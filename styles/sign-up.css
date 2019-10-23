@@ -21,8 +21,13 @@
     border: 1px solid #213DCD;
 }
 
+.btn img{
+    padding-right:10px;
+    
+}
+
 .footer_box {
-    height: 398px;
+    height: 450px;
     color: #fff;
 }
 
