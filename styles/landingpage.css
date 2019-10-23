@@ -53,7 +53,7 @@ body {
 
 .form-content {
   width: 80%;
-  margin-top: 15%;
+  margin-top: 20%;
 }
 
 .input-group {
@@ -70,14 +70,14 @@ body {
 
 h1 {
   margin-left: 23%;
-  color: #213DCD;
+  color: #ffffff;
   margin-bottom: 50px;
 }
 
 .search-content {
   font-size: 1.2rem;
   margin-left: 23%;
-  color: #676871;
+  color: #ffffff;
   padding-top: 20px;
   font-weight: bold;
 }
@@ -87,6 +87,10 @@ h1 {
  color: #213DCD;
 }
 
+.body-section {
+  background-image: url("https://res.cloudinary.com/jameschima/image/upload/v1571811814/marco-oriolesi-wqLGlhjr6Og-unsplash_1_qjnpta.png");
+  height: 749px;
+}
 
 #footer {
   background-color: #213DCD;
@@ -167,9 +171,13 @@ h1 {
       font-size: 1rem;
       width: 100%;
       margin-left: 13%;
-      color: #676871;
+      color: #ffffff;
       padding-top: 20px;
       font-weight: bold;
+  }
+  .form-content {
+    width: 80%;
+    margin-top: 35%;
   }
 }
 
@@ -183,8 +191,13 @@ h1 {
     font-size: 1rem;
     width: 120%;
     margin-left: 8%;
-    color: #676871;
+    color: #ffffff;
     padding-top: 20px;
     font-weight: bold;
+  }
+
+  .form-content {
+    width: 80%;
+    margin-top: 60%;
   }
 }
