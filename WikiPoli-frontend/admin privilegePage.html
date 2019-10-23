@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Admin privilegePage</title>
+  <link rel="stylesheet" href="css/admin privilegePage.css">
+</head>
+<body>
+  <nav class="navbar">
+    <span class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+        <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+            <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+            <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+        </svg>
+      </a>
+    </span>
+
+    <ul class="navbar-nav">
+      <li><a href="#">Dashboard</a></li>
+      <li><a href="#">Activities</a></li>
+      <li><a href="#">Add Post</a></li>
+      <li><a href="#">Add privileges</a></li>
+      <li><a href="#">Block/Unblock</a></li>
+      <li><a href="#">Log Out</a></li>
+    </ul>
+  </nav>
+
+  <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="#">Dashboard</a>
+    <a href="#">Activities</a>
+    <a href="#">Add Post</a>
+    <a href="#">Add privileges</a>
+    <a href="#">Block/Unblock</a>
+    <a href="#">Log Out</a>
+  </div>
+
+  <div id="main">
+    <h1><div class="container">
+      <form action="action_page.php">
+        <div class="row">
+          <div class="col-25">
+            <div><label for="fname">First Name</label></div>
+          </div>
+          <div class="col-75">
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="lname">email</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="email" name="email" placeholder="Your email..">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="privileges">privileges</label>
+          </div>
+          <div class="col-75">
+            <select id="privileges" name="privileges">
+              <option value="admin">admin</option>
+              <option value="">#</option>
+              <option value="">#</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="privilege level">privilege level</label>
+          </div>
+          <div class="col-75">
+            <select id="privileges" name="privileges">
+              <option value="admin">2</option>
+              <option value="">1</option>
+              <option value="">0</option>
+            </select>
+          </div>
+        </div>
+        
+      </form>
+    </div></h1>
+  </div>
+
+  <script>
+    function openSlideMenu(){
+      document.getElementById('side-menu').style.width = '250px';
+      document.getElementById('main').style.marginLeft = '250px';
+    }
+
+    function closeSlideMenu(){
+      document.getElementById('side-menu').style.width = '0';
+      document.getElementById('main').style.marginLeft = '0';
+    }
+  </script>
+</body>
+</html>
