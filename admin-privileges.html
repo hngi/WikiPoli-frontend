@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Admin Privileges</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="admin-privileges.css" />
+</head>
+<body>
+    <img src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571749198/c09e9odiqy2cvkosfubl.png" id="lgg"/>
+    <div class="center-main">
+        <span class="sitename"><span>Wiki</span><span class="poli">Poli</span></span><span class="rightlink">Hello, masterAdmin<span class="profimg"><img src="#"></span></span>
+        <div class="forms">
+                <h3 class="heavy-weight">Add Privileges</h3>
+                <form>
+                    <fieldset id="field1">
+                    <h4 class="heavy-weight">Change User Privilege</h4>
+                    <label for="name" class="label">Name</label>
+                    <label for="email" class="label left-margin-1">Email</label><br/>
+                    <input type="text" name="name"class="input-field" required>
+                    <input type="email" name="email" class="input-field left-margin-3" required><br/>
+                    <label for="priv" class="label">Privilege</label>
+                    <label for="privilegelevel" class="label left-margin-2">Privilege Level</label><br/>
+                    <select id="priv" class="input-field">
+                            <option value="1">Admin</option>
+                            <option value="2">Non-Admin</option>
+                        </select>
+                    <select id="privilegelevel" class="input-field left-margin-3">
+                        <option value="1">1</option>
+                        <option value="2" selected>2</option>
+                    </select>
+                    <br/>
+                    <button type="button" class="bluebutton">ADD</button>
+                </fieldset>
+                <fieldset id="field2"> 
+                    <h4 class="heavy-weight">Add Admin</h4>
+                    <label for="name" class="label">Name</label>
+                    <label for="email" class="label left-margin-1">Email</label><br/>
+                    <input type="text" name="name" class="input-field"required>
+                    <input type="email" name="email" class="input-field left-margin-3" required><br/>
+                    <label for="priv" class="label">Privilege</label>
+                    <label for="password" class="label left-margin-2">Set Password</label><br/>
+                     <select id="priv" class="input-field">
+                        <option value="1">Admin</option>
+                        <option value="2">Non-Admin</option>
+                    </select>
+                    <input type="password" name="password" class="input-field left-margin-3" required><br/>
+                    <button type="button" class="bluebutton">Create</button>
+                </fieldset>
+                </form>
+                
+                <a href="#">Perform bulk operations</a>
+                <a href="#" class="rightlink">View list of Admins</a>
+        </div>
+    
+    </div>
+    <div id="nav">
+        <nav>
+        <ul>
+            <li><a href="#" class="navlink">Dashboard</a></li>
+            <li><a href="#" class="navlink">Activities</a></li>
+            <li><a href="#" class="navlink">Add Post +</a></li>
+            <li><a href="admin-privileges.html" class="navlink addpriul">Add Privileges</a></li>
+            <li><a href="#" class="navlink">Block/Unblock</a></li>
+            <li><a href="#" class="navlink">LogOut</a></li>
+        </ul>
+    </nav>
+    </div>
+    
+</body>
+</html>
