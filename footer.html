@@ -1,22 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-                    <meta charset="UTF-8">
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-                    <title>footer</title>
-                    <link rel="stylesheet" href="styles/footer.css">
-</head>
-<body>
-                    <footer> 
-                                        <a class="footer_brand" href="#"><img src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571749198/c09e9odiqy2cvkosfubl.png" alt=""></a>
-                                        <ul class="footer_elements"> 
 
-                                                            <li ><a href="#">Privacy Policy</a></li>
-                                                            <li><a href="#">About WikiPoli</a></li>
-                                                            <li><a href="#">Contact WikiPoli</a></li>
-                                        </ul>
-                    </footer>
-                    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>footer</title>
+    <!-- Bootstrap core CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+    <!-- Google imported font for pacifico -->
+
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet" />
+
+    <!-- Font awesome icon -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+</head>
+
+<style>
+    .list-inline {
+        vertical-align: middle;
+        list-style: none;
+
+    }
+
+    .list-group-item {
+        position: relative;
+        display: block;
+        padding: .75rem 1.25rem;
+        margin-bottom: -1px;
+        background-color: #213DCD;
+        border: none;
+        line-height: 0.5rem;
+    }
+
+    .list-group {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding-left: inherit;
+        margin-bottom: inherit;
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    a {
+        color: ivory;
+        text-decoration: none;
+        background-color: transparent;
+    }
+
+    ul li {
+        background-color: none !important;
+        color: ivory;
+    }
+
+    .footersection {
+        background-color: #213DCD;
+        height: auto;
+        padding-top: 1rem;
+        padding-bottom: 0.1rem;
+        font-family: 'Ubuntu', sans-serif;
+
+    }
+
+    i {
+        color: floralwhite;
+        padding-right: 4rem;
+        vertical-align: middle;
+    }
+
+    ul p {
+        font-weight: bold;
+    }
+</style>
+
+
+<body>
+    <footer>
+        <section class="footersection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm ">
+                        <ul class="footer_elements list-group list-group-flush">
+                            <p class="text-center bold" style="color: ivory;">Support</p>
+                            <li class="list-group-item text-center"><a href="#">Contact us</a></li>
+                            <li class="list-group-item text-center"><a href="#">Term of Use </a></li>
+                            <li class="list-group-item text-center"><a href="#">Privacy Policy</a></li>
+                            <li class="list-group-item text-center"><a href="#">Donation</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="col-sm">
+                        <ul class="footer_elements list-group list-group-flush">
+                            <p class="text-center bold" style="color: ivory;">Company</p>
+                            <li class="list-group-item text-center"><a href="#">About</a></li>
+                            <li class="list-group-item text-center"><a href="#">Career </a></li>
+                            <li class="list-group-item text-center"><a href="#">Tour</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col text-center">
+                            <ul class="list-inline mt-5" style="justify-content: center;">
+                                <li class="list-inline-item mr-5"><a class="social-icon text-xs-center" target="_blank"
+                                        href="#"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+                                </li>
+                                <li class="list-inline-item mr-5"><a class="social-icon text-xs-center" target="_blank"
+                                        href="#"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+                                </li>
+                                <li class="list-inline-item mr-5"><a class="social-icon text-xs-center" target="_blank"
+                                        href="#"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+                                </li>
+                                <li class="list-inline-item mr-5"><a class="social-icon text-xs-center" target="_blank"
+                                        href="#"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a>
+                                </li>
+                                <li class="list-inline-item mr-5"><a class="social-icon text-xs-center" target="_blank"
+                                        href="#"><i class="fa fa-pinterest fa-lg" aria-hidden="true"></i></a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm mt-2">
+                            <p class="text-center"><span style="font: bold; color: floralwhite;">2019 WikiPoli. All
+                                    Rights
+                                    Reserved</span></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+
+
+
+
+
+        <!-- <a class="footer_brand" href="#"><img
+                src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571749198/c09e9odiqy2cvkosfubl.png"
+                alt=""></a>
+        <ul class="footer_elements">
+
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">About WikiPoli</a></li>
+            <li><a href="#">Contact WikiPoli</a></li>
+        </ul> -->
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
