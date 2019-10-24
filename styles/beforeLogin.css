@@ -10,10 +10,14 @@ body{
     line-height: 2.5rem;
     color: #000000
 }
+
 .btn-primary{
-    background-color: #213DCD !important;
+    background-color: #6D9BF1 !important;
     color: white !important; 
+    border-radius: 0;
+    border: none;
 }
+
 .navbar-brand {
     margin-left: 5rem;
     width: 40px
@@ -25,12 +29,13 @@ body{
     }
 }
 #login-bttn {
-    color: #213DCD;
+    color: #6D9BF1;
     /* margin-right: 2rem */
 }
 #signup-bttn {
     color: #213DCD;
     /* margin-right: 10rem; */
+
 }
 #signup-bttn {
     border: 1px solid;
@@ -44,21 +49,26 @@ body{
 }
 #search-space {
     border: 1px solid;
-    background-color: #213DCD;
+    background-color: #6D9BF1;
+    border-radius: 0;
     color: #fff;
     width: 6rem;
     text-align: center;
     height: 2.5rem;
     margin-right: 1rem;
+
 }
 #nav-top {
     list-style: none;
     display: flex;
 }
+
 .ul-nav{
     position: relative;
     left: 8rem;
 }
+
+
 @media screen and (max-width: 876px) {
     #nav-top{
       display: block;
@@ -89,7 +99,12 @@ body{
     margin-left: 28rem;
     font-size: 1.2rem;
     -webkit-text-fill-color: black;  
-    text-decoration: underline;
+    /*text-decoration: underline;
+    text-decoration-color: #6D9BF1;*/
+    border-bottom: 0.2rem solid #6D9BF1;  
+}
+#read:hover{
+    text-decoration: none;
 }
 @media screen and (max-width: 876px) {
         #read {
@@ -101,25 +116,26 @@ body{
     padding: 1rem 2rem;
     fill: solid;
     margin-right: 2rem;
+    line-height: 28px;
 }
 .fela-dob{
-    font-size: 0.7rem;
+    font-size: 0.85rem !important;
 }
 .fela-content{
     font-size: 1rem;
     margin: 2rem
 }
 .poli-quali {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 500
 }
 
 
  /*--------part two begins-------------*/
+
  .img-fela{
     background-attachment: fixed !important;
     border-radius: 10px;
-
 }
 
 .interactives{
@@ -138,15 +154,17 @@ body{
 }
 .fa-heart{
     cursor: pointer;
-    color: red
+    color: black;
 }
 /*-------footer begins-----*/
 footer {
-    background: rgba(33, 60, 220, 0.1);
+    background-color: #000000;
+    color:#fff;
     margin: auto;
     overflow: hidden;
     padding: 15px;
 }
+
 .footer_elements,
 .footer_brand {
     display:  flex;
@@ -159,6 +177,7 @@ footer {
 .footer_elements {
     width: auto;
 }
+
 .footer_elements li {
 
     font-weight:  bold;
@@ -200,7 +219,3 @@ footer {
     }
 
 }
-
-
-/* Ends here */
-

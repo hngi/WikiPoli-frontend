@@ -6,26 +6,25 @@
 }
 
 .register_container {
-    height: 1024px;
+    height: 100vh;
     font-family: 'Lato', sans-serif;
 }
 
+/*
 .aside_img_box {
     background-image: url('https://res.cloudinary.com/wpgroom-com/image/upload/v1571736661/Group_18_sfpvd7.png');
     background-size: auto 100%;
     background-repeat: no-repeat;
 }
 
-.aside_content{
-    background: #FAFAFA;
-}
 .aside_content h2{
     font-weight: 700;
 }
+*/
 .signup_form input, .login_form input {
-    height: 60px;
+    height: 55px;
     width: 456px;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
     border: 1px solid #213DCD;
     border-radius: 0;
 }

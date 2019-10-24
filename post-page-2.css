@@ -32,14 +32,13 @@ body,html{
 }
 .search input[type="text"]{
 	padding: 6px 5px;
-	width: 30%;
-	margin-left: 55%;
+	width: 31%;
+	margin-left: 54%;
 }
-.search input[type="submit"]
-{
+.search button{
 	border: 0px;
 	background: none;
-	background-color: #0000FF;
+	background-color: #6D9BF1;
 	color: #fff;
 	padding: 8px 20px;
 	border-radius-top-right: 5px;
@@ -49,15 +48,15 @@ body,html{
 }
 @media only screen and (max-width : 780px)
 {
-	.search input[type="submit"]{margin-top: 5px; float: left; margin-left: 5%;}
+	.search button{margin-top: 5px; float: left; margin-left: 4%;}
 	.search input[type="text"]{
 		width: 90%;
-		margin-left: 5%;
+		margin-left: 4%;
 	}
 
 }
 .col-sm {
-	border: 2px solid #3333FF;
+	border: 2px solid #6D9BF1;
 	margin-top: 70px;
 }
 #post-1{
@@ -88,12 +87,15 @@ body,html{
 	margin-top: 50px;
 	margin-right: 80px;
 }
+@media only screen and (max-width: 768px){
+	.pagination{margin-right: }
+}
 .pages li{
 	display: inline;
 	padding-right: 20px;
 }
 .login-footer{
-    background: #213CDC;
+    background: #6D9BF1;
     list-style: none;
     display: flex;
     max-width: 100%;

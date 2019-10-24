@@ -74,7 +74,7 @@ left: 98%;
 .pop-modal-body {
     cursor:pointer;
     text-align: center;
-    color:blue;
+    color:#6d9bf1;
     font-size:150%;
 }
 .pop-modal-body:hover{
@@ -174,7 +174,7 @@ form {
   text-align:center;
 }
 .news-container h2{      
-    color: #213CDC;
+    color: #6d9bf1;
 }
 
 /* Style the input elements and the submit button */
@@ -194,7 +194,7 @@ form {
 
 /* Style the submit button */
 .news-container input[type=submit] {
-  background-color: #213CDC;
+  background-color: #6d9bf1;
   color: white;
   border: none;
 }

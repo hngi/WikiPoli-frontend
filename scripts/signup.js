@@ -2,12 +2,18 @@ auth_token = "wikipoli_auth_token";
 
 let data = 
 {
-	email: "oladipoumar1@gmail.com",
-	password: "Horlerdipo"
+	name: "Johnson",
+	email: "jaycodist@sdt.com",
+	password: "tester"
 }
-fetch("http://teamgandhi.000webhostapp.com/wikipoli-api/Api/login.php",
+fetch("http://teamgandhi.000webhostapp.com/api/signup.php",
 {
 	method: 'POST',
-	body: JSON.stringify(data)
+	headers: 
+	{
+	  'Content-Type': 'application/json',
+	  "origin": "wiki"
+	},
+	//body: JSON.stringify(data)
 })
-	.then(data => data.json()).then(data => console.log(data));
+	.then(data => data.json()).then(json => console.log(json));
