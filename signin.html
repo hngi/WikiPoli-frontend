@@ -6,92 +6,63 @@
     <meta name="viewport" content="width=device-width , initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>WikiPoli | Sign In</title>
-    <link rel="stylesheet" type="text/css"
-        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="shortcut icon" type="image/png" href="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571749198/c09e9odiqy2cvkosfubl.png" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/56f496c8ed.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles/sign.css">
+    <link rel="stylesheet" href="styles/signin.css">
 </head>
 
 <body>
 
-    <main class="row register_container main">
-        <section class="aside_img_box col-12 col-lg-6 py-5">
+     <div class="container">
 
-        </section>
-        <section class="aside_content col-12 col-lg-6 px-5 d-flex flex-column align-items-center">
-            <div>
-                <img src="https://res.cloudinary.com/wpgroom-com/image/upload/v1571736654/wikiPoli5_8_yrgvwn.png"
-                    alt="" />
-            </div>
-            <div>
-                <h2>Log In to your WikiPoli Account</h2>
-            </div>
-            <div>
+         <div class="container-inner">
 
-                <form class="login_form" action="#" method="post">
+             <div class="cover-container">
 
-                    <p></p>
+                 <div class="inner cover">
+                     <h1 class="cover-heading"> <img src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571749198/c09e9odiqy2cvkosfubl.png"></h1>
+                     
+                        <form class="login_form" action="#" method="post">
+                            <h2 class="form-signin-heading">Log In to Your WikiPoli Account</h2>
+                            
+                            <div class="form-group">
+                            <label for="email" class="sr-only">Email address</label>
+                                <input type="email" id="inputEmail" class="form-control" placeholder=" Your Email Address" required
+                                    autofocus>
+                            </div>
+                            
+                            <div class="form-group">
+                            <label for="password" class="sr-only">Password</label>
+                                <input type="password" id="inputPassword" class="form-control" placeholder="Your Password" required>
+                            </div>
 
-                    <div class="form-group">
-                        <input id="email" name="email" type="email" placeholder="Your email address" required
-                            class="form-control signin-input" />
-                    </div>
+                            <button class="btn btn-lg btn-primary btn-block" type="submit" onclick="validation()">Log In</button>
+                                    <div class="forg">
+                                        <p class="forg"><a href="forgotpassword.html">Forgot Password?</a></p>
+                                    </div>
+                                <div id="eresult"></div>
 
-                    <div class="form-group">
-                        <input  id="password" name="password" type="password" placeholder="Your Password" required
-                            class="form-control signin-input" />
-                    </div>
+                                <p class="text-center">
+                                    Don't have an account? <a href="signup.html"> Sign up</a>
+                                </p>
 
-                    <input type="submit" id="submitter" name="log-in" value="Log In" class="btn my-4" />
-                </form>
-                                            <div id="eresult"></div>
+                     </form>
 
+                 </div>
 
-                <p class="text-center">
-                    Don't have an account? <a href="sign-up.html">Sign up</a>
-                </p>
-            </div>
-        </section>
-    </main>
-    <footer class="footer_box d-flex flex-column aligns-items-center">
-        <div class="container">
-            <section class="footer_link d-flex justify-content-between pt-5">
-                <div class="d-flex flex-column text-center">
-                    <a href="#" class="mb-4 text-bold">Support</a>
-                    <a href="contact.html">Contact Us</a>
-                    <a href="/Terms-of-use.html">Terms of Use</a>
-                    <a href="privacypolicy.html">Privacy Policy</a>
-                    <a href="Donations.html">Donations</a>
-                </div>
-                <div class="footer_link_two d-flex flex-column text-center">
-                    <a href="#" class="mb-4 text-bold">Company</a>
-                    <a href="about.html">About</a>
-                    <a href="careers.html">Careers</a>
-                    <a href="tour.html">Tour </a>
-                </div>
-            </section>
-            <section>
-                <div class="social_footer d-flex justify-content-center mt-1">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-linkedin-in"></i>
-                    <i class="fab fa-pinterest-p"></i>
-                </div>
-            </section>
-            <section class="text-center">
-                &copy; 2019 WikiPoli. All Rights Reserved
-            </section>
-        </div>
-    </footer>
+             </div>
+
+         </div>
+
+    </div>
+
     <script src="ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-
     <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
+    <script type="text/javascript" src="login.js"></script>
 
 </body>
 
 </html>
-<script type="text/javascript" src="scripts/login.js"></script>
