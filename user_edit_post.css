@@ -26,7 +26,8 @@ input{
 	width: 90%;
 	margin-bottom: 20px;
 	border: 1px solid blue;
-	padding-left:10px;
+	padding-left:10px; display: inline;
+	
 }
 textarea{
 	height: 100px;
@@ -103,7 +104,7 @@ textarea{
 }
 .input-group, .input-group-text, .input-group-addon{border-raduis:0px!important;}
 .input-group-text{color:#ffffff!important;}
-.input-group-addon{background:blue!important; display: inline;}
+.input-group-addon, .input-group-text{background:blue!important; display: inline;}
 @media only screen and (max-width: 991px){
 	{
 
