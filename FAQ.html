@@ -7,166 +7,195 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Faq</title>
     <link rel="stylesheet" href="faq.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-  <header>
-        <nav class="navbar navbar-expand-lg navbar-custom bg-custom">
-            <div class="container">
-              <a href="index.html" class="logo"><img src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571749198/c09e9odiqy2cvkosfubl.png"alt="logo" class="img-fluid" width="150px;"></a>
-              <button class="navbar-toggler float-right custom-toggler" type="button" data-toggle="collapse" data-target="#navbar9" style="color: #000000;">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="navbar-collapse collapse" id="navbar9">
-                <ul class="navbar-nav ml-auto"> 
-                  <li class="navbar-item mr-5">
-                    <a href="#" class="navbar-link" style="color: black;" id="logIn">Log In</a>
-                  </li>
-                  <li class="navbar-item mr-5">
-                    <a href="#" class="btn navbar-link" id="signUp" style="background-color: #0000FF;">Sign Up</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-        </header>
-      <section> 
+    <nav class="navbar navbar-expand-lg navbar-custom bg-custom">
+        <div class="container">
+          <a href="index.html" class="logo"><img src="https://res.cloudinary.com/siyfa/image/upload/v1571745363/u0zhq4fwslfr4u5lx5qt.png" alt="logo" class="img-fluid" width="150px;"></a>
+          <button class="navbar-toggler float-right custom-toggler" type="button" data-toggle="collapse" data-target="#navbar9" style="color: #000000;">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse collapse" id="navbar9">
+            <ul class="navbar-nav ml-auto"> 
+              <li class="navbar-item mr-5">
+                <a href="./signin.html" class="navbar-link" style="color: black;" id="logIn">Log In</a>
+              </li>
+              <li class="navbar-item mr-5">
+                <a href="./signup.html" class="btn navbar-link" id="signUp" style="background-color: #6D9BF1;">Post</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
           <div class="container"> 
-<h2>Frequently Asked Questions</h2>
+<h2 align="center">Frequently Asked Questions</h2>
 <br>
 <br>
-            <p>Login and Registration Issues</p>
-<div id="accordion">
-    <div class="card">
-      <div class="card-header">
-        <a class="card-link" data-toggle="collapse" href="#collapseOne">
-            Why do I need to Sign Up/Log In?
-        </a>
-      </div>
-      <div id="collapseOne" class="collapse show" data-parent="#accordion">
-        <div class="card-body">
-            You may not have to, however, in order to post messages you must sign up/log in. Also, registration gives you access to additional features not available to guest users such as private messaging the administrator, subscription to latest news on this site, etc. It only takes a few moments to register so it is recommended you do so.
-          </div>
-      </div>
-    </div>
-    <div class="card-header">
-        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-            What is WikiPoli?
-      </a>
-      </div>
-      <div id="collapseTwo" class="collapse" data-parent="#accordion">
-        <div class="card-body">
-            It is a special type of website designed to make contribution on everything politics easy. Many people are constantly improving WikiPOLIS, making thousands of edits every minute.
-          </div>
-      </div>
-    </div>
-    <div class="card">
-        <div class="card-header">
-          <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
-              I registered but cannot login!
-          </a>
-        </div>
-        <div id="collapseThree" class="collapse" data-parent="#accordion">
-          <div class="card-body">
-              First, check your username and password. If they are correct, then one of two things may have happened. If you were sent an email, follow the instructions. If you did not receive an email, you may have provided an incorrect email address or the email may have been picked up by a spam filer. If you are sure the email address you provided is correct, try contacting an administrator.
+<div class="container">
+    <div id="accordion" class="accordion">
+        <div class="card mb-0">
+    
+            <h5 class="card-title">
+            <div class="card-header collapsed" data-toggle="collapse" href="#collapseOne">
+                <a class="card-title">
+                    What is WikiPoli?
+                </a>
             </div>
+            </h5>
+            <div id="collapseOne" class="card-body collapse show" data-parent="#accordion" ><p>
+                It is a special type of website designed to make contribution on everything politics easy. Many people are constantly improving Wikipoli, making thousands of edits every minute.
+            </p>
         </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
-            I’ve lost my password!
-          </a>
+        <h5 class="card-title">
+        <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+            <a class="card-title">
+                How can I contribute?
+            </a>
         </div>
-        <div id="collapseFour" class="collapse" data-parent="#accordion">
-          <div class="card-body">
-            Don’t panic! While your password cannot be retrieved, it can easily be reset. Visit the login page and click <em>I forgot my password</em>. Follow the instructions and you should be able to log in again shortly.<br />However, if you are not able to reset your password, contact a board administrator.
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-      </section>
-      <br>
-      <br>
-      <section>
-  <div class="container">
-            <p>Posting Issues</p>
+      </h5>
+            <div id="collapseTwo" class="card-body collapse" data-parent="#accordion" >
+                <p>Making a contribution is so easy. simply click <a href="#">here</a> and begin to share your wonderful contributions./p>
+            </div>
 
-    <div class="card">
-      <div class="card-header">
-        <a class="card-link" data-toggle="collapse" href="#collapseOne">
-            How do I create a new topic or post a reply?
-        </a>
-      </div>
-      <div id="collapseOne" class="collapse show" data-parent="#accordion">
-        <div class="card-body">
-            To post a new topic in a forum, click "New Topic". To post a reply to a topic, click "Post Reply". You may need to register before you can post a message. A list of your permissions in each forum is available at the bottom of the forum and topic screens. Example: You can post new topics.     </div>
+        <h5 class="card-title">
+        <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+            <a class="card-title">
+                I am finding it difficult to log in, what should I do?
+            </a>
         </div>
-      </div>
+      </h5>
+        <div id="collapseThree" class="card-body collapse" data-parent="#accordion" >
+            <p> First, check your username and password. If they are correct, then one of two things may have happened. If you were sent an email, follow the instructions. If you did not receive an email, you may have provided an incorrect email address or the email may have been picked up by a spam filer. If you are sure the email address you provided is correct, try contacting an administrator.
+              </p>
+        </div>
+<h5 class="card-title">
+    <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+        <a class="card-title">
+            What is the difference between a Super Administrator and an Administrator?
+        </a>
     </div>
-  </section>
-  <br>
-  <br>
-<section>
-  <div class="container">
-            <p>Others</p>
-      <div class="card">
-        <div class="card-header">
-          <a class="card-link" data-toggle="collapse" href="#collapseOne">
-            Who do you think is the richest Nigerian politician alive?
-          </a>
+  </h5>
+    <div id="collapseFour" class="collapse" data-parent="#accordion" >
+      <p>Super power!It is the super power bestowed on the super administrator to block users or administrators who default</p>  
+    </div>
+    <h5 class="card-title">
+        <div class="card-header collapsed" data-toggle="collapse" href="#collapseFive">
+            <a class="card-title">
+                What is the role of an Administrator?
+            </a>
         </div>
-        <div id="collapseOne" class="collapse show" data-parent="#accordion">
-          <div class="card-body">
-            I had an argument with a friend recently about some of the richest Nigerian politicians alive, so I am bringing the question here for you guys to give your opinions and help us settle it once and for all.
-      </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-            Who is your best Nigerian governor so far in 2019?
+        </h5>
+        <div id="collapseFive" class="card-body collapse" data-parent="#accordion" ><p>
+            Simple! An administrator plays the role of inviting or deleting a user. The admin can also delete posts completely from database, edit posts, publish posts and ensure it is visible for all.</p>
+    </div>
+    <h5 class="card-title">
+    <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+        <a class="card-title">
+            How Do I Create a new topic or post a reply?
         </a>
+    </div>
+  </h5>
+  <div id="collapseSix" class="collapse" data-parent="#accordion" >
+      <p>To post a new topic in a forum, click <a href="#">"Post"</a>. To post a reply to a topic, click "comment". You may need to register before you can post a message.
+      </p>
+    </div>    
+    <h5 class="card-title">
+    <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
+        <a class="card-title">
+            Can I comment on any post?
+        </a>
+    </div>
+  </h5>
+    <div id="collapseSeven" class="collapse" data-parent="#accordion" >
+      <p>Of course! All you need to do is to go the comment section after every post and make a comment</p>  
+    </div>
+    <h5 class="card-title">
+        <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEight">
+            <a class="card-title">
+                I cannot rememeber my password?
+            </a>
         </div>
-        <div id="collapseTwo" class="collapse" data-parent="#accordion">
-          <div class="card-body">
-            Which governor do you think has performed so well this year and deserved the best governor in Nigeria for the year 2019?
+      </h5>
+        <div id="collapseEight" class="collapse" data-parent="#accordion" >
+            <p> Don’t panic! While your password cannot be retrieved, it can easily be reset. Visit the login page and click <em>I forgot my password</em>. Follow the instructions and you should be able to log in again shortly.<br />However, if you are not able to reset your password, contact a board administrator.</p>
+</div>
+
+            <h5 class="card-title">
+    <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseNine">
+        <a class="card-title">
+            Why did I receive a warning?
+        </a>
+    </div>
+  </h5>
+    <div id="collapseNine" class="collapse" data-parent="#accordion" >
+      <p>There are set rules for this site. If you have broken a rule, you may be issued a warning. Please note that this is the administrator’s decision, and <a href="#">hng6</a> has nothing to do with the warnings on the given site. Contact the administrator if you are unsure about why you were issued a warning.</div>
+    <h5 class="card-title">
+        <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTen">
+            <a class="card-title">
+                How can I report posts to an administrator?
+            </a>
         </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
-            How much does a local government councillor earn in Nigeria?
-          </a>
-        </div>
-        <div id="collapseThree" class="collapse" data-parent="#accordion">
-          <div class="card-body">
-            It seems like the local government Councillor is a very lucrative position to hold in Nigeria. I have seen people fighting and doing all sorts of things just to get the position. So, I’m tempted to ask. Like how much 
-        </div>
-        </div>
-      </div>
+      </h5>
+        <div id="collapseTen" class="collapse" data-parent="#accordion" >
+            <p> If the  administrator has allowed it, you should fill the "feedback" form.</a>
+    </div>
+  </h5>
+    <div id="collapseSeven" class="collapse" data-parent="#accordion" >
+      <p>Of course! All you need to do is to go the comment section after every post and make a comment</p>  
     </div>
 </div>
-</section>
-<br>
-<br>
-  <footer> 
-    <a class="footer_brand" href="#"><img src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571749198/c09e9odiqy2cvkosfubl.png" alt=""></a>
-    <ul class="footer_elements"> 
+</div>
+</div>
+</div>
 
-                        <li ><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">About WikiPoli</a></li>
-                        <li><a href="#">Contact WikiPoli</a></li>
-    </ul>
+<br>
+<br><hr>
+<footer>
+    <div id="footer">
+                        <div class="container">
+                                            <div class="row links">
+                                                                <div class="col-md-4 col-sm-12  text-center">
+                                                                                    <ul class="quick-links">
+                                                                                                        <li>Legal</li>
+                                                                                                        <li><a href="Terms-of-use.html">Terms of Use</a></li>
+                                                                                                        <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-md-4 col-sm-12  text-center">
+                                                                                    <ul class="quick-links">
+                                                                                                        <li>Company</li>
+                                                                                                        <li><a href="">About</a></li>
+                                                                                                        <li><a href="">Careers</a></li>
+                                                                                                        <li><a href="">FAQs</a></li>
+                                                                                                        <li><a href="">Donations</a></li>
+                                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-md-4 col-sm-12  text-center">
+                                                                    <div class="text-center social-links">
+                                                                                        <h3>Connect With Us</h3>
+                                                                                        <a href="facebook.com"><span class="fa fa-facebook"></span></a>
+                                                                                        <a href="twitter.com"><span class="fa fa-twitter"></span></a>
+                                                                                        <a href="instagram.com"><span class="fa fa-instagram"></span></a>
+                                                                                        <p>contact@wikipoli.gq</p>
+                                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12 copyright text-center">
+                                                                    <p>&copy; 2019 Wikipoli - All Rights Reserved</p>
+                                                </div>
+                            </div>
+        </div>
+</div>
 </footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-</body>
-
+            </body>
 </html>
 
