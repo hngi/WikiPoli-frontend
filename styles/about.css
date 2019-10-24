@@ -41,7 +41,7 @@ p, span {
 }
 .jumbotron
 {
-  background-color: #000;
+  background-color:#6D9BF1 ;
   color: #fff;
   border-radius: 0;
 }
@@ -132,7 +132,6 @@ hr {
 	height: 100px;
 	width: 100%;
 	background-color: rgba(33,60,220,0.1);
-	color:;
 
 }
 
