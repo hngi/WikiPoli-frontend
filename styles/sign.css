@@ -52,6 +52,15 @@ input[name='sign-up'], input[name='log-in'] {
     font-family: 'Gilroy', sans-serif;
 }
 
+.err-msg
+{
+    display: none;
+    text-align: center;
+    background-color: crimson;
+    color: white;
+    padding: 5px 10px;
+    font-size: 20px;
+}
 .text-bold {
     font-weight: 700
 }

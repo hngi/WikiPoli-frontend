@@ -17,7 +17,7 @@
 
 <body>
   <main class="row register_container">
-    <section class="aside_img_box col-12 col-lg-6 py-5">
+    <section class="aside_img_box col-12 col-lg-6 my-5">
 
     </section>
     <section class="aside_content col-12 col-lg-6 px-5 d-flex flex-column align-items-center">
@@ -50,8 +50,11 @@
             <input id="confirmPassword" name="confirmPassword" type="password" placeholder="Confirm Password" required
               class="form-control" />
           </div>
+          <div class="form-group">
+            <div class="err-msg">Email already exists!</div>
+          </div>
 
-          <input type="submit"  name="sign-up" value="Sign Up" class="btn signup-submit my-4" />
+          <input type="submit" id="submit-button" name="sign-up" value="Sign Up" class="btn signup-submit my-4" />
         </form>
         <p class="text-center">
           Already have an account? <a href="signin.html">Login</a>
@@ -59,40 +62,13 @@
       </div>
     </section>
   </main>
-  <footer   class="footer_box d-flex flex-column aligns-items-center">
-    <div class="container">
-      <section class="footer_link d-flex justify-content-between pt-5">
-        <div class="d-flex flex-column text-center">
-          <a href="#" class="mb-4 text-bold">Support</a>
-          <a href="contact.html">Contact Us</a>
-          <a href="#">Terms of Use</a>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Donations</a>
-        </div>
-        <div class="footer_link_two d-flex flex-column text-center">
-          <a href="#" class="mb-4 text-bold">Company</a>
-          <a href="#">About</a>
-          <a href="#">Careers</a>
-          <a href="#">Tour </a>
-        </div>
-      </section>
-      <section>
-        <div class="social_footer d-flex justify-content-center mt-1">
-          <i class="fab fa-facebook-f"></i>
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-instagram"></i>
-          <i class="fab fa-linkedin-in"></i>
-          <i class="fab fa-pinterest-p"></i>
-        </div>
-      </section>
-      <section class="text-center">
-        &copy; 2019 WikiPoli. All Rights Reserved
-      </section>
-    </div>
-  </footer>
-  <script src="ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  
+
+  <script src="https://cdn.auth0.com/js/auth0-spa-js/1.2/auth0-spa-js.production.js"></script>
   <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/signup.js"></script>

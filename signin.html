@@ -28,7 +28,9 @@
                 <h2>Log In to your WikiPoli Account</h2>
             </div>
             <div>
-                <form class="login_form" action="">
+
+                <form class="login_form" action="#" method="post">
+
                     <p></p>
 
                     <div class="form-group">
@@ -41,10 +43,13 @@
                             class="form-control signin-input" />
                     </div>
 
-                    <input type="submit" name="log-in" value="Log In" class="btn my-4" />
+                    <input type="submit" id="submitter" name="log-in" value="Log In" class="btn my-4" />
                 </form>
+                                            <div id="eresult"></div>
+
+
                 <p class="text-center">
-                    Don't have an account? <a href="signup.html">Sign up</a>
+                    Don't have an account? <a href="sign-up.html">Sign up</a>
                 </p>
             </div>
         </section>
@@ -55,15 +60,15 @@
                 <div class="d-flex flex-column text-center">
                     <a href="#" class="mb-4 text-bold">Support</a>
                     <a href="contact.html">Contact Us</a>
-                    <a href="#">Terms of Use</a>
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Donations</a>
+                    <a href="/Terms-of-use.html">Terms of Use</a>
+                    <a href="privacypolicy.html">Privacy Policy</a>
+                    <a href="Donations.html">Donations</a>
                 </div>
                 <div class="footer_link_two d-flex flex-column text-center">
                     <a href="#" class="mb-4 text-bold">Company</a>
-                    <a href="#">About</a>
-                    <a href="#">Careers</a>
-                    <a href="#">Tour </a>
+                    <a href="about.html">About</a>
+                    <a href="careers.html">Careers</a>
+                    <a href="tour.html">Tour </a>
                 </div>
             </section>
             <section>
@@ -82,9 +87,11 @@
     </footer>
     <script src="ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script type="text/javascript"
-        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 
 </body>
 
 </html>
+<script type="text/javascript" src="scripts/login.js"></script>
