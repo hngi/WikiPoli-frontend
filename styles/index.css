@@ -14,11 +14,15 @@ body {
 
 .navbar p {
   font-size: 2rem;
-  color: #6D9BF1;
+  color: #213DCD;
 }
 
 .menu a {
   font-size: 1.5rem;
+  color: #213DCD;
+}
+
+.menu a {
   color: #6D9BF1;
 }
 
@@ -31,18 +35,28 @@ body {
 }
 
 .button-signup {
-  background-color: #6D9BF1;
+  background-color: #213DCD;
   border: none;
   box-shadow: none;
   color: #ffffff;
   padding: 6px;
   font-size: 1.5rem;
+  text-align: center;
   width: 150px;
   margin-left: 2.5rem;
 }
 
-.button-search {
+.button-signup {
   background-color: #6D9BF1;
+}
+
+.button-signup:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.button-search {
+  background-color: #213DCD;
   border: none;
   box-shadow: none;
   color: #ffffff;
@@ -51,10 +65,18 @@ body {
   width: 150px;
 }
 
+.button-search {
+  background-color: #6D9BF1;
+}
+
 .form-content {
   width: 80%;
+  margin-top: 15%;
+}
+.form-content {
   margin-top: 20%;
 }
+
 
 .input-group {
   width: 80%;
@@ -65,27 +87,39 @@ body {
   height: 50px;
   padding: 15px;
   border-radius: 0;
-  border: 1px solid #6D9BF1;
+  border: 1px solid #213DCD;
   background-color: #FFEBEF;
 }
 
 h1 {
   margin-left: 23%;
-  color: #FFEBEF;
+  color: #213DCD;
   margin-bottom: 50px;
+}
+
+h1 {
+  color:#FFEBEF;
 }
 
 .search-content {
   font-size: 1.2rem;
   margin-left: 23%;
-  color: #FFEBEF;
+  color: #676871;
   padding-top: 20px;
   font-weight: bold;
 }
 
+.search-content {
+  color: #FFEBEF;
+}
+
 .search-content a {
  font-weight: bold;
- color: #6D9BF1;
+ color: #213DCD;
+}
+
+.search-content a {
+  color: #6D9BF1;
 }
 
 .body-section {
@@ -93,8 +127,9 @@ h1 {
   height: 749px;
 }
 
+
 #footer {
-  background-color: #6D9BF1;
+  background-color: #213DCD;
   margin-top: 200px;
   padding-top: 10px;
   height: 300px;
@@ -157,11 +192,11 @@ h1 {
       height: 50px;
       padding: 20px;
       border-radius: 0;
-      border: 1px solid #6D9BF1;
+      border: 1px solid #213DCD;
       background-color: #FFEBEF;
   }
     .button-search {
-      background-color:#6D9BF1;
+      background-color: #213DCD;
       border: none;
       box-shadow: none;
       color: #ffffff;
@@ -169,13 +204,19 @@ h1 {
       padding: 1px;
       width: 80px;
   }
+  .button-search {
+    background-color: #6D9BF1;
+  }
     .search-content {
       font-size: 1rem;
       width: 100%;
       margin-left: 13%;
-      color: #ffffff;
+      color: #676871;
       padding-top: 20px;
       font-weight: bold;
+  }
+    .search-content {
+      color: #FFEBEF;
   }
   .form-content {
     width: 80%;
@@ -193,11 +234,10 @@ h1 {
     font-size: 1rem;
     width: 120%;
     margin-left: 8%;
-    color: #ffffff;
+    color: #676871;
     padding-top: 20px;
     font-weight: bold;
   }
-
   .form-content {
     width: 80%;
     margin-top: 60%;
