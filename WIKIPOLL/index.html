@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" type="image/png" href="assets/img/favicon.ico">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>WikiPoll</title>
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/light-bootstrap-dashboard.css" rel="stylesheet"/>
+</head>
+<style>
+    .form-group .btn {
+        background-color: #6d9bf1;
+        color: #ffffff;
+        height: 35px;
+    }
+    .content{
+        margin: 0 30px 0 30px;
+    }
+    .sidebar{
+        background: #E9EDFA;
+    }
+    .sidebar-wrapper.active {
+        color: #6d9bf1;
+    }
+</style>
+<body>
+
+<div class="wrapper">
+    <div class="sidebar" data-color="" data-image="">
+
+    <!--
+
+        Tip 1: you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple"
+        Tip 2: you can also add an image using data-image tag
+
+    -->
+
+    	<div class="sidebar-wrapper">
+            <div class="logo">
+                
+            </div>
+
+            <ul class="nav">
+
+                <li>
+                    <a href="#">                        
+                        <p>Dashboard</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">                        
+                        <p>Activities</p>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="#">                        
+                        <p>Add Post +</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">                        
+                        <p>Add Priviledges</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">                        
+                        <p>Block/Unblock</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">                        
+                        <p>Logout</p>
+                    </a>
+                </li>
+            </ul>
+    	</div>
+    </div>
+
+    <div class="main-panel">
+        <nav class="navbar navbar-default navbar-fixed">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><span style="color: black">Wiki</span><span style="color:blue">Poli</span></a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-left">
+                        
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a><img src="https://res.cloudinary.com/glocutey/image/upload/v1571765360/Vector_2_ufl1vx.png">Hello, masterAdmin</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <form role="form" method="post">
+                        <div class="form-group">
+                            <label>Add Post</label>
+                            <input type="text" class="form-control" name="earn" placeholder="Earning capacity">
+                        </div>                                    
+                        <div class="form-group">
+                            <textarea class="form-control" rows="10" name="extra" placeholder="Associated Disciplines"></textarea>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-8 col-sm-8"></div>
+                            <div class="col-md-2 col-sm-2">
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-sm form-control" name="" value="submit">Save to Draft</button>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-2">
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-sm form-control" name="" value="">Publish</button>
+                                </div>
+                            </div>
+                        </div>    
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="footer">
+           
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+
+    <!--   Core JS Files   -->
+    <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+    <!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
+	<script src="assets/js/light-bootstrap-dashboard.js"></script>
+
+</html>
