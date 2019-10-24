@@ -30,6 +30,18 @@ body {
   color: #000000;
 }
 
+.posts-nav-link {
+   background-color: #6D9BF1 !important;
+  
+  color: #ffffff !important;
+  padding: .6rem 1.7rem;
+}
+
+.posts-nav-link:hover {
+   text-decoration: none;
+    background-color: rgb(69, 115, 202) !important;
+}
+
 .button-signup {
   background-color: #6D9BF1;
   border: none;
