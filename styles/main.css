@@ -1,0 +1,49 @@
+body {
+  width: 100%;
+  margin: 0;
+  padding: 2%;
+  color: #000;
+}
+#logo {
+  margin: 4%;
+}
+
+.firstnav li {
+  list-style-type: none;
+  display: inline-block;
+  float: right;
+  margin: 3%;
+  font-weight: 500;
+}
+.firstnav li a {
+  color: #000;
+}
+.firstnav li a:hover {
+  text-decoration: none;
+}
+#btn {
+  border-radius: 0px !important;
+  color: #fff;
+}
+#input {
+  outline: none !important;
+}
+.input-group-text {
+  border-radius: 0px !important;
+  background-color: blue !important;
+  color: #fff !important;
+}
+#create {
+  /*    margin-top: 82%;*/
+  font-weight: 500;
+}
+#create:hover {
+  text-decoration: none;
+}
+#more {
+  float: right;
+  font-weight: 500;
+}
+#more:hover {
+  text-decoration: none;
+}

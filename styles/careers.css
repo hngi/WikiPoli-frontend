@@ -1,0 +1,20 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid purple;
+    width: 100%;
+    margin-top: 50px;
+}
+.join-team{
+    display: flex;
+    border: 1px solid transparent;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-family: lato;
+}
+.apply-here{
+    margin-top: 100px;
+}

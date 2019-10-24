@@ -41,6 +41,14 @@ body {
   margin-left: 2.5rem;
 }
 
+.button-signup:hover {
+   background: rgb(69, 115, 202);
+}
+
+.user-name-link {
+  color: black !important;
+}
+
 .button-search {
   background-color: #6D9BF1;
   border: none;
@@ -53,7 +61,7 @@ body {
 
 .form-content {
   width: 80%;
-  margin-top: 20%;
+  margin-top: 15%;
 }
 
 .input-group {
@@ -61,26 +69,36 @@ body {
   margin-left: 23%;
 }
 
-.form-control {
-  height: 50px;
-  padding: 15px;
-  border-radius: 0;
-  border: 1px solid #6D9BF1;
-  background-color: #FFEBEF;
-}
-
 h1 {
-  margin-left: 23%;
-  color: #FFEBEF;
+  color: #6D9BF1;
   margin-bottom: 50px;
 }
 
 .search-content {
   font-size: 1.2rem;
   margin-left: 23%;
-  color: #FFEBEF;
+  color: #676871;
   padding-top: 20px;
   font-weight: bold;
+}
+
+.form-control {
+  border: 1px solid rgb(148, 148, 148);
+  border-radius: 0;
+}
+
+.send-email {
+  background: #6D9BF1;
+  color: white;
+  border-radius: 0;
+}
+
+.send-email:hover {
+   background: rgb(69, 115, 202);
+}
+
+.send-email:hover {
+  color: white;
 }
 
 .search-content a {
@@ -88,10 +106,6 @@ h1 {
  color: #6D9BF1;
 }
 
-.body-section {
-  background-image: url("https://res.cloudinary.com/jameschima/image/upload/v1571811814/marco-oriolesi-wqLGlhjr6Og-unsplash_1_qjnpta.png");
-  height: 749px;
-}
 
 #footer {
   background-color: #6D9BF1;
@@ -114,6 +128,34 @@ h1 {
   color: #ffffff;
   padding-bottom: 10px;
   font-weight: bold;
+}
+
+.main-body .fas,
+.main-body .fab {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.icons-row {
+  padding: 0 3rem;
+}
+
+.icons-row a {
+  color: #333;
+}
+
+.icons-row a:hover {
+  color: #555;
+}
+
+.secondrow-content {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #333;
+}
+
+.secondrow-content > * {
+  margin-bottom: 1rem;
 }
 
 .quick-links li a {
@@ -146,6 +188,10 @@ h1 {
     .social-links {
       margin-left: 40px;
   }
+
+  .fa-2x {
+    font-size: 1.3rem !important;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -153,53 +199,11 @@ h1 {
       width: 100%;
       margin-left: 12%;
   }
-    .form-control {
-      height: 50px;
-      padding: 20px;
-      border-radius: 0;
-      border: 1px solid #6D9BF1;
-      background-color: #FFEBEF;
-  }
-    .button-search {
-      background-color:#6D9BF1;
-      border: none;
-      box-shadow: none;
-      color: #ffffff;
-      font-size: 1.2rem;
-      padding: 1px;
-      width: 80px;
-  }
-    .search-content {
-      font-size: 1rem;
-      width: 100%;
-      margin-left: 13%;
-      color: #ffffff;
-      padding-top: 20px;
-      font-weight: bold;
-  }
-  .form-content {
-    width: 80%;
-    margin-top: 35%;
-  }
 }
 
 @media screen and (max-width: 375px) {
   .input-group {
     width: 120%;
     margin-left: 4%;
-  }
-
-  .search-content {
-    font-size: 1rem;
-    width: 120%;
-    margin-left: 8%;
-    color: #ffffff;
-    padding-top: 20px;
-    font-weight: bold;
-  }
-
-  .form-content {
-    width: 80%;
-    margin-top: 60%;
   }
 }
