@@ -102,6 +102,13 @@ a{
 .fa-twitter-square{
 	color: #55acee;
 }
+#footer{
+             background: #6D9BF1 !important;
+  }
+  .social-links h3 {
+  font-size: 1rem;
+  line-height: 1.5;
+}
 @media screen and (min-width:700px){
 	.card-wrap{
 		flex-direction: row;
