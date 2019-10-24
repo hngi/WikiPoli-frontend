@@ -17,8 +17,8 @@ a{
     margin-left: 50px;
 }
 .sign-up {
-    background-color: #213dcd;
-    color: white;
+    background-color: #6d9bf1;
+    color: #ffebef;
 }
 
 .navbar ul li a {
@@ -28,17 +28,17 @@ a{
     font-weight: bold;
     font-size: 22px;
     line-height: 48px;
-    color: #213dcd;
+    color: #6d9bf1;
 }
 
 .nav-link {
-    color: #213dcd !important;
+    color: #6d9bf1!important;
 }
 
 .active {
     border-radius: 0%;
     padding: 0 30px;
-    background-color: #213dcd;
+    background-color: #6d9bf1;
 }
 .heading{
 	font-size: 3.5rem;
@@ -90,7 +90,7 @@ a{
 	justify-content: center;
 	padding: 2rem 0;
 	margin-top: 1.5rem;
-	border-top: 1px solid blue;
+	border-top: 1px solid #6d9bf1;
 }
 .social-media i{
 	font-size: 3rem;
