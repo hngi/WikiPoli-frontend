@@ -11,15 +11,16 @@
     <img src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571749198/c09e9odiqy2cvkosfubl.png" id="lgg"/>
     <div class="center-main">
         <span class="sitename"><span>Wiki</span><span class="poli">Poli</span></span><span class="rightlink">Hello, masterAdmin<span class="profimg"><img src="#"></span></span>
+        <form action="" method="post">
         <div class="forms">
                 <h3 class="heavy-weight">Add Privileges</h3>
                 <form>
                     <span id="errorMsg"></span>
                     <fieldset id="field1">
                     <h4 class="heavy-weight">Change User Privilege</h4>
-                    <p><span id="name1ErrorMsg"></span><span id="email1ErrorMsg"></span>
-                       <span id="privilege1ErrorMsg"><span id="privilegelevelErrorMsg"></span</p>
-                
+                    <p><span id="name1ErrorMsg"></span>
+                       <span id="email1ErrorMsg"></span>
+                    </p>
                     <label for="name" class="label">Name </label>
                    </span><label for="email" class="label left-margin-1"> Email</label><br>
                     <input type="text" id="name1" name="name"class="input-field" required>
@@ -34,14 +35,20 @@
                     <select id="privilegelevel" class="input-field left-margin-3">
                        <option value="1">1</option>
                        <option value="2" selected>2</option>
+                       <option value="2">3</option>
                     </select><br/>
                     <button type="button" class="bluebutton">ADD</button>
+                </div>
+                </form>
                 </fieldset>
 
                 <fieldset id="field2"> 
+                        <form action="" method="post">
+                                <div class="forms">
                     <h4 class="heavy-weight">Add Admin</h4>
+                    <span id="errorMsg1"></span> 
                     <p><span id="name2ErrorMsg"></span><span id="email2ErrorMsg"></span>
-                       <span id="privilege2ErrorMsg"></span> <span id="passwordErrorMsg"></span></p>
+                       </span> <span id="passwordErrorMsg"></span></p>
                     <label for="name" class="label">Name</label>
                     <label for="email" class="label left-margin-1">Email</label><br/>
                     <input type="text"  id="name2" name="name" class="input-field"required>
@@ -57,8 +64,10 @@
                     <input type="password"  id="password" name="password" class="input-field left-margin-3" required>
                    <br/>
                     <button type="button" class="bluebutton">Create</button>
-                </fieldset>
+                    </div>
                 </form>
+                </fieldset>
+                
                 
                 <a href="#">Perform bulk operations</a>
                 <a href="#" class="rightlink rightlink2">View list of Admins</a>
@@ -96,14 +105,24 @@ var submit2 = document.getElementById("create");
 // check if any input is empty.
 function checkForm() { 
    
-   if((name1.value.length == 0 && name2.value.length == 0 && email1.value.length == 0 &&
-   privilege1.value.length == 0 && privilegeLevel.value.length == 0 && name2.value.length == 0 &&
-   email2.value.length == 0 && privilege2.value.length == 0 && password.value.length == 0)){
+   if((name1.value.length == 0 && email1.value.length == 0 )){
     showErrorMsg();
    }
 
   else {
     hideErrorMsg();
+   }
+}
+
+function checkForm1() { 
+   
+   if(( name2.value.length == 0 && email2.value.length == 0 && 
+   password.value.length == 0)){
+    showErrorMsg1();
+   }
+
+  else {
+    hideErrorMsg1();
    }
 }
 
@@ -114,44 +133,45 @@ function showErrorMsg(){
 }
 
 function hideErrorMsg(){
-   document.getElementById("errorMsg").textContent = "All Fields are required!"; 
    document.getElementById("errorMsg").style.display = "none"; 
+}
+
+function showErrorMsg1(){
+    document.getElementById("errorMsg1").textContent = "All Fields are required!"; 
+    document.getElementById("errorMsg1").style.display = "block"; 
+    document.getElementById("errorMsg1").style.color = "red";
+}
+
+function hideErrorMsg1(){
+   document.getElementById("errorMsg1").style.display = "none"; 
 }
 
 
 
 
 //=========================Effects of blur and focus========================
+if (name1.addEventListener) {
+   name1.addEventListener('blur', checkForm, true);
+   name1.addEventListener('focus', showErrorMsg, true);
+}
 
-
-if (email1.addEventListener) {
+ if (email1.addEventListener) {
    email1.addEventListener('blur', checkForm, true);
    email1.addEventListener('focus', showErrorMsg, true);
 }
 
-else if (privilege1.addEventListener) {
-    privilege1.addEventListener('blur', checkForm, true);
-    privilege1.addEventListener('focus', showErrorMsg, true);
+ if (name2.addEventListener) {
+    name2.addEventListener('blur', checkForm1, true);
+    name2.addEventListener('focus', showErrorMsg1,true);
 }
-else if (privilegeLevel .addEventListener) {
-    privilegeLevel .addEventListener('blur', checkForm, true);
-    privilegeLevel .addEventListener('focus', showErrorMsg, true);
+ if (email2.addEventListener) {
+    email2.addEventListener('blur', checkForm1,true);
+    email2.addEventListener('focus', showErrorMsg1, true);
+
 }
-else if (name2.addEventListener) {
-    name2.addEventListener('blur', checkForm, true);
-    name2.addEventListener('focus', showErrorMsg,true);
-}
-else if (email2.addEventListener) {
-    email2.addEventListener('blur', checkForm,true);
-    email2.addEventListener('focus', showErrorMsg, true);
-}
-else if (privilege2.addEventListener) {
-    privilege2.addEventListener('blur', checkForm, true);
-    privilege2.addEventListener('focus', showErrorMsg, true);
-}
-else if (password.addEventListener) {
-    password.addEventListener('blur', checkForm,true);
-    password.addEventListener('focus', showErrorMsg, true);
+ if (password.addEventListener) {
+    password.addEventListener('blur', checkForm1,true);
+    password.addEventListener('focus', showErrorMsg1, true);
 }
 
 
@@ -162,54 +182,65 @@ else if (password.addEventListener) {
 // If email is the right format
 
 function checkEmailField() {
-
-   // format for email validation
-   var mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+ // format for email validation
+   var emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
    if (email1.value.length == 0) {
        document.getElementById("email1ErrorMsg").style.display = "block";
        document.getElementById("email1ErrorMsg").style.color = "red";
        document.getElementById("email1ErrorMsg").textContent = "Email Field cannot be empty!";  
    } 
-   else if(email2.value.length == 0) {
-       document.getElementById("email2ErrorMsg").style.display = "block";
-       document.getElementById("email2ErrorMsg").style.color = "red";
-       document.getElementById("email2ErrorMsg").textContent = "Email Field cannot be empty!";  
-   } 
-
+ 
   else if (email1.value.indexOf("@", 0) < 0){
        document.getElementById("email1ErrorMsg").style.display = "block";
        document.getElementById("email1ErrorMsg").style.color = "red";
        document.getElementById("email1ErrorMsg").textContent = "Email must contain  an '@' symbol!";  
    } 
-   else if (email2.value.indexOf("@", 0) < 0){
-       document.getElementById("email2ErrorMsg").style.display = "block";
-       document.getElementById("email2ErrorMsg").style.color = "red";
-       document.getElementById("email2ErrorMsg").textContent = "Email must contain  an '@' symbol!";  
-   } 
+   
    else if (email1.value.indexOf(".", 0) < 0) {
        document.getElementById("email1ErrorMsg").style.display = "block";
        document.getElementById("email1ErrorMsg").style.color = "red";
-       document.getElementById("email1ErrorMsg").textContent = "Email must contain  an '.' symbol!please check!";    
+       document.getElementById("email1ErrorMsg").textContent = "Email must contain  a'.' symbol!";    
    }
-   else if (email2.value.indexOf(".", 0) < 0) {
-       document.getElementById("email2ErrorMsg").style.display = "block";
-       document.getElementById("email2ErrorMsg").style.color = "red";
-       document.getElementById("email2ErrorMsg").textContent = "Email must contain  an '.' symbol!, please check!";    
-   }
-   else if (mailFormat.test(email1.value) == false) {
+  
+   else if (emailRegex.test(email1.value) == false) {
        document.getElementById("email1ErrorMsg").style.display = "block";
        document.getElementById("email1ErrorMsg").style.color = "red";
        document.getElementById("email1ErrorMsg").textContent = "Wrong email format, please try again!";    
      }
-     else if (mailFormat.test(email12.value) == false) {
+       
+   else {
+    hideEmailError();
+   }
+}
+
+function checkEmailField1() {
+ // format for email validation
+   var emailRegex1 = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+   
+   if(email2.value.length == 0) {
        document.getElementById("email2ErrorMsg").style.display = "block";
        document.getElementById("email2ErrorMsg").style.color = "red";
-       document.getElementById("email2ErrorMsg").textContent = "Wrong email format, please try again!";    
+       document.getElementById("email2ErrorMsg").textContent = "Email Field cannot be empty!";  
+   }  
+   else if (email2.value.indexOf("@", 0) < 0){
+       document.getElementById("email2ErrorMsg").style.display = "block";
+       document.getElementById("email2ErrorMsg").style.color = "red";
+       document.getElementById("email2ErrorMsg").textContent = "Email must contain an '@' symbol!";  
+   } 
+   else if (email2.value.indexOf(".", 0) < 0) {
+       document.getElementById("email2ErrorMsg").style.display = "block";
+       document.getElementById("email2ErrorMsg").style.color = "red";
+       document.getElementById("email2ErrorMsg").textContent = "Email must contain  a '.' symbol!";    
+   }
+     else if (emailRegex1.test(email12.value) == false) {
+       document.getElementById("email2ErrorMsg").style.display = "block";
+       document.getElementById("email2ErrorMsg").style.color = "red";
+       document.getElementById("email2ErrorMsg").textContent = "Wrong email format!";    
      }
        
    else {
-       document.getElementById("error1EmailMsg").style.display = "none";
-       document.getElementById("error2EmailMsg").style.display = "none";
+      
+    hideEmailError1();
    }
 }
 
@@ -225,34 +256,48 @@ if (email1.addEventListener) {
    email1.addEventListener('focus', hideEmailError, true);
 }
 if (email2.addEventListener) {
-   email2.addEventListener('blur', checkEmailField,true);
+   email2.addEventListener('blur', checkEmailField1,true);
    email2.addEventListener('focus', hideEmailError1, true);
 }
-
-function checkNamesAndPassword(){
-    if(name1.value.length <= 4){
+function checkName(){
+    if(name1.value.length <=4){
         document.getElementById("name1ErrorMsg").style.display = "block";
         document.getElementById("name1ErrorMsg").style.color = "red";
        document.getElementById("name1ErrorMsg").textContent = "Name must be more than 4 characters!"; 
 }
-else if(name2.value.length <=  4){
+
+else {
+       document.getElementById("name1ErrorMsg").style.display = "none";
+       
+   }
+}
+
+function checkName1(){
+    if(name2.value.length <= 4){
         document.getElementById("name2ErrorMsg").style.display = "block";
         document.getElementById("name2ErrorMsg").style.color = "red";
        document.getElementById("name2ErrorMsg").textContent = "Name must be more than 4 characters!"; 
 }
-else if(password.value.length <= 4){
-        document.getElementById("passwordErrorMsg").style.display = "block";
-        document.getElementById("passwordErrorMsg").style.color = "red";
-       document.getElementById("passwordErrorMsg").textContent = "Password must be more than 4 characters!"; 
-}
+
 else {
-       document.getElementById("name1ErrorMsg").style.display = "none";
-       document.getElementById("name2ErrorMsg").style.display = "none";
-       document.getElementById("passwordErrorMsg").style.display = "none";
-       hidePasswordErrorMsg();
+    document.getElementById("name2ErrorMsg").style.display = "none";
        
    }
 }
+
+function checkPassword(){ 
+  if(password.value.length <= 7){
+        document.getElementById("passwordErrorMsg").style.display = "block";
+        document.getElementById("passwordErrorMsg").style.color = "red";
+       document.getElementById("passwordErrorMsg").textContent = "Password must be at least 8 characters!"; 
+}
+
+else {
+    
+    hidePasswordErrorMsg();
+   }
+}
+
 function hideName1ErrorMsg() {
    document.getElementById("name1ErrorMsg").style.display = "none";
 }
@@ -264,15 +309,15 @@ function hidePasswordErrorMsg() {
 }
 
 if (name1.addEventListener) {
-    name1.addEventListener('blur', checkNamesAndPassword,true);
+    name1.addEventListener('blur', checkName,true);
     name1.addEventListener('focus', hideName1ErrorMsg, true);
 }
 if (name2.addEventListener) {
-    name2.addEventListener('blur', checkNamesAndPassword,true);
+    name2.addEventListener('blur', checkName1,true);
     name2.addEventListener('focus', hideName2ErrorMsg,true);
 }
 if (password.addEventListener) {
-    password.addEventListener('blur', checkNamesAndPassword,true);
+    password.addEventListener('blur', checkPassword,true);
     password.addEventListener('focus', hidePasswordErrorMsg,true);
 }
 
