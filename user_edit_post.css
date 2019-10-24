@@ -101,8 +101,10 @@ textarea{
     background: #fff;
     color:#213CDC;
 }
+.input-group, .input-group-text, .input-group-addon{border-raduis:0px!important;}
+.input-group-text{color:#ffffff!important;}
 @media only screen and (max-width: 991px){
-	input{
+	{
 
 	}
 }
