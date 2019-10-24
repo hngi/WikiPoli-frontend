@@ -103,6 +103,7 @@ textarea{
 }
 .input-group, .input-group-text, .input-group-addon{border-raduis:0px!important;}
 .input-group-text{color:#ffffff!important;}
+.input-group{background:blue!important; display: inline;}
 @media only screen and (max-width: 991px){
 	{
 
