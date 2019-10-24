@@ -1,0 +1,317 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Lato', sans-serif;
+}
+p, span {
+  flood-color: #000;
+}
+
+.logo img {
+  width: 90px;
+}
+.nav-link {
+  color: black !important;
+}
+.nav-link:hover{
+    background-color: #213dcd;
+}
+.menu a {
+  color: #213DCD;
+}
+
+.menu li {
+  padding-left: 2.5rem;
+}
+
+.fa-bars {
+  color: #000000;
+}
+.logout {
+  background-color: #213DCD;
+  border: none;
+  box-shadow: none;
+  color: #ffffff;
+  padding: 5px 15px;
+  margin-top: .2rem;
+  width: 100px;
+}
+.jumbotron
+{
+  background-color: #000;
+  color: #fff;
+  border-radius: 0;
+}
+.jumbotron hr
+{
+  border-top: 2px solid #b4b4b4;
+  width: 60%;
+  margin-top: .8rem;
+  margin-bottom: .3rem;
+}
+.jumbotron .lead {
+  font-size: 2.5rem;
+  word-spacing: 1.5rem;
+}
+.jumbotron .small {
+  font-size: 1.9rem;
+}
+hr {
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+}
+.img-fluid.euro {
+    width: 100%;
+    height: auto;
+}
+.btn-primary
+{
+  background: #C4C4C4;
+  border: unset;
+  border-radius: 60px;
+  padding: 5px 20px;
+  font-weight: bold;
+  color: #000;
+}
+.btn-primary:hover
+{
+  background-color: #563d7c;
+  border: 1px solid #563d7c;
+}
+.col-md-12 p{
+  font-size: 1.1rem;
+}
+.card.Mission {
+  position: relative;
+  margin-left: -10%;
+  font-size: 1.1rem;
+  margin-top: 5%;
+  border: unset;
+  border-radius: 0;
+}
+.card.event {
+  min-height: 26.5vw;
+  padding-top: 5%;
+  line-height: 200%;
+  display: block;
+  align-items: flex-end;
+  background-color: #fff;
+  font-size: 1.1rem;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: unset;
+}
+.lead.text-left {
+  padding: 1rem;
+}
+.aboutimg .col-2
+{
+  position: relative;
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  flex: 0 0 20%;
+  max-width: 20%;
+  float: left;
+}
+.aboutimg .col-2 img
+{
+  width: 100%;
+  height: 100%;
+}
+footer {
+  background: rgba(33, 60, 220, 0.1);
+  margin: auto;
+  overflow: hidden;
+  padding: 25px;
+  position:relative;
+  top: 50px;
+}
+.footerElements {
+    display: flex;
+    flex-direction: row;
+    padding-inline-start: 0px;
+    align-items: right;
+    margin: 0 0 0 0;
+    float: right;
+    padding: 5px 0 0 0;
+}
+.footerElements {
+  width: auto;
+}
+.footerElements li {
+
+  font-weight:  bold;
+  font-size: 18px;
+  display: inline-block;
+  padding:  15px;      
+  width: fit-content;
+}
+.footerElements li  a {
+  text-decoration: none;
+  color: black;
+}
+.footerBrand  img {
+  height:  80px;
+  width: 100px;
+  vertical-align: middle;
+
+}
+
+/* Responsive styling */
+@media screen and (max-width: 992px) {
+    .jumbotron .lead {
+    font-size: 1.7rem;
+    word-spacing: 1rem;
+  }
+  .jumbotron .small {
+    font-size: 1.3rem;
+  }
+  .h2, h2 {
+    font-size: 1.5rem;
+  }
+  .col-md-12 p {
+    font-size: .96rem;
+}
+.order-1 {
+  order: 2;
+}
+.order-2 {
+  order: 1;
+}
+.card.Mission {
+    position: relative;
+    margin-left: -10%;
+    font-size: .95rem;
+    margin-top: 0%;
+}
+p {
+  font-size: .95rem;
+}
+.btn-primary {
+    font-size: .95rem;
+    border-radius: 60px;
+    padding: 5px 20px;
+}
+.display-4 {
+    font-size: 2.5rem;
+}
+.card.event {
+    min-height: 26vw;
+    padding-top: 1%;
+    line-height: 160%;
+    font-size: .9rem;
+}
+.pb-5, .py-5 {
+    padding-bottom: 2rem!important;
+}
+.lead.text-left {
+    padding-top: 0;
+}
+.lead {
+    font-size: 1.15rem;
+    padding-top: 0;
+}
+@media screen and (max-width: 991px) {
+      .menu li {
+        padding-left: unset;
+    }
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+    .jumbotron .lead {
+    font-size: 1.17rem;
+    word-spacing: .8rem;
+  }
+  .jumbotron .small {
+    font-size: 1rem;
+  }
+  .h2, h2 {
+    font-size: 1.3rem;
+    padding: 35px 0 0;
+  }
+  .col-md-12 p {
+    font-size: .9rem;
+}
+.card.Mission {
+    position: relative;
+    margin-left: unset;
+    font-size: .9rem;
+}
+p {
+  font-size: .9rem;
+}
+.btn-primary {
+    font-size: .9rem;
+    border-radius: 60px;
+    padding: 3px 15px;
+}
+.display-4 {
+    font-size: 2rem;
+}
+.card.event {
+    min-height: 22vw;
+    padding-top: 1%;
+    line-height: 160%;
+    font-size: .9rem;
+}
+.pb-5, .py-5 {
+    padding-bottom: 2rem!important;
+}
+.pt-5, .py-5 {
+    padding-top: 2rem!important;
+}
+.lead.text-left {
+    padding-top: 0;
+}
+.lead {
+    font-size: 1rem;
+    padding-top: 0;
+}
+.footerBrand img {
+    height: 70px;
+    width: 80px;
+    vertical-align: middle;
+}
+.footerElements li {
+    font-size: 14px;
+    display: inline-block;
+    padding: 12px;
+    width: fit-content;
+}
+.footerElements {
+    padding: 0;
+}
+
+}
+
+@media screen and (max-width: 576px) {
+    .jumbotron .lead {
+    font-size: 1.1rem;
+    word-spacing: .1rem;
+  }
+  .jumbotron .small {
+    font-size: .8rem;
+  }
+  .menu a, .logout {
+    font-size: .8rem;
+}
+.footerBrand img {
+    height: 60px;
+    width: 70px;
+    vertical-align: middle;
+}
+.footerElements li {
+    font-size: 10px;
+    display: inline-block;
+    padding: 10px;
+    width: fit-content;
+}
+
+
+}

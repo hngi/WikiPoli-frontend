@@ -1,3 +1,4 @@
+
 body,html{
     margin: 0;
     padding: 0;
@@ -6,23 +7,28 @@ body,html{
     box-sizing: border-box;
 
 }
+
+
 .main{
     width: 100%;
     height: 100%;
     position:relative
 }
+
+
+
 .img-wrapper{
     height: 100%;
     width: 60%;
-    float: left;
     overflow: hidden;
+    float: left;
+    background-color: #ffffff;
+
   
 }
 .img-wrapper  img{
     display: block;
     width: 80%;
-    height: 20%;
-    margin-top: 3%;
 
 }
 .img-wrapper  #one{
@@ -44,14 +50,22 @@ body,html{
     margin-top: 4%;
 }
 
+    height: 100%;
+    margin-top: 3%;
+
+}
+
+
 .form-wrapper{
     position: absolute;
     overflow: hidden;
     width: 100%;
-    max-width: 500px;
+
+    max-width: 560px;
     right: 0;
     margin: 0;
-    background: #fafafa;
+    background: #e5e5e5;
+
     height: 100%;
     z-index: 1;
 }
@@ -65,8 +79,10 @@ body,html{
     margin: 0 30px;
 }
 
-.form-wrapper h2{
-    font-size: 30px;
+
+.form-wrapper h3{
+    font-size: 25px;
+
     font-weight: bold;
     color: #000000;
     text-align: center;
@@ -80,14 +96,16 @@ body,html{
 }
 .form-wrapper .forg{
     text-align: right;
-    margin: -8px 0 5px 0;
+
+    margin: 6px 0 6px 0;
+
 
 }
 .form-wrapper #submit{
     background: #213DCD;
-    border-radius: 8px;
     color: #fff;
     font-weight: bold;
+    border-radius: 8px;
 }
 .form-wrapper p{
     text-align: center;
@@ -98,6 +116,11 @@ body,html{
 .form-wrapper p a:hover{
     color: red;
 }
+
+footer {
+    font-family: 'Lato' sans-serif;
+}
+
 .login-footer{
     background: #213CDC;
     list-style: none;
@@ -123,6 +146,9 @@ body,html{
 .footer-links p{
     color: #fff;
     text-align: center;
+
+    margin-top: 15px;
+
 }
 .footer-links ul {
     list-style: none;
@@ -155,6 +181,10 @@ body,html{
     background: #fff;
     color:#213CDC;
 }
+
+p.text-center {
+    margin-top: 40px;
+}
 @media all and (max-width:1000px){
     .footer-links ul{
         flex-wrap: wrap;
@@ -175,3 +205,164 @@ body,html{
         flex-basis: 100%;
     }
 }
+
+:root {
+    --primary-color: #213DCD;
+    --text-color: #213DCD;
+    --background: #E5E5E5;
+    --background-alt: #dddddd;
+    --light: #FAFAFA;
+    --placeholder-color: #7E7E7E;
+    --text-contrast: #FFFFFF;
+    --dark: #000000;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+}
+
+#wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.col {
+    width: 50%;
+}
+
+.bg {
+    background-color: #ffffff;
+}
+
+.bg img{
+    height: 100%;
+    align-content: left;
+}
+
+.content {
+    text-align: center;
+    background-color: #E5E5E5;
+}
+
+.content .logo {
+    height: 40px;
+    width: 150px;
+    margin: 0 auto;
+}
+
+.content .logo img {
+    width: 100%;
+}
+
+.content,
+.content form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.content form {
+    justify-content: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+.content form h2 {
+    font-weight: bold;
+}
+
+.signin_form input {
+    height: 60px;
+    width: 456px;
+    margin-bottom: 40px;
+    border: 1px solid #213DCD;
+    background: #FFFFFF;
+    margin: 10px 0px;
+    border: 1px solid #213DCD;
+    padding: 1em; 
+    width: 456px;
+    height: 60px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.content form input::placeholder {
+    color: var(--placeholder-color);
+}
+
+.content form input:focus {
+    background-color: var(--background-alt);
+}
+
+.signin_form button[type="submit"] {
+    outline: none;
+    border: 0;
+    height: 50px;
+    margin: 0.7rem auto;
+    width: 456px;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--text-contrast);
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+
+.content form button[type="submit"]:hover {
+    background-color: var(--text-color);
+}
+
+.content form button[type="submit"]:active {
+    background-color: var(--dark);
+}
+
+.forgotpassword {
+    text-align: right;
+}
+
+.forgotpassword a:link {
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: bold;
+}
+
+.forgotpassword a:visited {
+    color: #000000;
+}
+
+.forgotpassword a:hover {
+    color: var(--dark);
+}
+
+.aside_img {
+    width: 80%;
+}
+
+.account a {
+    color: #213DCD;
+    text-decoration: none;
+}
+
+
+/* Responsive CSS */
+@media only screen and (max-width: 650px) {
+    .bg {
+        display: none;
+    }
+
+    .content {
+        width: 100%;
+    }
+}
+
+
