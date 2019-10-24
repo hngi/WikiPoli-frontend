@@ -1,0 +1,290 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+​
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+​
+.bg-light {
+  background-color: #ffffff ;
+
+}​
+​
+.navbar-nav .nav-item .nav-link {
+  color: #000000;
+  font-size: 20px;
+  line-height: 36px;
+}
+​
+.logo span {
+color:  #213DCD; 
+}
+​
+.odd span {
+color: #E81E1E;
+}
+​
+li.bottom-border a {
+border-bottom: 5px solid #213DCD;
+}
+​
+​
+#log-out{
+ background-color: #213DCD;
+ width: 80px;
+ color: #FFFFFF;
+ text-align: center;
+ width: 7rem;
+font-size: 20px;
+line-height: 30px;
+}
+​
+.main-section {
+width: 80%;
+}
+​
+.intro-section{
+ margin: 5rem -.2rem 0 0;
+​
+}
+​
+.intro-section__contributions h5 {
+font-weight: bold;
+font-size: 23px;
+line-height: 48px;
+}
+​
+.intro-section__name .john-doe {
+font-weight: bold;
+font-size: 20px;
+line-height: 40px;
+}
+​
+.intro-section__form .submit {
+background-color: #213DCD;
+color: #FFFFFF;
+padding: .5rem;
+width: 6rem;
+}
+​
+.intro-section__form input {
+padding: 1.2rem;
+}
+​
+.intro-section__post p {
+font-weight: bold;
+font-size: 20px;
+line-height: 48px;
+}
+​
+​
+.contributor-name {
+border: 1px solid #213DCD;
+padding: 1rem;
+}
+​
+.checked {
+color: orange;
+}
+​
+footer {
+background: rgba(33, 60, 220, 0.1);
+position: relative;
+top: 320px;
+display: block;
+height: 80px;
+}
+​
+.footer__list {
+list-style: none;
+}
+​
+.footer__list li a {
+color: #000000;
+text-decoration: none;
+font-size: 20px;
+​
+}
+​
+.footer__list span {
+color: #213DCD;
+}
+​
+.clearfix {
+content: "";
+clear: both;
+display: table;
+}
+​
+​
+.img__text {
+align-self: center;
+padding-top: 2rem;
+width: 281px;
+height: 190px;
+background-color: rgba(33, 60, 220, 0.05);
+​
+}
+​
+.favourite-img, .favourite-img__two {
+margin-top: 3rem;
+}
+​
+​
+​
+@media only screen and (min-width: 1000px) {
+​
+.img-container, .img-container__two {
+  display: flex;
+ flex-direction: row;
+ justify-content: center;
+}
+.favourite-img {
+margin: 0 0 0 2rem;
+}
+​
+​
+.favourite-img__two {
+margin: 0 0 0 2rem;
+}
+​
+}
+​
+@media screen and (max-width: 520px) {
+.intro-section__form input{
+ margin: 0 2rem 1rem 0;
+}
+}
+
+#footer {
+    background-color: #213DCD;
+    margin-top: 200px;
+    padding-top: 10px;
+    height: 300px;
+    width: 100%;
+  }
+  
+  .links {
+    padding-top: 20px;
+  }
+  
+  .quick-links li {
+    list-style-type: none;
+    padding-top: 5px;
+  }
+  
+  .quick-links li:first-child {
+    color: #ffffff;
+    padding-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .quick-links li a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .social-links a span {
+    color: #ffffff;
+    letter-spacing: 20px;
+  }
+  
+  .copyright p {
+    padding-top: 10px;
+    color: #ffffff;
+    font-size: 12px; 
+  }
+  
+  /* Responsive styling */
+  @media screen and (max-width: 768px) {
+      h1 {
+        font-size: 30px;
+      }
+      #footer {
+        margin-top: 150px;
+        padding-top: 10px;
+        height: 450px;
+        width: 100%;
+     }
+      .social-links {
+        margin-left: 40px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+      .input-group {
+        width: 100%;
+        margin-left: 12%;
+    }
+      .form-control {
+        height: 50px;
+        padding: 20px;
+        border-radius: 0;
+        border: 1px solid #213DCD;
+    }
+      .button-search {
+        background-color: #213DCD;
+        border: none;
+        box-shadow: none;
+        color: #ffffff;
+        font-size: 1.2rem;
+        padding: 1px;
+        width: 80px;
+    }
+      .search-content {
+        font-size: 1rem;
+        width: 100%;
+        margin-left: 13%;
+        color: #676871;
+        padding-top: 20px;
+        font-weight: bold;
+    }
+  }
+
+
+  body {
+    font-family: 'Lato', sans-serif;
+  }
+  
+  .logo img {
+    width: 120px;
+  }
+  
+  .navbar p {
+    font-size: 2rem;
+    color: #213DCD;
+  }
+  
+  .menu a {
+    font-size: 1.5rem;
+    color: #213DCD;
+  }
+  
+  .menu li {
+    padding-left: 2.5rem;
+  }
+  
+  .fa-bars {
+    color: #000000;
+  }
+  
+  .button-LogOut {
+    background-color: #213DCD;
+    border: none;
+    box-shadow: none;
+    color: #ffffff;
+    padding: 6px;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 150px;
+    margin-left: 2.5rem;
+  }
+  
+  .button-LogOut:hover {
+    color: white;
+    text-decoration: none;
+  }
+  

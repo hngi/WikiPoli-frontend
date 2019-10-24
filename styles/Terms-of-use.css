@@ -1,0 +1,133 @@
+body  {
+    font-family: 'Lato', sans-serif;;
+    background: white;
+}    
+ 
+img  {
+    height: 9em;
+    width: 11em;
+    margin-left: 5em;
+    margin-bottom: 0em;           
+}
+.header   {
+    display: flex;
+    flex-direction: row;
+}        
+ul  {
+    list-style: none;
+    margin-left: 35em; 
+    float: right; 
+    margin-top: 4em;          
+}
+ul li  { 
+    display: inline-block;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1em;
+    line-height: 2em;
+    text-align: center; 
+    color: black;
+    margin-left: 3em;
+    cursor: pointer;  
+    position: relative;             
+}
+ul li:hover  {
+    background-color:  white;
+    color: black;
+}
+ul li:active  {
+    top: 2px;
+}
+.post   {
+    padding: .1em 1.7em;
+    
+    color: white;
+    border: 1px solid #213DCD;       
+}
+ .policy  {
+     margin: 0em 5em 5em 5em;
+     color: grey;
+ }        
+
+
+      /*css for footer */
+
+* {
+            font-family: Lato;
+            font-style: normal;
+}
+footer {
+            background: rgba(33, 60, 220, 0.1);
+            margin: auto;
+            overflow: hidden;
+            padding: 15px;
+        
+}
+.footer_elements,
+.footer_brand {
+            display:  flex;
+            flex-direction: column;
+            padding-inline-start:  0px;
+            align-items: center;
+            margin: 0 0 0 0;
+}
+.footer_elements {
+            width: auto;
+}
+.footer_elements li {
+            font-weight:  bold;
+            font-size: 18px;
+            display: inline-block;
+            padding:  5px;      
+            width: fit-content;
+}
+.footer_elements li  a {
+            text-decoration: none;
+            color: black;
+}
+.footer_brand  img {
+            height:  80px;
+            width: 100px;
+            margin-left: .2em;
+            vertical-align: middle;
+}
+@media screen  and (min-width: 600px){
+            .footer_brand {
+                                float: left;
+            }
+            .footer_brand {
+                                left: 223px;
+                                margin: 0 0 0 5vw ;
+            }
+            
+            .footer_elements li { 
+                                margin: 0 0 0 20px ;
+            }
+            .footer_elements{
+                                margin:  15px 0 0 0;
+                                /* line-height: 60px; */
+                                vertical-align: middle;
+                                flex-direction:  row;
+                                padding-inline-start:  0px;
+                                justify-content: flex-end;
+            }
+}
+@media only screen and (max-width: 700px) {
+body {
+margin-left: -3.5em;
+margin-right: 5em;
+}
+img  {
+width: 5em;
+height: 5em;
+}
+h1  {
+margin-top: .2em;
+}
+p  {
+font-size: .7em;
+}
+li  {
+font-size: .7em;
+}
+}

@@ -1,0 +1,206 @@
+/* All externall CSS starts here */
+
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+    color: #000000
+}
+.btn-primary{
+    background-color: #213DCD !important;
+    color: white !important; 
+}
+.navbar-brand {
+    margin-left: 5rem;
+    width: 40px
+}
+@media screen and (max-width: 876px) {
+    .navbar-brand {
+        margin-left: 0rem;
+        width: 40px
+    }
+}
+#login-bttn {
+    color: #213DCD;
+    /* margin-right: 2rem */
+}
+#signup-bttn {
+    color: #213DCD;
+    /* margin-right: 10rem; */
+}
+#signup-bttn {
+    border: 1px solid;
+    background-color: #213DCD;
+    color: #fff;
+    width: 8rem;
+    text-align: center;
+    height: 2.6rem;
+    margin-right: 11.5rem;
+    cursor: pointer;
+}
+#search-space {
+    border: 1px solid;
+    background-color: #213DCD;
+    color: #fff;
+    width: 6rem;
+    text-align: center;
+    height: 2.5rem;
+    margin-right: 1rem;
+}
+#nav-top {
+    list-style: none;
+    display: flex;
+}
+.ul-nav{
+    position: relative;
+    left: 8rem;
+}
+@media screen and (max-width: 876px) {
+    #nav-top{
+      display: block;
+    }
+}
+#not-logged {
+    margin-left: 5rem;
+    font-size: 1.2rem
+}
+
+@media screen and (max-width: 876px) {
+    #not-logged {
+        margin-left: 0rem; 
+    }
+}
+#large-bttn {
+    width: 13rem;
+}
+#search-buttn {
+    margin-left: 2rem; 
+}
+@media screen and (max-width: 876px) {
+    #search-buttn {
+        margin-left: 0rem; 
+    }
+}
+#read {
+    margin-left: 28rem;
+    font-size: 1.2rem;
+    -webkit-text-fill-color: black;  
+    text-decoration: underline;
+}
+@media screen and (max-width: 876px) {
+        #read {
+          margin-left: 0rem;
+    }
+}
+.portfolio {
+    background-color: rgba(33, 60, 220, 0.08);
+    padding: 1rem 2rem;
+    fill: solid;
+    margin-right: 2rem;
+}
+.fela-dob{
+    font-size: 0.7rem;
+}
+.fela-content{
+    font-size: 1rem;
+    margin: 2rem
+}
+.poli-quali {
+    font-size: 1.4rem;
+    font-weight: 500
+}
+
+
+ /*--------part two begins-------------*/
+ .img-fela{
+    background-attachment: fixed !important;
+    border-radius: 10px;
+
+}
+
+.interactives{
+
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: -1.4rem;
+    /* line-height: 30px; */
+    /* identical to box height, or 222% */
+
+
+    color: #000000;
+}
+.text-wrap {
+    font-size: 1rem;
+}
+.fa-heart{
+    cursor: pointer;
+    color: red
+}
+/*-------footer begins-----*/
+footer {
+    background: rgba(33, 60, 220, 0.1);
+    margin: auto;
+    overflow: hidden;
+    padding: 15px;
+}
+.footer_elements,
+.footer_brand {
+    display:  flex;
+    flex-direction: column;
+    padding-inline-start:  0px;
+    align-items: center;
+    margin: 0 0 0 0;
+
+}
+.footer_elements {
+    width: auto;
+}
+.footer_elements li {
+
+    font-weight:  bold;
+    font-size: 18px;
+    display: inline-block;
+    padding:  5px;      
+    width: fit-content;
+}
+.footer_elements li  a {
+    text-decoration: none;
+    color: black;
+}
+.footer_brand  img {
+    height:  80px;
+    width: 100px;
+    vertical-align: middle;
+
+}
+@media screen  and (min-width: 600px){
+    .footer_brand {
+    float: left;
+    }
+    .footer_brand {
+         left: 223px;
+         margin: 0 0 0 5vw ;
+    }
+
+    
+    .footer_elements li { 
+         margin: 0 0 0 20px ;
+    }
+.footer_elements{
+    margin:  15px 0 0 0;
+    /*line-height: 60px; */
+    vertical-align: middle;
+    flex-direction:  row;
+    padding-inline-start:  0px;
+    justify-content: flex-end;
+    }
+
+}
+
+
+/* Ends here */
+
