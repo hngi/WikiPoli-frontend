@@ -1,6 +1,6 @@
 #comments .fa-quote-left {
   font-size: 40px;
-  color: #213dcd;
+  color: #6D9BF1;
 }
 
 #comments img {
@@ -13,11 +13,11 @@
 }
 
 .title1 {
-  color: #213dcd;
+  color: #6D9BF1;
 }
 
 .sign-up {
-  background-color: #213dcd;
+  background-color: #6D9BF1;
   color: white;
 }
 
@@ -28,17 +28,17 @@
   font-weight: bold;
   font-size: 22px;
   line-height: 48px;
-  color: #213dcd;
+  color: #6D9BF1;
 }
 
 .nav-link {
-  color: #213dcd !important;
+  color: #6D9BF1 !important;
 }
 
 .active {
   border-radius: 0%;
   padding: 0 30px;
-  background-color: #213dcd;
+  background-color: #6D9BF1;
 }
 
 .button a {

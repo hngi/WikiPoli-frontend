@@ -38,15 +38,15 @@ body{
 }
 
 .button{
-    background-color: #213DCD;
-    border: 1px  #213DCD;
+    background-color: #6D9BF1;
+    border: 1px  #6D9BF1;
     padding: 1% 7%;
     cursor: pointer;
 }
 
 a {
     text-decoration: none;
-    color: #fff;
+    color: #ffebef;
     font-weight: normal;
 }
 
