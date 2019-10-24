@@ -17,7 +17,7 @@ a
 }
 .blue-text
 {
-	color: darkblue;
+	color: #6A9AD1; /*darkblue;*/
 }
 .admin-main-general
 {
@@ -60,7 +60,7 @@ a
 	top: 0;
 	height: 100vh;
 	width: var(--sidebar-width);
-	background-color: rgb(220, 230, 245);
+	background-color: #E9EDFA; /*rgb(220, 230, 245);*/
 	padding-top: 5rem;
 	display: flex;
 	flex-direction: column;
@@ -96,7 +96,7 @@ a
 #admin-sidebar-general .sidebar-active-link
 {
 	color: rgb(220, 230, 245);
-	background-color: darkblue;
+	background-color: #6D9BF1; /*darkblue;*/
 	align-self: stretch;
 }
 #mobile-bars 
@@ -130,6 +130,7 @@ a
 {
 	font-weight: 100;
 	text-align: center;
+	color: rgba(0, 0, 0, 0.8);
 }
 #main-options
 {
@@ -142,9 +143,9 @@ a
 #main-options > *
 {
 	background-color: white;/*rgb(113, 113, 200);*/
-	border: 1px solid rgb(63, 63, 150);
-	font-size: 35px;
-	color: darkblue;
+	border: 1px solid #6D9BF1; /*rgb(63, 63, 150);*/
+	font-size: 32px;
+	color: #6D9BF1;
 	border-radius: 10px;
 	cursor: pointer;
 	text-align: center;
@@ -155,7 +156,7 @@ a
 }
 #main-options > *:hover
 {
-	background-color: rgb(63, 63, 150);
+	background-color: #6D9BF1; /*rgb(63, 63, 150);*/
 	color: white;
 }
 
@@ -217,16 +218,21 @@ a
         left: 0;
     }
 
+    #admin-main #intro
+    {
+    	padding-top: 20px;
+    	padding-bottom: 30px;
+    }
     #main-options
 	{
 		margin: 2rem 1rem;
 		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 		grid-gap: 1rem;
-		height: 70vh;
+		height: 60vh;
 	}
 	#main-options > *
 	{
-		font-size: 23px;
+		font-size: 20px;
 		padding: 5px;
 		border-radius: 5px;
 	}

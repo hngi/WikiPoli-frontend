@@ -14,12 +14,12 @@ body {
 
 .navbar p {
   font-size: 2rem;
-  color: #213DCD;
+  color: #6D9BF1;
 }
 
 .menu a {
   font-size: 1.5rem;
-  color: #213DCD;
+  color: #6D9BF1;
 }
 
 .menu li {
@@ -30,8 +30,20 @@ body {
   color: #000000;
 }
 
+.posts-nav-link {
+   background-color: #6D9BF1 !important;
+  
+  color: #ffffff !important;
+  padding: .6rem 1.7rem;
+}
+
+.posts-nav-link:hover {
+   text-decoration: none;
+    background-color: rgb(69, 115, 202) !important;
+}
+
 .button-signup {
-  background-color: #213DCD;
+  background-color: #6D9BF1;
   border: none;
   box-shadow: none;
   color: #ffffff;
@@ -41,12 +53,16 @@ body {
   margin-left: 2.5rem;
 }
 
+.button-signup:hover {
+   background: rgb(69, 115, 202);
+}
+
 .user-name-link {
   color: black !important;
 }
 
 .button-search {
-  background-color: #213DCD;
+  background-color: #6D9BF1;
   border: none;
   box-shadow: none;
   color: #ffffff;
@@ -66,7 +82,7 @@ body {
 }
 
 h1 {
-  color: #213DCD;
+  color: #6D9BF1;
   margin-bottom: 50px;
 }
 
@@ -84,9 +100,13 @@ h1 {
 }
 
 .send-email {
-  background: #213DCD;
+  background: #6D9BF1;
   color: white;
   border-radius: 0;
+}
+
+.send-email:hover {
+   background: rgb(69, 115, 202);
 }
 
 .send-email:hover {
@@ -95,12 +115,12 @@ h1 {
 
 .search-content a {
  font-weight: bold;
- color: #213DCD;
+ color: #6D9BF1;
 }
 
 
 #footer {
-  background-color: #213DCD;
+  background-color: #6D9BF1;
   margin-top: 200px;
   padding-top: 10px;
   height: 300px;
@@ -179,6 +199,10 @@ h1 {
    }
     .social-links {
       margin-left: 40px;
+  }
+
+  .fa-2x {
+    font-size: 1.3rem !important;
   }
 }
 
