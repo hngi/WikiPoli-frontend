@@ -14,7 +14,7 @@ body {
 
 .navbar p {
   font-size: 2rem;
-  color: #213DCD;
+  color: #6D9BF1;
 }
 
 .menu a {
@@ -30,6 +30,18 @@ body {
   color: #000000;
 }
 
+.posts-nav-link {
+   background-color: #6D9BF1 !important;
+  
+  color: #ffffff !important;
+  padding: .6rem 1.7rem;
+}
+
+.posts-nav-link:hover {
+   text-decoration: none;
+    background-color: rgb(69, 115, 202) !important;
+}
+
 .button-signup {
   background-color: #6D9BF1;
   border: none;
@@ -37,14 +49,16 @@ body {
   color: #ffffff;
   padding: 6px;
   font-size: 1.5rem;
-  text-align: center;
   width: 150px;
   margin-left: 2.5rem;
 }
 
 .button-signup:hover {
-  color: white;
-  text-decoration: none;
+   background: rgb(69, 115, 202);
+}
+
+.user-name-link {
+  color: black !important;
 }
 
 .button-search {
@@ -62,36 +76,41 @@ body {
   margin-top: 15%;
 }
 
-.form-content {
-  margin-top: 20%;
-}
-
 .input-group {
   width: 80%;
   margin-left: 23%;
 }
 
-.form-control {
-  height: 50px;
-  padding: 15px;
-  border-radius: 0;
-  border: 1px solid #213DCD;
-  border-right: none;
-  background-color: #ffffff;
-}
-
 h1 {
-  margin-left: 23%;
   color: #6D9BF1;
   margin-bottom: 50px;
 }
 
 .search-content {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin-left: 23%;
-  color: #000000;
+  color: #676871;
   padding-top: 20px;
   font-weight: bold;
+}
+
+.form-control {
+  border: 1px solid rgb(148, 148, 148);
+  border-radius: 0;
+}
+
+.send-email {
+  background: #6D9BF1;
+  color: white;
+  border-radius: 0;
+}
+
+.send-email:hover {
+   background: rgb(69, 115, 202);
+}
+
+.send-email:hover {
+  color: white;
 }
 
 .search-content a {
@@ -99,8 +118,9 @@ h1 {
  color: #6D9BF1;
 }
 
+
 #footer {
-  background-color: #213DCD;
+  background-color: #6D9BF1;
   margin-top: 200px;
   padding-top: 10px;
   height: 300px;
@@ -120,6 +140,34 @@ h1 {
   color: #ffffff;
   padding-bottom: 10px;
   font-weight: bold;
+}
+
+.main-body .fas,
+.main-body .fab {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.icons-row {
+  padding: 0 3rem;
+}
+
+.icons-row a {
+  color: #333;
+}
+
+.icons-row a:hover {
+  color: #555;
+}
+
+.secondrow-content {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #333;
+}
+
+.secondrow-content > * {
+  margin-bottom: 1rem;
 }
 
 .quick-links li a {
@@ -152,6 +200,10 @@ h1 {
     .social-links {
       margin-left: 40px;
   }
+
+  .fa-2x {
+    font-size: 1.3rem !important;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -159,53 +211,11 @@ h1 {
       width: 100%;
       margin-left: 12%;
   }
-    .form-control {
-      height: 50px;
-      padding: 20px;
-      border-radius: 0;
-      border: 1px solid #213DCD;
-  }
-    .button-search {
-      background-color: #6D9BF1;
-      border: none;
-      box-shadow: none;
-      color: #ffffff;
-      font-size: 1.2rem;
-      padding: 1px;
-      width: 80px;
-  }
-    .search-content {
-      font-size: 1rem;
-      width: 100%;
-      margin-left: 13%;
-      color: #000000;
-      padding-top: 20px;
-      font-weight: bold;
-  }
-  .form-content {
-    width: 80%;
-    margin-top: 35%;
-  }
-
 }
 
 @media screen and (max-width: 375px) {
   .input-group {
     width: 120%;
     margin-left: 4%;
-  }
-
-  .search-content {
-    font-size: 1rem;
-    width: 120%;
-    margin-left: 8%;
-    color: #000000;
-    padding-top: 20px;
-    font-weight: bold;
-  }
-
-  .form-content {
-    width: 80%;
-    margin-top: 60%;
   }
 }
