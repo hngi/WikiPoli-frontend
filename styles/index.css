@@ -19,10 +19,6 @@ body {
 
 .menu a {
   font-size: 1.5rem;
-  color: #213DCD;
-}
-
-.menu a {
   color: #6D9BF1;
 }
 
@@ -35,7 +31,7 @@ body {
 }
 
 .button-signup {
-  background-color: #213DCD;
+  background-color: #6D9BF1;
   border: none;
   box-shadow: none;
   color: #ffffff;
@@ -46,27 +42,19 @@ body {
   margin-left: 2.5rem;
 }
 
-.button-signup {
-  background-color: #6D9BF1;
-}
-
 .button-signup:hover {
   color: white;
   text-decoration: none;
 }
 
 .button-search {
-  background-color: #213DCD;
+  background-color: #6D9BF1;
   border: none;
   box-shadow: none;
   color: #ffffff;
   font-size: 2rem;
   padding: 1px;
   width: 150px;
-}
-
-.button-search {
-  background-color: #6D9BF1;
 }
 
 .form-content {
@@ -88,45 +76,28 @@ body {
   padding: 15px;
   border-radius: 0;
   border: 1px solid #213DCD;
-  background-color: #FFEBEF;
+  border-right: none;
+  background-color: #ffffff;
 }
 
 h1 {
   margin-left: 23%;
-  color: #213DCD;
+  color: #6D9BF1;
   margin-bottom: 50px;
 }
 
-h1 {
-  color:#FFEBEF;
-}
-
 .search-content {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin-left: 23%;
-  color: #676871;
+  color: #000000;
   padding-top: 20px;
   font-weight: bold;
 }
 
-.search-content {
-  color: #FFEBEF;
-}
-
 .search-content a {
  font-weight: bold;
- color: #213DCD;
+ color: #6D9BF1;
 }
-
-.search-content a {
-  color: #6D9BF1;
-}
-
-.body-section {
-  background-image: url("https://res.cloudinary.com/jameschima/image/upload/v1571811814/marco-oriolesi-wqLGlhjr6Og-unsplash_1_qjnpta.png");
-  height: 749px;
-}
-
 
 #footer {
   background-color: #213DCD;
@@ -193,10 +164,9 @@ h1 {
       padding: 20px;
       border-radius: 0;
       border: 1px solid #213DCD;
-      background-color: #FFEBEF;
   }
     .button-search {
-      background-color: #213DCD;
+      background-color: #6D9BF1;
       border: none;
       box-shadow: none;
       color: #ffffff;
@@ -204,19 +174,13 @@ h1 {
       padding: 1px;
       width: 80px;
   }
-  .button-search {
-    background-color: #6D9BF1;
-  }
     .search-content {
       font-size: 1rem;
       width: 100%;
       margin-left: 13%;
-      color: #676871;
+      color: #000000;
       padding-top: 20px;
       font-weight: bold;
-  }
-    .search-content {
-      color: #FFEBEF;
   }
   .form-content {
     width: 80%;
@@ -234,7 +198,7 @@ h1 {
     font-size: 1rem;
     width: 120%;
     margin-left: 8%;
-    color: #676871;
+    color: #000000;
     padding-top: 20px;
     font-weight: bold;
   }
