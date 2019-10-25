@@ -41,20 +41,18 @@ $.ajax(settings).done(function (response) {
 	if(objResponse.res === "Incorrect credential") {
 		alert("Wrong username or password!!")
 	} else if(objResponse.res === "Login Successful" && objResponse.status === 200) {
-
-		console.log( 'yeah' )
 		
-			sessionStorage.setItem( "wikiToken", objResponse.token )
-			sessionStorage.setItem( "userEmail", email )
+			localStorage.setItem( "wikiToken", objResponse.token )
+			localStorage.setItem( "userEmail", email )
 			if(email == 'admin@gmail.com' || email == 'super@gmail.com'){
 				setTimeout(() => {
 					location.href = "admin-dashboard-general.html";
-				}, 2000);
+				}, 500);
 			}
 			else{
 				setTimeout(() => {
 					location.href = "dashboard-activity.html";
-				}, 2000);
+				}, 500);
 			}
 		
 	} 
