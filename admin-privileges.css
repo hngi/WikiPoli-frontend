@@ -1,59 +1,33 @@
-#lgg{
-    display:none;
-}
-*{
+html,body{
+    padding:0;
     margin:0;
-}
-.navlink{
-    text-decoration-line: none;
-    color: black;
-    
-}
-body{
     background-color: #E9EDFA;
 }
+
 .center-main{
     background-color: white;
-    float:right;
-    margin-top:0px;
-    width:78%;
-    height:100%;
+    margin-left:5em;
+   
 }
-#nav{
-    float:left;
-    background-color:#E9EDFA;
-    width:18%;
-    height:130%;
-}
-ul{
-    list-style-type: none;
-    line-height: 200%;
-    margin-top:35%;
-    font-weight:500;
-}
-.addpriul{
-    border: 1px solid blue;
-    padding: 2% 10% 2% 2%;
-    background-color: #213DCD;
-    color:white;
-}
+
 .sitename{
     font-size:22px;
     font-weight:bold;
     color:#000000;
 }
 .poli{
-    color:#213DCD
+    color:#6A9AD1;
+}
+.hello{
+    padding-left:60em;
 }
 .forms{
-    margin-top:3%;
-    margin-left:3%;
-    margin-right:4%;
-    line-height:230%;
+    margin-left:13em;
+    line-height:200%;
 }
 .heavy-weight{
     font-weight: bold;
-    color:#000000;
+    color:#000;
 }
 .label{
     font-weight: lighter;
@@ -64,18 +38,22 @@ ul{
     padding-left:4%;
 }
 #field1{
+    margin-top:5%;
     padding-left:4%;
 }
 .bluebutton{
     color:white;
     width:10%;
     height:4%;
-    background-color:#213DCD;
+    background-color:#6A9AD1;
     margin-top:2%;
     margin-bottom:2%;
 }
 .rightlink{
-    margin-left:70%;
+    margin-left:47em;
+}
+.leftlink{
+    margin-left:12em;
 }
 .profimg{
     margin-left:2%;
@@ -84,7 +62,7 @@ ul{
     padding:0.5%;
 }
 a{
-    color:#213DCD;
+    color:#6A9AD1;
 }
 .left-margin-1{
     margin-left: 35%;
@@ -96,64 +74,62 @@ a{
     margin-left: 15%;
 }
 .input-field{
-    width:25%
+    width:16em;
+    height:1.3em;
+    font-size:1em;
 }
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 990px){
     a{
         font-size:9px;
     }
-        #nav{
-            width:30%;
-            font-size:8px;
-        }
-        ul{
-            line-height:250%;
-           
-        }
-        ul li{
-            margin-left: 0px;
-            
-        }
-        .center-main{
-        margin-top:0px;
-        width:70%;
-        }
-        .bluebutton{
-        width:25%;
-        height:4%;
-    }
-    .addpriul{
-        border: 0.1px;
-        padding: 0;
-    }
-    .rightlink{
-        margin-left:18%;
-        font-size:10px;
-    }
-    .rightlink2{
-        margin-left:16%;
+    .left-margin-1{
+        margin-left: 10%;
     }
     .left-margin-2{
-        margin-left: 28%;
+        margin-left: 10%;
     }
+    .left-margin-3{
+        margin-left: 10%;
+    }
+        .center-main{
+        margin-top:0px;
+        margin-left:5em;
+        }
+        .bluebutton{
+            color:white;
+            width:13%;
+            height:4%;
+            background-color:#6A9AD1;
+            margin-top:2%;
+            margin-bottom:2%;
+    }
+    
     .input-field{
-        width:35%;
-        font-size:8.5px;
+        width:9em;
+        height:1.5em;
+        font-size:0.7em;
     }
-    .sitename{
-        font-size:18px;
+    #field2{
+        margin-top:5%;
+        padding-left:4%;
     }
-    h3{
-        font-size:18px;
-    }
-    h4{
-        font-size:16px;
+    #field1{
+        margin-top:5%;
+        padding-left:4%;
     }
     .forms{
-        margin-left:0px;
-        margin-right:0px;
+        margin-left:3em;
+        line-height:200%;
     }
     .label{
-        font-size:12px;
+        padding-left: 0px;
+        font-size:9px;
+    }
+    .rightlink{
+        padding-left: 20em;
+        
+    }
+    .leftlink{
+        padding-left:-7em ;
     }
 }

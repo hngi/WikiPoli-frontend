@@ -1,16 +1,16 @@
 /* Table of content
-1. Global styling
-2. Layout
-3. Typography
-   3.1 Lists
-   3.2 Links
-   3.3 Buttons
-   3.4 Images
-*/
+	1. Global styling
+	2. Layout
+	3. Typography
+		3.1 Lists
+		3.2 Links
+		3.3 Buttons
+		3.4 Images
+	*/
 
 /****************
-1. Global styling
-*****************/
+	1. Global styling
+	*****************/
 
 * {
 	margin: 0;
@@ -22,8 +22,8 @@
 }
 
 /****************
-2. Layout
-*****************/
+	2. Layout
+	*****************/
 
 .dashboard-container {
 	display: flex;
@@ -31,7 +31,7 @@
 
 aside {
 	width: 200px;
-	height: 100vh;
+	height: 124vh;
 	background-color: #e9edfa;
 }
 
@@ -49,7 +49,7 @@ main {
 .most-recent-activity {
 	margin: 20px auto 10px auto;
 	padding: 10px 10px 50px 10px;
-	border: 1px solid #213dcd;
+	border: 1px solid #6d9bf1;
 }
 
 .container-activity {
@@ -57,6 +57,7 @@ main {
 	border-radius: 5px;
 	box-shadow: 0px 2px 5px 0px #000;
 }
+
 .container-activity-2,
 .container-activity-3 {
 	margin-top: 30px;
@@ -67,8 +68,8 @@ main {
 }
 
 /****************
-3. Typography
-*****************/
+	3. Typography
+	*****************/
 
 /* 3.1 Lists */
 
@@ -91,7 +92,7 @@ aside li {
 }
 
 .active {
-	background: #213dcd;
+	background: #6d9bf1;
 	padding: 4px 0px 4px 10px;
 }
 
@@ -110,17 +111,21 @@ a {
 a:hover {
 	text-decoration: none;
 }
+
 /* 3.3 Buttons */
 
 .search-btn {
-	background: #213dcd;
+	background: #6d9bf1;
 	color: #fff;
-	margin-left: 2%;
+	padding-left: 10px;
+	border-radius: 0px;
 }
 
 .activity-cta {
-	background: #213dcd;
+	background: #6d9bf1;
 	color: #fff;
+	border: none;
+	padding: 0.2em 0.5em;
 }
 
 /*Hover state*/
@@ -143,7 +148,7 @@ a:hover {
 /* 3.5 Texts */
 
 h1 span {
-	color: #213dcd;
+	color: #6d9bf1;
 }
 
 h1,
@@ -157,17 +162,15 @@ h2 {
 
 @media screen and (min-width: 768px) {
 	/*****************
-   1. Global styling
-   *****************/
-
+		1. Global styling
+		*****************/
 	* {
 		font-size: 17px;
 	}
 
 	/*****************
-   2. Layout
-   *****************/
-
+		2. Layout
+		*****************/
 	aside {
 		width: 25%;
 	}
@@ -197,9 +200,8 @@ h2 {
 		padding: 20px 5px;
 	}
 	/*****************
-   3. Typography
-   *****************/
-
+		3. Typography
+		*****************/
 	.profile {
 		position: absolute;
 		top: 18px;
@@ -209,9 +211,33 @@ h2 {
 	}
 }
 
+.input-icons i {
+	position: absolute;
+}
+
+.input-icons {
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+.icon {
+	padding: 10px;
+	color: gray;
+	min-width: 50px;
+	text-align: center;
+}
+
+.input-field {
+	width: 60%;
+	padding: 5px;
+	padding-top: 5px;
+	padding-bottom: 7px;
+	text-align: center;
+}
+
 @media screen and (min-width: 1152px) {
 	* {
-		font-size: 19px;
+		font-size: 20px;
 	}
 	.container-activity {
 		width: 90%;
