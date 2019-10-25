@@ -6,11 +6,31 @@
     <title>Admin Privileges</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="admin-privileges.css" />
+    <link rel="stylesheet" type="text/css" href="styles/admin-dashboard-general.css">
 </head>
 <body>
-    <img src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571749198/c09e9odiqy2cvkosfubl.png" id="lgg"/>
+        <input type="checkbox" id="mobile-bars-check" />
+        <label for="mobile-bars-check" id="mobile-bars">
+            <div class="stix" id="stik1"></div>
+            <div class="stix" id="stik2"></div>
+            <div class="stix" id="stik3"></div>
+        </label>
+        <section id="admin-sidebar-general">
+                <div class="icon-div">
+                    <img src="images/house-icon.png" height="30px">
+                    <span>Wiki</span><span class="blue-text">Poli</span>
+                </div>
+                <a href="" class="sidebar-links ">Dashboard</a>
+                <a href="" class="sidebar-links">Activities</a>
+                <a href="" class="sidebar-links">Posts</a>
+                <a href="" class="sidebar-links">Users</a>
+                <a href="admin-privileges.html" class="sidebar-links sidebar-active-link">Add Privileges</a>
+                <a href="" class="sidebar-links">Logout</a>
+            </section>
+    
+      
     <div class="center-main">
-        <span class="sitename"><span>Wiki</span><span class="poli">Poli</span></span><span class="rightlink">Hello, masterAdmin<span class="profimg"><img src="#"></span></span>
+        <div><span class="sitename"><span>Wiki</span><span class="poli">Poli</span></span><span class="hello">Hello, Super Admin<span class="profimg"><img src="#"></span></span></div>
         <form action="" method="post">
         <div class="forms">
                 <h3 class="heavy-weight">Add Privileges</h3>
@@ -69,23 +89,13 @@
                 </fieldset>
                 
                 
-                <a href="#">Perform bulk operations</a>
-                <a href="#" class="rightlink rightlink2">View list of Admins</a>
+                <a href="#" class="leftlink">Perform bulk operations</a>
+                <a href="#" class="rightlink">View list of Admins</a>
         </div>
     
     </div>
-    <div id="nav">
-        <nav>
-        <ul>
-            <li><a href="#" class="navlink">Dashboard</a></li>
-            <li><a href="#" class="navlink">Activities</a></li>
-            <li><a href="#" class="navlink">Add Post +</a></li>
-            <li><a href="admin-privileges.html" class="navlink addpriul">Add Privileges</a></li>
-            <li><a href="#" class="navlink">Block/Unblock</a></li>
-            <li><a href="#" class="navlink">LogOut</a></li>
-        </ul>
-    </nav>
     </div>
+    
     <script>
     
         // ================================== Validation =============================================
@@ -232,7 +242,7 @@ function checkEmailField1() {
        document.getElementById("email2ErrorMsg").style.color = "red";
        document.getElementById("email2ErrorMsg").textContent = "Email must contain  a '.' symbol!";    
    }
-     else if (emailRegex1.test(email12.value) == false) {
+     else if (emailRegex1.test(email2.value) == false) {
        document.getElementById("email2ErrorMsg").style.display = "block";
        document.getElementById("email2ErrorMsg").style.color = "red";
        document.getElementById("email2ErrorMsg").textContent = "Wrong email format!";    
