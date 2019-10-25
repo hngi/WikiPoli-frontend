@@ -44,9 +44,16 @@ $.ajax(settings).done(function (response) {
 		
 			localStorage.setItem( "wikiToken", objResponse.token )
 			localStorage.setItem( "userEmail", email )
-			setTimeout(() => {
-				location.href = "dashboard-activity.html";
-			}, 1000);
+			if(email == 'admin@gmail.com' || email == 'super@gmail.com'){
+				setTimeout(() => {
+					location.href = "admin-dashboard-general.html";
+				}, 500);
+			}
+			else{
+				setTimeout(() => {
+					location.href = "dashboard-activity.html";
+				}, 500);
+			}
 		
 	} 
 });
