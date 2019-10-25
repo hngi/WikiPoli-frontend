@@ -1,11 +1,11 @@
 #politic-head {
-    color: blue;
+    color: #6D9BF1;
 }
 
 #edit {
     border: 0px;
     background: none;
-    background-color: #0000FF;
+    background-color: #6D9BF1;
     color: #fff;
     padding: 8px 20px;
     cursor:pointer;

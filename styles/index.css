@@ -136,13 +136,16 @@ h1 {
   font-size: 12px; 
 }
 
+.line{
+  display: none;
+}
+
 /* Responsive styling */
 @media screen and (max-width: 768px) {
     h1 {
       font-size: 30px;
     }
     #footer {
-      margin-top: 150px;
       padding-top: 10px;
       height: 450px;
       width: 100%;
@@ -192,5 +195,15 @@ h1 {
     color: #676871;
     padding-top: 20px;
     font-weight: bold;
+  }
+
+  .line{
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    height: 0px;
+    border: 1px solid #ffffff;
+    width: 25%;
+    background: #000;
   }
 }

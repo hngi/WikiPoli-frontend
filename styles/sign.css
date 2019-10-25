@@ -6,8 +6,9 @@
 }
 
 .register_container {
-    height: 100vh;
+    height: 100%;
     font-family: 'Lato', sans-serif;
+    background: #E5E5E5;
 }
 
 /*
@@ -25,14 +26,14 @@
     height: 55px;
     width: 456px;
     margin-bottom: 25px;
-    border: 1px solid #213DCD;
+    border: 1px solid #6D9BF1;
     border-radius: 0;
 }
 .signup_form input::placeholder{
     color: #7E7E7E;
 }
 input[name='sign-up'], input[name='log-in'] {
-    background-color: #213DCD !important;
+    background-color: #6D9BF1 !important;
     font-size: 20px;
     color: white;
     font-weight: 700;
