@@ -14,12 +14,12 @@ body {
 
 .navbar p {
   font-size: 2rem;
-  color: #213DCD;
+  color:  #6D9BF1;
 }
 
 .menu a {
   font-size: 1.5rem;
-  color: #213DCD;
+  color:  #6D9BF1;
 }
 
 .menu li {
@@ -31,7 +31,7 @@ body {
 }
 
 .button-signup {
-  background-color: #213DCD;
+  background-color:  #6D9BF1;
   border: none;
   box-shadow: none;
   color: #ffffff;
@@ -45,16 +45,21 @@ body {
 .button-signup:hover {
   color: white;
   text-decoration: none;
+  background: rgb(24, 24, 133);
 }
 
 .button-search {
-  background-color: #213DCD;
+  background-color:  #6D9BF1;
   border: none;
   box-shadow: none;
   color: #ffffff;
   font-size: 2rem;
   padding: 1px;
   width: 150px;
+}
+
+.button-search:hover {
+  background: rgb(24, 24, 133);
 }
 
 .form-content {
@@ -71,12 +76,12 @@ body {
   height: 50px;
   padding: 15px;
   border-radius: 0;
-  border: 1px solid #213DCD;
+  border: 1px solid  #6D9BF1;
 }
 
 h1 {
   margin-left: 23%;
-  color: #213DCD;
+  color:  #6D9BF1;
   margin-bottom: 50px;
 }
 
@@ -90,12 +95,12 @@ h1 {
 
 .search-content a {
  font-weight: bold;
- color: #213DCD;
+ color:  #6D9BF1;
 }
 
 
 #footer {
-  background-color: #213DCD; 
+  background-color:  #6D9BF1; 
   margin-top: 32%;  /* YOU CAN PULL THIS OUT WHEN YOU IMPLEMENT YOUR PAGE.*/
   padding-top: 10px;
   /* height: 300px; */
@@ -161,10 +166,10 @@ h1 {
       height: 50px;
       padding: 20px;
       border-radius: 0;
-      border: 1px solid #213DCD;
+      border: 1px solid  #6D9BF1;
   }
     .button-search {
-      background-color: #213DCD;
+      background-color:  #6D9BF1;
       border: none;
       box-shadow: none;
       color: #ffffff;
