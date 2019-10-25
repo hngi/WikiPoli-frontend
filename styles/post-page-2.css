@@ -39,7 +39,7 @@ body,html{
 {
 	border: 0px;
 	background: none;
-	background-color: #0000FF;
+	background-color: #6D9BF1;
 	color: #fff;
 	padding: 8px 20px;
 	border-radius-top-right: 5px;
@@ -57,7 +57,7 @@ body,html{
 
 }
 .col-sm {
-	border: 2px solid #3333FF;
+	border: 2px solid #6D9BF1;
 	margin-top: 70px;
 }
 #post-1{
@@ -93,7 +93,7 @@ body,html{
 	padding-right: 20px;
 }
 .login-footer{
-    background: #213CDC;
+    background: #6D9BF1;
     list-style: none;
     display: flex;
     max-width: 100%;
@@ -148,7 +148,7 @@ body,html{
 }
 .footer-links a:hover{
     background: #fff;
-    color:#213CDC;
+    color: #6D9BF1;
 }
 @media all and (max-width:1000px){
     .footer-links ul{
