@@ -1,17 +1,16 @@
 
 const api = "http://teamgandhi.000webhostapp.com/api";
-const wikiToken = sessionStorage.getItem( 'wikiToken' );
-const userEmail = sessionStorage.getItem('userEmail')
+const wikiToken = localStorage.getItem( 'wikiToken' );
+const userEmail = localStorage.getItem('userEmail')
 
 if ( !wikiToken && !userEmail ) {
-  console.log("not logged in");
   location.href="signin.html"
 } else {
   console.log('logged in');
   document.querySelector( "#logout" ).addEventListener( 'click', ( e ) => {
     e.preventDefault();
-    sessionStorage.removeItem("wikiToken");
-    sessionStorage.removeItem( "userEmail" );
+    localStorage.removeItem("wikiToken");
+    localStorage.removeItem( "userEmail" );
     console.log('yh');
     setTimeout(() => {
       location.href="signin.html"
@@ -26,7 +25,7 @@ if ( !wikiToken && !userEmail ) {
       var form = new FormData();
       form.append(
         "token",
-        sessionStorage.getItem('wikiToken')
+        localStorage.getItem('wikiToken')
       );
       form.append("post", postBody);
       form.append("topic", "tester");
