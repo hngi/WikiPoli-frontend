@@ -87,9 +87,8 @@ line-height: 48px;
 } 
 .aside {
   padding-top: 2.5rem;
-  
+  background: rgba(33, 60, 220, 0.1);
   /* height: 100%; */
-  background: rgba(33, 60, 220, 0.03);
 }
 .aside .contrib{
   margin-top: 1.5rem;
