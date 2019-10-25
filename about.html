@@ -8,14 +8,24 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="styles/about.css">
-  <title>Contact Us</title>
+  <title>About Us</title>
 </head>
+<style type="text/css">
+  #footer{
+             background: #6D9BF1 !important;
+  }
+  .social-links h3 {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+</style>
 <body> 
   <div id="wrapper">
     <div class="container-fluid">
       <nav class="navbar navbar-expand-lg">
-        <a href="#" class="navbar-brand logo">
+        <a href="index.html" class="navbar-brand logo">
           <img src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571749198/c09e9odiqy2cvkosfubl.png"
             alt="WikiPoli Logo">
         </a>
@@ -41,7 +51,6 @@
         </div>
       </nav>
     </div>
-
 
     <!--- Jumbotron -->
     <div class="container-fluid">
@@ -71,10 +80,10 @@
                 <div class="col-md-12">
                   <div class="card Mission">
                       <div class="card-body">
-                          <span class="card-title pl-5 pr-5">Mission</span>              <span class="card-title pl-5">Vision</span> <br>
-                          <p class="card-text mt-2">Lorem ipsum dolor sit amet, consectetur adipisifwcing elit, sed do eiusmod tempor incididunt ut labore et dLorem ip
+                          <span class="float-left card-title pl-5">Mission</span>              <span class="float-right card-title pr-5">Vision</span> <div></div>
+                          <p class="float-left card-text">Lorem ipsum dolor sit amet, consectetur adipisifwcing elit, sed do eiusmod tempor incididunt ut labore et dLorem ip
                           </p>            
-                        <a href="#" class="btn btn-primary">Read more</a>
+                        <a href="#" class="float-left btn btn-primary">Read more</a>
                       </div>
                    </div>
                 </div>
@@ -143,15 +152,50 @@
     </div>
     </div>
 
-    <footer> 
-          <a class="footerBrand" href="#"><img src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571749198/c09e9odiqy2cvkosfubl.png" alt="WikiPoli Logo">
-          </a>
-        <ul class="footerElements"> 
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">About WikiPoli</a></li>
-            <li><a href="#">Contact WikiPoli</a></li>
-        </ul>
-    </footer>
+    <footer>
+    <div id="footer">
+      <div class="container">
+        <div class="row links">
+          <div class="col-md-4 col-sm-12  text-center">
+              <ul class="quick-links">
+                <li>Legal</li>
+                <li><a href="Terms-of-use.html">Terms of Use</a></li>
+                <li><a href="privacypolicy.html">Privacy Policy</a></li>
+              </ul>
+            </div>
+  
+          <span class="line"></span>
+  
+          <div class="col-md-4 col-sm-12  text-center">    
+            <ul class="quick-links">
+                <li>Company</li>
+                <li><a href="">About</a></li>
+                <li><a href="">Careers</a></li>
+                <li><a href="">FAQs</a></li>
+                <li><a href="">Donations</a></li>
+            </ul>
+          </div>
+  
+          <span class="line"></span>
+  
+          <div class="col-md-4 col-sm-12  text-center">
+            <div class="text-center social-links">
+                <h3>Connect With Us</h3>
+                <a href="facebook.com"><span class="fa fa-facebook pl-4"></span></a>
+                <a href="twitter.com"><span class="fa fa-twitter"></span></a>
+                <a href="instagram.com"><span class="fa fa-instagram"></span></a>
+                <p>contact@wikipoli.gq</p>
+            </div>
+          </div>
+  
+  
+          <div class="col-lg-12 copyright text-center">
+            <p>&copy; 2019 Wikipoli - All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   </div>
 
