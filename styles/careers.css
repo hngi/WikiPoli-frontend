@@ -71,7 +71,7 @@ main .container{
     font-size: 20px;
 }
 .jobs{
-    margin: 50px 0;
+    margin: 50px 0 0 0;
 }
 .jobs h2{
     font-family: 'Lato', sans-serif;
@@ -81,7 +81,6 @@ main .container{
 }
 .jobs p{
     margin-top: 20px;
-    margin-bottom: 50px;
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 300;
