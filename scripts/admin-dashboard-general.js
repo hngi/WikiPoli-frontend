@@ -1,37 +1,35 @@
 
-
 const api = "http://teamgandhi.000webhostapp.com/api";
-const wikiToken = localStorage.getItem( 'wikiToken' );
-const userEmail = localStorage.getItem('userEmail')
+const wikiToken = sessionStorage.getItem( 'wikiToken' );
+const userEmail = sessionStorage.getItem('userEmail')
 
 if ( !wikiToken && !userEmail ) {
+  console.log("not logged in");
   location.href="signin.html"
 } else {
- 
-  document.querySelector( "#user-email" ).innerText = userEmail;
-  document.querySelector( "#logout-button" ).addEventListener( 'click', ( e ) => {
+  console.log('logged in');
+  document.querySelector( "#logout" ).addEventListener( 'click', ( e ) => {
     e.preventDefault();
-    localStorage.removeItem("wikiToken");
-    localStorage.removeItem( "userEmail" );
-    
+    sessionStorage.removeItem("wikiToken");
+    sessionStorage.removeItem( "userEmail" );
+    console.log('yh');
     setTimeout(() => {
-      location.href="index.html"
-    }, 2000);
-  } )
-  
+      location.href="signin.html"
+    }, 1000);
+  } )  
   document.querySelector('#add-post-button').addEventListener("click", (e) => {
     e.preventDefault();
+    console.log( 'show-modal' )
     const addPosts = () => {
       const postBody = document.querySelector("#post-content").value
 
       var form = new FormData();
       form.append(
         "token",
-        localStorage.getItem('wikiToken')
+        sessionStorage.getItem('wikiToken')
       );
       form.append("post", postBody);
-      form.append("topic", "PlacceHolder");
-      form.append("post_status", "OK")
+      form.append("topic", "tester");
 
       var settings = {
         url: `${api}/create_post.php`,
@@ -44,13 +42,15 @@ if ( !wikiToken && !userEmail ) {
       };
 
       $.ajax(settings).done(function(response) {
-        console.log(response);
+        console.log('entered');
+        console.log(JSON.parse(response));
       });
     }
-    addPosts()
-    /*setTimeout(() => {
+    addPosts();
+    console.log('done');
+    setTimeout(() => {
       document.location.reload()
-    }, 1000);*/
+    }, 10000);
 
   })
 
