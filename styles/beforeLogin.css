@@ -156,12 +156,14 @@ body{
     cursor: pointer;
     color: black;
 }
-/*-------footer begins-----*/
-
-
-  
-  
-  #footer {
+#footer{
+    background: #6D9BF1 !important;
+}
+.social-links h3 {
+font-size: 1rem;
+line-height: 1.5;
+}
+#footer {
     background-color: #213DCD; 
     margin-top: 32%;  /* YOU CAN PULL THIS OUT WHEN YOU IMPLEMENT YOUR PAGE.*/
     padding-top: 10px;
@@ -206,32 +208,4 @@ body{
   .line{
     display: none;
   }
- 
-  /* Responsive styling */
-  @media screen and (max-width: 768px) {
-      h1 {
-        font-size: 30px;
-      }
-  
-      #footer {
-        padding-top: 10px;
-        height: 450px;
-        width: 100%;
-     }
-  }
 
-  
-  
-  @media screen and (max-width: 375px) {
-
-  
-    .line{
-      display: block;
-      margin: 0 auto;
-      padding: 0;
-      height: 0px;
-      border: 1px solid #ffffff;
-      width: 25%;
-      background: #000;
-    }
-  }
