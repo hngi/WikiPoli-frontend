@@ -73,10 +73,14 @@ width: 20rem;
 text-align: center;
 }
 
-.intro-section__post p {
-font-weight: bold;
-font-size: 1.3rem;
-line-height: 48px;
+.create-post {
+  font-weight: bold;
+font-size: 1.1rem;
+text-align: center;
+color: #FFFFFF;
+background-color:  #6D9BF1;
+border: 1px solid #6D9BF1;
+padding: .5rem;
 }
 
 @media screen and (max-width: 520px) {
@@ -87,9 +91,8 @@ line-height: 48px;
 } 
 .aside {
   padding-top: 2.5rem;
-  
+  background: rgba(33, 60, 220, 0.1);
   /* height: 100%; */
-  background: rgba(33, 60, 220, 0.03);
 }
 .aside .contrib{
   margin-top: 1.5rem;
@@ -114,8 +117,9 @@ line-height: 48px;
   text-align: right;
 }
 
+
 .Fela-posts {
-  background-color: rgba(76, 85, 138, 0.03); 
+  background-color: rgba(76, 85, 138, 0.1); 
   }
   ​
 .interactives{
@@ -130,7 +134,7 @@ line-height: 48px;
 
 #footer {
   background-color: #6D9BF1; 
-  margin-top: 2rem;  
+  margin-top: 5rem;  
   padding-top: 10px;
   /* height: 300px; */
   width: 100%;
@@ -174,6 +178,9 @@ line-height: 48px;
 @media screen and (max-width: 768px) {
     h1 {
       font-size: 30px;
+    }
+    .aside_content {
+      margin-top: -4rem;
     }
     .image{
       width: 100%;

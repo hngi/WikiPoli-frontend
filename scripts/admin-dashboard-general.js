@@ -1,6 +1,4 @@
 
-
-
 const api = "http://teamgandhi.000webhostapp.com/api";
 const wikiToken = localStorage.getItem( 'wikiToken' );
 const userEmail = localStorage.getItem('userEmail')
@@ -8,20 +6,18 @@ const userEmail = localStorage.getItem('userEmail')
 if ( !wikiToken && !userEmail ) {
   location.href="signin.html"
 } else {
- 
-  document.querySelector( "#user-email" ).innerText = userEmail;
-  document.querySelector( "#logout-button" ).addEventListener( 'click', ( e ) => {
+  document.querySelector( "#name-plate" ).innerText = userEmail;
+  document.querySelector( "#logout" ).addEventListener( 'click', ( e ) => {
     e.preventDefault();
     localStorage.removeItem("wikiToken");
     localStorage.removeItem( "userEmail" );
-    
     setTimeout(() => {
-      location.href="index.html"
+      location.href="signin.html"
     }, 500);
-  } )
-  
+  } )  
   document.querySelector('#add-post-button').addEventListener("click", (e) => {
     e.preventDefault();
+    console.log( 'show-modal' )
     const addPosts = () => {
       const postBody = document.querySelector("#post-content").value
 
@@ -31,8 +27,7 @@ if ( !wikiToken && !userEmail ) {
         localStorage.getItem('wikiToken')
       );
       form.append("post", postBody);
-      form.append("topic", "PlacceHolder");
-      form.append("post_status", "OK")
+      form.append("topic", "tester");
 
       var settings = {
         url: `${api}/create_post.php`,
@@ -45,10 +40,12 @@ if ( !wikiToken && !userEmail ) {
       };
 
       $.ajax(settings).done(function(response) {
-        console.log(response);
+        console.log('entered');
+        console.log(JSON.parse(response));
       });
     }
-    addPosts()
+    addPosts();
+    console.log('done');
     setTimeout(() => {
       document.location.reload()
     }, 1000);

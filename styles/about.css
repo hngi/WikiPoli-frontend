@@ -15,9 +15,15 @@ p, span {
 }
 .nav-link {
   color: black !important;
+  padding-bottom: 5px;
 }
 .nav-link:hover{
-    background-color: #213dcd;
+    background-color: #6D9BF1;
+    color: #fff !important;
+}
+.nav-item.active .nav-link {
+  border-bottom: 3px solid #6D9BF1;
+  padding-bottom: 2px;
 }
 .menu a {
   color: #213DCD;
@@ -31,7 +37,7 @@ p, span {
   color: #000000;
 }
 .logout {
-  background-color: #213DCD;
+  background-color: #6D9BF1;
   border: none;
   box-shadow: none;
   color: #ffffff;
@@ -41,13 +47,13 @@ p, span {
 }
 .jumbotron
 {
-  background-color:#6D9BF1 ;
+  background-color: #6D9BF1;
   color: #fff;
   border-radius: 0;
 }
 .jumbotron hr
 {
-  border-top: 2px solid #b4b4b4;
+  border-top: 2px solid #fff;
   width: 60%;
   margin-top: .8rem;
   margin-bottom: .3rem;
@@ -69,28 +75,30 @@ hr {
 }
 .btn-primary
 {
-  background: #C4C4C4;
+  background: #6D9BF1;
   border: unset;
-  border-radius: 60px;
+  border-radius: 0;
   padding: 5px 20px;
-  font-weight: bold;
-  color: #000;
+  font-weight: 500;
+  color: #fff;
 }
 .btn-primary:hover
 {
-  background-color: #563d7c;
-  border: 1px solid #563d7c;
+  background-color: #59ac59;
+  border: 1px solid #59ac59;
 }
 .col-md-12 p{
   font-size: 1.1rem;
 }
 .card.Mission {
   position: relative;
-  margin-left: -10%;
   font-size: 1.1rem;
   margin-top: 5%;
-  border: unset;
   border-radius: 0;
+  min-height: 10vw;
+}
+.col-md-12 p {
+    font-size: 2vh;
 }
 .card.event {
   min-height: 26.5vw;
@@ -123,48 +131,57 @@ hr {
   height: 100%;
 }
 #footer {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	position: relative;
-	left: 0;
-	bottom: 0;
-	height: 100px;
-	width: 100%;
-	background-color: rgba(33,60,220,0.1);
-
+  background-color: #213DCD; 
+  margin-top: 5%; 
+  padding-top: 10px;
+  /* height: 300px; */
+  width: 100%;
 }
 
-#footerLogoDiv {
-	height: 100%;
-	width: 30%;
-	display: flex;
-	justify-content: flex-start;
-	margin-left: 15px;
-	align-items: center;
+.links {
+  padding-top: 5px;
 }
 
-#footerLogo {
-	height: 100px;
+.social-links h3,
+.quick-links li {
+  list-style-type: none;
+  padding-top: 5px;
 }
 
-#footerLinks {
-	width: 60%;
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
+.social-links h3,
+.quick-links li:first-child {
+  color: #ffffff;
+  padding-bottom: 10px;
+  font-weight: bold;
 }
 
-#footerLinks a {
-	margin-right: 15px;
-	font-size: 18px;
-	font-weight: bold;
-  font-style: normal;
-  color:#000000;
+.quick-links li a {
+  color: #ffffff;
+  text-decoration: none;
 }
-a:hover {
-  transform: scale(1.05);
-  
+
+.social-links a span {
+  color: #ffffff;
+  letter-spacing: 20px;
+}
+
+.social-links p,
+.copyright p {
+  padding-top: 10px;
+  color: #ffffff;
+  font-size: 12px; 
+}
+
+.line{
+  display: none;
+}
+.subFooter {
+  position: relative;
+    background-color: #000000;
+    top: -10px;
+    height: 1.5px;
+}
+
 /* Responsive styling */
 @media screen and (max-width: 992px) {
     .jumbotron .lead {
@@ -188,17 +205,23 @@ a:hover {
 }
 .card.Mission {
     position: relative;
-    margin-left: -10%;
-    font-size: .95rem;
+    font-size: .8rem;
     margin-top: 0%;
+    min-height: 5vw;
+}
+.card-title {
+    margin-bottom: 0;
+}
+.col-md-12 p {
+    font-size: 1.7vh;
 }
 p {
-  font-size: .95rem;
+  font-size: .9rem;
+  margin-bottom: .8vh;
 }
 .btn-primary {
-    font-size: .95rem;
-    border-radius: 60px;
-    padding: 5px 20px;
+    font-size: .8rem;
+    padding: 5px 12px;
 }
 .display-4 {
     font-size: 2.5rem;
@@ -219,10 +242,13 @@ p {
     font-size: 1.15rem;
     padding-top: 0;
 }
-}
 @media screen and (max-width: 991px) {
       .menu li {
         padding-left: unset;
+    }
+      .nav-link {
+        width: fit-content;
+        padding-right: .3rem !important;
     }
   }
 
@@ -252,9 +278,8 @@ p {
   font-size: .9rem;
 }
 .btn-primary {
-    font-size: .9rem;
-    border-radius: 60px;
-    padding: 3px 15px;
+    font-size: .6rem;
+    padding: 3px 10px;
 }
 .display-4 {
     font-size: 2rem;
@@ -279,32 +304,10 @@ p {
     padding-top: 0;
 }
 #footer {
-  height: 180px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#footerLogoDiv {
-  width: 100%;
-  height: 20%;
-  justify-content: center;
-  margin-left: 0;
-  margin-top: 10px;
-}
-
-#footerLinks {
-  width: 100%;
-  align-self: center;
-  flex-direction: column;
-  justify-content: center;
-  margin:initial;
-}
-
-#footerLinks a {
-  margin-bottom: 5px;
-  margin-top: 5px;
-}
+      padding-top: 10px;
+      height: 450px;
+      width: 100%;
+   }
 
 }
 
@@ -319,17 +322,20 @@ p {
   .menu a, .logout {
     font-size: .8rem;
 }
-/* .footerBrand img {
-    height: 60px;
-    width: 70px;
-    vertical-align: middle;
+
+
 }
-.footerElements li {
-    font-size: 10px;
-    display: inline-block;
-    padding: 10px;
-    width: fit-content;
-} */
+
+@media screen and (max-width: 400px) {
+    .line{
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    height: 0px;
+    border: 1px solid #ffffff;
+    width: 25%;
+    background: #000;
+  }
 
 
 }
