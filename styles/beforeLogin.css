@@ -157,7 +157,7 @@ body{
     color: black;
 }
 /*-------footer begins-----*/
-footer {
+/*footer {
     background-color: #000000;
     color:#fff;
     margin: auto;
@@ -195,7 +195,7 @@ footer {
     width: 100px;
     vertical-align: middle;
 
-}
+}*/
 @media screen  and (min-width: 600px){
     .footer_brand {
     float: left;
@@ -219,3 +219,75 @@ footer {
     }
 
 }
+#footer{
+    background: #6D9BF1 !important;
+}
+.social-links h3 {
+font-size: 1rem;
+line-height: 1.5;
+}
+#footer {
+    background-color: #213DCD; 
+    margin-top: 32%;  /* YOU CAN PULL THIS OUT WHEN YOU IMPLEMENT YOUR PAGE.*/
+    padding-top: 10px;
+    /* height: 300px; */
+    width: 100%;
+  }
+  
+  .links {
+    padding-top: 5px;
+  }
+  
+  .social-links h3,
+  .quick-links li {
+    list-style-type: none;
+    padding-top: 5px;
+  }
+  
+  .social-links h3,
+  .quick-links li:first-child {
+    color: #ffffff;
+    padding-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .quick-links li a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .social-links a span {
+    color: #ffffff;
+    letter-spacing: 20px;
+  }
+  
+  .social-links p,
+  .copyright p {
+    padding-top: 10px;
+    color: #ffffff;
+    font-size: 12px; 
+  }
+  
+  .line{
+    display: none;
+  }
+  @media screen and (max-width: 768px) {
+   
+    #footer {
+      padding-top: 10px;
+      height: 450px;
+      width: 100%;
+   }
+}
+@media screen and (max-width: 375px) {
+ 
+  .line{
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    height: 0px;
+    border: 1px solid #ffffff;
+    width: 25%;
+    background: #000;
+  }
+} 
