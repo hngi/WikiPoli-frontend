@@ -15,9 +15,15 @@ p, span {
 }
 .nav-link {
   color: black !important;
+  padding-bottom: 5px;
 }
 .nav-link:hover{
     background-color: #6D9BF1;
+    color: #fff !important;
+}
+.nav-item.active .nav-link {
+  border-bottom: 3px solid #6D9BF1;
+  padding-bottom: 2px;
 }
 .menu a {
   color: #213DCD;
@@ -169,6 +175,12 @@ hr {
 .line{
   display: none;
 }
+.subFooter {
+  position: relative;
+    background-color: #000000;
+    top: -10px;
+    height: 1.5px;
+}
 
 /* Responsive styling */
 @media screen and (max-width: 992px) {
@@ -233,6 +245,10 @@ p {
 @media screen and (max-width: 991px) {
       .menu li {
         padding-left: unset;
+    }
+      .nav-link {
+        width: fit-content;
+        padding-right: .3rem !important;
     }
   }
 

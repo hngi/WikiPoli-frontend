@@ -23,7 +23,6 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background-color: rgba(33,60,220,0.1);
 }
 
 .right {
@@ -56,17 +55,20 @@ header {
 .navLinks {
 	padding: 0 15px;
 	font-size: 20px;
-	font-style: normal;
 	font-weight: 600;
+	font-style: normal; 
 }
 
 #headerButton {
-	padding: 0 15px;
+	padding: 10px 15px;
 	font-size: 20px;
 	font-style: normal;
 	font-weight: 550;
-	background-color: inherit;
+	background-color: #6D9BF1;
+	color: #ffffff;
 	border: none;
+	outline: none;
+	cursor: pointer;
 }
 
 .alert {
@@ -74,7 +76,7 @@ header {
 }
 
 #target {
-	border-bottom: 3px solid #213DCD;
+	border-bottom: 3px solid #6D9BF1;
 	margin-top: 2.5px;
 }
 
@@ -82,28 +84,30 @@ header {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	margin: 25px;
-	padding: 10px;
-	padding-right: 0;
+	padding-right: 10px;
 }
 
 #form input {
-	height: 25px;
+	height: 45px;
 	width: 250px;
 	font-size: 15px;
 	font-weight: normal;
 	font-style: normal;
 	padding-left: 5px;
+	outline: none;
 }
 
 #formButton {
-	background-color: #213DCD;
+	background-color: #6D9BF1;
 	color: #ffffff;
-	height: 25px;
-	font-size: 15px;
-	padding-left: 10px;
-	padding-right: 10px;
-	width: 70px;
+	font-size: 20px;
+	font-weight: 550;
+	font-style: normal;
+	padding: 10px 15px;
+	width: 100px;
+	height: 45px;
+	border: none;
+	outline: none;
 	cursor: pointer;
 }
 
@@ -135,14 +139,13 @@ header {
 	padding-top: 20px;
 	text-align: center;
 	background-color: rgba(33,60,220,0.08);
-	border: 1px solid #213DCD;
+	border: 1px solid #6D9BF1;
 	width: 25%;
 	height: 1100px;
 	position: relative;
 }
 
 #leftImgDiv {
-	border: 1px solid green;
     width: 100px;
     height: 100px;
     margin: auto;
@@ -201,12 +204,12 @@ header {
 
 .fa-toggle-on {
 	font-size: 35px;
-	color: #213DCD;
+	color: #6D9BF1;
 }
 
 .fa-toggle-off {
 	font-size: 35px;
-	color: #213DCD;
+	color: #6D9BF1;
 	display: none;
 }
 
@@ -217,12 +220,15 @@ header {
 }
 
 .doneButton button {
-	background-color: #213DCD;
+	background-color: #6D9BF1;
 	color: #ffffff;
 	height: 40px;
 	width: 100px;
 	padding: 5px;
 	font-size: 16px;
+	border: none;
+	outline: none;
+	cursor: pointer;
 }
 
 .deleteMyAccount {
@@ -233,19 +239,27 @@ header {
 }
 
 .deleteMyAccount button {
-	background-color: #213DCD;
+	background-color: #6D9BF1;
 	color: #ffffff;
 	height: 45px;
 	width: 150px;
 	padding: 5px;
 	font-size: 16px;
+	border: none;
+	outline: none;
+	cursor: pointer;
 }
 
-#viewSettingsContent button {
-    background-color: #213DCD;
+#viewSettingsContent select {
+    background-color: #6D9BF1;
 	color: #ffffff;
+	width: 100px;
+	height: 40px;
 	padding: 5px;
 	font-size: 16px;
+	border: none;
+	outline: none;
+	cursor: pointer;
 }
 
 #viewSettingsContent button i {
@@ -259,7 +273,7 @@ header {
 }
 
 #accountSettingsContent, #notificationSettingsContent, #viewSettingsContent {
-	border: 1px solid rgba(33,61,205,0.7);
+	border: 1px solid #6D9BF1;
 	border-radius: 8px;
 	margin-left: 5px;
 	padding: 10px;
@@ -320,16 +334,21 @@ header {
 
 #footer {
 	display: flex;
-	justify-content: space-between;
+	flex-direction: column;
+	justify-content: center;
 	align-items: center;
 	position: relative;
 	left: 0;
 	bottom: 0;
 	height: 100px;
 	width: 100%;
-	background-color: rgba(33,60,220,0.1);
-	color:;
+	background-color: #000000;
+	color:#ffffff;
 
+}
+
+#footer h3 {
+	margin-bottom: 10px;
 }
 
 #footerLogoDiv {
@@ -371,6 +390,7 @@ a:hover, button:hover {
 	#nav {
 		width: 65%;
 	}
+
 }
 
 @media screen and (max-width: 800px) {
@@ -383,9 +403,6 @@ a:hover, button:hover {
 	}
 
     /*change this on remote and create pr*/
-	#form {
-		padding-right: 10px;
-	}
 
     /*change this on remote and create pr*/
 	#focus {
@@ -400,6 +417,13 @@ a:hover, button:hover {
 		flex-direction: column;
 		justify-content: space-around;
 		align-items: center;
+	}
+
+	#formButton {
+		width: 70px;
+		padding-left: 3px;
+		padding-right: 3px;
+		font-size: 16px;
 	}
 
 	.navLinks, #headerButton {
@@ -470,25 +494,22 @@ a:hover, button:hover {
 		padding: 2px;
 	}
 
-	#viewSettingsContent button {
-                width: 80px;
+	#viewSettingsContent select {
+        width: 80px;
 		font-size: 14px;
 		padding: 2px;
     }
 
-    #viewSettingsContent button i {
-		font-size: 14px;
-    }
 
 }
 
 @media screen and (max-width: 768px) {
-	#footer {
-		height: 180px;
+	/*#footer {
+		
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-	}
+	}*/
 
 	#footerLogoDiv {
 		width: 100%;
@@ -506,6 +527,10 @@ a:hover, button:hover {
 		margin:initial;
 	}
 
+	#formButton, #form input{
+		height: 40px;
+	}
+
 	#footerLinks a {
 		margin-bottom: 5px;
 		margin-top: 5px;
@@ -516,8 +541,6 @@ a:hover, button:hover {
 	}
 
 	#form {
-		justify-content: flex-start;
-		padding-left: 25px;
 	}
 	
 	#leftButton {
@@ -553,6 +576,18 @@ a:hover, button:hover {
 	.edits span {
 		font-size: 14px;
 		width: 40%;
+	}
+
+	.edit span {
+
+	}
+
+	#header button {
+		height: 35px;
+	}
+
+	#formButton, #form input {
+		height: 35px;
 	}
 
 	.rightInnerWrapper p {
