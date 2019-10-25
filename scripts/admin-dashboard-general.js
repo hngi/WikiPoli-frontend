@@ -6,15 +6,14 @@ const userEmail = localStorage.getItem('userEmail')
 if ( !wikiToken && !userEmail ) {
   location.href="signin.html"
 } else {
-  console.log('logged in');
+  document.querySelector( "#name-plate" ).innerText = userEmail;
   document.querySelector( "#logout" ).addEventListener( 'click', ( e ) => {
     e.preventDefault();
     localStorage.removeItem("wikiToken");
     localStorage.removeItem( "userEmail" );
-    console.log('yh');
     setTimeout(() => {
       location.href="signin.html"
-    }, 1000);
+    }, 500);
   } )  
   document.querySelector('#add-post-button').addEventListener("click", (e) => {
     e.preventDefault();
@@ -49,7 +48,7 @@ if ( !wikiToken && !userEmail ) {
     console.log('done');
     setTimeout(() => {
       document.location.reload()
-    }, 10000);
+    }, 1000);
 
   })
 
