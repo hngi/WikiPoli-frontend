@@ -1,12 +1,12 @@
 #politic-head {
-    color: blue;
+    color: #6D9BF1;
 }
 
 #submit {
 
 	border: 0px;
 	background: none;
-	background-color: #0000FF;
+	background-color: #6D9BF1;
 	color: #fff;
 	padding: 8px 20px;
 	cursor:pointer;
@@ -19,4 +19,12 @@
 
 body {
     font-weight: bolder;
+}
+
+#footer{
+    background: #6D9BF1 !important;
+}
+.social-links h3 {
+font-size: 1rem;
+line-height: 1.5;
 }
