@@ -61,7 +61,7 @@
 		.most-recent-activity {
 			margin: 20px auto 10px auto;
 			padding: 10px 10px 50px 10px;
-			border: 1px solid #213dcd;
+			border: 1px solid #6d9bf1;
 		}
 
 		.container-activity {
@@ -104,7 +104,7 @@
 		}
 
 		.active {
-			background: #213dcd;
+			background: #6d9bf1;
 			padding: 4px 0px 4px 10px;
 		}
 
@@ -127,14 +127,14 @@
 		/* 3.3 Buttons */
 
 		.search-btn {
-			background: #213dcd;
+			background: #6d9bf1;
 			color: #fff;
 			padding-left: 10px;
 			
 		}
 
 		.activity-cta {
-			background: #213dcd;
+			background: #6d9bf1;
 			color: #fff;
 		}
 
@@ -158,7 +158,7 @@
 		/* 3.5 Texts */
 
 		h1 span {
-			color: #213dcd;
+			color: #6d9bf1;
 		}
 
 		h1,
@@ -245,7 +245,8 @@
 			padding-bottom: 7px; 
             text-align: center; 
 			
-        } 
+		} 
+		
           
         
 		@media screen and (min-width: 1152px) {
@@ -262,10 +263,60 @@
 				margin-left: 5%;
 			}
 		}
+
+		@media(max-width: 600px){
+			.hamburger {
+				position: absolute;
+				top: 5%;
+				left: 2%;
+				position: fixed;
+				cursor: pointer;
+			}
+		.line {
+      width: 40px;
+      height: 5px;
+      background: black;
+	  margin: 5px;
+		}
+		.aside-ul{
+			position: absolute;
+			left: 15%;
+			line-height: 30px;
+			background-color: #6d9bf1;
+			position: fixed;
+			width: 100%;
+			height: 100vh;
+			margin-right: 40px;
+			width: 100%;
+			font-family: verdana;
+			font-size: 16px;
+			clip-path: circle(100px at 90% -10% );
+      		-webkit-clip-path: circle(60px at 90% -10% );
+			transition: all 1s  ease-out;
+			cursor: pointer;
+		}
+		.aside-ul>li:hover{
+			background: #fff;
+			transition:  1s ease-in-out;
+		}
+		.aside-ul.open {
+      clip-path: circle(1000px at 90% -10% );
+      -webkit-clip-path: circle(1000px at 90% -10% );
+	}
+	.input-icons,.profile{
+		z-index: -2;
+	}
+	}
 	</style>
 </head>
 
 <body>
+
+		<div class="hamburger">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			  </div>
 	<div class="dashboard-container">
 		<aside>
 			<ul class="aside-ul">
@@ -300,7 +351,7 @@
 					</h1>
 				</div>
 				<ul class="main-ul">
-					<li>Hello, Doe
+					<li>Xyluz
 						<img class="profile" src="https://res.cloudinary.com/joshuafolorunsho/image/upload/v1571776948/profile.png" alt="profile picture">
 					</li>
 				</ul>
@@ -396,5 +447,6 @@
 	</div>
 
 </body>
+<script src="index.js"></script>
 
 </html>
