@@ -14,12 +14,12 @@ body {
 
 .navbar p {
   font-size: 2rem;
-  color: #213DCD;
+  color:  #6D9BF1;
 }
 
 .menu a {
   font-size: 1.5rem;
-  color: #213DCD;
+  color:  #6D9BF1;
 }
 
 .menu li {
@@ -31,7 +31,7 @@ body {
 }
 
 .button-signup {
-  background-color: #213DCD;
+  background-color:  #6D9BF1;
   border: none;
   box-shadow: none;
   color: #ffffff;
@@ -45,16 +45,21 @@ body {
 .button-signup:hover {
   color: white;
   text-decoration: none;
+  background: rgb(24, 24, 133);
 }
 
 .button-search {
-  background-color: #213DCD;
+  background-color:  #6D9BF1;
   border: none;
   box-shadow: none;
   color: #ffffff;
   font-size: 2rem;
   padding: 1px;
   width: 150px;
+}
+
+.button-search:hover {
+  background: rgb(24, 24, 133);
 }
 
 .form-content {
@@ -71,12 +76,12 @@ body {
   height: 50px;
   padding: 15px;
   border-radius: 0;
-  border: 1px solid #213DCD;
+  border: 1px solid  #6D9BF1;
 }
 
 h1 {
   margin-left: 23%;
-  color: #213DCD;
+  color:  #6D9BF1;
   margin-bottom: 50px;
 }
 
@@ -90,27 +95,29 @@ h1 {
 
 .search-content a {
  font-weight: bold;
- color: #213DCD;
+ color:  #6D9BF1;
 }
 
 
 #footer {
-  background-color: #213DCD;
-  margin-top: 200px;
+  background-color:  #6D9BF1; 
+  margin-top: 32%;  /* YOU CAN PULL THIS OUT WHEN YOU IMPLEMENT YOUR PAGE.*/
   padding-top: 10px;
-  height: 300px;
+  /* height: 300px; */
   width: 100%;
 }
 
 .links {
-  padding-top: 20px;
+  padding-top: 5px;
 }
 
+.social-links h3,
 .quick-links li {
   list-style-type: none;
   padding-top: 5px;
 }
 
+.social-links h3,
 .quick-links li:first-child {
   color: #ffffff;
   padding-bottom: 10px;
@@ -127,10 +134,15 @@ h1 {
   letter-spacing: 20px;
 }
 
+.social-links p,
 .copyright p {
   padding-top: 10px;
   color: #ffffff;
   font-size: 12px; 
+}
+
+.line{
+  display: none;
 }
 
 /* Responsive styling */
@@ -139,14 +151,10 @@ h1 {
       font-size: 30px;
     }
     #footer {
-      margin-top: 150px;
       padding-top: 10px;
       height: 450px;
       width: 100%;
    }
-    .social-links {
-      margin-left: 40px;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -158,10 +166,10 @@ h1 {
       height: 50px;
       padding: 20px;
       border-radius: 0;
-      border: 1px solid #213DCD;
+      border: 1px solid  #6D9BF1;
   }
     .button-search {
-      background-color: #213DCD;
+      background-color:  #6D9BF1;
       border: none;
       box-shadow: none;
       color: #ffffff;
@@ -192,5 +200,15 @@ h1 {
     color: #676871;
     padding-top: 20px;
     font-weight: bold;
+  }
+
+  .line{
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    height: 0px;
+    border: 1px solid #ffffff;
+    width: 25%;
+    background: #000;
   }
 }
