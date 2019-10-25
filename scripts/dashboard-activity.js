@@ -49,10 +49,10 @@ if ( !wikiToken && !userEmail ) {
       });
     }
     addPosts()
-    setTimeout(() => {
+    /*setTimeout(() => {
       document.location.reload()
     }, 1000);
-
+    */
   })
 
 }

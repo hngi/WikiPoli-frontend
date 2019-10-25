@@ -1,8 +1,8 @@
 let mainBody = document.querySelector('#main-body-container')
 const api = "http://teamgandhi.000webhostapp.com/api";
 
-const wikiToken = sessionStorage.getItem("wikiToken");
-const userEmail = sessionStorage.getItem("userEmail");
+const wikiToken = localStorage.getItem("wikiToken");
+const userEmail = localStorage.getItem("userEmail");
 
 if ( wikiToken && userEmail ) {
   document.querySelector( "#main-navbar" ).innerHTML = `<h4 class="navbar-item" style="text-ah4gn: right">${userEmail}</li class="navbar-item">`;
