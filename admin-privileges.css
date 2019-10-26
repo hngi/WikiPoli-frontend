@@ -3,13 +3,14 @@
     html{
 	margin: 0;
 	padding: 0;
-	box-sizing: content-box;
 	--sidebar-width: 18vw;
 }
    body{
      padding:0;
     margin:0;
     background-color: #E9EDFA;
+     flex-wrap: nowrap; 
+     overflow-x: visible;
 }
 li{
     list-style: none;
@@ -124,12 +125,21 @@ li{
 {
 	font-weight: 100;
 	text-align: center;
-	color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.8);
+    flex-wrap: nowrap; 
+    width: 100%;
+    flex-wrap: nowrap; 
+    overflow-x: hidden;
 }
+
 
 .center-main{
     background-color: white;
     margin-left:3em;
+    flex-wrap: nowrap; 
+    width: 100%;
+    flex-wrap: nowrap; 
+    overflow-x: hidden;
    
 }
 
@@ -155,7 +165,7 @@ li{
 }
 .label{
     font-weight: lighter;
-    color:#c4c4c4
+    color:#6A9AD1;
 }
 #field2{
     margin-top:3%;
@@ -249,7 +259,7 @@ a{
         }
         .bluebutton{
             color:white;
-            width:13%;
+            width:15%;
             height:4%;
             background-color:#6A9AD1;
             margin-top:2%;
@@ -276,6 +286,7 @@ a{
     .label{
         padding-left: 0px;
         font-size:9px;
+        color:#6A9AD1;
     }
     
 }
