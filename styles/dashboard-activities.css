@@ -56,9 +56,15 @@
 
 /* 3.1 Lists */
 
-.main-ul li {
-	display: relative;
-	width: 103px;
+.logo{
+ flex-basis: 50%;
+}
+
+.main-ul {
+text-align: right;
+flex-basis: 50%;
+margin-right: 10px;
+
 }
 
 ul {
@@ -186,11 +192,6 @@ h2 {
 		width: 25%;
 	}
 
-
-	.main-ul li {
-		display: relative;
-		width: 200px;
-	}
 
 	.top-bar {
 		display: flex;

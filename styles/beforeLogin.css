@@ -165,9 +165,8 @@ line-height: 1.5;
 }
 #footer {
     background-color: #213DCD; 
-    margin-top: 32%;  /* YOU CAN PULL THIS OUT WHEN YOU IMPLEMENT YOUR PAGE.*/
+    margin-top: 40px;  /* YOU CAN PULL THIS OUT WHEN YOU IMPLEMENT YOUR PAGE.*/
     padding-top: 10px;
-    /* height: 300px; */
     width: 100%;
   }
   
@@ -208,4 +207,3 @@ line-height: 1.5;
   .line{
     display: none;
   }
-
