@@ -1,12 +1,135 @@
-html,body{
-    padding:0;
+
+
+    html{
+	margin: 0;
+	padding: 0;
+	box-sizing: content-box;
+	--sidebar-width: 18vw;
+}
+   body{
+     padding:0;
     margin:0;
     background-color: #E9EDFA;
+}
+li{
+    list-style: none;
+
+}
+:any-link{
+    text-decoration: none;
+}
+.admin-main-general > header
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	font-size: 20px;
+	padding: 0.2rem 20px;
+}
+.admin-main-general > header .icon-div img
+{
+	margin-right: 0.2rem;
+}
+.admin-main-general > header .icon-div span
+{
+	font-weight: 900;
+	font-size: 30px;
+}
+.admin-main-general > header #user-div
+{
+	display: flex;
+	flex-direction: row;
+	height: 100%;
+}
+.admin-main-general > header #name-plate
+{
+	align-self: center;
+	margin-right: 1rem;
+}
+
+#admin-sidebar-general
+{
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100vh;
+	width: var(--sidebar-width);
+	background-color: #E9EDFA; 
+	padding-top: 5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	z-index: 5;
+	font-size: 17px;
+}
+#admin-sidebar-general .icon-div
+{
+	display: none;
+}
+#admin-sidebar-general .icon-div img
+{
+	margin-right: 0.2rem;
+}
+#admin-sidebar-general .icon-div span
+{
+	font-weight: 900;
+	font-size: 30px;
+}
+#admin-sidebar-general .sidebar-links
+{
+	margin: 0.2rem 1rem;
+	padding: 0.3rem 1.5rem;
+	display: block;
+	align-self: flex-start;
+	transition: 0.4s ease-out;
+}
+#admin-sidebar-general .sidebar-links:hover
+{
+	color: blue;
+}
+#admin-sidebar-general .sidebar-active-link
+{
+	color: rgb(220, 230, 245);
+	background-color: #6D9BF1; /*darkblue;*/
+	align-self: stretch;
+}
+#mobile-bars 
+{
+    position: fixed;
+    left: -35vw;
+    top: 3vh;
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.7);
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+.stix 
+{
+    border-radius: 3px;
+    height: 3px;
+    width: 30px;
+    background-color: dimgray;
+    margin: 5px 0;
+    transition: 0.4s ease;
+}
+#mobile-bars-check 
+{
+    display: none;
+}
+
+
+#admin-main #intro
+{
+	font-weight: 100;
+	text-align: center;
+	color: rgba(0, 0, 0, 0.8);
 }
 
 .center-main{
     background-color: white;
-    margin-left:5em;
+    margin-left:3em;
    
 }
 
@@ -26,6 +149,7 @@ html,body{
     line-height:200%;
 }
 .heavy-weight{
+    padding-left: 10px;
     font-weight: bold;
     color:#000;
 }
@@ -34,12 +158,15 @@ html,body{
     color:#c4c4c4
 }
 #field2{
-    margin-top:5%;
-    padding-left:4%;
+    margin-top:3%;
+    padding-left:6%;
+    height: auto;
+    
 }
 #field1{
-    margin-top:5%;
-    padding-left:4%;
+    margin-top:3%;
+    padding-left:6%;
+    height: auto;
 }
 .bluebutton{
     color:white;
@@ -49,12 +176,7 @@ html,body{
     margin-top:2%;
     margin-bottom:2%;
 }
-.rightlink{
-    margin-left:47em;
-}
-.leftlink{
-    margin-left:12em;
-}
+
 .profimg{
     margin-left:2%;
     border:1px solid lightgray;
@@ -64,36 +186,66 @@ html,body{
 a{
     color:#6A9AD1;
 }
-.left-margin-1{
-    margin-left: 35%;
-}
-.left-margin-2{
-    margin-left: 32.5%;
-}
-.left-margin-3{
-    margin-left: 15%;
-}
+
 .input-field{
     width:16em;
     height:1.3em;
     font-size:1em;
 }
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+.first{
+    flex:1;  
+}
+.container1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.first{
+    flex:1;
+}
+.container3{
+    padding-left: 14em;
+    display: flex;  
+    flex-wrap: wrap; 
+}
+.bottomlink{
+    flex:1;
+}
+
+
+
 @media screen and (max-width: 990px){
-    a{
-        font-size:9px;
-    }
-    .left-margin-1{
-        margin-left: 10%;
-    }
-    .left-margin-2{
-        margin-left: 10%;
-    }
-    .left-margin-3{
-        margin-left: 10%;
-    }
+   
+   
         .center-main{
         margin-top:0px;
         margin-left:5em;
+        }
+        .sitename{
+            font-size:12px;
+            font-weight:bold;
+            color:#000000;
+        }
+        .poli{
+            color:#6A9AD1;
+        }
+        .hello{
+            text-align: end;
+        }
+        .forms{
+            margin-left:8em;
+            line-height:200%;
+        }
+        .heavy-weight{
+            padding-left: 30px;
+            font-weight: bold;
+            color:#000;
         }
         .bluebutton{
             color:white;
@@ -110,12 +262,12 @@ a{
         font-size:0.7em;
     }
     #field2{
-        margin-top:5%;
-        padding-left:4%;
+        margin-top:3%;
+        padding-left:2%;
     }
     #field1{
-        margin-top:5%;
-        padding-left:4%;
+        margin-top:3%;
+        padding-left:2%;
     }
     .forms{
         margin-left:3em;
@@ -125,11 +277,5 @@ a{
         padding-left: 0px;
         font-size:9px;
     }
-    .rightlink{
-        padding-left: 20em;
-        
-    }
-    .leftlink{
-        padding-left:-7em ;
-    }
+    
 }

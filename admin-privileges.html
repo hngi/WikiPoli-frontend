@@ -6,7 +6,8 @@
     <title>Admin Privileges</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="admin-privileges.css" />
-    <link rel="stylesheet" type="text/css" href="styles/admin-dashboard-general.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/admin-dashboard-general.css" />
+    
     <link rel="icon" type="img/png" href="images/favicon.png">
 </head>
 <body>
@@ -30,7 +31,7 @@
             </section>
     
       
-    <div class="center-main">
+    <div class="center-main" id="admin-main intro">
         <div><span class="sitename"><span>Wiki</span><span class="poli">Poli</span></span><span class="hello">Hello, Super Admin<span class="profimg"><img src="images/profilepic.png" height="30px"></span></span></div>
         <form action="" method="post">
         <div class="forms">
@@ -39,25 +40,33 @@
                     <span id="errorMsg"></span>
                     <fieldset id="field1">
                     <h4 class="heavy-weight">Change User Privilege</h4>
-                    <p><span id="name1ErrorMsg"></span>
-                       <span id="email1ErrorMsg"></span>
-                    </p>
-                    <label for="name" class="label">Name </label>
-                   </span><label for="email" class="label left-margin-1"> Email</label><br>
-                    <input type="text" id="name1" name="name"class="input-field" required>
-                    <input type="email"  id="email1" name="email" class="input-field left-margin-3" required><br>
-                   </span><label for="priv" class="label">Privilege</label>
-                    <label for="privilegelevel" class="label left-margin-2">Privilege Level</label><br/>
-                    <select id="privilege1" class="input-field">
-                            <option value="1">Admin</option>
-                            <option value="2">Non-Admin</option>
-                    </select>
-                        
+                    <span id="name1ErrorMsg"></span>
+                    <span id="email1ErrorMsg"></span>
+                    <div class="container">
+                        <div class="first">
+                    <label for="name" class="label">Name</label><br>
+                    <input type="text" id="name1" name="name"class="input-field" required></div>
+
+                    <div class="first">
+                   <label for="email" class="label left-margin-1"> Email</label><br>
+                    <input type="email"  id="email1" name="email" class="input-field left-margin-3" required>
+                    </div></div><br>
+                    
+                    <div class="container">
+                    <div class="first">
+                   <label for="priv" class="label">Privilege</label><br>
+                   <select id="privilege1" class="input-field">
+                    <option value="1">Admin</option>
+                    <option value="2">Non-Admin</option>
+                    </select></div><br>
+
+                        <div class="first">
+                    <label for="privilegelevel" class="label left-margin-2">Privilege Level</label><br/>   
                     <select id="privilegelevel" class="input-field left-margin-3">
                        <option value="1">1</option>
                        <option value="2" selected>2</option>
                        <option value="2">3</option>
-                    </select><br/>
+                    </select></div></div>
                     <button type="button" class="bluebutton">ADD</button>
                 </div>
                 </form>
@@ -68,31 +77,44 @@
                                 <div class="forms">
                     <h4 class="heavy-weight">Add Admin</h4>
                     <span id="errorMsg1"></span> 
-                    <p><span id="name2ErrorMsg"></span><span id="email2ErrorMsg"></span>
-                       </span> <span id="passwordErrorMsg"></span></p>
-                    <label for="name" class="label">Name</label>
-                    <label for="email" class="label left-margin-1">Email</label><br/>
+                    <span id="name2ErrorMsg"></span>
+                        <span id="email2ErrorMsg"></span>
+                       </span> <span id="passwordErrorMsg"></span>
+
+                       <div class="container">
+                           <div class="first">
+                    <label for="name" class="label">Name</label><br>
                     <input type="text"  id="name2" name="name" class="input-field"required>
+                           </div>
+
+                       <div class="first">
+                    <label for="email" class="label left-margin-1">Email</label><br/>
                     <input type="email" id="email2" name="email" class="input-field left-margin-3" required>
-                    <br/>
-                    
-                    <label for="priv" class="label">Privilege</label>
-                    <label for="password" class="label left-margin-2">Set Password</label><br/>
-                     <select id="privilege2" class="input-field"><br>
+                    <br/></div></div><br>
+
+                    <div class="container">
+                    <div class="first">
+                    <label for="priv" class="label">Privilege</label><br>
+                    <select id="privilege2" class="input-field"><br>
                         <option value="1">Admin</option>
                         <option value="2">Non-Admin</option>
-                    </select>
+                    </select></div>
+
+                    <div class="first">
+                    <label for="password" class="label left-margin-2">Set Password</label><br/>
                     <input type="password"  id="password" name="password" class="input-field left-margin-3" required>
-                   <br/>
-                    <button type="button" class="bluebutton">Create</button>
-                    </div>
+                   <br/></div></div>
+                    <button type="button" class="bluebutton">Create</button>  
                 </form>
+                </div>
                 </fieldset>
                 
+                <div class="container3">
+              <div> <a href="#" class="bottomlink">Perform bulk operations</a></div>
+                <div>  <a href="#" class="bottomlink">View list of Admins</a></div>
                 
-                <a href="#" class="leftlink">Perform bulk operations</a>
-                <a href="#" class="rightlink">View list of Admins</a>
-        </div>
+                </div>
+        
     
     </div>
     </div>
