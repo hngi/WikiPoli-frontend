@@ -37,13 +37,14 @@ aside {
 
 nav {
 	display: flex;
-	justify-content: space-between;
 	margin-bottom: 5px;
 }
 
 main {
-	width: 100%;
-	margin: 20px 5px 10px 5px;
+ width: 100%;
+ position: relative;
+ margin: 20px 5px 10px 5px;
+ overflow-x: hidden;
 }
 
 .most-recent-activity {
@@ -73,9 +74,15 @@ main {
 
 /* 3.1 Lists */
 
-.main-ul li {
-	display: relative;
-	width: 103px;
+.logo{
+ flex-basis: 50%;
+}
+
+.main-ul {
+text-align: right;
+flex-basis: 50%;
+margin-right: 10px;
+
 }
 
 ul {
@@ -177,11 +184,6 @@ h2 {
 
 	main {
 		margin-left: 20px;
-	}
-
-	.main-ul li {
-		display: relative;
-		width: 200px;
 	}
 
 	.top-bar {
