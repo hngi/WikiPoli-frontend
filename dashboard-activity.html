@@ -3,59 +3,53 @@
 
 <head>
 	<meta charset="utf-8" />
-	<title>Dashboard - Wiki</title>
+	<title>Dashboard | Activities</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 	 crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="./styles/dashboard-activities.css" />
+	<link rel="stylesheet" type="text/css" href="styles/admin-dashboard-sidebar.css">
+	<link rel="stylesheet" href="styles/dashboard-activities.css" />
+	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 	<link rel="icon" type="img/png" href="images/favicon.png">
 </head>
 
 <body>
+
 	<div class="dashboard-container">
-		<aside>
-			<ul class="aside-ul">
-				<li>
-					<a href="admin-dashboard-general.html">Dashboard</a>
-				</li>
-				<li class="active">
-					<a href="post-page-2.html">Activities</a>
-				</li>
-				<li>
-					<span style="cursor: pointer" data-target="#showPostModal" data-toggle="modal" id="display-modal" href="#">Add Post +</span>
-				</li>
-				<!-- <li>
-					<a href="">Add Privileges</a>
-				</li>
-				<li>
-					<a href="">Block/Unblock</a>
-				</li> -->
-				<li>
-					<a id="logout-button" href="">Logout</a>
-				</li>
-			</ul>
-		</aside>
-		<main>
-			<nav>
-				<div class="logo">
-					<h1>
-						<a href="">
-							<img src="https://res.cloudinary.com/yvehogan/image/upload/v1571741975/Vector_6_xtinij.png" alt="home logo">
-							<span><b>Wiki</b>Poli</span>
-						</a>
-					</h1>
-				</div>
-				<ul class="main-ul">
-					<li><p id="user-email"></p>
-						<!-- <img class="profile" src="https://res.cloudinary.com/joshuafolorunsho/image/upload/v1571776948/profile.png" alt="profile picture"> -->
-					</li>
-				</ul>
-			</nav>
+		<input type="checkbox" id="mobile-bars-check" />
+	    <label for="mobile-bars-check" id="mobile-bars">
+	        <div class="stix" id="stik1"></div>
+	        <div class="stix" id="stik2"></div>
+	        <div class="stix" id="stik3"></div>
+	    </label>
+		<section id="admin-sidebar-general">
+			<div class="icon-div">
+				<img src="images/house-icon.png" height="30px">
+				<span>Wiki</span><span class="blue-text">Poli</span>
+			</div>
+			<a href="admin-dashboard-general.html" class="sidebar-links">Dashboard</a>
+			<a href="dashboard-activity.html" class="sidebar-links sidebar-active-link">Activities</a>
+			<a href="post-page-2.html" class="sidebar-links">Posts</a>
+			<a href="" class="sidebar-links">Users</a>
+			<a href="admin-privileges.html" class="sidebar-links">Manage Privileges</a>
+			<a href="" class="sidebar-links" id="logout">Logout</a>
+		</section>
+		<main class="admin-main-general">
+			<header>
+			<div class="icon-div">
+				<img src="images/house-icon.png" height="30px">
+				<span>Wiki</span><span class="blue-text">Poli</span>
+			</div>
+			<div id="user-div">
+				<span id="name-plate">Hello, xyluz</span>
+				<img src="images/profilepic.png" height="30px">
+			</div>
+		</header>
 
 			<div class="main-content">
 				<div class="top-bar">
-					<h2>Activities</h2>
+					<h2 id="activity-intro">Activities</h2>
 					<div class="search">
 						<div class="input-group flex-nowrap">
 							<div class="input-group-prepend">
@@ -67,7 +61,7 @@
 								<i class="fa fa-search icon"> 
 							  </i> 
 								<input class="input-field" 
-									   type="text"> 
+									   type="text" id="search-ish"> 
 							
 							<button class="btn search-btn">Search</button>
 							</div>
@@ -99,26 +93,6 @@
 
 					<!-- Second container -->
 					<div class="container-activity container-activity-2">
-						<div class="activity child">
-							<p>Posted by: John Doe</p>
-							<button class=" activity-cta">Publish +</button>
-						</div>
-						<div class="activity child">
-							<p>Category: Politicain</p>
-							<button class=" activity-cta">Disapprove +</button>
-						</div>
-						<div class="activity child">
-							<p>Status: Wating Approval</p>
-							<button class=" activity-cta">View full post +</button>
-						</div>
-						<div class="activity child">
-							<p>Date: 22 / 10 / 2019</p>
-							<button class=" activity-cta">Edit +</button>
-						</div>
-					</div>
-
-					<!-- Third container -->
-					<div class="container-activity container-activity-3">
 						<div class="activity child">
 							<p>Posted by: John Doe</p>
 							<button class=" activity-cta">Publish +</button>
@@ -173,7 +147,10 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 	<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="scripts/dashboard-activity.js"></script>
+	<!--script type="text/javascript" src="scripts/dashboard-activity.js"></script-->
 </body>
 
 </html>
+
+
+<script src="scripts/admin-sidebar-general.js"></script>
