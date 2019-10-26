@@ -18,7 +18,15 @@ padding: 8px 20px;
 margin-top: 5px;
 font-size: 1.5em;
 }
-
+.col-sm
+{
+  cursor: pointer;
+  transition: 0.3s ease-out;
+}
+.col-sm:hover
+{
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.2);
+}
 .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
@@ -57,7 +65,7 @@ margin-right: 5px;
 
 }
 .col-sm {
-border: 2px solid #3333FF;
+border: 1px solid #6A9AD1;
 margin-top: 70px;
 }
 #post-1{
