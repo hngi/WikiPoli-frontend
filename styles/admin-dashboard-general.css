@@ -49,6 +49,10 @@ html
     	padding-top: 20px;
     	padding-bottom: 30px;
     }
+    #user-div
+    {
+    	margin-top: 0.5rem;
+    }
     #main-options
 	{
 		margin: 2rem 1rem;

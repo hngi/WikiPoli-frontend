@@ -102,6 +102,10 @@ main.admin-main-general
 		align-self: stretch;
 		text-align: center;
 	}
+	#name-plate
+	{
+		font-size: 20px;
+	}
 }
 /* 3.2 Links */
 
