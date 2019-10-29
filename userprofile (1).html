@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>User</title>
+  <title>WikiPoli | User Profile</title>
  
   
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -98,12 +98,16 @@
         <main class="container">
             <div class="row">
                 <div class="aside col-12 col-sm-4 col-md-4 col-lg-4 py-15">
-                    <h2>John Doe</h2>
-                    <p>I am a Lifestyle journalist par excellence, politics is my game. <br> <b><i class="fas fa-map-marker-alt"></i> Lagos, Nigeria</b> </p>
+                    <div class="text-center" contenteditable="true">
+                      <h2 id="name">John Doe</h2>
+                    <p id="desc">I am a Lifestyle journalist par excellence, politics is my game. <br> <br /><b id="location"><i class="fas fa-map-marker-alt"></i> Lagos, Nigeria</b> </p>
     
-                    <p><i class="far fa-calendar-alt"></i> Joined February, 2008</p>
+                    <p id=""><i class="far fa-calendar-alt"></i> Joined February, 2008</p>
                     <p class="contrib"><b>50 Contributions &nbsp; 20 Posts &nbsp; 20 Favourites</b></p>
-                    
+
+                    <button class="edit-profile" href="userprofile-edit.html" onclick="myFunction" style="background-color: #6D9BF1 !important; border-radius: 10px; padding: 10px; margin: 10px; border: none;"><i class="fas fa-user-edit"></i>&nbsp;&nbsp;Edit Profile</i></button>
+                    </div>
+
                     <div class="images">
                         
                           <img src="https://res.cloudinary.com/nkechi-christabel/image/upload/c_scale,h_190,w_281/v1571752819/yrwoswyydymwlcjraa1d.jpg" alt="...">
@@ -152,7 +156,7 @@
                       
                         <p>He was the Nigerian Presidential Candidate of the Alliance for New Nigeria party 
                           (ANN) for the 2019 Presidential elections. He was born to Lyiwola and Adeline Durotoye,
-                          both profesors at the University... <br><a href="">Read More</a></p>
+                          both professors at the University... <br><a href="">Read More</a></p>
                       </div>
                       <div class="img-container Fela-posts mb-5">
               
@@ -224,7 +228,7 @@
                           </section>
                       
                       </div>
-  
+            </div>
         </main>
     <!-- TechieNg's starts -->
     
