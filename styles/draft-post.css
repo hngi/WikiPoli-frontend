@@ -59,6 +59,10 @@ footer > #links-container
 	flex-direction: row;
 	justify-content: space-around;
 }
+footer .border
+{
+	display: none;
+}
 footer > #links-container > section
 {
 	display: flex;
@@ -183,4 +187,62 @@ footer #copyright
 	color: white;
 	background-color: #6D9BF1;
 	border: 1px solid #6D9BF1;
+}
+
+
+@media (max-width: 860px)
+{
+	#editor-section #intro
+	{
+		font-size: 30px;
+	}
+	#editor-section #editor-wrapper
+	{
+		width: 90%;
+		padding: 1.5rem 0.7rem 0.5rem;
+	}
+	#editor-section #post-body, #editor-section #post-title
+	{
+		font-size: 16px;
+	}
+	#editor-section #btns-wrapper
+	{
+		width: 100%;
+		justify-content: space-around;
+		padding: 0 2rem 1rem;
+	}
+	#editor-section #btns-wrapper #save-draft
+	{
+		margin: 0;
+	}
+	footer > #links-container
+	{
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	footer .border
+	{
+		display: block;
+		width: 40%;
+		border: 1px solid yellow;
+		margin: 0.5rem auto;
+	}
+	footer > #links-container > section > *
+	{
+		margin: 0.2rem auto;
+	}
+	footer #socials
+	{
+		width: 50%;
+		justify-content: space-between;
+	}
+	footer #copyright
+	{
+		margin: 1rem auto;
+		font-size: 12px;
+	}
+	footer #email-contact
+	{
+		font-size: 13px;
+	}
 }
