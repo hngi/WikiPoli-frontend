@@ -24,12 +24,14 @@ const api = "http://teamgandhi.000webhostapp.com/api";
 document.getElementById( 'signup-form' ).addEventListener( 'submit', ( e ) => {
 	e.preventDefault();
 	const name = document.querySelector('#name').value
-	const email = document.querySelector("#email").value;
+  const email = document.querySelector("#desc").value;
+  const desc = document.querySelector("#location").value;
+	const location = document.querySelector("#email").value;
 	const password = document.querySelector("#password").value;
 	const confirmPassword = document.querySelector("#confirmPassword").value;
 	
 	if ( password !== confirmPassword ) {
-		alert( "Passwords dont match!!" )
+		alert( "Passwords don't match!!" )
 	} else {
 		
 		

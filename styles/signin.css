@@ -55,6 +55,18 @@ html {
     background-color: #6D9BF1 !important;
 }
 
+.btn-google {
+    background-color: rgb(151, 25, 25) !important;
+}
+
+.g-signin2{
+    margin-left:73px !important;
+}
+.fab {
+    color: white;
+    padding-right: 8px;
+}
+
 .form-control,
 .btn-block {
     width: 80%;
