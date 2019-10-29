@@ -1,4 +1,3 @@
-
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.0.0/workbox-sw.js");
 
 if (workbox) {
@@ -11,7 +10,7 @@ if (workbox) {
     workbox.routing.registerRoute(
         /(.*)others(.*)\.(?:png|gif|jpg)/,
         new workbox.strategies.CacheFirst({
-            cacheName: "images",
+            cacheName: "Images",
             plugins: [
                 new workbox.expiration.Plugin({
                     maxEntries: 50,
