@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--required meta tags-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+
+    <!--google font link-->
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--bootstrap link-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Draft</title>
+
+    <style>
+    
+        #sidebar{
+            background-color: rgba(109, 154, 238, 0.19);
+            padding-right: 20%;
+            color: #000;
+        }
+
+        .btn{
+            background-color: #6d9bf1;
+            color: #fff;
+        }
+
+
+    </style>
+</head>
+
+<div class="wrapper container-fluid">
+
+    <!--site's logo-->
+    <a href="index.html" class="brand d-inline" style="width: 30px;">
+            <img src="https://res.cloudinary.com/adenike/image/upload/v1571756162/wikiPoli5_9_ln1eyb.png">
+        </a>
+
+        <div class="float-right d-inline mt-3">
+            <h6>Hello superAdmin<a href="" class="btn rounded-0 ml-4" id="logout"> Logout</a></h6>
+            
+            <div class=" pr-3 pt-1">
+                <input class="form-control-sm rounded-0 p-0" placeholder="Enter Politician's name">
+                <button type="submit" class="btn rounded-0" id="search">search</button>
+            </div>
+        </div>
+
+        <div class="row row-offcanvas row-offcanvas-left">
+            <!-- sidebar -->
+            <div class="col-sm-3 col-xs-1 sidebar-offcanvas" id="sidebar">
+                <ul class="nav nav-stacked" id="menu">
+                        <li class="nav-item"> 
+                                <a class="nav-link pl-0 text-dark" href="#">Dashboard</a>
+                        </li>
+
+                        <li class="nav-item"> 
+                                <a class="nav-link pl-0 text-dark" href="#">Admins</a>
+                        </li>
+
+                        <li class="nav-item"> 
+                                <a class="nav-link pl-0 text-dark" href="#">Activities</a>
+                        </li>
+
+                        <li class="nav-item"> 
+                                <a class="nav-link pl-0 text-dark" href="#">Add post</a>
+                        </li>
+
+                        <li class="nav-item"> 
+                                <a class="nav-link pl-0 text-dark" href="#">Add privileges</a>
+                        </li>
+
+                        <li class="nav-item"> 
+                                <a class="nav-link pl-0 text-dark" href="#">block/unblock</a>
+                        </li>
+
+                        <li class="nav-item"> 
+                                <a class="nav-link pl-0 text-dark btn rounded-0" href="#">Drafts</a>
+                        </li>
+
+                        <li class="nav-item"> 
+                                <a class="nav-link pl-0 text-dark" href="#">Log out</a>
+                        </li>
+                </ul>
+            </div>
+            <!-- /sidebar -->
+    
+            <!-- main right col -->
+            <div class="col-sm-9 col-xs-11" id="main">
+                    <section class="pb-5">
+                            <h3>Drafts</h3>
+            
+                            <div class="mt-5 pb-3">
+            
+                                <div class="title">
+            
+                                    <!--display image-->
+                                    <img  src="https://res.cloudinary.com/adenike/image/upload/v1572372557/Ellipse_46_ffyasd.png">
+                                    
+                                    <!--title of the post/message-->
+                                    <h5 class="d-inline">(no title)</h5>
+                                </div>
+            
+                                <!--message content-->
+                                <div class="content">
+                                    <div class="ml-5 mr-5">
+                                        <p class="d-inline">Adetokunbo Olufela Durotoye (born in Ibadan, Oyo State on the 12th May 1971)
+                                        is a business consultant, leadership expert and motivational speaker. 
+                                        Fela is the president of the...</p>
+                                    </div>
+            
+                                    <!--delete draft-->
+                                    <i class="fa fa-trash-o float-right d-inline" aria-hidden="true"></i>
+                                </div>
+            
+                                <!--uploaded image-->
+                                <div class="border rounded-lg float-left ml-5 mr-5 p-2"><i class="fa fa-picture-o" aria-hidden="true"></i>1297473_788...7</div>
+                            </div>
+                        
+            
+                            <div class="mt-5 pt-3 pb-3">
+            
+                                <div class="title">
+                                    <!--display image-->
+                                    <img  src="https://res.cloudinary.com/adenike/image/upload/v1572372557/Ellipse_46_ffyasd.png">
+                                    
+                                    <!--title of the post/message-->
+                                    <h5 class="d-inline">(no title)</h5>
+                                </div>
+            
+                                <!--message content-->
+                                <div class="content">
+                                    <div class="ml-5 mr-5">
+                                        <p class="d-inline">Adetokunbo Olufela Durotoye (born in Ibadan, Oyo State on the 12th May 1971)
+                                        is a business consultant, leadership expert and motivational speaker. 
+                                        Fela is the president of the...</p>
+                                    </div>
+            
+                                    <!--delete draft-->
+                                    <i class="fa fa-trash-o float-right d-inline" aria-hidden="true"></i>
+                                </div>
+            
+                                <!--uploaded image-->
+                                <div class="border rounded-lg float-left ml-5 mr-5 p-2"><i class="fa fa-picture-o" aria-hidden="true"></i>1297473_788...7</div>
+                            </div>
+            
+                            <div class="mt-5 pt-3 pb-3">
+            
+                                <div class="title">
+                                    <!--display image-->
+                                    <img  src="https://res.cloudinary.com/adenike/image/upload/v1572372557/Ellipse_46_ffyasd.png">
+                                    
+                                    <!--title of the post/message-->
+                                    <h5 class="d-inline">Muhammed Buhari</h5>
+                                </div>
+            
+                                <!--message content-->
+                                <div class="content">
+                                    <div class="ml-5 mr-5">
+                                        <p class="d-inline">(no body)</p>
+                                    </div>
+            
+                                <!--delete draft-->
+                                <i class="fa fa-trash-o float-right d-inline" aria-hidden="true"></i>
+                                </div>
+            
+                            </div>
+            
+                            <div class="mt-5 pt-3 pb-3">
+            
+                                <div class="title">
+                                    <!--display image-->
+                                    <img  src="https://res.cloudinary.com/adenike/image/upload/v1572372557/Ellipse_46_ffyasd.png">
+                                    
+                                    <!--title of the post/message-->
+                                    <h5 class="d-inline">Muhammed Buhari</h5>
+                                </div>
+            
+                                <!--message content-->
+                                <div class="content">
+                                    <div class="ml-5 mr-5">
+                                        <p class="d-inline">Adetokunbo Olufela Durotoye (born in Ibadan, Oyo State on the 12th May 1971)
+                                        is a business consultant, leadership expert and motivational speaker. 
+                                        Fela is the president of the...</p>
+                                    </div>
+            
+                                    <!--delete draft-->
+                                    <i class="fa fa-trash-o float-right d-inline" aria-hidden="true"></i>
+                                </div>
+            
+                                <!--uploaded image-->
+                                <div class="border rounded-lg float-left ml-5 mr-5 p-2"><i class="fa fa-picture-o" aria-hidden="true"></i>1297473_788...7</div>
+                            </div>
+            
+                            <div class="mt-5 pb-5">
+            
+                                <div class="title">
+            
+                                    <!--display image-->
+                                    <img  src="https://res.cloudinary.com/adenike/image/upload/v1572372557/Ellipse_46_ffyasd.png">
+                                    
+                                    <!--title of the post/message-->
+                                    <h5 class="d-inline">Prof. Osinbajo</h5>
+                                </div>
+            
+                                <!--message content-->
+                                <div class="content">
+                                    <div class="ml-5 mr-5">
+                                        <p class="d-inline">Adetokunbo Olufela Durotoye (born in Ibadan, Oyo State on the 12th May 1971)
+                                        is a business consultant, leadership expert and motivational speaker. 
+                                        Fela is the president of the...</p>
+                                    </div>
+            
+                                    <!--delete draft-->
+                                        <i class="fa fa-trash-o float-right d-inline" aria-hidden="true"></i>
+                                </div>
+            
+                                <!--uploaded image-->
+                                <div class="border rounded-lg float-left ml-5 mr-5 p-2"><i class="fa fa-picture-o" aria-hidden="true"></i>1297473_788...7</div>
+                            </div>
+                            
+            
+                        </section>
+            </div>
+            <!-- /main -->
+        </div>
+    </div>
