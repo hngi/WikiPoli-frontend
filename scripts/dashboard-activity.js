@@ -1,5 +1,6 @@
 
 
+
 const api = "http://teamgandhi.000webhostapp.com/api";
 const wikiToken = localStorage.getItem( 'wikiToken' );
 const userEmail = localStorage.getItem('userEmail')
@@ -16,7 +17,7 @@ if ( !wikiToken && !userEmail ) {
     
     setTimeout(() => {
       location.href="index.html"
-    }, 2000);
+    }, 500);
   } )
   
   document.querySelector('#add-post-button').addEventListener("click", (e) => {
@@ -50,8 +51,8 @@ if ( !wikiToken && !userEmail ) {
     addPosts()
     /*setTimeout(() => {
       document.location.reload()
-    }, 1000);*/
-
+    }, 1000);
+    */
   })
 
 }

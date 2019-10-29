@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="user_edit_post.css">	
+    <link rel="icon" type="img/png" href="images/favicon.png">
 	<title>Wikipoli Edit post</title>
 
 </head>
@@ -25,7 +26,7 @@
 						<a href="#" class="navbar-link" style="color: black;" id="logIn">Home</a>
 					</li>
 					<li class="navbar-item mr-5">
-						<a href="#" class="btn navbar-link" id="signUp" style="background-color: #0000FF;">Post</a>
+						<a href="#" class="btn navbar-link" id="signUp" style="background-color: #6D9BF1;">Post</a>
 					</li>
 				</ul>
 			</div>						
@@ -37,31 +38,46 @@
 				<div class="col-md-6 edit_input">
 					<h3>Edit Post</h3>
 					<div class="col-md-12 row name">
-						<div class="col-md-6"><label>First Name</label><input type="text" placeholder="Olufela"></div>
-						<div class="col-md-6"><label>Last Name</label><input type="text" placeholder="Durotoye"></div>
+						<div class="col-md-6"><label>First Name</label><input type="text" class = "form-control"  placeholder="Olufela"></div>
+						<div class="col-md-6"><label>Last Name</label><input type="text" class="form-control" placeholder="Durotoye"></div>
 					</div>
 					<div class="col-md-12 dob ">
-						<div class=""><label>Date Of Birth</label><input type="date" placeholder=""></div>
+						<div class="input-group"><label>Date Of Birth</label><input type="date" class="form-control" placeholder="25/10/2019"></div>
 					</div>
 					<div class="col-md-12 occu ">
-						<div class=""><label>Occupation</label><input type="text" placeholder="Leadership expert, Motivational speaker"></div>
+						<div class="input-group"><label>Occupation</label><input type="text" class  = "form-control" placeholder="Leadership expert, Motivational speaker"></div>
 					</div>
 					<div class="col-md-12 child ">
-						<div class=""><label>No. Of Children</label><input type="number" max-width="50px" placeholder="3"></div>
+						<div class="input-group"><label>No. Of Children</label><input type="number" class = "form-control" width="50px" placeholder="3"></div>
 					</div>
 					<div class="col-md-12 spouse ">
-						<div class=""><label>Spouse name</label><input type="text" placeholder="Tara-Fela Durotayo"></div>
+						<div class="input-group"><label>Spouse name</label><input type="text" class = "form-control"  placeholder="Tara-Fela Durotayo"></div>
 					</div>
 					<div class="col-md-12 dob ">
-						<div class="">
+						<div class="edu">
 							<label>Education</label>
-							<div><input type="text" placeholder="Moremi Highschool"></div>
-							<div><input type="text" placeholder="Obafemi Awolowo University"></div>
-							<div><input type="text" Placeholder="Harvard University"></div>
+							<div class="input-group">
+								<input type="text" class = "form-control" aria-describedby = "basic-addon2" placeholder="Moremi Highschool"> 
+								<div class="input-group-append">
+    							<span class="input-group-text" id="basic-addon2">+</span>
+  								</div> 
+  							</div>
+							<div class="input-group" >
+								<input type="text" class = "form-control" aria-describedby = "basic-addon2" placeholder="Obafemi Awolowo University"> 
+								<div class="input-group-append">
+    								<span class="input-group-text" id="basic-addon2">+</span>
+    								<i class="fa fa-lg fa-trash" aria-hidden="true"></i>
+  								</div> 
+  							</div>
+							<div class="input-group" ><input type="text" class = "form-control" aria-describedby = "basic-addon2" Placeholder="Harvard University"><div class="input-group-append">
+    <span class="input-group-text" id="basic-addon2">+</span><i class="fa fa-lg fa-trash" aria-hidden="true"></i>
+  </div>  </div>
 						</div>
 					</div>
-					<div class="col-md-12 web">
-						<div class=""><label>WebSite</label><input type="text" placeholder="www.Feladurotayo.net"></div>
+					<div class="col-md-12 web ">
+						<div class="input-group"><label>WebSite</label><input type="text" class="form-control" placeholder="www.Feladurotayo.net">
+
+</div>
 					</div>
 				</div>
 				<div class="offset-md-1 col-md-5 edit_textarea">
@@ -85,37 +101,43 @@
 		</form>
 
 	</div>
-<div class="login-footer">
-
-       <div class="footer-links">
-            <div class="left">
-                <ul>
-                    <li><a href="#"><strong>Support</strong></a></li>
-                    <li><a href="#">Contact us</a></li>
-                    <li><a href="#">Terms of use</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Donations</a></li>
+<footer>
+        <div id="footer">
+          <div class="container">
+            <div class="row links">
+              <div class="col-md-4 col-sm-12  text-center">
+                <ul class="quick-links">
+                  <li>Legal</li>
+                  <li><a href="Terms-of-use.html">Terms of Use</a></li>
+                  <li><a href="privacypolicy.html">Privacy Policy</a></li>
                 </ul>
+              </div>
+              <div class="col-md-4 col-sm-12  text-center">
+                <ul class="quick-links">
+                  <li>Company</li>
+                  <li><a href="">About</a></li>
+                  <li><a href="">Careers</a></li>
+                  <li><a href="">FAQs</a></li>
+                  <li><a href="">Donations</a></li>
+                </ul>
+              </div>
+
+              <div class="col-md-4 col-sm-12  text-center">
+                <div class="text-center social-links">
+                  <h3>Connect With Us</h3>
+                  <a href="facebook.com"><span class="fa fa-facebook"></span></a>
+                  <a href="twitter.com"><span class="fa fa-twitter"></span></a>
+                  <a href="instagram.com"><span class="fa fa-instagram"></span></a>
+                  <p>contact@wikipoli.gq</p>
+                </div>
+              </div>
+              <div class="col-lg-12 copyright text-center">
+                <p>&copy; 2019 Wikipoli - All Rights Reserved</p>
+              </div>
             </div>
-           <div class="right">
-                <ul>
-                    <li><a href="#"><strong>Company</strong></a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">tour</a></li>
-                </ul> 
-           </div>
-           <div class="clear" style="clear: both"></div>
-            <ul class="icon-area">  
-                <li class="icon-area"><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                <li class="icon-area"><a href=""><i class="fab fa-twitter"></i></a></li>
-                <li class="icon-area"><a href=""><i class="fab fa-instagram"></i></a></li>
-                <li class="icon-area"><a href=""><i class="fab fa-linkedin-in"></i></a></li>
-                <li class="icon-area"><a href=""><i class="fab fa-pinterest-p"></i></a></li>
-            </ul>
-            <p>2019 WikiPoli. All Rights Reserved</p>
+          </div>
         </div>
-   </div>
+      </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
