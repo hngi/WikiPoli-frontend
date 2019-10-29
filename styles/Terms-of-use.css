@@ -1,133 +1,230 @@
-body  {
-    font-family: 'Lato', sans-serif;;
-    background: white;
-}    
- 
-img  {
-    height: 9em;
-    width: 11em;
-    margin-left: 5em;
-    margin-bottom: 0em;           
+/* Style for Navbar Starts */
+.navbar-custom li a {
+    color: #000;
 }
-.header   {
-    display: flex;
-    flex-direction: row;
-}        
-ul  {
-    list-style: none;
-    margin-left: 35em; 
-    float: right; 
-    margin-top: 4em;          
-}
-ul li  { 
-    display: inline-block;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 1em;
-    line-height: 2em;
-    text-align: center; 
-    color: black;
-    margin-left: 3em;
-    cursor: pointer;  
-    position: relative;             
-}
-ul li:hover  {
-    background-color:  white;
-    color: black;
-}
-ul li:active  {
-    top: 2px;
-}
-.post   {
-    padding: .1em 1.7em;
-    
-    color: white;
-    border: 1px solid #213DCD;       
-}
- .policy  {
-     margin: 0em 5em 5em 5em;
-     color: grey;
- }        
 
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.custom-toggler.navbar-toggler {
+    border-color: #000;
+}
+/* Style for Navbar Ends */
+.display-4 {
+font-weight: bold;
+font-size: 40px;
+line-height: 55px;
+}
+h1 {
+font-family: "Nunito", sans-serif;
+font-style: normal;
+letter-spacing: 0.655606px;
+color: #ffffff;
+text-align: center;
+}
 
-      /*css for footer */
-
-* {
-            font-family: Lato;
-            font-style: normal;
+h5 {
+font-family: "Nunito", sans-serif;
 }
-footer {
-            background: rgba(33, 60, 220, 0.1);
-            margin: auto;
-            overflow: hidden;
-            padding: 15px;
-        
+strong {
+font-size: 1.15rem;
 }
-.footer_elements,
-.footer_brand {
-            display:  flex;
-            flex-direction: column;
-            padding-inline-start:  0px;
-            align-items: center;
-            margin: 0 0 0 0;
-}
-.footer_elements {
-            width: auto;
-}
-.footer_elements li {
-            font-weight:  bold;
-            font-size: 18px;
-            display: inline-block;
-            padding:  5px;      
-            width: fit-content;
-}
-.footer_elements li  a {
-            text-decoration: none;
-            color: black;
-}
-.footer_brand  img {
-            height:  80px;
-            width: 100px;
-            margin-left: .2em;
-            vertical-align: middle;
-}
-@media screen  and (min-width: 600px){
-            .footer_brand {
-                                float: left;
-            }
-            .footer_brand {
-                                left: 223px;
-                                margin: 0 0 0 5vw ;
-            }
-            
-            .footer_elements li { 
-                                margin: 0 0 0 20px ;
-            }
-            .footer_elements{
-                                margin:  15px 0 0 0;
-                                /* line-height: 60px; */
-                                vertical-align: middle;
-                                flex-direction:  row;
-                                padding-inline-start:  0px;
-                                justify-content: flex-end;
-            }
-}
-@media only screen and (max-width: 700px) {
-body {
-margin-left: -3.5em;
-margin-right: 5em;
-}
-img  {
-width: 5em;
-height: 5em;
-}
-h1  {
-margin-top: .2em;
-}
-p  {
+p {
+font-family: "Nunito", sans-serif;
 font-size: .7em;
 }
-li  {
-font-size: .7em;
+.paragraph {
+font-family: "Open Sans", sans-serif;
+font-size: 16px;
+line-height: 22px;
+color: black;
+}
+.navbar {
+padding: .9rem 1rem;
+}
+.navbar-nav {
+margin-left: 18rem;
+}
+.nav-item {
+margin: 0 15px;
+font-family: "Nunito", sans-serif;
+font-style: normal;
+font-weight: bold;
+}
+.nav-link {
+font-size: 16px;
+line-height: 22px;
+letter-spacing: 0.655606px;
+color: #2a2b2a !important;
+}
+#learn {
+color: white !important
+}
+
+.secondheader {
+font-family: "Nunito", sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 27px;
+letter-spacing: 0.655606px;
+color: #6D9BF1;
+}
+.first {
+background: #2a2b2a;
+}
+.second {
+border: 0.5px solid #d0d0d0;
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+padding: 20px 80px;
+}
+
+.fourth {
+background: #3a0842;
+padding: 2.2em;
+}
+.fourth a {
+color: white;
+}
+.fifth {
+background: #2e0435;
+text-align: end;
+}
+.center {
+text-align: center;
+}
+.lead {
+font-family: "Nunito", sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 25px;
+line-height: 34px;
+}
+.sub-lead {
+font-family: "Open Sans", sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 22px;
+}
+
+.jumbotron {
+margin-bottom: 0;
+}
+
+li {
+list-style: none;
+color: white;
+}
+.expand {
+width: 91%
+}
+#footer{
+background: #6D9BF1 !important;
+}
+.social-links h3 {
+font-size: 1rem;
+line-height: 1.5;
+}
+/* Style for footer */
+.logo img {
+width: 120px;
+}
+
+#footer {
+background-color:  #6D9BF1; 
+padding-top: 10px;
+/* height: 300px; */
+width: 100%;
+}
+.fa-bars {
+color: #000000;
+}
+
+.links {
+padding-top: 5px;
+}
+
+.social-links h3,
+.quick-links li {
+list-style-type: none;
+padding-top: 5px;
+}
+
+.social-links h3,
+.quick-links li:first-child {
+color: #ffffff;
+padding-bottom: 10px;
+font-weight: bold;
+}
+
+.quick-links li a {
+color: #ffffff;
+text-decoration: none;
+}
+
+.social-links a span {
+color: #ffffff;
+letter-spacing: 20px;
+}
+
+.social-links p,
+.copyright p {
+padding-top: 10px;
+color: #ffffff;
+font-size: 12px; 
+}
+
+.line{
+display: none;
+}
+
+@media only screen and (max-width: 480px) {
+.display-4 {
+font-size: 35px;
+}
+h3 {
+margin-bottom: 1rem;
+}
+.my-5 {
+margin-top: 1rem !important;
+}
+.second {
+padding: 20px 50px;
+}
+#buttons button {
+margin-right: 0;
+margin-left: 0;
+margin-bottom: 10px;
+}
+}
+::-webkit-scrollbar {
+width: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+box-shadow: inset 0 0 5px grey;
+border-radius: 10px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #6D9BF1; 
+border-radius: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #6D9BF1; 
+}
+/*Responsive styling */
+@media screen and (max-width: 768px) {
+h1 {
+font-size: 30px;
+}
+#footer {
+padding-top: 10px;
+height: 450px;
+width: 100%;
 }
 }

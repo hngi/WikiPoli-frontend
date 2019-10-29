@@ -17,7 +17,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-size: 13px;
-	font-family: sans-serif;
+	font-family: "Lato", segoe UI, sans-serif;
 	color: #000000;
 }
 
@@ -26,24 +26,7 @@
 	*****************/
 
 .dashboard-container {
-	display: flex;
-}
-
-aside {
-	width: 200px;
-	height: 124vh;
-	background-color: #e9edfa;
-}
-
-nav {
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: 5px;
-}
-
-main {
-	width: 100%;
-	margin: 20px 5px 10px 5px;
+	display: block;
 }
 
 .most-recent-activity {
@@ -73,9 +56,15 @@ main {
 
 /* 3.1 Lists */
 
-.main-ul li {
-	display: relative;
-	width: 103px;
+.logo{
+ flex-basis: 50%;
+}
+
+.main-ul {
+text-align: right;
+flex-basis: 50%;
+margin-right: 10px;
+
 }
 
 ul {
@@ -83,24 +72,52 @@ ul {
 	display: inline;
 }
 
-aside li:first-child {
-	margin-top: 70px;
-}
-
-aside li {
-	margin: 20px 10% 0px 8%;
-}
-
 .active {
 	background: #6d9bf1;
 	padding: 4px 0px 4px 10px;
 }
 
+#admin-sidebar-general .sidebar-links
+{
+	padding: 3px 25px;
+}
+main.admin-main-general
+{
+	padding: 20px;
+}
+#activity-intro
+{
+	font-size: 35px;
+	color: rgba(0, 0, 0, 0.8);
+}
+#search-ish
+{
+	text-align: left;
+	padding-left: 40px;
+}
+@media (max-width: 860px)
+{
+	.top-bar {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin: 2rem auto;
+	}
+	.top-bar > *
+	{
+		align-self: stretch;
+		text-align: center;
+	}
+	#name-plate
+	{
+		font-size: 20px;
+	}
+}
 /* 3.2 Links */
 
 .active a {
 	color: #fff;
-	font-size: 1.1rem;
+	
 }
 
 a {
@@ -160,7 +177,7 @@ h2 {
 	margin-top: 20px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 860px) {
 	/*****************
 		1. Global styling
 		*****************/
@@ -175,23 +192,13 @@ h2 {
 		width: 25%;
 	}
 
-	main {
-		margin-left: 20px;
-	}
-
-	.main-ul li {
-		display: relative;
-		width: 200px;
-	}
 
 	.top-bar {
 		display: flex;
 		justify-content: space-between;
+		margin: 2rem auto;
 	}
 
-	.search {
-		margin-right: 6%;
-	}
 
 	.container-activity {
 		display: flex;
