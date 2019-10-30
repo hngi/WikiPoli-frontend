@@ -43,7 +43,7 @@ line-height: 30px;
 }
 
 main.main-section {
-width: 97%;
+width: 100%;
 }
 
 .intro-section{
@@ -55,7 +55,13 @@ width: 97%;
 font-weight: bold;
 font-size: 1.7rem;
 line-height: 40px;
+margin-left: 38px;
 }
+
+p.float-right.pr-1.pt-4.mt-4 {
+  margin-right: 40px;
+}
+
 
 .intro-section__form .submit {
 background-color: #6D9BF1;
@@ -79,21 +85,9 @@ font-size: 1.3rem;
 line-height: 48px;
 }
 
-@media screen and (max-width: 520px) {
-  .intro-section__form input{
-   margin: 0 2rem 1rem 0;
-  }
-  
-} 
 .aside {
   padding-top: 2.5rem;  
   /* height: 100%; */
-  background: rgba(33, 60, 220, 0.03);
-}
-
-.text-center h2{
-    text-align: center;
-
 }
 
 .aside .contrib{
@@ -190,4 +184,11 @@ line-height: 48px;
       padding-top: 10px;
       width: 100%;
    }
+}
+
+@media screen and (max-width: 520px) {
+  .intro-section__form input {
+    margin: 0 2rem 1rem 0;
+  }
+
 }
