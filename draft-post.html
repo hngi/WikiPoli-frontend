@@ -50,9 +50,26 @@
 		<input type="text" name="title" id="post-title" placeholder="Post Title">
 		<div id="editor">
 			<div id="editor-header">
-				<span id="bold"><strong>B</strong></span>
-				<span id="italics"><em>I</em></span>
-				<span id="underline">U</span>
+				<section class="option-group">
+					<span class="option" title="Bolden text" id="bold"><strong>B</strong></span>
+					<span class="option" title="Italicize text" id="italics"><em>I</em></span>
+					<span class="option active-option" title="Underline text" id="underline">U</span>
+				</section>
+				<section class="option-group">
+					<span class="option" title="Post link"><img src="images/link-icon.png" height="20px"></span>
+					<span class="option" title="Add quotes"><img src="images/quotes-icon.jpg" height="20px"></span>
+					<span class="option" title="Add image"><img src="images/image-icon.png" height="20px"></span>
+				</section>
+				<section class="option-group">
+					<span class="option" title="Add bullet list item"><img src="images/bullet-list-icon.png" height="20px"></span>
+					<span class="option" title="Add numbered list item"><img src="images/numbered-list-icon.png" height="20px"></span>
+					<span class="option" title="Add horizontal divider"><img src="images/hr-icon.png" height="20px"></span>
+					<span class="option" title="Add heading/sub-heading"><img src="images/heading-icon.png" height="20px"></span>
+				</section>
+				<section class="option-group">
+					<span class="option" title="Undo recent changes"><img src="images/undo-icon.png" height="20px"></span>
+					<span class="option" title="Redo recent changes"><img src="images/redo-icon.png" height="20px"></span>
+				</section>
 			</div>
 			<textarea id="post-body" placeholder="Write a post. . ."></textarea>
 		</div>
