@@ -1,19 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
 
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
+	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>General footer</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="./styles/Post_page_3.css">
-    <link rel="icon" type="img/png" href="images/favicon.png">
-    <style>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="postpage1.css">
+	<link rel="stylesheet" href="index.css">
+	<link rel="icon" type="img/png" href="images/favicon.png">
+	<title>Posts</title>
+
+	<style>
         #footer {
             background: #6D9BF1 !important;
             /* margin-top: 9% ; */
@@ -39,310 +41,225 @@
 
     </style>
 </head>
-
 <body>
-    <nav class="navbar navbar-expand-lg navbar-custom bg-custom">
-        <div class="container">
-            <a href="index.html" class="logo"><img
-                    src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571749198/c09e9odiqy2cvkosfubl.png"
-                    alt="logo" class="img-fluid" width="150px;"></a>
-            <button class="navbar-toggler float-right custom-toggler" type="button" data-toggle="collapse"
-                data-target="#navbar9" style="color: #213dcd;">
-                <span class=" show-nav navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse" id="navbar9">
-                <ul class="navbar-nav ml-auto">
-                    <li class="navbar-item mr-5">
-                        <a href="#" class="navbar-link" style="color: #161414;" id="logIn">Log In</a>
-                    </li>
-                    <li class="navbar-item mr-5">
-                        <a href="#" class="btn navbar-link" id="signUp">Sign Up</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+	<nav class="navbar navbar-expand-lg navbar-custom bg-custom">
+		<div class="container">
+			<a href="index.html" class="logo"><img src="https://res.cloudinary.com/siyfa/image/upload/v1571745363/u0zhq4fwslfr4u5lx5qt.png" alt="logo" class="img-fluid" width="150px;"></a>
+			<button class="navbar-toggler float-right custom-toggler" type="button" data-toggle="collapse" data-target="#navbar9" style="color: #000000;">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="navbar-collapse collapse" id="navbar9">
+				<ul id="main-navbar" class="navbar-nav ml-auto"> 
+					<li class="navbar-item mr-5">
+						<a href="signin.html" class="navbar-link" style="color: black;" id="logIn">Log In</a>
+					</li>
+					<li class="navbar-item mr-5">
+						<a href="signup.html" class="btn navbar-link" id="signUp" style="background-color: #6d9bf1;">Sign Up</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<!--h1 id="posts-intro">All Posts</h1-->
+	<div class="search">
+		<button onclick="location.href='user_edit_post.html'" id="create-post">New Post</button>
+		<form action="action_page.php">
+			<input type="text" name="search" placeholder="Search Politician's name" class="justify-content-right">
+			<input type="submit" name="Submit" value="Search">
+		</form>
+	</div>
 
-    <!-- Search bar -->
-    <div class="search">
-        <form action=" " method="">
-            <input type="text" name="search" placeholder="Enter Politician's name" class="justify-content-right">
-            <input type="submit" name="Submit">
-        </form>
-    </div>
+	<div class="container main">
+		<div class="row">
+			<div class="col-sm" id="post-1">
+				<div class="post">
+						<h4>ProfErons</h4>
+						<p><strong>Felatoye Durotoye</strong>  is a Leadership Expert, Motivational Speaker . Lorem ipsumsit amet, consectetur adipiscing elsit amet, consectetur adipiscing elsit amet, consectetur adipiscing el  <a href="">Read More</a>
+							</p>
+					<div class="icon">
+						<a href="" class="" aria-hideen="true"><img src="https://res.cloudinary.com/siyfa/image/upload/v1571760606/zbjtlwqjffgwvyc9klvc.png" style="width: 25px;"></a>
+						<a href=""><img src="https://res.cloudinary.com/siyfa/image/upload/v1571761066/a4zha34vheoeyzypvpqu.png" style="width: 25px;"></a>
+		                <a href=""><img src="https://res.cloudinary.com/siyfa/image/upload/v1571761008/bzosk4pcqvpldu59bo0w.png" style="width: 25px;"></i></a>
+		                <a href="" aria-hideen="true"><img src="https://res.cloudinary.com/siyfa/image/upload/v1571760662/hq5ctfvhjv3r05bqdski.png" style="width: 25px;"></a>
+					</div>
+				</div>	
+			</div>
+			<div class="col-sm">
+				<div class="post">
+						<h4>Xyluz</h4>
+						<p><strong>Buhari Jibril</strong>  is a Leadership Expert, Motivational Speaker . Lorem ipsumsit amet, consectetur adipiscing elsit amet, consectetur adipiscing elsit amet, consectetur adipiscing el  <a href="">Read More</a> 
+						</p>
+					<div class="icon">
+						<a href="" class="" aria-hideen="true"><img src="https://res.cloudinary.com/siyfa/image/upload/v1571760606/zbjtlwqjffgwvyc9klvc.png" style="width: 25px;"></a>
+						<a href=""><img src="https://res.cloudinary.com/siyfa/image/upload/v1571761066/a4zha34vheoeyzypvpqu.png" style="width: 25px;"></a>
+		                <a href=""><img src="https://res.cloudinary.com/siyfa/image/upload/v1571761008/bzosk4pcqvpldu59bo0w.png" style="width: 25px;"></i></a>
+		                <a href="" aria-hideen="true"><img src="https://res.cloudinary.com/siyfa/image/upload/v1571760662/hq5ctfvhjv3r05bqdski.png" style="width: 25px;"></a>
+					</div>
+				</div>
+			</div>
 
-    <!-- Posts Section -->
-    <div class="container main">
-        <div class="row">
-            <div class="col-sm" id="post-1">
-                <div class="post">
-                    <h4>Motun</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed vitae, ad voluptatum pariatur
-                        maiores dolores laudantium suscipit deserunt labore dicta repellat ab fugit, cumque accusantium
-                        omnis dignissimos aperiam hic eveniet? <a href="">Read More</a>
-                    </p>
-                    <div class="icon">
-                        <a href="" class="" aria-hideen="true"><img
-                                src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571778978/ljfnxoz7op0mrm8gsm4j.png"
-                                style="width: 25px;" alt="comment"></a>
-                        <a href=""><img
-                                src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571778977/tdy3a6be0lancyghg9lz.png"
-                                style="width: 25px;" alt="share on twitter"></a>
-                        <a href=""><img
-                                src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571778976/cthxzlu3asx6srzxfxlt.png"
-                                style="width: 25px;" alt="share on facebook"></i></a>
-                        <a href="" aria-hideen="true"><img
-                                src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571778977/jzmlueddu9oewg8e3ikx.png"
-                                style="width: 25px;" alt="react on post"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="post">
-                    <h4>Ghost</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsam sequi eius voluptatum
-                        incidunt exercitationem ea et perferendis iure excepturi unde quisquam natus, temporibus
-                        deserunt ab omnis, dolorum quaerat dicta.<a href="">Read More</a>
-                    </p>
-                    <div class="icon">
-                        <a href="" class="" aria-hideen="true"><img
-                                src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571778978/ljfnxoz7op0mrm8gsm4j.png"
-                                style="width: 25px;" alt="comment"></a>
-                        <a href=""><img
-                                src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571778977/tdy3a6be0lancyghg9lz.png"
-                                style="width: 25px;" alt="share on twitter"></a>
-                        <a href=""><img
-                                src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571778976/cthxzlu3asx6srzxfxlt.png"
-                                style="width: 25px;" alt="share on facebook"></i></a>
-                        <a href="" aria-hideen="true"><img
-                                src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571778977/jzmlueddu9oewg8e3ikx.png"
-                                style="width: 25px;" alt="react on post"></a>
-                    </div>
-                </div>
-            </div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm" id="post-1">
+				<div class="post">
+						<h4>theresand</h4>
+						<p><strong>Sanwoolu</strong>  is a Leadership Expert, Motivational Speaker . Lorem ipsumsit amet, consectetur adipiscing elsit amet, consectetur adipiscing elsit amet, consectetur adipiscing el  <a href="">Read More</a> 
+						</p>
+					<div class="icon">
+						<a href="" class="" aria-hideen="true"><img src="https://res.cloudinary.com/siyfa/image/upload/v1571760606/zbjtlwqjffgwvyc9klvc.png" style="width: 25px;"></a>
+						<a href=""><img src="https://res.cloudinary.com/siyfa/image/upload/v1571761066/a4zha34vheoeyzypvpqu.png" style="width: 25px;"></a>
+		                <a href=""><img src="https://res.cloudinary.com/siyfa/image/upload/v1571761008/bzosk4pcqvpldu59bo0w.png" style="width: 25px;"></i></a>
+		                <a href="" aria-hideen="true"><img src="https://res.cloudinary.com/siyfa/image/upload/v1571760662/hq5ctfvhjv3r05bqdski.png" style="width: 25px;"></a>
+					</div>
+				</div>	
+			</div>
+			<div class="col-sm">
+				<div class="post">
+					<h4>Johnson</h4>
+						<p><strong>Goodluck Jonathan</strong>  is a Leadership Expert, Motivational Speaker . Lorem ipsumsit amet, consectetur adipiscing elsit amet, consectetur adipiscing elsit amet, consectetur adipiscing el  <a href="">Read More</a> 
+						</p>
+					<div class="icon">
+						<a href="" class="" aria-hideen="true"><img src="https://res.cloudinary.com/siyfa/image/upload/v1571760606/zbjtlwqjffgwvyc9klvc.png" style="width: 25px;"></a>
+						<a href=""><img src="https://res.cloudinary.com/siyfa/image/upload/v1571761066/a4zha34vheoeyzypvpqu.png" style="width: 25px;"></a>
+		                <a href=""><img src="https://res.cloudinary.com/siyfa/image/upload/v1571761008/bzosk4pcqvpldu59bo0w.png" style="width: 25px;"></i></a>
+		                <a href="" aria-hideen="true"><img src="https://res.cloudinary.com/siyfa/image/upload/v1571760662/hq5ctfvhjv3r05bqdski.png" style="width: 25px;"></a>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm" id="post-1">
+				<div class="post">
+						<h4>goodwill</h4>
+						<p><strong>Segun Obasanjo</strong>  is a Leadership Expert, Motivational Speaker . Lorem ipsumsit amet, consectetur adipiscing elsit amet, consectetur adipiscing elsit amet, consectetur adipiscing el  <a href="">Read More</a> 
+						</p>
+					<div class="icon">
+						<a href="" class="" aria-hideen="true"><img src="https://res.cloudinary.com/siyfa/image/upload/v1571760606/zbjtlwqjffgwvyc9klvc.png" style="width: 25px;"></a>
+						<a href=""><img src="https://res.cloudinary.com/siyfa/image/upload/v1571761066/a4zha34vheoeyzypvpqu.png" style="width: 25px;"></a>
+		                <a href=""><img src="https://res.cloudinary.com/siyfa/image/upload/v1571761008/bzosk4pcqvpldu59bo0w.png" style="width: 25px;"></i></a>
+		                <a href="" aria-hideen="true"><img src="https://res.cloudinary.com/siyfa/image/upload/v1571760662/hq5ctfvhjv3r05bqdski.png" style="width: 25px;"></a>
+					</div>
+				</div>	
+			</div>
+			<div class="col-sm">
+				<div class="post">
+						<h4>Chiagoziem</h4>
+						<p><strong>Bola Tinubu</strong>  is a Leadership Expert, Motivational Speaker . Lorem ipsumsit amet, consectetur adipiscing elsit amet, consectetur adipiscing elsit amet, consectetur adipiscing el  <a href="">Read More</a> 
+						</p>
+					<div class="icon">
+						<a href="" class="" aria-hideen="true"><img src="https://res.cloudinary.com/siyfa/image/upload/v1571760606/zbjtlwqjffgwvyc9klvc.png" style="width: 25px;"></a>
+						<a href=""><img src="https://res.cloudinary.com/siyfa/image/upload/v1571761066/a4zha34vheoeyzypvpqu.png" style="width: 25px;"></a>
+		                <a href=""><img src="https://res.cloudinary.com/siyfa/image/upload/v1571761008/bzosk4pcqvpldu59bo0w.png" style="width: 25px;"></i></a>
+		                <a href="" aria-hideen="true"><img src="https://res.cloudinary.com/siyfa/image/upload/v1571760662/hq5ctfvhjv3r05bqdski.png" style="width: 25px;"></a>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm" id="post-1">
+				<div class="post">
+						<h4>TomisinLalude</h4>
+						<p><strong>Raji Fashola</strong>  is a Leadership Expert, Motivational Speaker . Lorem ipsumsit amet, consectetur adipiscing elsit amet, consectetur adipiscing elsit amet, consectetur adipiscing el  <a href="">Read More</a> 
+							</p>
+					<div class="icon">
+						<a href="" class="" aria-hideen="true"><img src="https://res.cloudinary.com/siyfa/image/upload/v1571760606/zbjtlwqjffgwvyc9klvc.png" style="width: 25px;"></a>
+						<a href=""><img src="https://res.cloudinary.com/siyfa/image/upload/v1571761066/a4zha34vheoeyzypvpqu.png" style="width: 25px;"></a>
+		                <a href=""><img src="https://res.cloudinary.com/siyfa/image/upload/v1571761008/bzosk4pcqvpldu59bo0w.png" style="width: 25px;"></i></a>
+		                <a href="" aria-hideen="true"><img src="https://res.cloudinary.com/siyfa/image/upload/v1571760662/hq5ctfvhjv3r05bqdski.png" style="width: 25px;"></a>
+					</div>
+				</div>	
+			</div>
+			<div class="col-sm">
+				<div class="post">
+						<h4>Thanos</h4>
+						<p><strong>Bukola Saraki</strong>  is a Leadership Expert, Motivational Speaker . Lorem ipsumsit amet, consectetur adipiscing elsit amet, consectetur adipiscing elsit amet, consectetur adipiscing el  <a href="">Read More</a> 
+						</p>
+					<div class="icon">
+						<a href="" class="" aria-hideen="true"><img src="https://res.cloudinary.com/siyfa/image/upload/v1571760606/zbjtlwqjffgwvyc9klvc.png" style="width: 25px;"></a>
+						<a href=""><img src="https://res.cloudinary.com/siyfa/image/upload/v1571761066/a4zha34vheoeyzypvpqu.png" style="width: 25px;"></a>
+		                <a href=""><img src="https://res.cloudinary.com/siyfa/image/upload/v1571761008/bzosk4pcqvpldu59bo0w.png" style="width: 25px;"></i></a>
+		                <a href="" aria-hideen="true"><img src="https://res.cloudinary.com/siyfa/image/upload/v1571760662/hq5ctfvhjv3r05bqdski.png" style="width: 25px;"></a>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
+	<div class="pagination">
+		<ul class="pages">
+			<li><img src="https://res.cloudinary.com/siyfa/image/upload/v1571762484/cezdbfynpv1dvjfopzy0.png" style="width: 10px; color: #333333;"></li>
+			<li class="pageitem">
+				<a href="post_page_1.html" class="pagelink" style="color: #0000FF; font-size: 1.3em;">1</a>
+			</li>
+			<li class="pageitem">
+				<a href="post_page_2.html" class="pagelink" style="color: #333333; font-size: 1.2em;">2</a>
+			<li class="pageitem">
+				<a href="post_page_3.html" class="pagelink" style="color: #333333; font-size: 1.2em;">3</a>
+			</li>
+			<li><img src="https://res.cloudinary.com/siyfa/image/upload/v1571762485/sk98ivrsx2v2ypqgrguh.png" style="width: 10px; color: #333333;"> </li>
+		</ul>
+	</div>
+	
 
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm" id="post-1">
-                <div class="post">
-                    <h4>Tominislude</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ullam cum quis odio sunt
-                        consequatur pariatur dolore beatae ducimus quia culpa unde expedita qui maxime incidunt,
-                        mollitia iste illo architecto? <a href="">Read More</a>
-                    </p>
-                    <div class="icon">
-                        <a href="" class="" aria-hideen="true"><img
-                                src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571778978/ljfnxoz7op0mrm8gsm4j.png"
-                                style="width: 25px;" alt="comment"></a>
-                        <a href=""><img
-                                src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571778977/tdy3a6be0lancyghg9lz.png"
-                                style="width: 25px;" alt="share on twitter"></a>
-                        <a href=""><img
-                                src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571778976/cthxzlu3asx6srzxfxlt.png"
-                                style="width: 25px;" alt="share on facebook"></i></a>
-                        <a href="" aria-hideen="true"><img
-                                src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571778977/jzmlueddu9oewg8e3ikx.png"
-                                style="width: 25px;" alt="react on post"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="post">
-                    <h4>Theresea Nde</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio mollitia quaerat nulla, corporis
-                        facilis numquam provident voluptatibus voluptates expedita alias nam unde ducimus harum, error
-                        pariatur natus modi porro fugit! <a href="">Read More</a>
-                    </p>
-                    <div class="icon">
-                        <a href="" class="" aria-hideen="true"><img
-                                src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571778978/ljfnxoz7op0mrm8gsm4j.png"
-                                style="width: 25px;" alt="comment"></a>
-                        <a href=""><img
-                                src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571778977/tdy3a6be0lancyghg9lz.png"
-                                style="width: 25px;" alt="share on twitter"></a>
-                        <a href=""><img
-                                src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571778976/cthxzlu3asx6srzxfxlt.png"
-                                style="width: 25px;" alt="share on facebook"></i></a>
-                        <a href="" aria-hideen="true"><img
-                                src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571778977/jzmlueddu9oewg8e3ikx.png"
-                                style="width: 25px;" alt="react on post"></a>
-                    </div>
-                </div>
-            </div>
 
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm" id="post-1">
-                <div class="post">
-                    <h4>Pro fons</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt minus illo officia eius et placeat,
-                        saepe, vitae repellat quibusdam quos ipsam excepturi nam corrupti architecto necessitatibus
-                        aperiam ratione porro itaque. <a href="">Read More</a>
-                    </p>
-                    <div class="icon">
-                        <a href="" class="" aria-hideen="true"><img
-                                src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571778978/ljfnxoz7op0mrm8gsm4j.png"
-                                style="width: 25px;" alt="comment"></a>
-                        <a href=""><img
-                                src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571778977/tdy3a6be0lancyghg9lz.png"
-                                style="width: 25px;" alt="share on twitter"></a>
-                        <a href=""><img
-                                src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571778976/cthxzlu3asx6srzxfxlt.png"
-                                style="width: 25px;" alt="share on facebook"></i></a>
-                        <a href="" aria-hideen="true"><img
-                                src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571778977/jzmlueddu9oewg8e3ikx.png"
-                                style="width: 25px;" alt="react on post"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="post">
-                    <h4>Kingbash</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A mollitia maiores, obcaecati vero
-                        voluptatem sed animi voluptate voluptas ad optio aperiam quo nihil? Explicabo eveniet repellat
-                        nam, praesentium quas quis! <a href="">Read More</a>
-                    </p>
-                    <div class="icon">
-                        <a href="" class="" aria-hideen="true"><img
-                                src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571778978/ljfnxoz7op0mrm8gsm4j.png"
-                                style="width: 25px;" alt="comment"></a>
-                        <a href=""><img
-                                src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571778977/tdy3a6be0lancyghg9lz.png"
-                                style="width: 25px;" alt="share on twitter"></a>
-                        <a href=""><img
-                                src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571778976/cthxzlu3asx6srzxfxlt.png"
-                                style="width: 25px;" alt="share on facebook"></i></a>
-                        <a href="" aria-hideen="true"><img
-                                src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571778977/jzmlueddu9oewg8e3ikx.png"
-                                style="width: 25px;" alt="react on post"></a>
-                    </div>
-                </div>
-            </div>
+		<footer>
+			<div id="footer">
+				<div class="container">
+					<div class="row links">
+						<div class="col-md-4 col-sm-12  text-center">
+							<ul class="quick-links">
+								<li>Legal</li>
+								<li><a href="Terms-of-use.html">Terms of Use</a></li>
+								<li><a href="privacypolicy.html">Privacy Policy</a></li>
+							</ul>
+						</div>
+						<div class="col-md-4 col-sm-12  text-center">
+							<ul class="quick-links">
+								<li>Company</li>
+								<li><a href="about.html">About</a></li>
+								<li><a href="careers.html">Careers</a></li>
+								<li><a href="faq.css">FAQs</a></li>
+								<li><a href="donation_page.html">Donations</a></li>
+							</ul>
+						</div>
+	
+						<div class="col-md-4 col-sm-12  text-center">
+							<div class="text-center social-links">
+								<h3>Connect With Us</h3>
+								<a href="facebook.com"><span class="fa fa-facebook"></span></a>
+								<a href="twitter.com"><span class="fa fa-twitter"></span></a>
+								<a href="instagram.com"><span class="fa fa-instagram"></span></a>
+								<p>contact@wikipoli.gq</p>
+							</div>
+						</div>
+						<div class="col-lg-12 copyright text-center">
+							<p>&copy; 2019 Wikipoli - All Rights Reserved</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+		</script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+		</script>
+	</body>
+	
+	</html>
 
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm" id="post-1">
-                <div class="post">
-                    <h4>Johnson</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum saepe repellat beatae, quo
-                        exercitationem repudiandae placeat voluptatibus maiores qui suscipit ipsa fugit dicta molestiae
-                        quis doloribus necessitatibus ratione ad molestias.<a href="">Read More</a>
-                    </p>
-                    <div class="icon">
-                        <a href="" class="" aria-hideen="true"><img
-                                src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571778978/ljfnxoz7op0mrm8gsm4j.png"
-                                style="width: 25px;" alt="comment"></a>
-                        <a href=""><img
-                                src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571778977/tdy3a6be0lancyghg9lz.png"
-                                style="width: 25px;" alt="share on twitter"></a>
-                        <a href=""><img
-                                src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571778976/cthxzlu3asx6srzxfxlt.png"
-                                style="width: 25px;" alt="share on facebook"></i></a>
-                        <a href="" aria-hideen="true"><img
-                                src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571778977/jzmlueddu9oewg8e3ikx.png"
-                                style="width: 25px;" alt="react on post"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="post">
-                    <h4>Professor</h4>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere ab consequatur hic eos,
-                        laboriosam rerum placeat unde consequuntur blanditiis reiciendis obcaecati, nulla accusantium
-                        ipsam soluta veritatis laborum? Dolores, commodi a? <a href="">Read More</a>
-                    </p>
-                    <div class="icon">
-                        <a href="" class="" aria-hideen="true"><img
-                                src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571778978/ljfnxoz7op0mrm8gsm4j.png"
-                                style="width: 25px;" alt="comment"></a>
-                        <a href=""><img
-                                src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571778977/tdy3a6be0lancyghg9lz.png"
-                                style="width: 25px;" alt="share on twitter"></a>
-                        <a href=""><img
-                                src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571778976/cthxzlu3asx6srzxfxlt.png"
-                                style="width: 25px;" alt="share on facebook"></i></a>
-                        <a href="" aria-hideen="true"><img
-                                src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571778977/jzmlueddu9oewg8e3ikx.png"
-                                style="width: 25px;" alt="react on post"></a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- Pignation section -->
-    <div class="pagination">
-        <ul class="pages">
-            <li><a href="#"><img
-                        src="https://res.cloudinary.com/siyfa/image/upload/v1571762484/cezdbfynpv1dvjfopzy0.png"
-                        style="width: 10px; color: #333333;"></a></li>
-            <li class="pageitem">
-                <a href="" class="pagelink" style="color: #000000; font-size: 1.2em;">1</a>
-            </li>
-            <li class="pageitem ">
-                <a href="./post-page-2.html" class="pagelink" style="color: #000000; font-size: 1.2em;">2</a>
-            </li>
-            <li class="pageitem">
-                <a href="./post_page_3.html" class="pagelink active" style="color: #213dcd; font-size: 1.3em;">3</a>
-            </li>
-            <li><a href="#"><img
-                        src="https://res.cloudinary.com/siyfa/image/upload/v1571762485/sk98ivrsx2v2ypqgrguh.png"
-                        style="width: 10px; color: #333333;"></a> </li>
-        </ul>
-    </div>
-    <footer>
-        <div id="footer">
-            <div class="container">
-                <div class="row links">
-                    <div class="col-md-4 col-sm-12  text-center">
-                        <ul class="quick-links">
-                            <li>Legal</li>
-                            <li><a href="Terms-of-use.html">Terms of Use</a></li>
-                            <li><a href="privacypolicy.html">Privacy Policy</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4 col-sm-12  text-center">
-                        <ul class="quick-links">
-                            <li>Company</li>
-                            <li><a href="">About</a></li>
-                            <li><a href="">Careers</a></li>
-                            <li><a href="">FAQs</a></li>
-                            <li><a href="">Donations</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-md-4 col-sm-12  text-center">
-                        <div class="text-center social-links">
-                            <h3>Connect With Us</h3>
-                            <a href="facebook.com"><span class="fa fa-facebook"></span></a>
-                            <a href="twitter.com"><span class="fa fa-twitter"></span></a>
-                            <a href="instagram.com"><span class="fa fa-instagram"></span></a>
-                            <p>contact@wikipoli.gq</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 copyright text-center">
-                        <p>&copy; 2019 Wikipoli - All Rights Reserved</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
-</body>
-
-</html>
+	<script type="text/javascript" src="scripts/postpage1.js"></script>
