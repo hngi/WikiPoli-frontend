@@ -7,7 +7,6 @@
   <link rel="icon" type="img/png" href="images/favicon.png">
   <title>User</title>
  
-  
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
@@ -23,7 +22,28 @@
   <link rel="stylesheet" type="text/css" href="styles/userprofile.css">
 </head>
 <body>
+
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog ">
+          <div class="modal-content">
+            <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            
+            </div>
+            <h4 class="modal-title text-center followhead"></h4>
+            <div class="modal-body" id="followResult">
+              <!-- <h1><span id="result"></span></h1>
+              <p id="comments"></p> -->
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
   <section>
+
+     
   <div id="header">
      
     <div class="nav">
@@ -99,6 +119,30 @@
     
                     <p><i class="far fa-calendar-alt"></i> Joined February, 2008</p>
                     <p class="contrib"><b>50 Contributions &nbsp; 20 Posts &nbsp; 20 Favourites</b></p>
+
+                    <!-- FOR THE FOLLOW AND UNFOLLOW FEATURES -->
+                    <div class="followDiv">
+
+                      <span 
+                        onclick="showFollowers()"
+                        id="followers" 
+                        class="badge badge-primary float-left" 
+                        data-toggle="modal" 
+                        data-target="#myModal"
+                        >
+                        14+ follower
+                      </span>
+
+                      <span 
+                        onclick="showFollowing()"
+                        id="following" 
+                        class="badge badge-primary float-right" 
+                        data-toggle="modal" 
+                        data-target="#myModal"
+                      >
+                        22+ following
+                      </span>
+                    </div>
                     
                     <div class="images">
                         
@@ -271,5 +315,6 @@
           </div>
         </div>
       </footer>
+      <script src="scripts/follow_unfollowscript.js "></script>
       </body>
       </html>
