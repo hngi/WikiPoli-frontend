@@ -3,14 +3,17 @@
 
 
 
+const api = "http://teamgandhi.000webhostapp.com/api";
+const wikiToken = localStorage.getItem( 'wikiToken' );
+const userEmail = localStorage.getItem('userEmail')
 
 //followers Array stores all users that follows a particular user.
 let followers = [
-                    {
-                                        name: "Celestine Stephen",
-                                        Id:  001,
-                                        ProfilePic: `<img src="images/profilepic.png" alt="user profile photo"   />`
-                    },
+    {
+    name: "Celestine Stephen",
+    Id:  001,
+    ProfilePic: `<img src="images/profilepic.png" alt="user profile photo"   />`
+    },
                     {
                                         name: "xyluz",
                                         Id:  002,
@@ -63,7 +66,9 @@ let unfollowButton = `
 <button id = "" class="btn btn-primary " onclick="unfollow(this.id);">Unfollow</button>`;
 
  function showFollowers(){
-                    var result = document.querySelector('#followResult');
+   // if ( wikiToken && userEmail ) {
+        
+        var result = document.querySelector('#followResult');
                     result.innerHTML = " ";
                     
                    document.querySelector('.followhead').innerHTML = 'PEOPLE FOLLOWING YOU!';
@@ -82,6 +87,11 @@ let unfollowButton = `
 
                     //for debugging purposes
                    // console.log('this block works');
+                    
+     // }else {
+       // document.querySelector('.followhead').innerHTML = 'YOU ARE NOT LOGGED IN';
+        //location.href = "signin.html"
+   //   }
                     
                     
  }
