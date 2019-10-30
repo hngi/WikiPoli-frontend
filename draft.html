@@ -1,0 +1,289 @@
+<!--https://adenikesalau.github.io/wikipoli-hng/-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--required meta tags-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+
+    <!--google font link-->
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--bootstrap link-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Draft</title>
+
+    <style>
+    
+    	body{
+      		font-family: Lato, sans-serif;
+      		font-style: normal;
+            font-weight: normal;
+      	}
+    
+        #sidebar{
+            background-color: rgba(109, 154, 238, 0.19);
+            padding-right: 20%;
+            color: #000;
+        }
+
+        .btn{
+            background-color: #6d9bf1;
+            color: #fff;
+        }
+        
+        .active{
+        	background-color: #6d9bf1;
+        	padding: 0px 5px;
+        	margin: 2px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper container-fluid">
+        <header>
+            <!-- Nav bar-->
+            <nav class="navbar navbar-expand-lg navbar-light static-top" style="background-color: #fff;">
+
+                <a class="navbar-brand float-left" href="index.html">
+                    <img src="https://res.cloudinary.com/adenike/image/upload/v1571756162/wikiPoli5_9_ln1eyb.png" width="50%" height="30%" alt="wikipoli-logo" >
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav ml-auto mr-5 float-right">
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark poli-quali d-inline" href="#">Hello, Super Admin</a>
+
+                            <a class="nav-link  btn text-light rounded-0  mx-auto d-inline p-2" href="beforeLogin.html" style="width: 6em;">Log Out</a>
+                        </li>
+            
+                    </ul>
+                </div>   
+            </nav>
+                
+            <!--search for a politician-->
+            <div class="d-flex justify-content-end mr-5">
+
+                <form class="form-inline my-2">
+                    <div class="input-group">
+
+                        <input class="form-control rounded-0" id="large-btn" type="search" placeholder="Enter Politician's name" aria-label="Search">
+                        
+                        <div class="input-group-append">
+                            <button class="input-group-text btn rounded-0" id="search-space" type="submit">Search</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </header>    
+        
+        <div class="row row-offcanvas row-offcanvas-left">
+            <!-- sidebar -->
+            <div class="col-sm-1 col-xs-1 sidebar-offcanvas" id="sidebar">
+
+                <ul class="nav nav-stacked" id="menu" style="line-height: 2.5rem;">
+                    
+                    <li class="nav-item"> 
+                        <a class="nav-link pl-0 text-dark" href="dashboard-activity.html">Dashboard</a>
+                    </li>
+
+                    <li class="nav-item"> 
+                        <a class="nav-link pl-0 text-dark" href="#">Admins</a>
+                    </li>
+
+                    <li class="nav-item"> 
+                        <a class="nav-link pl-0 text-dark" href="#">Activities</a>
+                    </li>
+
+                    <li class="nav-item"> 
+                        <a class="nav-link pl-0 text-dark" style="white-space:pre;" href="#">Add post</a>
+                    </li>
+
+                    <li class="nav-item"> 
+                        <a class="nav-link pl-0 text-dark" href="#" style="white-space:pre;">Add privileges</a>
+                    </li>
+
+                    <li class="nav-item"> 
+                        <a class="nav-link pl-0 text-dark" href="#">block/unblock</a>
+                    </li>
+
+                    <li class="nav-item active"> 
+                        <a class="nav-link pl-0 text-dark rounded-0" href="#">Draft</a>
+                    </li>
+
+                    <li class="nav-item"> 
+                        <a class="nav-link pl-0 text-dark" href="beforeLogin.html" style="white-space:pre;">Log out</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /sidebar -->
+    
+            <!-- main right col -->
+            <div class="col-sm-9 col-xs-11" id="main">
+
+                <section class="pb-5">
+
+                    <h3>Drafts</h3>
+    
+                    <div class="mt-5 pb-3">
+    
+                        <div class="title">
+    
+                            <!--display image-->
+                            <img  src="https://res.cloudinary.com/adenike/image/upload/v1572372557/Ellipse_46_ffyasd.png">
+                            
+                            <!--title of the post/message-->
+                            <h5 class="d-inline">(no title)</h5>
+                            <time class="float-right">22/10/2019</time>
+                        </div>
+    
+                        <!--message content-->
+                        <div class="content">
+                            <div class="ml-5 mr-5">
+                                <p class="d-inline">Adetokunbo Olufela Durotoye (born in Ibadan, Oyo State on the 12th May 1971)
+                                is a business consultant, leadership expert and motivational speaker. 
+                                Fela is the president of the...</p>
+                            </div>
+    
+                            <!--delete draft-->
+                            <i class="fa fa-trash-o float-right d-inline" aria-hidden="true"></i>
+                        </div>
+    
+                        <!--uploaded image-->
+                        <div class="border rounded-lg float-left ml-5 mr-5 p-2"><i class="fa fa-picture-o" aria-hidden="true"></i>1297473_788...7</div>
+                    </div>
+                    
+        
+                    <div class="mt-5 pt-3 pb-3">
+    
+                        <div class="title">
+                            <!--display image-->
+                            <img  src="https://res.cloudinary.com/adenike/image/upload/v1572372557/Ellipse_46_ffyasd.png" alt="image">
+                            
+                            <!--title of the post/message-->
+                            <h5 class="d-inline">(no title)</h5>
+                            <time class="float-right">22/10/2019</time>
+                        </div>
+    
+                        <!--message content-->
+                        <div class="content">
+                            <div class="ml-5 mr-5">
+                                <p class="d-inline">Adetokunbo Olufela Durotoye (born in Ibadan, Oyo State on the 12th May 1971)
+                                is a business consultant, leadership expert and motivational speaker. 
+                                Fela is the president of the...</p>
+                            </div>
+    
+                            <!--delete draft-->
+                            <i class="fa fa-trash-o float-right d-inline" aria-hidden="true"></i>
+                        </div>
+    
+                        <!--uploaded image-->
+                        <div class="border rounded-lg float-left ml-5 mr-5 p-2"><i class="fa fa-picture-o" aria-hidden="true"></i>1297473_788...7</div>
+                    </div>
+        
+                    <div class="mt-5 pt-3 pb-3">
+    
+                        <div class="title">
+                            <!--display image-->
+                            <img  src="https://res.cloudinary.com/adenike/image/upload/v1572372557/Ellipse_46_ffyasd.png" alt="image">
+                            
+                            <!--title of the post/message-->
+                            <h5 class="d-inline">Muhammed Buhari</h5>
+                            <time class="float-right">22/10/2019</time>
+                        </div>
+    
+                        <!--message content-->
+                        <div class="content">
+                            <div class="ml-5 mr-5">
+                                <p class="d-inline">(no body)</p>
+                            </div>
+    
+                        <!--delete draft-->
+                        <i class="fa fa-trash-o float-right d-inline" aria-hidden="true"></i>
+                        </div>
+    
+                    </div>
+        
+                    <div class="mt-5 pt-3 pb-3">
+    
+                        <div class="title">
+                            <!--display image-->
+                            <img  src="https://res.cloudinary.com/adenike/image/upload/v1572372557/Ellipse_46_ffyasd.png" alt="image">
+                            
+                            <!--title of the post/message-->
+                            <h5 class="d-inline">Muhammed Buhari</h5>
+                            <time class="float-right">22/10/2019</time>
+                        </div>
+    
+                        <!--message content-->
+                        <div class="content">
+                            <div class="ml-5 mr-5">
+                                <p class="d-inline">Adetokunbo Olufela Durotoye (born in Ibadan, Oyo State on the 12th May 1971)
+                                is a business consultant, leadership expert and motivational speaker. 
+                                Fela is the president of the...</p>
+                            </div>
+    
+                            <!--delete draft-->
+                            <i class="fa fa-trash-o float-right d-inline" aria-hidden="true"></i>
+                        </div>
+    
+                        <!--uploaded image-->
+                        <div class="border rounded-lg float-left ml-5 mr-5 p-2"><i class="fa fa-picture-o" aria-hidden="true"></i>1297473_788...7</div>
+                    </div>
+        
+                    <div class="mt-5 pb-5">
+    
+                        <div class="title">
+    
+                            <!--display image-->
+                            <img  src="https://res.cloudinary.com/adenike/image/upload/v1572372557/Ellipse_46_ffyasd.png" alt="image">
+                            
+                            <!--title of the post/message-->
+                            <h5 class="d-inline">Prof. Osinbajo</h5>
+                            <time class="float-right">22/10/2019</time>
+                        </div>
+    
+                        <!--message content-->
+                        <div class="content">
+                            <div class="ml-5 mr-5">
+                                <p class="d-inline">Adetokunbo Olufela Durotoye (born in Ibadan, Oyo State on the 12th May 1971)
+                                is a business consultant, leadership expert and motivational speaker. 
+                                Fela is the president of the...</p>
+                            </div>
+    
+                            <!--delete draft-->
+                                <i class="fa fa-trash-o float-right d-inline" aria-hidden="true"></i>
+                        </div>
+    
+                        <!--uploaded image-->
+                        <div class="border rounded-lg float-left ml-5 mr-5 p-2"><i class="fa fa-picture-o" aria-hidden="true"></i>1297473_788...7</div>
+                    </div>
+                        
+                </section>
+            </div>
+            <!-- /main -->
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    
+</body>
+</html>
+
