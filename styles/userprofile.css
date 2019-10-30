@@ -6,7 +6,6 @@ padding: 0;
 }
 
 
-
 nav.bg-light {
   background-color: #ffffff !important;
 }
@@ -73,6 +72,37 @@ width: 20rem;
 text-align: center;
 }
 
+
+
+/* THIS IS FOR THE FOLLOW FEATURE */
+.followDiv {
+   height: 3rem;
+}
+.followDiv .badge {
+  line-height: 2;
+  cursor: pointer;
+}
+
+.followDiv .float-right {
+  margin-right: 0.5rem;
+}
+
+/* for the follow modal */
+.followInDiv {
+  height: 3rem;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+.followInDiv img {
+  height: 1.6rem;
+  float: left !important;
+  width: 1.6rem;
+  border-radius: 100%;
+}
+
+
+
 .create-post {
   font-weight: bold;
 font-size: 1.1rem;
@@ -87,6 +117,14 @@ padding: .5rem;
   .intro-section__form input{
    margin: 0 2rem 1rem 0;
   }
+
+  /* for the followDiv */
+  .followDiv .float-right {
+    margin-right: 1.4rem !important;
+  }
+  
+
+  /* ends here */
   
 } 
 .aside {
@@ -176,6 +214,17 @@ padding: .5rem;
 
 /* Responsive styling */
 @media screen and (max-width: 768px) {
+  /* this is for the followDiv */
+  .followDiv .badge {
+    width: 4rem;
+    font-size: 60%;
+  }
+  .followDiv .float-right {
+    margin-right: 0rem;
+  }
+
+  /* and it ends here */
+
     h1 {
       font-size: 30px;
     }
