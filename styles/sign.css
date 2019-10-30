@@ -23,9 +23,9 @@
 }
 */
 .signup_form input, .login_form input {
-    height: 55px;
-    width: 456px;
-    margin-bottom: 25px;
+    height: 48px;
+    width: 450px;
+    margin-bottom: 20px;
     border: 1px solid #6D9BF1;
     border-radius: 0;
 }
