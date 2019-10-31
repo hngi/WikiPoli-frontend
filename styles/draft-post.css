@@ -133,7 +133,8 @@ footer #copyright
 	border: none;
 	resize: none;
 	background-color: white;
-	min-height: 40vh;
+	height: 40vh;
+	overflow-y: auto;
 }
 #editor-section #editor-header
 {

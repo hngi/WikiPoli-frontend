@@ -42,6 +42,11 @@ let quill = new Quill('#post-body',
 	placeholder: 'Create a post. . .',
 })
 
+document.getElementById("editor-header").addEventListener("click", e =>
+{
+	document.getElementById("post-body").focus();
+})
+
 document.getElementById("post-body").addEventListener("keydown", e =>
 {
 	if (e.code === "Space")
