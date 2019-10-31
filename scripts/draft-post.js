@@ -13,14 +13,18 @@ let toolbarOptions =
 		{
 			if (value)
 			{
-				/*
+				
 				let modal = document.getElementById("links-modal");
-				document.getElementById("modal-submit").addEventListener("click", 
+				document.getElementById("modal-submit").addEventListener("click", e => 
 				{
 					modal.style.display = "none";
 					this.quill.format('link', "Hey")
-				}
-				modal.style.display = 'flex';*/
+				});
+				document.getElementById("modal-close").addEventListener("click", e => 
+				{
+					modal.style.display = "none";
+				});
+				modal.style.display = 'flex';
 				this.quill.format('link', "test ish");
 			}
 			else
