@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Admin Activities
+    </title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/admin-general.css">
+    <link rel="stylesheet" type="text/css" href="styles/admin-sidebar.css">
+    <link rel="icon" type="img/png" href="images/favicon.png">
+</head>
+<body>
+<input type="checkbox" id="mobile-bars-check" />
+<label for="mobile-bars-check" id="mobile-bars">
+    <div class="stix" id="stik1"></div>
+    <div class="stix" id="stik2"></div>
+    <div class="stix" id="stik3"></div>
+</label>
+<section id="admin-sidebar-general">
+    <div class="icon-div">
+        <img src="images/house-icon.png" height="30px">
+        <span>Wiki</span><span class="blue-text">Poli</span>
+    </div>
+    <a href="admin-dashboard-general.html" class="sidebar-links s">Dashboard</a>
+    <a href="admin-dashboard-general.html" class="sidebar-links">Admin</a>
+    <a href="dashboard-activity.html" class="sidebar-links sidebar-active-link">Activities</a>
+    <a href="postpage1.html" class="sidebar-links"> Add Posts</a>
+    <a href="" class="sidebar-links">Add Privileges</a>
+    <a href="" class="sidebar-links">Block/Unblock</a>
+    <a href="" class="sidebar-links">Drafts</a>
+    <a href="" class="sidebar-links" id="logout">Logout</a>
+</section>
+<main class="admin-main-general" id="admin-main">
+    <header>
+        <div class="icon-div">
+            <img src="./images/Vector.png" height="30px">
+            <span>Wiki</span><span class="blue-text">Poli</span>
+        </div>
+        <div id="user-div">
+            <span id="name-plate">Hello, xyluz</span>
+            <img src="./images/XYlus.png" height="30px">
+        </div>
+    </header>
+
+
+    <div class="container-fluid">
+        <div class="row second-header">
+                <h2 class="col-md-9 ">Activities</h2>
+            <div class="row col-md-3 justify-content-right" style="margin-left:8px; height: 15px;">
+                <input type="text" placeholder="search">
+                <button class="my-search">Search</button>
+            </div>
+        </div>
+        <div class="col-md-12 InsideLife" >
+            <h3  style="margin-bottom: 20px; font-size: 18px;">Most Recent Activity</h3>
+            <div class="row Holders" style="margin: 40px; padding: 20px">
+                <div class="col-md-3" id="">
+                    <p>Posted by: Ayo Adele</p>
+                    <button class="inside-button mt-5 center">Publish +</button>
+                </div>
+                <div class="col-md-3" id="">
+                    <p>Category: Politician</p>
+                    <button class="inside-button mt-5 center">Disapprove +</button>
+                </div>
+                <div class="col-md-3" id="">
+                    <p>Status: Waiting Approval</p>
+                    <button class="inside-button mt-5 center">View full post +</button>
+                </div>
+                <div class="col-md-3" id="">
+                    <p>Date: 29/10/2019</p>
+                    <button class="inside-button mt-5 center">Edit +</button>
+                </div>
+            </div>
+            <div class="row Holders" style="margin: 40px; padding: 20px">
+                <div class="col-md-3" id="">
+                    <p>Posted by: Ayo Adele</p>
+                    <button class="inside-button mt-5 center">Publish +</button>
+                </div>
+                <div class="col-md-3" id="">
+                    <p>Category: Politician</p>
+                    <button class="inside-button mt-5 center">Disapprove +</button>
+                </div>
+                <div class="col-md-3" id="">
+                    <p>Status: Waiting Approval</p>
+                    <button class="inside-button mt-5 center">View full post +</button>
+                </div>
+                <div class="col-md-3" id="">
+                    <p>Date: 29/10/2019</p>
+                    <button class="inside-button mt-5 center">Edit +</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+
+    </div>
+
+</main>
+
+<!--<script src="scripts/admin.js"></script>-->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

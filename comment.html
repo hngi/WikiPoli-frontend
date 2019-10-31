@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WIKIPOLI</title>
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="read more.css">
+    <style>
+        .navbar{
+        background-color:transparent;
+        height: 55px;
+        /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+       
+        }
+
+        .navbar-brand{
+            padding: 0px;
+        }
+
+        .navbar-brand img{
+            margin-top: 0px;
+            height: 80px !important;
+        }
+
+        .navbar-nav>li>a{
+        text-decoration: none;
+        color: rgb(74, 169, 247);
+        font-weight: 500;
+        background-color: white;
+        
+        }
+
+        .navbar-nav>li>a:hover{
+        text-decoration: none;
+        color: orange;
+        background-color: transparent;
+        }
+
+        .navbar-nav>li>a:active{
+        text-decoration: underline;
+        color:white;
+        background-color: rgb(54, 54, 214);
+        }
+
+        .navbar-toggle .icon-bar{
+        background-color: black
+
+        }
+
+        .signup{
+            background-color:rgb(74, 169, 247);
+            color: white;
+            width: 100px;
+            margin-top: 6px;
+            height: 35px;
+        }
+         .modal-signup{
+             border:none;
+            background-color:rgb(74, 169, 247);
+         }
+        .search{
+            background-color:rgb(74, 169, 247);
+            border: none;
+            color: white;
+            width: 100px;
+        }
+        .search_box{
+            float:right
+        }
+
+        .content{
+            margin-top: 50px;
+        }
+        
+        .paragraph{
+            text-align: justify;
+        }
+
+        .image-row{
+            height: 300px !important;
+            background-image: url("https://res.cloudinary.com/zennylily/image/upload/v1571784976/wikipoli_cn3w6g.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        hr{
+            border: 1px solid rgb(228, 228, 228)
+        }
+        
+        .modal-body{
+            text-align: center;
+            align-content:center;
+        }
+
+        .authorName{
+            font-weight: 800;
+            
+        }
+
+        #footer{
+            background-color:rgb(74, 169, 247);
+            color: white
+        }
+
+        #footer a:link{
+            color: white
+        }
+        
+ .     #footer a:visited{
+            color: white
+        }
+        .quick-links li a:link{
+            color: white;
+        }
+    
+
+        @media screen and (max-width: 480px){
+ 
+        .collapse{
+        background-color: white;
+        position: relative;
+        z-index: 99;
+        }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="#"><img
+                    src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571749198/c09e9odiqy2cvkosfubl.png"
+                    alt=""
+                    width="100"/></a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class=""></span>Login</a></li>
+                    <li><button class="btn signup">Sign up</button></li>
+                
+                </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <section >
+        <div class="container">
+            <div class="row">
+                <div  class="col-md-7">
+                    <i class="fa fa-user"></i>You are not logged in
+                </div>
+                <div  class="col-md-5">
+                    <div class="search_box">
+                        <input type="text" id="input" placeholder="Enter Politicial Name"/>
+                        <button id="sub" class="btn search" type="submit">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content">
+        <div class="container">
+            <div class="row content1">
+                <div class="col-md-4 paragraph">
+                    <p>
+                            Adetokunbo Olufela Durotoye (born in Ibadan, Oyo State on the 12th May 1971) is a business consultant,
+                             leadership expert and motivational speaker. Fela is the president of the GEMSTONE Nation Builders 
+                             Foundation, non- profit, non- governmental organization targeted at training youths towards transformational 
+                             leadership and.... Adetokunbo Olufela Durotoye (born in Ibadan, Oyo State on the 12th May 1971) is a business 
+                             consultant, leadership expert and motivational speaker. Fela is the president of the GEMSTONE Nation Builders 
+                             Foundation, non- profit, non- governmental organization targeted at training youths towards transformational 
+                             leadership and.... Adetokunbo Olufela Durotoye (born in Ibadan, Oyo State on the 12th May 1971) is a business 
+                             consultant, leadership expert and motivational speaker. Fela is the president of the GEMSTONE Nation Builders
+                              Foundation, non- profit, non- governmental organization targeted at training youths towards transformational 
+                              leadership and....Adetokunbo Olufela Durotoye (born in Ibadan, Oyo State on the 12th May 1971) is a business 
+                              consultant, leadership expert and motivational speaker. 
+                    </p>
+                </div>
+                <div class="col-md-4 paragraph middle-column" style="background-color: rgb(212, 241, 250);">
+                    <p>
+                            He was the Nigerian Presidential Candidate of the Alliance for New
+                            Nigeria party (ANN) for the 2019 Presidential elections.
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia ipsum distinctio, quisquam voluptatibus, esse vel
+                            , eos eveniet similique quae architecto molestiae! Nostrum dolores ipsa minima tenetur voluptate, dolorem dicta ad!
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat delectus at ea, cumque molestias debitis voluptatem
+                             harum nam porro deleniti dolorum unde ab suscipit, qui eos? Voluptas numquam quo iure.
+                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam enim vel deserunt neque mollitia quis ea! Recusandae nisi 
+                             exercitationem eum tempora dolore ex illo ad, veritatis, magni, quod repellendus saepe?
+                             Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC,
+                              making it over 2000 years old. Richard McClintock,
+                              a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscur
+                              e Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+                               
+                    </p>
+                </div>
+                <div class="col-md-4 paragraph">
+                    <p>
+                            Adetokunbo Olufela Durotoye (born in Ibadan, Oyo State on the 12th
+                            May 1971) is a business consultant, leadership expert and
+                            motivational speaker. Fela is the president of the GEMSTONE Nation
+                            Builders Foundation, non- profit, non- governmental organization
+                            targeted at training youths towards transformational leadership
+                            and.. Adetokunbo Olufela Durotoye (born in Ibadan, Oyo State on the
+                            12th May 1971) is a business consultant, leadership expert and
+                            motivational speaker. Fela is the president of the GEMSTONE Nation
+                            Builders Foundation, non- profit, non- governmental organization
+                            targeted at training youths towards transformational leadership
+                            and.. Adetokunbo Olufela Durotoye (born in Ibadan, Oyo State on the
+                            12th May 1971) is a business consultant, leadership expert and
+                            motivational speaker. Fela is the president of the GEMSTONE Nation
+                            Builders Foundation, non- profit, non- governmental organization
+                            targeted at training youths towards transformational leadership
+                            and.. Adetokunbo Olufela Durotoye (born in Ibadan, Oyo State on the
+                            12th May 1971) is a business consultant, leadership expert and
+                            motivational speaker. Fela is the president of the GEMSTONE Nation
+                            Builders Foundation, non- profit,
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="image-section">
+        <div class="row image-row"></div>
+    </section>
+
+    <section class="content">
+        <div class="container">
+            <div class="row">
+                <h3>Education</h3>
+                <hr>
+                <p>
+                        He was the Nigerian Presidential Candidate of the Alliance for New
+                        Nigeria party (ANN) for the 2019 Presidential elections.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia ipsum distinctio, quisquam voluptatibus, esse vel
+                        , eos eveniet similique quae architecto molestiae! Nostrum dolores ipsa minima tenetur voluptate, dolorem dicta ad!
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat delectus at ea, cumque molestias debitis voluptatem
+                        
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam enim vel deserunt neque mollitia quis ea! Recusandae nisi 
+                        exercitationem eum tempora dolore ex illo ad, veritatis, magni, quod repellendus saepe?
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC,
+                        making it over 2000 years old. Richard McClintock,harum nam porro deleniti dolorum unde ab suscipit, qui eos? Voluptas numquam quo iure.
+                </p>
+                <h3>Career</h3>
+                <hr>
+                <p>
+                        He was the Nigerian Presidential Candidate of the Alliance for New
+                        Nigeria party (ANN) for the 2019 Presidential elections.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia ipsum distinctio, quisquam voluptatibus, esse vel
+                        , eos eveniet similique quae architecto molestiae! Nostrum dolores ipsa minima tenetur voluptate, dolorem dicta ad!
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat delectus at ea, cumque molestias debitis voluptatem
+                        
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam enim vel deserunt neque mollitia quis ea! Recusandae nisi 
+                        exercitationem eum tempora dolore ex illo ad, veritatis, magni, quod repellendus saepe?
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC,
+                        making it over 2000 years old. Richard McClintock,harum nam porro deleniti dolorum unde ab suscipit, qui eos? Voluptas numquam quo iure.
+                </p>
+                <h3>Politics</h3>
+                <hr>
+                <p>
+                        He was the Nigerian Presidential Candidate of the Alliance for New
+                        Nigeria party (ANN) for the 2019 Presidential elections.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia ipsum distinctio, quisquam voluptatibus, esse vel
+                        , eos eveniet similique quae architecto molestiae! Nostrum dolores ipsa minima tenetur voluptate, dolorem dicta ad!
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat delectus at ea, cumque molestias debitis voluptatem
+                        
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam enim vel deserunt neque mollitia quis ea! Recusandae nisi 
+                        exercitationem eum tempora dolore ex illo ad, veritatis, magni, quod repellendus saepe?
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC,
+                        making it over 2000 years old. Richard McClintock,harum nam porro deleniti dolorum unde ab suscipit, qui eos? Voluptas numquam quo iure.
+                </p>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <!--modal-->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content"> 
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-md-12">
+                       <img class="rounded-circle img-responsive" src="https://res.cloudinary.com/glocutey/image/upload/v1572451913/undraw_notify_88a4_1_wqu6fa.png" >
+                       <h4 style="font-weight: bold;"><a style="cursor:pointer;" data-toggle="modal" data-target="#exampleModal"></a></h4>
+                       <p>To comment you need to sign in <br/> 
+                          <center>to your account</center> <br/>
+                        </p>
+                         <p><button class="btn btn-md btn-primary modal-signup">Sign In</button></p>
+    
+    
+                        <center> <p>Dont have an account?<a href="signup.html">sign up</a></p></center>
+                      </div>
+                    </div>
+                  </div> 
+                </div>
+             </div>
+            </div>
+    <section class="comment">
+        <div class="container">
+            <div class="row">
+                <p>See All 246 Comments</p>
+            </div>
+            <div class="row">
+                    <div class="col-md-6">
+                        <p><span class="authorName">Gloria Chinedu</span>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam enim vel deserunt neque mollitia quis ea! Recusandae nisi 
+                            exercitationem eum tempora dolore ex illo ad, veritatis, magni, quod repellendus saepe?
+                        </p>
+                    </div>                    
+                </div>
+                <br>
+            <div class="row">
+                <div class="col-md-6">
+                    <p><span class="authorName">Chukwuka Ezeaka</span>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam enim vel deserunt neque mollitia quis ea! Recusandae nisi 
+                        exercitationem eum tempora dolore ex illo ad, veritatis, magni, quod repellendus saepe?
+                    </p>
+                </div>                    
+            </div>
+            <div class="row">
+                <textarea row="4" class="form-control" id="commentBox" placeholder="write comment"></textarea>
+            </div>
+        </div>
+    </section>
+    <br>
+    <section>
+            <div id="footer">
+                    <div class="container" >
+                        <div class="row links">
+                                <div class="col-md-4 col-sm-12  text-center">
+                                        <ul class="quick-links">
+                                            <li>Legal</li>
+                                            <li><a href="Terms-of-use.html">Terms of Use</a></li>
+                                            <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                                        </ul>
+                                </div>
+                                <div class="col-md-4 col-sm-12  text-center">
+                                        <ul class="quicklinks">
+                                            <li>Company</li>
+                                            <li><a href="">About</a></li>
+                                            <li><a href="">Careers</a></li>
+                                            <li><a href="">FAQs</a></li>
+                                            <li><a href="">Donations</a></li>
+                                        </ul>
+                                </div>
+        
+                                <div class="col-md-4 col-sm-12 text-center">
+                                        
+                                        <div class="quicklinks">
+                                            <ul>
+                                                <li style="font-size:17px;">Connect With Us</li>
+                                                <li><a href="facebook.com"><span class="fa fa-facebook"></span></a> </li>
+                                                <li><a href="twitter.com"><span class="fa fa-twitter"></span></a></li>
+                                                <li><a href="instagram.com"><span class="fa fa-instagram"></span></a> </li>
+                                            </ul>                                   
+                                            <p>contact@wikipoli.gq</p>
+                                        </div> 
+                                </div>
+                                <div class="col-lg-12 copyright text-center">
+                                        <p>&copy; 2019 Wikipoli - All Rights Reserved</p>
+                                </div>
+                        </div>
+                    </div>
+            </div>
+    </section>
+    <script>
+        $(document).ready(function(){
+            $("#commentBox").focus(function(){
+                $("#myModal").modal();
+            })
+        })
+    </script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</body>
+</html>
