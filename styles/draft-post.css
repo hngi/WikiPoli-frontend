@@ -108,6 +108,7 @@ footer #copyright
 	margin: 2rem auto;
 	padding: 1.5rem 0.5rem 0.5rem;
 	border-radius: 5px;
+	position: relative;
 }
 #editor-section #post-title
 {
@@ -131,6 +132,7 @@ footer #copyright
 	border-radius: 3px;
 	border: none;
 	resize: none;
+	background-color: white;
 	min-height: 40vh;
 }
 #editor-section #editor-header
@@ -158,6 +160,10 @@ footer #copyright
 	transition: 0.6s ease-out;
 	position: relative;
 	display: inline-block;
+	border: none;
+	outline: none;
+	color: inherit;
+	background-color: inherit;
 }
 #editor-section #editor-header .option:hover
 {
@@ -204,6 +210,71 @@ footer #copyright
 	color: white;
 	background-color: #6D9BF1;
 	border: 1px solid #6D9BF1;
+}
+
+#links-modal
+{
+	display: none;
+	position: absolute;
+	background-color: rgba(0, 59, 100, 0.8);
+	border-top: 0.7rem solid rgb(0, 0, 0, 0.6);
+	height: 70%;
+	width: 70%;
+	left: 15%;
+	top: 15%;
+	color: white;
+	z-index: 20;
+	transition: 0.4s ease-out;
+	flex-direction: column;
+	justify-content: center;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+}
+#links-modal > *
+{
+	align-self: center;
+	display: flex;
+	flex-direction: column;
+	margin: 0.5rem auto;
+}
+#links-modal input
+{
+	width: 20rem;
+	outline: none;
+	border: none;
+	font-size: inherit;
+	font-family: inherit;
+	padding: 0.2rem;
+	border-radius: 3px;
+}
+#links-modal button
+{
+	border: none;
+	outline: none;
+	font-size: inherit;
+	font-family: inherit;
+	border-radius: 5px;
+	padding: 0.3rem 2rem;
+	margin: 1rem auto;
+	transition: 0.4s ease-out;
+}
+#links-modal button:hover
+{
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+}
+#links-modal #modal-close
+{
+	position: absolute;
+	top: -10%;
+	left: 94%;
+	font-size: 35px;
+	padding: 0.2rem;
+	cursor: pointer;
+	transition: 0.4s ease-out;
+}
+#links-modal #modal-close:hover
+{
+	color: darkorange;
 }
 
 

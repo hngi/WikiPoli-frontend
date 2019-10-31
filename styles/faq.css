@@ -1,44 +1,10 @@
-body {
-    font-family:'Source Sans Pro','Arial','Helvetica',sans-serif;
-    margin:0;
-    color:black;
-    background-color:#ecf0f1;
-}
-.logo{margin-left: -2%;}
-.navbar-nav{margin-right: -6%;}
-@media only screen and (max-width: 768){
-	.navbar-nav{margin-left: 4%;}
-}
 
-h2,h4, a {
-    font-family:'Asap','Arial','Helvetica',sans-serif;
-    font-weight:700;
-    line-height:normal;
-    margin:0 0 10px;color:#7f7f7f;
-    word-wrap:break-word;
-    text-rendering:optimizeLegibility;
-    -webkit-font-smoothing:antialiased;
-    color: black;
-}
-a:link {
-    color: #8c8c8c;
-}
-a:visited {
-    color:blueviolet;
-}
-p{
-    font-size:20px;
-    text-transform:uppercase;
-    color:black;
-    border-bottom:4px solid #fff;
-    font-family:monospace;
-}
 
-    .side-segment h3:after,.side-segment h2:after {
+    /* .side-segment h3:after,.side-segment h2:after {
 	background-color: #535a6b;
-}
+} */
 
-footer {
+/* footer {
     background: rgba(33, 60, 220, 0.1);
     margin: auto;
     overflow: hidden;
@@ -90,15 +56,15 @@ footer {
     .footer_elements{
                         margin:  15px 0 0 0;
                         /* line-height: 60px; */
-                        vertical-align: middle;
+                        /* vertical-align: middle;
                         flex-direction:  row;
                         padding-inline-start:  0px;
                         justify-content: flex-end;
     }
 
-}
+} */
 
-footer {
+/* footer {
     background: rgba(33, 60, 220, 0.1);
     margin: auto;
     overflow: hidden;
@@ -131,10 +97,10 @@ footer {
 .footer_brand  img {
     height:  80px;
     width: 100px;
-    vertical-align: middle;
+    vertical-align: middle; */
 
-}
-@media screen  and (min-width: 600px){
+/* } */ 
+/* @media screen  and (min-width: 600px){
     .footer_brand {
                         float: left;
     }
@@ -148,12 +114,12 @@ footer {
                         margin: 0 0 0 20px ;
     }
     .footer_elements{
-                        margin:  15px 0 0 0;
+                        margin:  15px 0 0 0; */
                         /* line-height: 60px; */
-                        vertical-align: middle;
+                        /* vertical-align: middle;
                         flex-direction:  row;
                         padding-inline-start:  0px;
                         justify-content: flex-end;
     }
 
-}
+} */
