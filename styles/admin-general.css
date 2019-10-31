@@ -1,0 +1,97 @@
+html
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    --sidebar-width: 18vw;
+}
+
+#admin-main #intro
+{
+    font-weight: 100;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.8);
+}
+#main-options
+{
+    margin: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-gap: 1rem;
+    height: 70vh;
+}
+#main-options > *
+{
+    background-color: white;/*rgb(113, 113, 200);*/
+    border: 1px solid #6D9BF1; /*rgb(63, 63, 150);*/
+    font-size: 18px;
+    text-align: center;
+    margin-right: 10px;
+    transition: 0.3s ease-out;
+    display: flex;
+    flex-direction: row;
+}
+#main-options > p{
+    font-size: 18px;
+    display: flex;
+    padding-top: 10px;
+    justify-items: left;
+}
+
+.InsideLife{
+    padding: 0;
+    margin: 0;
+    border: 1px solid #6D9BF1;
+    margin-top: 10px;
+    height: 60vh;
+}
+
+.Holders{
+    height: 150px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+}
+.inside-button{
+    background-color: #6D9BF1;
+    color: white;
+    display: flex;
+    justify-content: center;
+    border: none;
+    padding: 5px 10px;
+}
+
+.second-header{
+display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.my-search{
+    background-color: #6D9BF1;color: white;
+    cursor: pointer;
+    border: none;
+}
+
+@media (max-width: 860px)
+{
+    #admin-main #intro
+    {
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    #user-div
+    {
+        margin-top: 0.5rem;
+    }
+    #main-options
+    {
+        margin: 2rem 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 1rem;
+        height: 60vh;
+    }
+    #main-options > *
+    {
+        font-size: 20px;
+        padding: 5px;
+        border-radius: 5px;
+    }
+}
