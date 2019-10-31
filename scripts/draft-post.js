@@ -18,7 +18,7 @@ let toolbarOptions =
 				document.getElementById("modal-submit").addEventListener("click", e => 
 				{
 					modal.style.display = "none";
-					this.quill.format('link', "Hey")
+					this.quill.format('link', "https://google.com")
 				});
 				document.getElementById("modal-close").addEventListener("click", e => 
 				{
@@ -29,6 +29,10 @@ let toolbarOptions =
 			}
 			else
 				this.quill.format('link', false);
+		},
+		'image': function(value)
+		{
+			quill.insertEmbed(1, 'image', 'https://res.cloudinary.com/fabianuzukwu/image/upload/v1571749198/c09e9odiqy2cvkosfubl.png');
 		}
 	}
 }
