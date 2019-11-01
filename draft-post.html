@@ -58,22 +58,24 @@
 				<section class="option-group">
 					<button class="option ql-link" title="Post link"><img src="images/link-icon.png" height="20px"></button>
 					<button class="option ql-blockquote" title="Add blockquote"><img src="images/quotes-icon.jpg" height="20px"></button>
-					<button class="option ql-image" title="Add image"><img src="images/image-icon.png" height="20px"></button>
+					<button class="option" title="Add image" id="img-upload-div">
+						<input type="file" name="file" id="file-upload" value="" accept="image/*">
+						<img src="images/image-icon.png" height="20px">
+					</button>
 				</section>
 				<section class="option-group">
 					<button class="option ql-list" value="bullet" title="Add bullet list item"><img src="images/bullet-list-icon.png" height="20px"></button>
 					<button class="option ql-list" value="ordered" title="Add numbered list item"><img src="images/numbered-list-icon.png" height="20px"></button>
-					<button class="option" title="Add horizontal divider"><img src="images/hr-icon.png" height="20px"></button>
+					<button class="option ql-align" value="left" title="Change text alignment"><img src="images/left-align-icon.png" height="20px"></button>
 					<button class="option ql-header" title="Add heading/sub-heading"><img src="images/heading-icon.png" height="20px"></button>
 				</section>
 				<section class="option-group">
 					<button id="undo" class="option" title="Undo recent changes"><img src="images/undo-icon.png" height="20px"></button>
-					<button id="redo" class="option" title="Redo recent changes"><img src="images/redo-icon.png" height="20px"></button>
+					<button id="redo" class="option" title="Redo undone changes"><img src="images/redo-icon.png" height="20px"></button>
 				</section>
 			</div>
 			<div contenteditable="true" id="post-body" placeholder="Write a post. . ."></div>
 		</div>
-
 		<div id="links-modal">
 			<div id="modal-close">x</div>
 			<div>

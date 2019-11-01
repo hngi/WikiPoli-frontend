@@ -5,13 +5,28 @@ let inputState = [""];
 let stateIndex = 0;
 const Delta = Quill.import('delta');
 
+document.getElementById("file-upload").addEventListener("change", e =>
+{
+	if (!e.target.files || !e.target.files[0])
+		return;
+	let reader = new FileReader();
+	reader.onload = eReader =>
+	{
+		quill.clipboard.dangerouslyPasteHTML(1, `<img src=${eReader.target.result} >`);
+	}
+	reader.readAsDataURL(e.target.files[0]);
+})
 
 let toolbarOptions = 
 {
 	container: "#editor-header",
 	handlers: 
 	{
-		'link': function() 
+		'align': () =>
+		{
+
+		},
+		'link': () =>
 		{
 			document.getElementById("post-body").focus();
 			let modal = document.getElementById("links-modal");
