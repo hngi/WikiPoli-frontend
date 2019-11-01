@@ -9,7 +9,7 @@
     <link rel="icon" type="img/png" href="images/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://cdn.quilljs.com/1.3.6/quill.bubble.css" rel="stylesheet">
+    <link href="https://cdn.quilljs.com/1.3.6/quill.core.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles/draft-post.css" />
 </head>
 <body>
@@ -57,7 +57,7 @@
 				</section>
 				<section class="option-group">
 					<button class="option ql-link" title="Post link"><img src="images/link-icon.png" height="20px"></button>
-					<button class="option ql-blockquote" title="Add quotes"><img src="images/quotes-icon.jpg" height="20px"></button>
+					<button class="option ql-blockquote" title="Add blockquote"><img src="images/quotes-icon.jpg" height="20px"></button>
 					<button class="option ql-image" title="Add image"><img src="images/image-icon.png" height="20px"></button>
 				</section>
 				<section class="option-group">
@@ -83,7 +83,7 @@
 
 			<div>
 				<label for="link-desc">Display text</label>
-				<input type="text" id="link-desc" name="address" placeholder="Optional Display text" required>
+				<input type="text" id="link-desc" name="address" placeholder="Optional Display text">
 			</div>
 
 			<button id="modal-submit">Add link</button>

@@ -131,10 +131,16 @@ footer #copyright
 	font-size: 18px;
 	border-radius: 3px;
 	border: none;
+	outline: none;
 	resize: none;
 	background-color: white;
 	height: 40vh;
 	overflow-y: auto;
+}
+#editor-section #post-body blockquote
+{
+	padding: 0.1rem 1rem;
+	border-left: 5px solid #6D9BF1;
 }
 #editor-section #editor-header
 {
