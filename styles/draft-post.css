@@ -367,4 +367,24 @@ footer #copyright
 	{
 		font-size: 13px;
 	}
+
+	#links-modal
+	{
+		width: 90%;
+		left: 5%;
+		font-size: 14px;
+	}
+	#links-modal input
+	{
+		width: 15rem;
+	}
+	#links-modal button
+	{
+		padding: 0.3rem 1.5rem;
+	}
+	#links-modal #modal-close
+	{
+		top: -10%;
+		left: 91%;
+	}
 }
