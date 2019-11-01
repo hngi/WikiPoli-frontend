@@ -3,36 +3,73 @@ let textOutput = "";
 
 let inputState = [""];
 let stateIndex = 0;
+const Delta = Quill.import('delta');
+
 
 let toolbarOptions = 
 {
 	container: "#editor-header",
 	handlers: 
 	{
-		'link': function(value) 
+		'link': function() 
 		{
-			if (value)
+			document.getElementById("post-body").focus();
+			let modal = document.getElementById("links-modal");
+			let range = quill.getSelection();
+			modal.setAttribute("data-lock", "unlocked");
+			modal.setAttribute("data-range", JSON.stringify(range));
+			document.getElementById("link-address").value = "";
+			document.getElementById("link-desc").value = quill.getText(range.index, range.length).trim();
+			const addLink = e =>
 			{
-				
-				let modal = document.getElementById("links-modal");
-				document.getElementById("modal-submit").addEventListener("click", e => 
+				if (modal.getAttribute("data-lock") === "locked")
+					return;
+				modal.setAttribute("data-lock", "locked");
+				range = JSON.parse(modal.getAttribute("data-range"));
+				let normalizedLink = document.getElementById("link-address").value;
+				normalizedLink = /^https?\:\/\//.test(normalizedLink) ? 
+					normalizedLink : "https://" + normalizedLink;
+				modal.style.display = "none";
+				if (range.length > 0)
+					quill.deleteText(range.index, range.length);
+				let linkDesc = document.getElementById("link-desc").value.length ? 
+					document.getElementById("link-desc").value : document.getElementById("link-address").value;
+				quill.insertText(range.index, linkDesc, 
 				{
-					modal.style.display = "none";
-					this.quill.format('link', "https://google.com")
+					color: "blue",
+					underline: true,
+					link: normalizedLink
 				});
-				document.getElementById("modal-close").addEventListener("click", e => 
+				quill.insertText(range.index + linkDesc.length, " ", 
 				{
-					modal.style.display = "none";
-				});
-				modal.style.display = 'flex';
-				this.quill.format('link', "test ish");
+					color: "black",
+					underline: null,
+					link: null
+				})
+				quill.setSelection(range.index + linkDesc.length + 1);
+				document.getElementById("post-body").focus();
 			}
-			else
-				this.quill.format('link', false);
+			document.getElementById("modal-submit").addEventListener("click", addLink);
+			document.getElementById("links-modal").addEventListener("keydown", e =>
+			{
+				if (e.key === "Enter")
+				{
+					addLink();
+					e.preventDefault();
+				}
+			})
+			document.getElementById("modal-close").addEventListener("click", e => 
+			{
+				modal.style.display = "none";
+				document.getElementById("post-body").focus();
+			});
+			modal.style.display = 'flex';
+			setTimeout(() => document.getElementById("link-address").focus(), 0);
 		},
 		'image': function(value)
 		{
-			quill.insertEmbed(1, 'image', 'https://res.cloudinary.com/fabianuzukwu/image/upload/v1571749198/c09e9odiqy2cvkosfubl.png');
+			//quill.insertEmbed(1, 'image', 'https://res.cloudinary.com/fabianu.png');
+			//quill.updateContents(new Delta().insert('Hello ', {color: "blue", underline: true});
 		}
 	}
 }
