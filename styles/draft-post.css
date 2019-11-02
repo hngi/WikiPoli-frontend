@@ -148,6 +148,11 @@ footer #copyright
 	display: block;
 	margin: 1rem auto;
 }
+#editor-section #post-body li
+{
+	margin-left: 0;
+	padding-left: 0.5rem;
+}
 #editor-section #editor-header
 {
 	background-color: rgb(245, 245, 245);

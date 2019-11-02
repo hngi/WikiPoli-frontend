@@ -116,6 +116,31 @@ const optionsTable =
 	"header": document.querySelector(".ql-header"),
 	"list": document.querySelector(".ql-list")
 }
+const alignIcon = document.querySelector(".ql-align");
+alignIcon.addEventListener("click", e =>
+{
+	alignIcon.classList.remove("ql-active");
+	if (alignIcon.getAttribute("data-current") === "left")
+	{
+		alignIcon.setAttribute("data-current", "center");
+		alignIcon.value = "right";
+		alignIcon.firstChild.setAttribute("src", "images/center-align-icon.png");
+	}
+	else if (alignIcon.getAttribute("data-current") === "center")
+	{
+		alignIcon.setAttribute("data-current", "right");
+		alignIcon.setAttribute("value", "left");
+		alignIcon.classList.add("ql-active");
+		alignIcon.firstChild.setAttribute("src", "images/right-align-icon.png");
+	}
+	else
+	{
+		alignIcon.setAttribute("data-current", "left");
+		alignIcon.setAttribute("value", "center");
+		alignIcon.firstChild.setAttribute("src", "images/left-align-icon.png");
+	}
+})
+
 for (let option in optionsTable)
 {
 	optionsTable[option].addEventListener("click", e =>
@@ -136,11 +161,16 @@ quill.on("editor-change", e =>
 	let currentFormat = quill.getFormat(quill.getSelection().index, quill.getSelection().length);
 	for (let option in optionsTable)
 	{
-		optionsTable[option].classList.remove("ql-active");
 		if (currentFormat[option] != null)
 			optionsTable[option].classList.add("active-option")
 		else
 			optionsTable[option].classList.remove("active-option");
+	}
+	switch(currentFormat.align)
+	{
+		case "center": alignIcon.firstChild.setAttribute("src", "images/center-align-icon.png"); break;
+		case "right": alignIcon.firstChild.setAttribute("src", "images/right-align-icon.png"); break;
+		default: alignIcon.firstChild.setAttribute("src", "images/left-align-icon.png"); break;
 	}
 })
 
