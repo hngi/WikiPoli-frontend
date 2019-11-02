@@ -1,3 +1,8 @@
+// 
+//	The output of the input editor is a HTML partial that is the value of:
+//    document.getElementById("post-body").innerHTML
+//
+
 let textInput = "";
 let textOutput = "";
 
@@ -18,7 +23,7 @@ document.getElementById("file-upload").addEventListener("change", e =>
 		{
 		  top: 1000,
 		  behavior: 'smooth'
-		}), 500);
+		}), 1000);
 	}
 	reader.readAsDataURL(e.target.files[0]);
 })
