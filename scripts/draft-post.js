@@ -1,5 +1,5 @@
-// 
-//	Check line 173 for comments how to read from post editor
+// 	BACKEND!
+//	Check line 237 for comments how to read from post editor
 //
 
 let textInput = "";
