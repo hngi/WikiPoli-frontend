@@ -155,7 +155,9 @@ quill.on("editor-change", e =>
 {
 	if (!quill.getSelection())
 		return;
-	let currentFormat = quill.getFormat(quill.getSelection().index, quill.getSelection().length);
+	let index = quill.getSelection().index;
+	let range = quill.getSelection().length;
+	let currentFormat = quill.getFormat(index, range);
 	for (let option in optionsTable)
 	{
 		if (currentFormat[option] != null)

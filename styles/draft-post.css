@@ -183,7 +183,7 @@ footer #copyright
 	color: inherit;
 	background-color: inherit;
 }
-#editor-section #editor-header .option:hover
+#editor-section #editor-header .option:hover, #editor-section #editor-header .option:focus
 {
 	background-color: #ADCBFB;
 }
