@@ -87,8 +87,8 @@ body,html{
 {
     border: 0px;
     background: none;
-    background-color: #6D9BF1;
-    color: #fff;
+    background-color: #fff;
+    color: #6D9BF1;
     padding: 8px 20px;
     border-top-right-radius:5px;
     cursor:pointer;
