@@ -221,6 +221,11 @@ editorBody.addEventListener("keydown", e =>
 		e.preventDefault();
 		document.querySelector(".ql-blockquote").click();
 	}
+	else if (e.ctrlKey && e.code === "KeyH")
+	{
+		e.preventDefault();
+		document.querySelector(".ql-header").click();
+	}
 })
 
 document.getElementById("create-post").addEventListener("click", e =>
