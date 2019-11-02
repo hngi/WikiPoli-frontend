@@ -198,6 +198,7 @@ footer #copyright
 	overflow: hidden;
 	position: relative;
 	align-self: center;
+	cursor: pointer;
 }
 #editor-section #editor-header #img-upload-div input
 {
