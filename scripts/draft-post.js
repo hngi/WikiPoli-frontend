@@ -12,7 +12,13 @@ document.getElementById("file-upload").addEventListener("change", e =>
 	let reader = new FileReader();
 	reader.onload = eReader =>
 	{
-		quill.clipboard.dangerouslyPasteHTML(1, `<img src=${eReader.target.result} >`);
+		quill.clipboard.dangerouslyPasteHTML(quill.getSelection().index, 
+			`<img src=${eReader.target.result} >`);
+		setTimeout(() => document.getElementById("post-body").scroll(
+		{
+		  top: 1000,
+		  behavior: 'smooth'
+		}), 500);
 	}
 	reader.readAsDataURL(e.target.files[0]);
 })
