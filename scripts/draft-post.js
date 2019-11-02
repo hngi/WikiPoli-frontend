@@ -21,7 +21,7 @@ document.getElementById("file-upload").addEventListener("change", e =>
 	{
 		quill.clipboard.dangerouslyPasteHTML(quill.getSelection().index, 
 			`<img src=${eReader.target.result} >`);
-		//document.getElementById("post-body").scrollTo(0, document.getElementById("post-body".scrollHeight))
+		//setTimeout(() => editorBody.scrollTo(0, editorBody.scrollHeight), 200);
 	}
 	reader.readAsDataURL(e.target.files[0]);
 })
@@ -33,7 +33,7 @@ let toolbarOptions =
 	{
 		'link': () =>
 		{
-			document.getElementById("post-body").focus();
+			editorBody.focus();
 			let modal = document.getElementById("links-modal");
 			let range = quill.getSelection();
 			modal.setAttribute("data-lock", "unlocked");
@@ -67,7 +67,7 @@ let toolbarOptions =
 					link: null
 				})
 				quill.setSelection(range.index + linkDesc.length + 1);
-				document.getElementById("post-body").focus();
+				editorBody.focus();
 			}
 			document.getElementById("modal-submit").addEventListener("click", addLink);
 			document.getElementById("links-modal").addEventListener("keydown", e =>
@@ -81,7 +81,7 @@ let toolbarOptions =
 			document.getElementById("modal-close").addEventListener("click", e => 
 			{
 				modal.style.display = "none";
-				document.getElementById("post-body").focus();
+				editorBody.focus();
 			});
 			modal.style.display = 'flex';
 			setTimeout(() => document.getElementById("link-address").focus(), 0);
@@ -96,7 +96,6 @@ let quill = new Quill('#post-body',
 		toolbar: toolbarOptions,
 		history: 
 		{
-			delay: 2000,
 			maxStack: 500
 		}
 	},
@@ -189,7 +188,7 @@ editorBody.addEventListener("paste", e =>
 document.getElementById("create-post").addEventListener("click", e =>
 {
 	let postTitle = document.getElementById("post-title").value;
-	let postBody = DOMPurify.sanitize(document.getElementById("post-body").innerHTML);
+	let postBody = DOMPurify.sanitize(editorBody.innerHTML);
 	let filteredPostBody = postBody.replace(/content-editable="true"/gi, 'content-editable="false"');
 
 	///		Note to BE:
@@ -200,46 +199,8 @@ document.getElementById("create-post").addEventListener("click", e =>
 
 document.getElementById("editor-header").addEventListener("click", e =>
 {
-	document.getElementById("post-body").focus();
+	editorBody.focus();
 })
 
-const recordProgress = () =>
-{
-	inputState.push(document.getElementById("post-body").innerHTML);
-	stateIndex++;
-}
-
-document.getElementById("post-body").addEventListener("keydown", e =>
-{
-	if (e.code === "Space")
-		recordProgress();
-})
-
-const undo = () =>
-{
-	if (stateIndex === inputState.length - 1)
-		recordProgress();
-	if (stateIndex <= 0)
-		return;
-	stateIndex--;
-	textInput = inputState[stateIndex];
-	updateDisplay(textInput);
-}
-
-const redo = () =>
-{
-	if (stateIndex >= inputState.length - 1)
-		return;
-	stateIndex++;
-	textInput = inputState[stateIndex];
-	updateDisplay(textInput);
-}
-
-const updateDisplay = input =>
-{
-	textOutput = textInput;
-	document.getElementById("post-body").innerHTML = textOutput;
-}
-
-document.getElementById("undo").addEventListener("click", () => quill.history.undo.call(quill));
-document.getElementById("redo").addEventListener("click", quill.history.redo);
+document.getElementById("undo").addEventListener("click", () => quill.history.undo());
+document.getElementById("redo").addEventListener("click", () => quill.history.redo());
