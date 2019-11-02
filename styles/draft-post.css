@@ -182,9 +182,9 @@ footer #copyright
 {
 	background-color: #ADCBFB;
 }
-#editor-section #editor-header .active-option
+#editor-section #editor-header .active-option, 
+#editor-section #editor-header .active-option:hover
 {
-	text-decoration: underline;
 	background-color: #6D9BF1;
 }
 #editor-section #editor-header #img-upload-div

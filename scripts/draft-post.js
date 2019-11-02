@@ -33,10 +33,6 @@ let toolbarOptions =
 	container: "#editor-header",
 	handlers: 
 	{
-		'align': () =>
-		{
-
-		},
 		'link': () =>
 		{
 			document.getElementById("post-body").focus();
@@ -107,6 +103,45 @@ let quill = new Quill('#post-body',
 		toolbar: toolbarOptions,
 	},
 	placeholder: 'Create a post. . .',
+})
+
+
+const optionsTable =  
+{
+	"bold": document.querySelector(".ql-bold"),
+	"italic": document.querySelector(".ql-italic"),
+	"underline": document.querySelector(".ql-underline"),
+	"link": document.querySelector(".ql-link"),
+	"blockquote": document.querySelector(".ql-blockquote"),
+	"header": document.querySelector(".ql-header"),
+	"list": document.querySelector(".ql-list")
+}
+for (let option in optionsTable)
+{
+	optionsTable[option].addEventListener("click", e =>
+	{
+		if (!/\boption\b/.test(e.target.classList))
+			return;
+		if (/\bactive-option\b/.test(e.target.classList))
+			e.target.classList.remove("active-option")
+		else
+			e.target.classList.add("active-option")
+	})
+}
+
+quill.on("editor-change", e => 
+{
+	if (!quill.getSelection())
+		return;
+	let currentFormat = quill.getFormat(quill.getSelection().index, quill.getSelection().length);
+	for (let option in optionsTable)
+	{
+		optionsTable[option].classList.remove("ql-active");
+		if (currentFormat[option] != null)
+			optionsTable[option].classList.add("active-option")
+		else
+			optionsTable[option].classList.remove("active-option");
+	}
 })
 
 document.getElementById("editor-header").addEventListener("click", e =>
