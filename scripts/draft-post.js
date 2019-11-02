@@ -8,6 +8,9 @@ let textOutput = "";
 let inputState = [""];
 let stateIndex = 0;
 const Delta = Quill.import('delta');
+const editorBody = document.getElementById("post-body");
+editorBody.focus();
+
 
 document.getElementById("file-upload").addEventListener("change", e =>
 {
@@ -91,6 +94,11 @@ let quill = new Quill('#post-body',
 	modules: 
 	{
 		toolbar: toolbarOptions,
+		history: 
+		{
+			delay: 2000,
+			maxStack: 500
+		}
 	},
 	placeholder: 'Create a post. . .',
 })
@@ -164,6 +172,19 @@ quill.on("editor-change", e =>
 	}
 })
 
+let pasteLocked = false;
+editorBody.addEventListener("paste", e =>
+{
+	let index = quill.getSelection().index;
+	let range = quill.getSelection().length;
+	if (range)
+		quill.deleteText(index, range);
+	let paste = (e.clipboardData || window.clipboardData).getData('text');
+	quill.insertText(index, paste);
+	setTimeout(() => quill.setSelection(index + paste.length), 0);
+	e.preventDefault();
+})
+
 document.getElementById("create-post").addEventListener("click", e =>
 {
 	let postTitle = document.getElementById("post-title").value;
@@ -181,22 +202,22 @@ document.getElementById("editor-header").addEventListener("click", e =>
 	document.getElementById("post-body").focus();
 })
 
+const recordProgress = () =>
+{
+	inputState.push(document.getElementById("post-body").innerHTML);
+	stateIndex++;
+}
+
 document.getElementById("post-body").addEventListener("keydown", e =>
 {
 	if (e.code === "Space")
-	{
-		inputState.push(document.getElementById("post-body").innerHTML);
-		stateIndex++;
-	}
+		recordProgress();
 })
 
 const undo = () =>
 {
 	if (stateIndex === inputState.length - 1)
-	{
-		inputState.push(document.getElementById("post-body").innerHTML);
-		stateIndex++;
-	}
+		recordProgress();
 	if (stateIndex <= 0)
 		return;
 	stateIndex--;
@@ -219,5 +240,5 @@ const updateDisplay = input =>
 	document.getElementById("post-body").innerHTML = textOutput;
 }
 
-document.getElementById("undo").addEventListener("click", undo);
-document.getElementById("redo").addEventListener("click", redo);
+document.getElementById("undo").addEventListener("click", () => quill.history.undo.call(quill));
+document.getElementById("redo").addEventListener("click", quill.history.redo);
