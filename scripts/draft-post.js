@@ -183,6 +183,7 @@ editorBody.addEventListener("paste", e =>
 	quill.insertText(index, paste);
 	setTimeout(() => quill.setSelection(index + paste.length), 0);
 	e.preventDefault();
+	return false;
 })
 
 document.getElementById("create-post").addEventListener("click", e =>
