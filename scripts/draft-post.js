@@ -50,6 +50,7 @@ let toolbarOptions =
 				normalizedLink = /^https?\:\/\//.test(normalizedLink) ? 
 					normalizedLink : "https://" + normalizedLink;
 				modal.style.opacity = "0";
+				modal.style.display = "none";
 				if (range.length > 0)
 					quill.deleteText(range.index, range.length);
 				let linkDesc = document.getElementById("link-desc").value.length ? 
