@@ -1,0 +1,151 @@
+
+.navbar-nav a{
+	text-decoration: none;
+}
+.edit_textarea{
+}
+#login{
+	vertical-align: center;
+	font-weight: 900;
+}
+#signUp{
+	background: #6D9BF1;
+	color: #ffffff;
+	border-radius: 0px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.edit_input h3{
+	color: #6D9BF1;
+}
+.edit_input>div{
+padding-left: 0;
+margin-left: 0;
+}
+.edit_input>div .col-md-6{
+padding-left: 0;
+margin-left: 0;
+}
+label{
+
+	display: block;
+	font-weight: 600;
+}
+input{
+	width: 90%!important;
+	margin-bottom: 20px;
+	border: 1px solid #6D9BF1;
+	padding-left:10px; 
+   display: inline!important;
+	
+}
+.edu input{
+   width: 85%!important;
+}
+textarea{
+	height: 100px;
+	min-width:90%;
+	margin-bottom: 15px;
+	border: 1px solid #6D9BF1
+}
+.desc textarea{
+	width: 100%;
+	height: 300px;
+	border: 1px solid #6D9BF1
+}
+
+.edit_textarea{
+	padding-top: 40px;
+}
+#footer {
+  background-color: #6D9BF1; 
+  margin-top: 5rem;  
+  padding-top: 10px;
+  /* height: 300px; */
+  width: 100%;
+}
+
+.links {
+  padding-top: 5px;
+}
+
+.social-links h3,
+.quick-links li {
+  list-style-type: none;
+  padding-top: 5px;
+}
+
+.social-links h3,
+.quick-links li:first-child {
+  color: #ffffff;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+.quick-links li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.social-links a span {
+  color: #ffffff;
+  letter-spacing: 20px;
+}
+
+.social-links p,
+.copyright p {
+  padding-top: 10px;
+  color: #ffffff;
+  font-size: 12px; 
+}
+.form-control{
+	border-radius:0px!important;
+	border:1px solid #6D9BF1;
+}
+
+.input-group{
+   padding-bottom:1rem!important; 
+   width: 90%!important;
+   display: flex;
+   flex-direction:row;
+}
+
+.edu {width: 100%; 
+   display: inline!important;}
+.input-group, .input-group-text, .input-group-addon{
+   border-radius:0px!important;
+}
+
+.input-group-text{
+   color:#ffffff!important;
+   font-size: 1.5rem;
+   font-weight: 900;
+   padding-top: 0px!important;
+   padding-bottom: 0px!important;
+}
+
+.input-group-addon, .input-group-text{
+   background:#6D9BF1!important; 
+   border:1px solid #6D9BF1; 
+   display: inline;
+   cursor: pointer;
+}
+.fa{
+   vertical-align:center!important;
+   display: relative;
+   margin-top: 10px;
+   margin-left: 5px;
+   cursor: pointer;
+   float: right!important;
+   right: -30px!important;
+   bottom: 1px!important;
+   position: absolute!important;
+   display: inline!important;
+   top: 0;
+}
+@media only screen and (max-width: 991px){
+
+	.input-group{
+      max-width: 100%!important;
+	}
+}
