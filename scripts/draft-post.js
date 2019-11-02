@@ -49,7 +49,7 @@ let toolbarOptions =
 				let normalizedLink = document.getElementById("link-address").value;
 				normalizedLink = /^https?\:\/\//.test(normalizedLink) ? 
 					normalizedLink : "https://" + normalizedLink;
-				modal.style.display = "none";
+				modal.style.opacity = "0";
 				if (range.length > 0)
 					quill.deleteText(range.index, range.length);
 				let linkDesc = document.getElementById("link-desc").value.length ? 
@@ -77,13 +77,18 @@ let toolbarOptions =
 					addLink();
 					e.preventDefault();
 				}
+				if (e.key === "Escape")
+				{
+					modal.style.opacity = "0";
+					setTimeout(() => quill.setSelection(JSON.parse(modal.getAttribute("data-range"))), 0);
+				}
 			})
 			document.getElementById("modal-close").addEventListener("click", e => 
 			{
-				modal.style.display = "none";
-				editorBody.focus();
+				modal.style.opacity = "0";
+				setTimeout(() => quill.setSelection(JSON.parse(modal.getAttribute("data-range"))), 0);
 			});
-			modal.style.display = 'flex';
+			modal.style.opacity = "100";
 			setTimeout(() => document.getElementById("link-address").focus(), 0);
 		}
 	}
@@ -173,7 +178,7 @@ quill.on("editor-change", e =>
 	}
 })
 
-let pasteLocked = false;
+
 editorBody.addEventListener("paste", e =>
 {
 	let index = quill.getSelection().index;
@@ -185,6 +190,34 @@ editorBody.addEventListener("paste", e =>
 	setTimeout(() => quill.setSelection(index + paste.length), 0);
 	e.preventDefault();
 	return false;
+})
+editorBody.addEventListener("keydown", e =>
+{
+	if (e.ctrlKey && e.code === "KeyZ")
+	{
+		e.preventDefault();
+		quill.history.undo();
+	}
+	else if (e.ctrlKey && e.code === "KeyY")
+	{
+		e.preventDefault();
+		quill.history.redo();
+	}
+	else if (e.ctrlKey && e.code === "KeyL")
+	{
+		e.preventDefault();
+		document.querySelector(".ql-link").click();
+	}
+	else if (e.ctrlKey && e.code === "KeyE")
+	{
+		e.preventDefault();
+		document.querySelector(".ql-align").click();
+	}
+	else if (e.ctrlKey && e.code === "KeyQ")
+	{
+		e.preventDefault();
+		document.querySelector(".ql-blockquote").click();
+	}
 })
 
 document.getElementById("create-post").addEventListener("click", e =>

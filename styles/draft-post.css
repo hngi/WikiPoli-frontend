@@ -248,10 +248,11 @@ footer #copyright
 
 #links-modal
 {
-	display: none;
+	display: flex;
 	position: absolute;
 	background-color: rgba(0, 59, 100, 0.8);
 	border-top: 0.7rem solid rgb(0, 0, 0, 0.6);
+	opacity: 0;
 	height: 70%;
 	width: 70%;
 	left: 15%;
