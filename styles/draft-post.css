@@ -248,7 +248,7 @@ footer #copyright
 
 #links-modal
 {
-	display: flex;
+	display: none;
 	position: absolute;
 	background-color: rgba(0, 59, 100, 0.8);
 	border-top: 0.7rem solid rgb(0, 0, 0, 0.6);

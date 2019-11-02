@@ -79,16 +79,19 @@ let toolbarOptions =
 				}
 				if (e.key === "Escape")
 				{
+					modal.style.display = "none";
 					modal.style.opacity = "0";
 					setTimeout(() => quill.setSelection(JSON.parse(modal.getAttribute("data-range"))), 0);
 				}
 			})
 			document.getElementById("modal-close").addEventListener("click", e => 
 			{
+				modal.style.display = "none";
 				modal.style.opacity = "0";
 				setTimeout(() => quill.setSelection(JSON.parse(modal.getAttribute("data-range"))), 0);
 			});
 			modal.style.opacity = "100";
+			modal.style.display = "flex";
 			setTimeout(() => document.getElementById("link-address").focus(), 0);
 		}
 	}
