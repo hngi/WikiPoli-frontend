@@ -1,6 +1,5 @@
 // 
-//	The output of the input editor is a HTML partial that is the value of:
-//    document.getElementById("post-body").innerHTML
+//	Check line 173 for comments how to read from post editor
 //
 
 let textInput = "";
@@ -19,11 +18,7 @@ document.getElementById("file-upload").addEventListener("change", e =>
 	{
 		quill.clipboard.dangerouslyPasteHTML(quill.getSelection().index, 
 			`<img src=${eReader.target.result} >`);
-		setTimeout(() => document.getElementById("post-body").scroll(
-		{
-		  top: 1000,
-		  behavior: 'smooth'
-		}), 1000);
+		//document.getElementById("post-body").scrollTo(0, document.getElementById("post-body".scrollHeight))
 	}
 	reader.readAsDataURL(e.target.files[0]);
 })
@@ -87,11 +82,6 @@ let toolbarOptions =
 			});
 			modal.style.display = 'flex';
 			setTimeout(() => document.getElementById("link-address").focus(), 0);
-		},
-		'image': function(value)
-		{
-			//quill.insertEmbed(1, 'image', 'https://res.cloudinary.com/fabianu.png');
-			//quill.updateContents(new Delta().insert('Hello ', {color: "blue", underline: true});
 		}
 	}
 }
@@ -172,6 +162,18 @@ quill.on("editor-change", e =>
 		case "right": alignIcon.firstChild.setAttribute("src", "images/right-align-icon.png"); break;
 		default: alignIcon.firstChild.setAttribute("src", "images/left-align-icon.png"); break;
 	}
+})
+
+document.getElementById("create-post").addEventListener("click", e =>
+{
+	let postTitle = document.getElementById("post-title").value;
+	let postBody = DOMPurify.sanitize(document.getElementById("post-body").innerHTML);
+	let filteredPostBody = postBody.replace(/content-editable="true"/gi, 'content-editable="false"');
+
+	///		Note to BE:
+	///  Save filteredPostBody as the body of the post to database. 
+	///  Sanitize it at the server too, with DOMPurify or similar libraries for security reasons, since it is HTML string
+	///  Save postTitle as the title of the post. It's just a string, so no need for serious sanitization
 })
 
 document.getElementById("editor-header").addEventListener("click", e =>
