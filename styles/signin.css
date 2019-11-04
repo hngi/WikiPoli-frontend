@@ -36,40 +36,44 @@ html {
 }
 
 .forg a {
-  color: #6D9BF1 !important;
+  color: #6D9BF1;
 }
 
 .forg p a:hover {
-    color: red !important;
+    color: red;
     text-decoration: none;
 }
 .text-center {
     margin-top: 12px;
 }
 .text-center a:hover {
-    color: red !important;
+    color: red;
     text-decoration: none;
 }
 
 .btn-block {
-    background-color: #6D9BF1 !important;
+    background-color: #6D9BF1;
 }
 
 .btn-google {
-    background-color: rgb(151, 25, 25) !important;
+    background-color: rgb(151, 25, 25);
 }
 
 .g-signin2{
-    margin-left:73px !important;
+    margin-left:73px;
 }
 .fab {
     color: white;
     padding-right: 8px;
 }
 
+.form-signin-heading{
+    text-align: center;
+}
+
 .form-control,
 .btn-block {
-    width: 80%;
+    width: 30%;
     margin-left: 12%;
     margin-bottom: 2rem;
     height: 50px;

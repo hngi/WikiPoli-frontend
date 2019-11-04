@@ -21,6 +21,8 @@
 
 <body>
 
+    <h1 class="cover-heading"><a href="index.html"><img src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571749198/c09e9odiqy2cvkosfubl.png"></a></h1>
+
      <div class="container">
 
          <div class="container-inner">
@@ -28,12 +30,14 @@
              <div class="cover-container">
 
                  <div class="inner cover">
-                     <h1 class="cover-heading"><a href="index.html"><img src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571749198/c09e9odiqy2cvkosfubl.png"></a></h1>
                      
                         <form id="login-form" class="login_form" action="#" method="post">
-                            <h2 class="form-signin-heading">Log In to Your WikiPoli Account</h2>
+                            <h2 class="form-signin-heading">Welcome Back</h2>
+                            <p class="text-center">
+                                New To WikiPoli? <a href="signup.html"> Sign up</a>
+                            </p>
                             
-                            <div class="form-group">
+                          <div class="form-group">
                             <label for="email" class="sr-only">Email address</label>
                                 <input type="email" id="inputEmail" class="form-control" placeholder=" Your Email Address" required
                                     autofocus>
@@ -44,17 +48,20 @@
                                 <input type="password" id="inputPassword" class="form-control" placeholder="Your Password" minlength="5" required>
                             </div>
 
-                            <button class="btn btn-lg btn-primary btn-block" type="submit" >Log In</button>
-                            <!-- <button class="btn btn-lg btn-primary btn-block btn-google" type="submit" ><i class="fab fa-google"></i> Log In with Google</button> -->
+                            <button class="btn btn-md btn-primary btn-block" type="submit" >Log In</button>
+                            <button type="button" class="btn btn-light"><i class="fab fa-facebook"></i>Login With Facebook</button>                               
+                            <button type="button" class="btn btn-light"><i class="fab fa-twitter"></i>Login With Twitter</button>
+                            <button class="btn btn-lg btn-primary btn-block btn-twitter" type="submit" ><i class="fab fa-twitter"></i> Log In with Twitter</button>
+                            
                             <div class="g-signin2" data-onsuccess="onSignIn"></div>
                                     <div class="forg">
                                         <p class="forg"><a href="forgotpassword.html">Forgot Password?</a></p>
                                     </div>
                                 <div id="eresult"></div>
 
-                                <p class="text-center">
-                                    Don't have an account? <a href="signup.html"> Sign up</a>
-                                </p>
+                            <p class="text-center">
+                                By continuing you accept our <a href="signup.html"> Terms of Use</a>
+                            </p>
 
                      </form>
 
