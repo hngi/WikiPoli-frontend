@@ -11,7 +11,8 @@
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="read more.css">
+    <link rel="stylesheet" href="./styles/read more.css">
+    <link rel="stylesheet" href="./styles/draft-post.css">
     <style>
         .navbar{
         background-color:transparent;
@@ -50,8 +51,11 @@
         }
 
         .navbar-toggle .icon-bar{
-        background-color: black
+        background-color: black;
 
+        }
+        .may {
+            color: rgb(0, 0, 0, 0.5);
         }
 
         .signup{
@@ -75,19 +79,41 @@
             float:right
         }
 
+        .search_box input[type="text"]{
+        padding: 4px 4px;
+        width: 250px;
+        /* border-radius: px; */
+        }
+
         .content{
             margin-top: 50px;
         }
         
         .paragraph{
             text-align: justify;
+            min-height: 300px;
+            line-height: 35px;
+        }
+        .intro {
+            line-height: 35px;
+        }
+
+        .padded-column1{
+            padding-right:90px;
+            
+        }
+
+        .padded-column2{
+            padding-left:90px;
         }
 
         .image-row{
             height: 300px !important;
-            background-image: url("https://res.cloudinary.com/zennylily/image/upload/v1571784976/wikipoli_cn3w6g.jpg");
-            background-size: cover;
+            background-image: url("./images/fela-pic2.png");
+            background-size: 92%;
             background-repeat: no-repeat;
+            margin-left: 90px;
+            height: 100%;
         }
 
         hr{
@@ -99,10 +125,18 @@
             align-content:center;
         }
 
+        .p-title{
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 18px;
+        }
+
         .authorName{
             font-weight: 800;
+            line-height: 35px;
             
         }
+        .modal-body
 
         #footer{
             background-color:rgb(74, 169, 247);
@@ -113,16 +147,20 @@
             color: white
         }
         
- .     #footer a:visited{
+      #footer a:visited{
             color: white
         }
+
         .quick-links li a:link{
             color: white;
         }
     
 
-        @media screen and (max-width: 480px){
- 
+        @media screen and (max-width: 578px){
+        div.image-row{
+            margin:10px;
+            height: 0%;
+        }
         .collapse{
         background-color: white;
         position: relative;
@@ -176,65 +214,47 @@
     <section class="content">
         <div class="container">
             <div class="row content1">
-                <div class="col-md-4 paragraph">
-                    <p>
-                            Adetokunbo Olufela Durotoye (born in Ibadan, Oyo State on the 12th May 1971) is a business consultant,
-                             leadership expert and motivational speaker. Fela is the president of the GEMSTONE Nation Builders 
-                             Foundation, non- profit, non- governmental organization targeted at training youths towards transformational 
+                <div class="col-md-5 padded-column1 paragraph">
+                    <p class="paragraph1">
+                            <span class="p-title">Adetokunbo Olufela Durotoye </span><br>
+                            (born in Ibadan, Oyo State on the 12th May 1971) <br/><br/>He is a business consultant,
+                             leadership expert and motivational speaker. <br>
+                             Fela is the president of the GEMSTONE Nation Builders 
+                             Foundation<br> non- profit, non- governmental organization targeted at training youths towards transformational 
                              leadership and.... Adetokunbo Olufela Durotoye (born in Ibadan, Oyo State on the 12th May 1971) is a business 
-                             consultant, leadership expert and motivational speaker. Fela is the president of the GEMSTONE Nation Builders 
-                             Foundation, non- profit, non- governmental organization targeted at training youths towards transformational 
-                             leadership and.... Adetokunbo Olufela Durotoye (born in Ibadan, Oyo State on the 12th May 1971) is a business 
-                             consultant, leadership expert and motivational speaker. Fela is the president of the GEMSTONE Nation Builders
-                              Foundation, non- profit, non- governmental organization targeted at training youths towards transformational 
-                              leadership and....Adetokunbo Olufela Durotoye (born in Ibadan, Oyo State on the 12th May 1971) is a business 
-                              consultant, leadership expert and motivational speaker. 
+                             consultant, <br>leadership expert and motivational speaker. Fela is the president of the GEMSTONE Nation Builders 
+                             Foundation, non- profit, non- governmental organization targeted at training youths towards transformational <br>
+                             
+                            
                     </p>
                 </div>
-                <div class="col-md-4 paragraph middle-column" style="background-color: rgb(212, 241, 250);">
+                <div class="col-md-2 paragraph middle-column" style="background-color: rgb(33, 50, 220, 0.08);">
                     <p>
-                            He was the Nigerian Presidential Candidate of the Alliance for New
-                            Nigeria party (ANN) for the 2019 Presidential elections.
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia ipsum distinctio, quisquam voluptatibus, esse vel
-                            , eos eveniet similique quae architecto molestiae! Nostrum dolores ipsa minima tenetur voluptate, dolorem dicta ad!
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat delectus at ea, cumque molestias debitis voluptatem
-                             harum nam porro deleniti dolorum unde ab suscipit, qui eos? Voluptas numquam quo iure.
-                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam enim vel deserunt neque mollitia quis ea! Recusandae nisi 
-                             exercitationem eum tempora dolore ex illo ad, veritatis, magni, quod repellendus saepe?
-                             Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC,
-                              making it over 2000 years old. Richard McClintock,
-                              a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscur
-                              e Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
-                               
+                            <div><strong>Education</strong></div> He was the Nigerian PresidentialCandidate of the Alliance for New
+                            Nigeria party (ANN)<br><br> <div><strong>ocupation</strong></div> for the 2019 Presidential elections.<br><br><div><strong>spouse</strong></div>Tara- Fela Durotoye<br><br>
+
+                            <div><strong>children</strong></div>1
+                           
                     </p>
                 </div>
-                <div class="col-md-4 paragraph">
+                <div class="col-md-5 padded-column2 paragraph">
                     <p>
                             Adetokunbo Olufela Durotoye (born in Ibadan, Oyo State on the 12th
                             May 1971) is a business consultant, leadership expert and
                             motivational speaker. Fela is the president of the GEMSTONE Nation
-                            Builders Foundation, non- profit, non- governmental organization
+                            Builders Foundation,<br> non- profit, non- governmental organization
                             targeted at training youths towards transformational leadership
-                            and.. Adetokunbo Olufela Durotoye (born in Ibadan, Oyo State on the
+                            and.. <br>Adetokunbo Olufela Durotoye (born in Ibadan, Oyo State on the
                             12th May 1971) is a business consultant, leadership expert and
-                            motivational speaker. Fela is the president of the GEMSTONE Nation
-                            Builders Foundation, non- profit, non- governmental organization
-                            targeted at training youths towards transformational leadership
-                            and.. Adetokunbo Olufela Durotoye (born in Ibadan, Oyo State on the
-                            12th May 1971) is a business consultant, leadership expert and
-                            motivational speaker. Fela is the president of the GEMSTONE Nation
-                            Builders Foundation, non- profit, non- governmental organization
-                            targeted at training youths towards transformational leadership
-                            and.. Adetokunbo Olufela Durotoye (born in Ibadan, Oyo State on the
-                            12th May 1971) is a business consultant, leadership expert and
-                            motivational speaker. Fela is the president of the GEMSTONE Nation
-                            Builders Foundation, non- profit,
+                            motivational speaker. <br>Fela is the president of the GEMSTONE Nation
+                            
+                           
                     </p>
                 </div>
             </div>
         </div>
     </section>
-    <section class="image-section">
+    <section class="image-section content">
         <div class="row image-row"></div>
     </section>
 
@@ -243,7 +263,7 @@
             <div class="row">
                 <h3>Education</h3>
                 <hr>
-                <p>
+                <p class="intro">
                         He was the Nigerian Presidential Candidate of the Alliance for New
                         Nigeria party (ANN) for the 2019 Presidential elections.
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia ipsum distinctio, quisquam voluptatibus, esse vel
@@ -257,7 +277,7 @@
                 </p>
                 <h3>Career</h3>
                 <hr>
-                <p>
+                <p class="intro">
                         He was the Nigerian Presidential Candidate of the Alliance for New
                         Nigeria party (ANN) for the 2019 Presidential elections.
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia ipsum distinctio, quisquam voluptatibus, esse vel
@@ -271,7 +291,7 @@
                 </p>
                 <h3>Politics</h3>
                 <hr>
-                <p>
+                <p class="intro">
                         He was the Nigerian Presidential Candidate of the Alliance for New
                         Nigeria party (ANN) for the 2019 Presidential elections.
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia ipsum distinctio, quisquam voluptatibus, esse vel
@@ -312,11 +332,13 @@
     <section class="comment">
         <div class="container">
             <div class="row">
-                <p>See All 246 Comments</p>
+                <p><img src="//res.cloudinary.com/glocutey/image/upload/v1572621868/heart_9_ndlhnn.png" height="15px" width="15px"></img><strong> 2.1k</strong></p><br>
+                <p class="may">See All 50 Comments</p>
             </div>
             <div class="row">
                     <div class="col-md-6">
-                        <p><span class="authorName">Gloria Chinedu</span>
+                        
+                        <p class="intro"><span class="authorName">Gloria Chinedu</span>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam enim vel deserunt neque mollitia quis ea! Recusandae nisi 
                             exercitationem eum tempora dolore ex illo ad, veritatis, magni, quod repellendus saepe?
                         </p>
@@ -325,7 +347,7 @@
                 <br>
             <div class="row">
                 <div class="col-md-6">
-                    <p><span class="authorName">Chukwuka Ezeaka</span>
+                    <p class="intro"><span class="authorName" class="intro">Chukwuka Ezeaka</span>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam enim vel deserunt neque mollitia quis ea! Recusandae nisi 
                         exercitationem eum tempora dolore ex illo ad, veritatis, magni, quod repellendus saepe?
                     </p>
@@ -337,46 +359,34 @@
         </div>
     </section>
     <br>
-    <section>
-            <div id="footer">
-                    <div class="container" >
-                        <div class="row links">
-                                <div class="col-md-4 col-sm-12  text-center">
-                                        <ul class="quick-links">
-                                            <li>Legal</li>
-                                            <li><a href="Terms-of-use.html">Terms of Use</a></li>
-                                            <li><a href="privacypolicy.html">Privacy Policy</a></li>
-                                        </ul>
-                                </div>
-                                <div class="col-md-4 col-sm-12  text-center">
-                                        <ul class="quicklinks">
-                                            <li>Company</li>
-                                            <li><a href="">About</a></li>
-                                            <li><a href="">Careers</a></li>
-                                            <li><a href="">FAQs</a></li>
-                                            <li><a href="">Donations</a></li>
-                                        </ul>
-                                </div>
-        
-                                <div class="col-md-4 col-sm-12 text-center">
-                                        
-                                        <div class="quicklinks">
-                                            <ul>
-                                                <li style="font-size:17px;">Connect With Us</li>
-                                                <li><a href="facebook.com"><span class="fa fa-facebook"></span></a> </li>
-                                                <li><a href="twitter.com"><span class="fa fa-twitter"></span></a></li>
-                                                <li><a href="instagram.com"><span class="fa fa-instagram"></span></a> </li>
-                                            </ul>                                   
-                                            <p>contact@wikipoli.gq</p>
-                                        </div> 
-                                </div>
-                                <div class="col-lg-12 copyright text-center">
-                                        <p>&copy; 2019 Wikipoli - All Rights Reserved</p>
-                                </div>
-                        </div>
-                    </div>
-            </div>
-    </section>
+    <footer>
+        <div id="links-container">
+            <section id="legal-links">
+                <span class="links-title">Legal</span>
+                <a href="Terms-of-use.html">Terms of Use</a>
+                <a href="privacypolicy.html">Privacy Policy</a>
+            </section>
+            <div class="border"></div>
+            <section id="company-links">
+                <span class="links-title">Company</span>
+                <a href="about.html">About</a>
+                <a href="careers.html">Careers</a>
+                <a href="FAQ.html">FAQs</a>
+                <a href="donation_page.html">Donations</a>
+            </section>
+            <div class="border"></div>
+            <section id="connect-links">
+                <span class="links-title">Connect With Us</span>
+                <section id="social-links">
+                    <a href=""><span class="fa fa-facebook"></span></a>
+                    <a href=""><span class="fa fa-twitter"></span></a>
+                    <a href=""><span class="fa fa-instagram"></span></a>
+                </section>
+                <a id="email-contact" href="mailto:contact@wikipoli.gq">contact@wikipoli.gq</a>
+            </section>
+        </div>
+        <p id="copyright">&copy 2019 WikiPoli - All rights reserved</p>
+    </footer>
     <script>
         $(document).ready(function(){
             $("#commentBox").focus(function(){

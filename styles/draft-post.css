@@ -126,14 +126,32 @@ footer #copyright
 	margin: 0 auto;
 	display: block;
 	width: 100%;
-	padding: 0.5rem;
+	padding: 0;
 	font-family: inherit;
 	font-size: 18px;
 	border-radius: 3px;
 	border: none;
+	outline: none;
 	resize: none;
 	background-color: white;
-	min-height: 40vh;
+	height: 40vh;
+	overflow-y: auto;
+}
+#editor-section #post-body blockquote
+{
+	padding: 0.1rem 1rem;
+	border-left: 5px solid #6D9BF1;
+}
+#editor-section #post-body img
+{
+	height: 300px;
+	display: block;
+	margin: 1rem auto;
+}
+#editor-section #post-body li
+{
+	margin-left: 0;
+	padding-left: 0.5rem;
 }
 #editor-section #editor-header
 {
@@ -165,14 +183,31 @@ footer #copyright
 	color: inherit;
 	background-color: inherit;
 }
-#editor-section #editor-header .option:hover
+#editor-section #editor-header .option:hover, #editor-section #editor-header .option:focus
 {
 	background-color: #ADCBFB;
 }
-#editor-section #editor-header .active-option
+#editor-section #editor-header .active-option, 
+#editor-section #editor-header .active-option:hover
 {
-	text-decoration: underline;
 	background-color: #6D9BF1;
+}
+#editor-section #editor-header #img-upload-div
+{
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	align-self: center;
+	cursor: pointer;
+}
+#editor-section #editor-header #img-upload-div input
+{
+	position: absolute;
+	opacity: 0;
+	z-index: 2;
+	left: 0;
+	top: 0;
+	font-size: 100px;
 }
 #editor-section #btns-wrapper
 {
@@ -218,6 +253,7 @@ footer #copyright
 	position: absolute;
 	background-color: rgba(0, 59, 100, 0.8);
 	border-top: 0.7rem solid rgb(0, 0, 0, 0.6);
+	opacity: 0;
 	height: 70%;
 	width: 70%;
 	left: 15%;
@@ -258,7 +294,7 @@ footer #copyright
 	margin: 1rem auto;
 	transition: 0.4s ease-out;
 }
-#links-modal button:hover
+#links-modal button:hover, #links-modal button:focus
 {
 	box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
 }
@@ -365,5 +401,25 @@ footer #copyright
 	footer #email-contact
 	{
 		font-size: 13px;
+	}
+
+	#links-modal
+	{
+		width: 90%;
+		left: 5%;
+		font-size: 14px;
+	}
+	#links-modal input
+	{
+		width: 15rem;
+	}
+	#links-modal button
+	{
+		padding: 0.3rem 1.5rem;
+	}
+	#links-modal #modal-close
+	{
+		top: -10%;
+		left: 91%;
 	}
 }
