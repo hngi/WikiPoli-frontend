@@ -219,10 +219,10 @@ background: #6D9BF1;
 }
 /*Responsive styling */
 
-@media (min-width: 600px){
-    .container my-5 second{
-        margin:auto
-        max-width:auto
+@media (min-width: 992px){
+    .container {
+        width: 801;
+        height: 680;
     }
 }
 
