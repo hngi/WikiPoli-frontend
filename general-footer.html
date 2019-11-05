@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Footer</title>
+	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="icon" type="img/png" href="images/favicon.png">
+    <style type="text/css">
+    	#footer
+		{
+			font-family: Nunito, segoe UI, sans-serif;
+			margin: 1rem auto;
+			width: 100%;
+		}
+		#footer #hr
+		{
+			width: 80%;
+			border: 0.5px solid rgba(0, 0, 0, 0.08);
+		}
+		#footer #nav-flex
+		{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			margin: 2rem auto;
+		}
+		#footer #nav-flex .link-group
+		{
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+		}
+		#footer .link-group .group-desc
+		{
+			color: #1257AE;
+			font-weight: bolder;
+			margin: 1rem 0;
+		}
+		#footer .link-group a
+		{
+			text-decoration: none;
+			color: rgba(0, 0, 0, 0.8);
+			margin: 0.15rem 0;
+			transition: 0.4s ease-out;
+		}
+		#footer .link-group a:hover
+		{
+			color: rgb(100, 100, 200);
+		}
+		#footer #socials
+		{
+			display: flex;
+			flex-direction: row;
+		}
+		#footer #socials .social-link
+		{
+			margin-right: 1rem;
+			border-radius: 100%;
+			height: 30px;
+			border: 2px solid white;
+			transition: 0.4s ease-out;
+		}
+		#footer #socials .social-link:hover
+		{
+			border: 2px solid skyblue;
+		}
+
+
+		@media (max-width: 860px)
+		{
+			#footer
+			{
+				padding-bottom: 1rem;
+			}
+			#footer #nav-flex
+			{
+				flex-direction: column;
+				margin: 1rem 2rem;
+			}
+			#footer .link-group .group-desc
+			{
+				margin: 1.5rem 0 0.5rem;
+			}
+		}
+    </style>
+</head>
+<body>
+	<footer id="footer">
+		<hr id="hr">
+		<nav id="nav-flex">
+			<section class="link-group">
+				<span class="group-desc">Company</span>
+				<a href="">About Us</a>
+				<a href="">Our Team</a>
+				<a href="">Election 2023</a>
+			</section>
+			<section class="link-group">
+				<span class="group-desc">Help & Support</span>
+				<a href="">FAQ</a>
+				<a href="">Contact us</a>
+			</section>
+			<section class="link-group">
+				<span class="group-desc">Legal</span>
+				<a href="">Terms and Conditions</a>
+				<a href="">Privacy Policy</a>
+			</section>
+			<section class="link-group">
+				<span class="group-desc">Follow Us</span>
+				<section id="socials">
+					<a class="social-link" href=""><img src="images/facebook-icon.png" height="30px"></a>
+					<a class="social-link" href=""><img src="images/linkedin-icon.png" height="30px"></a>
+					<a class="social-link" href=""><img src="images/twitter-icon.png" height="30px"></a>
+				</section>
+			</section>
+		</nav>
+	</footer>
+</body>
+</html>
