@@ -31,12 +31,13 @@ html {
 
 .forg {
     text-align: right;
-    margin: 8px 25px 5px 0;
+    margin: -20px 25px 15px 0;
     text-decoration: none;
+    font-size: 16px;
 }
 
 .forg a {
-  color: #6D9BF1 !important;
+  color: #000000 !important;
 }
 
 .forg p a:hover {
@@ -62,6 +63,13 @@ html {
 .g-signin2{
     margin-left:73px !important;
 }
+
+.g-signin1{
+    margin-left:85px !important;
+}
+.auth{
+
+}
 .fab {
     color: white;
     padding-right: 8px;
@@ -86,7 +94,7 @@ html {
 }
 
 .cover .btn-lg {
-    padding: .7rem 1.rem;
+    padding: .7rem 1rem;
     font-weight: 500;
 }
 
