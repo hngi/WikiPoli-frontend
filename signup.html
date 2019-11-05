@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <title>WIKIPOLI - Sign Up</title>
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            ;
+            height: 100vh;
+        }
+
+
+        #nav {
+            margin-top: -40px;
+        }
+
+        .link {
+            font-size: 17px;
+            font-weight: 500;
+        }
+
+        .btn_link {
+            background: #1257AE;
+            height: 42px;
+            font-size: 17px;
+        }
+
+        .link:hover {
+            text-decoration: underline;
+        }
+
+        #form_container {
+            width: 99%;
+        }
+
+        .btn_button {
+            background: #1257AE;
+            height: 50px;
+            color: white;
+            font-size: 17px;
+            border-radius: 0px;
+        }
+
+        .input {
+            border-radius: 0;
+            height: 50px;
+        }
+
+        .wiki {
+            width: 400px;
+            padding: 4px 5px;
+        }
+
+        #wiki-head {
+            font-weight: 500;
+            font-size: 28px;
+
+        }
+
+        .login_link {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            text-decoration-line: underline;
+            color: #2159A8;
+            font-weight: 500;
+        }
+
+        .twitter,
+        .google {
+            color: #2159A8;
+        }
+
+        #hr {
+            border: solid 0.5px #adacacb7;
+        }
+
+        .already {
+            opacity: .7;
+            font-weight: 500;
+        }
+
+        .agree {
+            opacity: .7;
+            font-weight: 500;
+        }
+
+        .term {
+            color: #2159A8;
+            font-weight: 500;
+        }
+
+
+        @media screen and (max-width: 576px) {
+
+            #wiki-head {
+                font-size: 27px;
+            }
+
+            #nav img {
+                width: 150px;
+                margin-top: 10px;
+            }
+        }
+
+        @media (min-width: 390px) and (max-width: 575px) {
+            #form_container {
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        @media (max-width: 545px) {
+            .wiki {
+                width: 99%;
+            }
+        }
+
+        @media screen and (max-width: 284px) {
+
+            #wiki-head {
+                font-size: 27px;
+            }
+
+            #nav img {
+                width: 100px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <nav class="navbar navbar-expand-sm navbar-light " id="nav">
+            <a class="navbar-brand mr-sm-2" href="#">
+                <img src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571749198/c09e9odiqy2cvkosfubl.png"
+                    class="navimg mr-sm-auto ml-lg-2"></a>
+            <button class="navbar-toggler d-lg-none " type="button" data-toggle="collapse"
+                data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mr-2" id="collapsibleNavId">
+                <ul class="navbar-nav ml-auto mt-2 ">
+                    <li class="nav-item active">
+                        <a class="din link mr-3 btn btn-lg" href="#">Posts </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="din mr-3 btn link btn-lg " href="#">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn_link text-light btn btn-lg ml-3  mr-auto " href="#"
+                            style="border-radius: 0;">Register</a>
+                    </li>
+            </div>
+        </nav>
+
+        <div id="form_container">
+            <div class="wiki mx-auto text-center">
+                <h2 class=" mx-auto pr-2" id="wiki-head">
+                    WikiPoli was made for people like you.
+                </h2>
+                <p class="text-center mx-auto pr-3 my-3">
+                    <span class="already">Already signed up? </span><a href="" class="login_link">Log in</a></p>
+            </div>
+            <div class="col-lg-5 col-md-6 col-sm-7 mx-auto">
+                <form id="signup-form" action="">
+                    <div class="form-group form-div mt-4">
+                        <input id="name" name="name" type="text" placeholder="Full Name" required
+                            class="form-control input" />
+                    </div>
+
+                    <div class="form-group form-div mt-4">
+                        <input id="username" name="username" type="text" placeholder="Username" required
+                            class="form-control input" />
+                    </div>
+
+                    <div class="form-group form-div  mt-4">
+                        <input id="email" name="email" type="email" placeholder="Your Email address" required
+                            class="form-control input" />
+                    </div>
+
+                    <div class="form-group form-div  mt-4">
+                        <input id="password" name="password" minlength="5" type="password" placeholder="Password"
+                            required class="form-control input" onkeyup='check();' />
+                    </div>
+
+                    <div class="form-group form-div mt-4">
+                        <input id="confirmPassword" name="confirmPassword" type="password"
+                            placeholder="Confirm Password" required minlength="5" class="form-control input"
+                            onkeyup='check();' />
+                    </div>
+                    <span id='message'></span>
+                    <button class="btn btn_button btn-block btn-primary submit my-3">Sign up</button>
+
+                </form>
+                <p class="text-center mt-3 mt-xs-1 mx-auto  pr-3 " style="font-weight: 500;">
+                    or, continue with <a href="#" class="twitter">Twiter</a> or <a href="#" class="google">Google</a>
+                </p>
+                <hr id="hr" class="my-4 mx-auto ">
+                <p class="mr-5 text-center ml-xs-3">
+                    <span class="agree">
+                        By continuing, you accept our
+                    </span>
+                    <a href="" class="term">Terms of Use</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const check = function () {
+            if (document.getElementById('password').value ==
+                document.getElementById('confirmPassword').value) {
+                document.getElementById('message').style.color = 'green';
+                document.getElementById('message').innerHTML = 'Password confirmed';
+            } else {
+                document.getElementById('message').style.color = 'red';
+                document.getElementById('message').innerHTML = 'Passwords don\'t match';
+            }
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
