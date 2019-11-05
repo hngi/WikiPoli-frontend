@@ -1,0 +1,169 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&amp;display=swap" rel="stylesheet">
+    <title>WIKIPOLI - Sign Up</title>
+
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+            /* background: gainsboro; */
+            height: 100vh;
+        }
+
+
+        #nav {
+            margin-top: -40px;
+        }
+        #nav a.din:hover{
+            text-decoration: underline;
+        }
+
+
+        .form-div,
+        .btn-block {
+            width: 80%;
+            border-radius: 0px;
+        }
+        .facebook{
+            border: 1px solid #3A559F;
+            color: #3A559F;
+        }
+        .forg{
+            margin-left: 160px;
+            margin-right: 20px;
+            margin-bottom: -5px;
+            margin-top: -6px;
+        }
+        .forg a {
+            color: #2159A8 !important;
+            font-size: 16px;
+        }
+
+        .forg p a:hover {
+            color: red !important;
+            text-decoration: none;
+        }
+        .text-center {
+            margin-top: 12px;
+        }
+        .text-center a:hover {
+            color: red !important;
+            text-decoration: none;
+        }
+
+        div #wiki-head {
+            font-weight: 800;
+
+        }
+
+        #hr {
+            width: 34%;
+            border: solid 0.5px #adacacb7;
+        }
+
+        @media screen and (max-width: 576px) {
+            .form-div {
+                max-width: 300%;
+            }
+            #wiki-head{
+                margin-left: 15px;
+            }
+            #wiki-head {
+                width: 100%;
+                font-size: 16px;
+                font-weight: 500;
+                margin-left:20px ;
+                /* margin-right:20px; */
+            }
+            .form-colum{
+                max-width:300%;
+            }
+            .agree{
+                margin-left: 20px;
+            }
+            #wiki .already{
+                margin-left: 30px;
+            }
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+<div class="container-fluid">
+
+    <nav class="navbar navbar-expand-sm navbar-light " id="nav">
+        <a class="navbar-brand mr-sm-2" href="#">
+            <img src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571749198/c09e9odiqy2cvkosfubl.png" class="navimg mr-sm-auto ml-lg-2"></a>
+        <button class="navbar-toggler d-lg-none " type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse mr-2" id="collapsibleNavId">
+            <ul class="navbar-nav ml-auto mt-2 ">
+                <li class="nav-item active">
+                    <a class="din mr-3 btn btn-lg" href="#">Posts </a>
+                </li>
+                <li class="nav-item">
+                    <a class=" btn btn-primary btn-lg ml-3  mr-auto " href="#" style="border-radius: 0;">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="din mr-3 btn  btn-lg " href="#">Register</a>
+                </li>
+
+            </ul></div>
+    </nav>
+
+
+
+    <div class="  d-flex flex-column align-items-center mx-auto">
+        <form id="signup-form" class="mr-3" action="">
+            <div class="wiki mx-auto">
+                <h2 class=" mx-auto pr-2" id="wiki-head">
+                    <!--                    WikiPoli was made by people like you-->
+
+                </h2>
+
+            </div>
+            <div class="row d-flex flex-column align-items-center form-colum ">
+                <h2 id="wiki-head" class="mx-auto"> Welcome back!</h2>
+                <p class="text-center already  mx-auto pr-3 my-3" style="opacity: 0.8;font-size: 18px;">New to Wikipoli? <a href="">Sign Up</a></p>
+                <div class="form-group col-12 form-div  my-3 pt-3 ">
+                    <input id="email" name="email" type="email" placeholder="Email address" required="" class="form-control">
+                </div>
+
+                <div class="form-group col-12 form-div  my-3 pt-3">
+                    <input id="password" name="password" minlength="5" type="password" placeholder=" Your Password" required="" class="form-control">
+                </div>
+
+                <button class="btn btn-block btn-primary submit my-3 col-12 ">Login</button>
+                <div class="forg">
+                    <p class="forg"><a href="forgotpassword.html">Forgot Password?</a></p>
+                </div>
+                <button class="btn btn-block facebook  submit my-3 col-12 ">Connect with Facebook</button>
+                <button class="btn btn-block facebook  submit my-3 col-12 ">Connect Twitter</button>
+
+
+
+            </div></form>
+
+        <hr id="hr" class="my-4 mx-auto ">
+        <p class="mr-5 text-center ml-xs-3 agree">
+            By continuing , you accept our <a href="">Terms of Use</a>
+        </p>
+    </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+</script>
+
+</body></html>
