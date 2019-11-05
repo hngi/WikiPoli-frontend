@@ -20,19 +20,41 @@
 </head>
 
 <body>
-
-    <h1 class="cover-heading"><a href="index.html"><img src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571749198/c09e9odiqy2cvkosfubl.png"></a></h1>
+      <header id="header" class="container-fluid">
+          <div class="container">
+              <nav class="navbar navbar-expand-lg" id="navbar">
+                  <a href="index.html" class="navbar-brand logo">
+                      <img src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571749198/c09e9odiqy2cvkosfubl.png"
+                          alt="WikiPoli Logo">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <i class="fa fa-bars" aria-hidden="true"></i>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="nav navbar-nav ml-auto menu">
+                          <li class="nav-item">
+                              <a class="nav-link " href="index.html"><strong>Posts</strong></a>
+                          </li>
+                          <li class="nav-item active">
+                              <a class="nav-link" href="postpage1.html"><strong>Login</strong></a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="error joor" id="nav-register">Register</a>
+                          </li>
+                      </ul>
+                  </div>
+              </nav>
+          </div>
+      </header>
 
      <div class="container">
-
          <div class="container-inner">
-
              <div class="cover-container">
-
                  <div class="inner cover">
                      
                         <form id="login-form" class="login_form" action="#" method="post">
-                            <h2 class="form-signin-heading">Welcome Back</h2>
+                            <h2 class="form-signin-heading">Welcome Back!</h2>
                             <p class="text-center">
                                 New To WikiPoli? <a href="signup.html"> Sign up</a>
                             </p>
@@ -48,15 +70,15 @@
                                 <input type="password" id="inputPassword" class="form-control" placeholder="Your Password" minlength="5" required>
                             </div>
 
-                            <button class="btn btn-md btn-primary btn-block" type="submit" >Log In</button>
-                            <button type="button" class="btn btn-light"><i class="fab fa-facebook"></i>Login With Facebook</button>                               
-                            <button type="button" class="btn btn-light"><i class="fab fa-twitter"></i>Login With Twitter</button>
-                            <button class="btn btn-lg btn-primary btn-block btn-twitter" type="submit" ><i class="fab fa-twitter"></i> Log In with Twitter</button>
-                            
-                            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                            <button class="btn btn-md btn-primary btn-block" type="submit" >Login</button>
+
                                     <div class="forg">
                                         <p class="forg"><a href="forgotpassword.html">Forgot Password?</a></p>
                                     </div>
+                            <button class="btn btn-lg btn-primary btn-block btn-facebook" type="submit"><i class="fab fa-facebook-f"></i> Connect with Facebook</button>
+
+                            <button class="btn btn-lg btn-primary btn-block btn-twitter" type="submit"><i
+                                    class="fab fa-twitter"></i> Connect with Twitter</button>
                                 <div id="eresult"></div>
 
                             <p class="text-center">
@@ -72,6 +94,7 @@
          </div>
 
     </div>
+</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
