@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Single Post | WikiPoli</title>
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+<link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel="icon" type="img/png" href="images/favicon.png" />
+</head>
+<style>
+  body {
+      font-family: 'Nunito', sans-serif;
+      padding-left: 1rem;
+      padding-right: 1rem;
+  }
+  .navbar {
+      margin-top: -1.8em;
+  }
+
+  .link {
+        text-decoration: none;
+    }
+    .nav-item {
+      margin: 1rem;
+    }
+    .nav-item .active {
+      background: #1257AE;
+      color: #FFFFFF !important;
+    }
+    .nav-item .active:hover {
+      color: #FFFFFF !important;
+    }
+
+
+    .row {
+        align-self: auto;
+        justify-content: center;
+        margin-right:  0px; 
+         margin-left:  0px; 
+    }
+    .row1 {
+      margin-top : 2rem;
+    }
+    .row1 p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 30px;
+    }
+    .list {
+        list-style-type: none;
+        line-height: 2em;
+    }
+
+    .list a {
+        text-decoration: none;
+        color: darkslategrey;
+    }
+
+    .cont a {
+        text-decoration: none;
+    }
+    .reaction {
+      display: block;
+      padding-inline-start: 0px;
+
+    }
+    .reaction li {
+      float: left;
+      list-style-type: none;
+      padding: 1rem;
+      color:  #1257AE;
+      font-size: 40px;
+      padding-inline-start: 0px;
+    }
+    .comment_cont {
+
+      min-height: 150px;
+      padding: 1rem;
+      margin-top: 2rem;
+      background: #FFFFFF;
+      border: 1px solid rgba(0, 0, 0, 0.01);
+      box-sizing: border-box;
+      box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+      border-radius: 9px;
+    }
+    .comment_cont a img {
+      float: left;
+      padding-right: 1rem;
+    }
+    .comment_details a {
+      height: 36px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 36px;
+      color: #1257AE;
+      margin-right: 20px;
+    }
+    .comment_details span {
+      width: 183px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 30px;
+      color: rgba(0, 0, 0, 0.55);
+    }
+    .comment_details p {
+      display: flex;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 30px;
+      line-height: 36px;
+    }
+    .comment_nums {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 36px;
+      color: #1257AE;
+    }
+
+/* for comment */
+.comment_box {
+  height: 191px;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 9px;
+} 
+.comment_btn {
+  margin-bottom: 2rem;
+  background-color: #1257AE;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 48px;
+}
+.col-md-6 img {
+  width:  100%;
+}
+
+.col-md-6 h3 {
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 55px;
+color: #1257AE;
+}
+.col-md-6 h5 {
+font-style: normal;
+font-weight: 500;
+font-size: 25px;
+line-height: 29px;
+display: flex;
+align-items: center;
+
+color: rgba(0, 0, 0, 0.55);
+}
+.col-md-6 h5 span {
+  color: #1257AE;
+  margin-left: 0.5rem;
+}
+.col-md-6 i {
+  font-size: 60px;
+  color: #1257AE;
+}
+
+@media only screen and (max-width: 568px) {
+        .navimg {
+            margin-left: -1em;
+            height: 120px;
+            width: 120px;
+        }
+    }
+
+</style>
+<body class="bg-light " >
+    <div class="container-fluid bg-light">
+        <nav class="navbar navbar-expand-md navbar-light ">
+          <a class="navbar-brand font-weight-bold" href="#"
+            ><img
+              src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571749198/c09e9odiqy2cvkosfubl.png"
+              alt="logo"
+              class="navimg"
+          /></a>
+          <button
+            class="navbar-toggler "
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link text-dark font-weight-bold" href="#"
+                  >Post</a>
+                
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark font-weight-bold" href="#"
+                  >Add Post</a
+                >
+              </li>
+              <li class="nav-item ">
+                  <a class="nav-link text-dark font-weight-bold active" href="#"> Account</a>
+              </li>
+              <li class="nav-item ">
+                    <a class="nav-link text-dark font-weight-bold" href="#"> 
+                      <i class="fa fa-search "></i>
+                    </a>
+                </li>
+            </ul>
+          </div>
+       </nav>
+       <div class="row">
+         <div class="col-12 col-md-6">
+            <img src="images/p_image.png"  alt="image">
+         </div>
+         
+         <div class="col-12 col-md-6">
+           <h3>How To Join A Political Party</h3>
+           <h5>Posted  on Mon, Nov 4 2019.</h5>
+           <h5>Published by  <span> John Doe</span></h5>
+           <i class="fa fa-twitter-square "></i>
+           <i class="fa fa-facebook-square"></i>
+         </div>
+       </div>
+
+       <div class="row row1">
+         <p>
+            Joining a political Party is easy. You can start by getting a voter card.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+         </p>
+         <p>
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+            deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
+             consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+             et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+             ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+             dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
+             officia deserunt mollit anim id est laborum.
+         </p>
+         <p>
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+            deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
+             consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+             et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+             ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+             dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
+             officia deserunt mollit anim id est laborum.
+         </p>
+         <p>
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+            deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
+             consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+             et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+             ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+             dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
+             officia deserunt mollit anim id est laborum.
+         </p>
+         <p>
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+            deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
+             consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+             et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+             ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+             dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
+             officia deserunt mollit anim id est laborum.
+         </p>
+         <p>
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+            deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
+             consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+             et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+             ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+             dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
+             officia deserunt mollit anim id est laborum.
+         </p>
+         <div class="col-12 ">
+            <ul class="reaction">
+              <li><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></li>
+               <li><i class="fa fa-thumbs-o-down"></i></li> 
+               <li><i class="fa fa-heart-o"></i></li> 
+            </ul>
+         </div>
+         <div class="col-12 ">
+            <h3 class="comment_nums">3 Comments</h3>
+
+            <div class="comment_cont">
+              <a href="#"><img src="images/profileSam1.png" alt=""></a>
+              <!-- comment header -->
+              <span class="comment_details"> <a href="#">John Doe</a> <span>Tue, Nov 5 2019.</span> </span>
+      
+              <p>
+                  Excepteur sint occaecat cupidatat non proident, 
+                  sunt in culpa qui officia deserunt mollit anim id 
+                  est laborum.
+              </p>
+            </div>
+
+            <div class="comment_cont">
+                <a href="#"><img src="images/profileSam1.png" alt=""></a>
+                <!-- comment header -->
+                <span class="comment_details"> <a href="#">John Doe</a> <span>Tue, Nov 5 2019.</span> </span>
+        
+                <p>
+                    Excepteur sint occaecat cupidatat non proident, 
+                    sunt in culpa qui officia deserunt mollit anim id 
+                    est laborum.
+                </p>
+              </div>
+
+              <div class="comment_cont">
+                  <a href="#"><img src="images/profileSam1.png" alt=""></a>
+                  <!-- comment header -->
+                  <span class="comment_details"> <a href="#">John Doe</a> <span>Tue, Nov 5 2019.</span> </span>
+          
+                  <p>
+                      Excepteur sint occaecat cupidatat non proident, 
+                      sunt in culpa qui officia deserunt mollit anim id 
+                      est laborum.
+                  </p>
+                </div>
+                <form action="">
+                  <textarea class="form-control comment_box" aria-expanded="false" name="" id="" cols="30" rows="5" placeholder="Comment here........"></textarea>
+                  <button type="submit" class="btn btn-primary comment_btn">Comment</button>
+
+
+                </form>
+
+
+         </div>
+         
+
+
+
+       </div>
+
+
+       <hr class="mt-4">
+            
+       <footer>
+           <div class="row">
+               <div class="mt-5 col-sm-12 col-md-3 col-lg-3">
+                   <h4 class="h4 text-center text-primary mb-4">Legal</h4>
+                   <li class="text-center list"><a href="Terms-of-use.html">Terms Of Use</a></li>
+                   <li class="text-center list"><a href="privacypolicy.html">Privacy Policy</a> </li>  
+               </div>
+
+               <div class="mt-5 col-sm-12 col-md-3 col-lg-3">
+                   <h4 class="h4 text-center text-primary mb-4">Company</h4>
+                       <li class="text-center list"><a href="about.html">About</a></li>
+                       <li class="text-center list"><a href="careers.html">Careers</a></li>
+               </div>
+
+               <div class="mt-5 col-sm-12 col-md-3 col-lg-3">
+                   <h4 class="h4 text-center text-primary mb-4">Help & Support</h4>
+                       <li class="text-center list"><a href="FAQ.html">FAQs</a></li>
+                       <li class="text-center list"><a href="my--don.html">Donations</a></li>
+               </div>
+
+               <div class="mt-5 col-sm-12 col-md-3 col-lg-3">
+                   <h4 class="h4 text-center text-primary mb-4">Connect With Us</h4>
+                   <div class="d-flex justify-content-center">
+                       <a href="#" class="m-2"> <i class="fa fa-facebook" aria-hidden="true"></i></a>
+                       <a href="#" class="m-2"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                       <a href="#" class="m-2"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                   </div>
+                   <div class="text-center mt-4 cont">
+                       <a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> contact@wikipoli.gq</a>
+                   </div>
+               </div>
+           </div>
+           <p class="text-center  mt-5 copy">&copy;2019 WikiPoli. All Rights Reserved</p>
+       </footer>
+
+      </div>
+  
+
+
+
+
+
+
+      <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>

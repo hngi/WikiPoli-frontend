@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+<link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+<title>WikiPoli || Posts</title>
+<style>
+
+    body {
+        font-family: 'Nunito', sans-serif;
+        height: 100vh;
+    }
+
+    .navbar {
+        margin-right: -0.8em;
+        margin-left: -0.8em;
+        margin-top: -1.8em;
+    }
+
+    .nav-link {
+        font-size: 1.2em;
+        font-weight: 300;
+    }
+
+    .first {
+        margin-left: 3.5em;
+        margin-right: 3.5em;
+        margin-top: -1em;
+    }
+    .first a {
+        text-decoration: none;
+    }
+
+    .row {
+        justify-content: center;
+    }
+
+    .cardi a {
+        text-decoration: none;
+    }
+
+    .img-fluid {
+        height: 13em;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .card-text {
+        font-size: 0.85em;
+        color: darkslategrey;
+    }
+
+    .list {
+        list-style-type: none;
+        line-height: 2em;
+    }
+
+    .list a {
+        text-decoration: none;
+        color: darkslategrey;
+    }
+
+    .cont a {
+        text-decoration: none;
+    }
+
+    .copy {
+        font-size: 12.5px;
+    }
+
+    @media only screen and (max-width: 425px) {
+        .navimg {
+            margin-left: -5em;
+            height: 150px;
+            width: 190px;
+        }
+
+        .img-fluid {
+            width: 100%;
+            height: 10em;
+            object-fit: cover;
+        }
+
+        .first {
+            margin-left: -1em;
+        }
+    }
+
+    @media only screen and (max-width: 575px) {
+        .navbar {
+            margin-top: -1.8em;
+        }
+
+        .nav-link {
+            font-size: 1.2em;
+            font-weight: 300;
+        }
+
+        p {
+            font-size: 0.9em;
+        }
+    }
+
+    @media only screen and (width: 375px) {
+        .navimg {
+            margin-left: -8em;
+        }
+        .first {
+            margin: auto;
+        }
+    }
+    
+    @media only screen and (width: 425px) {
+        .navimg {
+            margin-left: -10em;
+        }
+        .first {
+            margin: auto;
+        }
+    }
+    @media only screen and (min-width: 768px) {
+        .navimg {
+            margin-left: -1.5em;
+        }
+        .card {
+            margin-left: 2em;
+            margin-right: 2em;
+        }
+    }
+    @media only screen and (max-width: 320px) {
+        .card {
+            margin: auto;
+        }
+        .first {
+            margin: auto;
+        }
+    }
+    @media only screen and (max-width: 767px) {
+        .card {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    @media only screen and (max-width: 767px) {
+        .card {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    @media only screen and (min-width: 1024px) {
+        .card {
+            margin-left: 3em;
+            margin-right: 3em;
+        }
+    }
+    @media only screen and (width: 1024px) {
+        .card {
+            margin-left: 2em;
+            margin-right: 2em;
+        }
+    }
+</style>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-sm navbar-light">
+            <a class="navbar-brand" href="logged-in.html"></a>
+                <img src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571749198/c09e9odiqy2cvkosfubl.png" class="navimg">
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-primary pr-2 dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i> Chiagoziem</a></a>
+                        <div class="dropdown-menu bg-light" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">Settings</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="index.html">Logout</a>
+                        </div>
+                    </li>
+            </div>
+        </nav>
+            
+
+        <h5 class="h3 text-dark text-center pb-4">Recent Posts</h5>
+        <div class="d-flex first">
+            <a href="#" class="ml-auto h5"><i class="fas fa-plus-circle"></i> Add Post</a>
+        </div>
+        
+
+        <div class="row">
+
+            <div class="col-sm-12 col-md-4 col-lg-3 mt-5 cardi">
+                    <a href="#">
+                        <img class="img-fluid" src="https://res.cloudinary.com/gozzycloud/image/upload/v1572694230/wikipoli/Goodluck_Jonathan_2014_jr8b3g.jpg">
+                        <div>
+                            <h5 class="h5 mb-2 mt-2">Good Or Bad</h5>
+                            <p class="text-dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </a>
+                        <div>
+                            <a href="#"><i class="fa fa-thumbs-up pr-3" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-thumbs-down pr-3" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-reply" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fab fa-facebook  float-right" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fab fa-twitter pr-3 float-right"></i></a>
+                        </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4 col-lg-3 mt-5 cardi">
+                    <a href="#">
+                        <img class="img-fluid" src="https://res.cloudinary.com/gozzycloud/image/upload/v1572694229/wikipoli/D0ZBtr3X0AAnfG3-500x375_mwm30v.jpg">
+                        <div>
+                            <h5 class="h5 mb-2 mt-2">Good Or Bad</h5>
+                            <p class="text-dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </a>
+                        <div>
+                            <a href="#"><i class="fa fa-thumbs-up pr-3" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-thumbs-down pr-3" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-reply" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fab fa-facebook  float-right" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fab fa-twitter pr-3 float-right"></i></a>
+                        </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4 col-lg-3 mt-5 cardi">
+                    <a href="#">
+                        <img class="img-fluid" src="https://res.cloudinary.com/gozzycloud/image/upload/v1572694230/wikipoli/olusegun-obasanjo-1_jnctdw.jpg">
+                        <div>
+                            <h5 class="h5 mb-2 mt-2">Good Or Bad</h5>
+                            <p class="text-dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </a>
+                        <div>
+                            <a href="#"><i class="fa fa-thumbs-up pr-3" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-thumbs-down pr-3" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-reply" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fab fa-facebook  float-right" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fab fa-twitter pr-3 float-right"></i></a>
+                        </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4 col-lg-3 mt-5 cardi">
+                    <a href="#">
+                        <img class="img-fluid" src="https://res.cloudinary.com/gozzycloud/image/upload/v1572694230/wikipoli/show-photo_pspnd7.jpg">
+                        <div>
+                            <h5 class="h5 mb-2 mt-2">Good Or Bad</h5>
+                            <p class="text-dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </a>
+                        <div>
+                            <a href="#"><i class="fa fa-thumbs-up pr-3" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-thumbs-down pr-3" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-reply" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fab fa-facebook  float-right" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fab fa-twitter pr-3 float-right"></i></a>
+                        </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4 col-lg-3 mt-5 cardi">
+                    <a href="#">
+                        <img class="img-fluid" src="https://res.cloudinary.com/gozzycloud/image/upload/v1572694230/wikipoli/atiku3_ivquan.png">
+                        <div>
+                            <h5 class="h5 mb-2 mt-2">Good Or Bad</h5>
+                            <p class="text-dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </a>
+                        <div>
+                            <a href="#"><i class="fa fa-thumbs-up pr-3" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-thumbs-down pr-3" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-reply" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fab fa-facebook  float-right" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fab fa-twitter pr-3 float-right"></i></a>
+                        </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4 col-lg-3 mt-5 cardi">
+                    <a href="#">
+                        <img class="img-fluid" src="https://res.cloudinary.com/gozzycloud/image/upload/v1572694230/wikipoli/ilupmC_i_400x400_rswxai.jpg">
+                        <div>
+                            <h5 class="h5 mb-2 mt-2">Good Or Bad</h5>
+                            <p class="text-dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </a>
+                        <div>
+                            <a href="#"><i class="fa fa-thumbs-up pr-3" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-thumbs-down pr-3" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-reply" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fab fa-facebook  float-right" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fab fa-twitter pr-3 float-right"></i></a>
+                        </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4 col-lg-3 mt-5 cardi">
+                    <a href="#">
+                        <img class="img-fluid" src="https://res.cloudinary.com/gozzycloud/image/upload/v1572694230/wikipoli/K5gAuCIk_400x400_q46tr9.jpg">
+                        <div>
+                            <h5 class="h5 mb-2 mt-2">Good Or Bad</h5>
+                            <p class="text-dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </a>
+                        <div>
+                            <a href="#"><i class="fa fa-thumbs-up pr-3" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-thumbs-down pr-3" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-reply" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fab fa-facebook  float-right" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fab fa-twitter pr-3 float-right"></i></a>
+                        </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4 col-lg-3 mt-5 cardi">
+                    <a href="#">
+                        <img class="img-fluid" src="https://res.cloudinary.com/gozzycloud/image/upload/v1572694229/wikipoli/IBB_bdbbsh.jpg">
+                        <div>
+                            <h5 class="h5 mb-2 mt-2">Good Or Bad</h5>
+                            <p class="text-dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </a>
+                        <div>
+                            <a href="#"><i class="fa fa-thumbs-up pr-3" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-thumbs-down pr-3" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-reply" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fab fa-facebook  float-right" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fab fa-twitter pr-3 float-right"></i></a>
+                        </div>
+                </div>
+            
+        </div>
+
+        <nav aria-label="Page" class="mt-5 pb-4">
+            <ul class="pagination justify-content-center">
+                <li class="page-item">
+                    <a class="page-link" href="#" tabindex="-1">Prev</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active"><a class="page-link" href="postpage2loggedin.html">2</a></li>
+                <li class="page-item"><a class="page-link" href="postpage2loggedin.html">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
+
+
+
+
+        <hr class="mt-3">
+            
+        <footer>
+            <div class="row">
+                <div class="mt-5 col-sm-12 col-md-3 col-lg-3">
+                    <h4 class="h4 text-center text-primary mb-4">Legal</h4>
+                    <li class="text-center list"><a href="Terms-of-use.html">Terms Of Use</a></li>
+                    <li class="text-center list"><a href="privacypolicy.html">Privacy Policy</a> </li>  
+                </div>
+
+                <div class="mt-5 col-sm-12 col-md-3 col-lg-3">
+                    <h4 class="h4 text-center text-primary mb-4">Company</h4>
+                        <li class="text-center list"><a href="about.html">About</a></li>
+                        <li class="text-center list"><a href="careers.html">Careers</a></li>
+                </div>
+
+                <div class="mt-5 col-sm-12 col-md-3 col-lg-3">
+                    <h4 class="h4 text-center text-primary mb-4">Help & Support</h4>
+                        <li class="text-center list"><a href="FAQ.html">FAQs</a></li>
+                        <li class="text-center list"><a href="my--don.html">Donations</a></li>
+                </div>
+
+                <div class="mt-5 col-sm-12 col-md-3 col-lg-3">
+                    <h4 class="h4 text-center text-primary mb-4">Connect With Us</h4>
+                    <div class="d-flex justify-content-center">
+                        <a href="#" class="m-2"> <i class="fab fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#" class="m-2"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" class="m-2"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="text-center mt-4 cont">
+                        <a href="#"><i class="fas fa-envelope" aria-hidden="true"></i> contact@wikipoli.gq</a>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center  mt-5 copy">&copy;2019 WikiPoli. All Rights Reserved</p>
+        </footer>
+
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
