@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>user setting</title>
+	<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+		<link rel="icon" type="img/png" href="images/favicon.png">
+</head>
+<style>
+		body {
+			  font-family: 'Nunito', sans-serif;
+              height: 100vh;
+              margin-left: 40px
+		  }
+		  @media screen and (max-width: 800px) {
+			body {
+				margin-left: 10px
+			}
+		  }
+	   /*--------------------------------------- header begins here..............................................*/
+	   header
+		  {
+				box-sizing: border-box;
+		  }
+		  body 
+		  {
+			   font-family: 'Nunito', segoe UI, sans-serif;
+		  }
+		  #header
+		  {
+			  width: 100%;
+			  padding: 0;
+		  }
+		  #header #navbar
+		  {
+			  padding: 0;
+		  }
+		  #header .logo img 
+		  {
+			width: 150px;
+		  }
+		  #header .navbar p 
+		  {
+			font-size: 2rem;
+			color:  #6D9BF1;
+		  }
+		  #header .menu .nav-link
+		  {
+			font-size: 1.1rem;
+			color:  rgba(0, 0, 0, 0.7);
+			transition: 0.4s ease-out;
+		  }
+		  #header .menu .nav-link:hover
+		  {
+			  color: blue;
+		  }
+		  #header .menu #nav-register
+		  {
+			background-color: #1257AE;
+			align-self: center;
+			color: white;
+			padding: 0.4rem 1.5rem;
+		  }
+		  #header .menu #nav-register:hover
+		  {
+			  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+		  }
+		  #header .menu li 
+		  {
+			margin-left: 2.2rem;
+		  }
+		  #header .fa-bars 
+		  {
+			color: #000000;
+		  }
+		  @media (max-width: 860px)
+		  {
+			  #header .fa-bars 
+			  {
+				margin-bottom: 1rem;
+			  }
+			  #header .menu
+			  {
+				  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+				  padding-bottom: 1rem;
+			  }
+			  #header .menu .nav-link
+			  {
+				  font-size: 1rem;
+				  padding: 0.3rem 1rem;
+			  }
+			  #header .menu #nav-register
+			  {
+				  padding: 0.3rem 1rem;
+			  }
+			  #header .menu li 
+			  {
+				  margin-left: 0.5rem;
+			  }
+		  }
+	   /*--------------------------------------- header stops here..............................................*/
+		/*--------------------------------------- main style begins here..............................................*/
+		#form {
+		  display: flex;
+		  justify-content: flex-end;
+		  align-items: center;
+		  padding-right: 10px;
+	  }
+	  #form input {
+		  height: 45px;
+		  width: 250px;
+		  font-size: 15px;
+		  font-weight: normal;
+		  font-style: normal;
+		  padding-left: 5px;
+		  outline: none;
+	  }
+	  
+	  #formButton {
+		  background-color: #1257AE;
+		  color: #ffffff;
+		  font-size: 20px;
+		  font-weight: 550;
+		  font-style: normal;
+		  padding: 10px 15px;
+		  width: 100px;
+		  height: 45px;
+		  border: none;
+		  outline: none;
+		  cursor: pointer;
+	  }
+	  .logoInBlue {
+		  color: blue;
+	  }
+	  #focus {
+		  display: flex;
+		  justify-content: flex-start;
+		  align-items: center;
+		  margin: 25px;
+		  font-size: 32px;
+		  font-weight: bold;
+		  font-style: normal;
+	  }
+	  
+	  #main {
+		  display: flex;
+		  justify-content: space-between;
+		  align-items:  ;
+		  margin: 25px;
+		  margin-left: 0;
+		  margin-bottom: 0;
+		  height: 100%;
+	  }
+	  
+	  #left {
+		  padding-top: 20px;
+		  text-align: center;
+		  background-color: rgba(33,60,220,0.08);
+		  border: 1px solid #1257AE;
+		  width: 25%;
+		  height: 1100px;
+		  position: relative;
+	  }
+	  
+	  #leftImgDiv {
+		  width: 100px;
+		  height: 100px;
+		  margin: auto;
+		  position: relative;
+		  overflow: hidden;
+		  border-radius: 50%;
+		  margin-bottom:;
+	  }
+	  
+	  #odd {
+		  width: 75%;
+	  }
+	  
+	  #img {
+		  display: inline;
+		  margin: 0 auto;
+		  margin-left: -25%;
+		  height: 100%;
+		  width: auto;
+	  }
+	  
+	  #left p {
+		  text-align: center;
+		  font-weight: bold;
+		  margin-top: 10px;
+		  padding-left: 5px;
+		  padding-right: 5px;
+	  }
+	  
+	  #name {
+		  font-size: 20px;
+	  }
+	  
+	  .transparent {
+		  font-size: 14px;
+		  opacity: 0.7;
+	  }
+	  #right {
+		  display: flex;
+		  flex-direction: column;
+		  width: 75%;
+		  padding: 50px 15px;
+	  }
+	  
+	
+	  
+	  .accountSettings, .notificationSettings, .viewSettings, .doneButton, .deleteMyAccount {
+		  border-radius: 8px;
+		  margin-bottom: 20px;
+		  margin-left: 30px;
+		  padding: 10px;
+		  line-height: 30px;
+	  }
+	  .fa-toggle-on {
+		  font-size: 35px;
+		  color: #1257AE;
+	  }
+	  
+	  .fa-toggle-off {
+		  font-size: 35px;
+		  color: #1257AE;
+		  display: none;
+	  }
+	  
+	  .doneButton {
+		  display: flex;
+		  justify-content: flex-end;
+		  align-items: center;
+	  }
+	  
+	  .doneButton button {
+		  background-color: #1257AE;
+		  color: #ffffff;
+		  height: 40px;
+		  width: 100px;
+		  padding: 5px;
+		  font-size: 16px;
+		  border: none;
+		  outline: none;
+		  cursor: pointer;
+	  }
+	  
+	  .deleteMyAccount {
+		  display: flex;
+		  justify-content: flex-start;
+		  align-items: center;
+		  text-align: center;
+	  }
+	  
+	  .deleteMyAccount button {
+		  background-color: #1257AE;
+		  color: #ffffff;
+		  height: 45px;
+		  width: 150px;
+		  padding: 5px;
+		  font-size: 16px;
+		  border: none;
+		  outline: none;
+		  cursor: pointer;
+	  }
+	  
+	  #viewSettingsContent select {
+		  background-color: #1257AE;
+		  color: #ffffff;
+		  width: 100px;
+		  height: 40px;
+		  padding: 5px;
+		  font-size: 16px;
+		  border: none;
+		  outline: none;
+		  cursor: pointer;
+	  }
+	  
+	  #viewSettingsContent button i {
+		  margin-left: 10px;
+		  font-size: 16px;
+		  font-weight: bold;
+	  }
+	  
+	  .accountSettings h3, .notificationSettings h3, .viewSettings h3 {
+		  margin-bottom: 20px;
+	  }
+	  
+	  #accountSettingsContent, #notificationSettingsContent, #viewSettingsContent {
+		  border: 1px solid #1257AE;
+		  border-radius: 8px;
+		  margin-left: 5px;
+		  padding: 10px;
+	  }
+	  
+	  .edits, .edit {
+		  display: flex;
+		  justify-content: space-between;
+		  align-items: center;
+		  margin-bottom: 10px;
+	  }
+	  
+	  .edits p {
+		  width: 44%;
+		  align-self: flex-start;
+	  }
+	  
+	  #different {
+		  margin-left: initial;
+	  }
+	  
+	  .edit p {
+		  width: 65%;
+	  }
+	  
+	  .edits i, .edit i {
+		  margin-left: 5px;
+	  }
+	  
+	  .edits span {
+		  width: 45%;
+		  display: flex;
+		  justify-content: flex-start;
+	  }
+	  
+	  .edit span {
+		  display: flex;
+		  justify-content: flex-end;
+		  width: 20%;
+	  }
+	  
+	  .last {
+		  margin-bottom: initial;
+	  }
+	  
+	  .edits button, .edit button {
+		  height: 30px;
+		  width: 100px;
+		  padding: 5px;
+		  font-size: 16px;
+		  font-weight: normal;
+		  font-style: normal;
+	  }
+	  
+	  .rightInnerWrapper {
+		  width: 70%;
+	  }
+	  a:hover, button:hover {
+		  transform: scale(1.05);
+	  }
+	  @media screen and (max-width: 800px) {
+		  #formButton {
+			  width: 70px;
+			  padding-left: 3px;
+			  padding-right: 3px;
+			  font-size: 16px;
+		  }
+		  #main {
+			  margin-top:;
+              flex-direction: column;
+              margin-left: 
+		  }
+		  
+		  #left {
+			  width: 100%;
+			  height: 250px;
+			  background-color: inherit;
+			  border: none;
+              margin-bottom: ;
+		  }
+		  
+		  #right {
+			  width: 100%;
+		  }
+		  
+		  .accountSettings, .notificationSettings, .viewSettings, .doneButton, .deleteMyAccount {
+			  width: 100%;
+		  }
+	  
+		  .rightOutterWrapper {
+			  width: 100%;
+		  }
+		  
+		  .rightInnerWrapper {
+			  width: 75%;
+		  }
+		  
+		  #headerLogo {
+			  height: 80px;
+		  }
+	  
+		  #headerButton {
+			  border: none;
+		  }
+	  
+		  #focus {
+			  font-size: 25px;
+		  }
+	  
+		  #form, #focus, #main {
+			  width: 100%;
+			  margin-left: 0;
+			  margin-right: 0;
+		  }
+	  
+		  .rightOutterWrapper, .accountSettings, .notificationSettings, .viewSettings, .doneButton, .deleteMyAccount {
+			  margin-left: 0;
+			  margin-right: 0;
+			  padding: 15px 10px;
+		  }
+	  
+		  .rightOutterWrapper button {
+			  width: 60px;
+			  font-size: 14px;
+			  padding: 2px;
+		  }
+	  
+		  #viewSettingsContent select {
+			  width: 80px;
+			  font-size: 14px;
+			  padding: 2px;
+		  }
+	  }
+	  @media screen and (max-width: 768px) {
+		  #formButton, #form input{
+			  height: 40px;
+		  }
+		  #focus {
+			  padding-left: 25px;
+		  }
+	  
+		  #form {
+		  }
+		  
+		  #leftButton {
+			  font-size: 14px;
+		  }
+	  
+		  #left p {
+			  font-size: 18px;
+		  }
+	  }
+	  @media screen and (max-width: 450px) {
+		  #left p {
+			  font-size: 13px;
+		  }
+	  
+		  #name {
+			  font-size: 15px;
+		  }
+	  
+		  #viewSettingsContent button {
+			  height: 25px;
+			  padding: 2px;
+			  width: 70px ;
+			  font-size: 12px;
+		  }
+	  
+		  .edits p {
+			  width: 50%;
+			  font-size: 14px;
+		  }
+	  
+		  .edits span {
+			  font-size: 14px;
+			  width: 40%;
+		  }
+	  
+		  .edit span {
+	  
+		  }
+	  
+		  #header button {
+			  height: 35px;
+		  }
+	  
+		  #formButton, #form input {
+			  height: 35px;
+		  }
+	  
+		  .rightInnerWrapper p {
+			  width: 85%;
+		  }
+	  
+		  .doneButton button{
+			  height: 30px ;
+			  width: 80px ;
+			  padding: 2px;
+			  font-size: 13px ;
+	  
+		  }
+	  
+		  .deleteMyAccount button {
+			  height: 35px;
+			  width: 130px;
+			  font-size: 13px ;
+		  }
+	  
+		  #left {
+			  height: 220px;
+		  }
+	  
+		  #right {
+			  padding: 25px 15px;
+		  }
+	  
+	  }
+	  
+	  
+	  
+		 /*--------------------------------------- main style ends here..............................................*/
+	  
+	   /*--------------------------------------- footer begins here..............................................*/
+	   #footer
+			  {
+				  font-family: Nunito, segoe UI, sans-serif;
+				  margin: 1rem auto;
+				  width: 100%;
+			  }
+			  #footer #hr
+			  {
+				  width: 80%;
+				  border: 0.5px solid rgba(0, 0, 0, 0.08);
+			  }
+			  #footer #nav-flex
+			  {
+				  display: flex;
+				  flex-direction: row;
+				  justify-content: space-around;
+				  margin: 2rem auto;
+			  }
+			  #footer #nav-flex .link-group
+			  {
+				  display: flex;
+				  flex-direction: column;
+				  justify-content: flex-start;
+			  }
+			  #footer .link-group .group-desc
+			  {
+				  color: #1257AE;
+				  font-weight: bolder;
+				  margin: 1rem 0;
+			  }
+			  #footer .link-group a
+			  {
+				  text-decoration: none;
+				  color: rgba(0, 0, 0, 0.8);
+				  margin: 0.15rem 0;
+				  transition: 0.4s ease-out;
+			  }
+			  #footer .link-group a:hover
+			  {
+				  color: rgb(100, 100, 200);
+			  }
+			  #footer #socials
+			  {
+				  display: flex;
+				  flex-direction: row;
+			  }
+			  #footer #socials .social-link
+			  {
+				  margin-right: 1rem;
+				  border-radius: 100%;
+				  height: 30px;
+				  border: 2px solid white;
+				  transition: 0.4s ease-out;
+			  }
+			  #footer #socials .social-link:hover
+			  {
+				  border: 2px solid skyblue;
+			  }
+			  @media (max-width: 860px)
+			  {
+				  #footer
+				  {
+					  padding-bottom: 1rem;
+				  }
+				  #footer #nav-flex
+				  {
+					  flex-direction: column;
+					  margin: 1rem 2rem;
+				  }
+				  #footer .link-group .group-desc
+				  {
+					  margin: 1.5rem 0 0.5rem;
+				  }
+			  }
+	   /*--------------------------------------- footer ends here..............................................*/
+	  
+	  </style>
+<body>
+	<div id="wrapper">
+            <header id="header" class="container-fluid">
+                    <div class="container">
+                        <nav class="navbar navbar-expand-lg" id="navbar">
+                          <a href="index.html" class="navbar-brand logo">
+                            <img src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571749198/c09e9odiqy2cvkosfubl.png" alt="WikiPoli Logo">
+                          </a>
+                          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                              <i class="fa fa-bars" aria-hidden="true"></i>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="nav navbar-nav ml-auto menu">
+                              <li class="nav-item active">
+                                <a class="nav-link " href="index.html"><strong>Posts</strong></a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="postpage1.html"><strong>Login</strong></a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="error joor" id="nav-register">Register</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </nav>
+                      </div>
+                  </header>
+                  
+	    <form id="form">
+		    <input id="formSearch" type="text" name="search" placeholder="Enter Politician's name">
+		    <button id="formButton" type="click">Search</button>
+	    </form>
+
+	    <h3 id="focus">Settings</h3>
+	    <div id="main">
+	    	<div id="left">
+	    		<div id="leftImgDiv">
+	    		    <img id="img" src="https://res.cloudinary.com/mariamcodes/image/upload/v1571784300/tdeplbzwksdu1lysygbq.jpg" alt="my picture">
+	    		</div>
+		    	<p id="name">John Doe</p>
+		    	<p class="transparent">Lagos, Nigeria</p>
+		    	<p class="transparent">I am a lifestyle journalist par excellence. Politics is my game</p>
+		    </div>
+		    <div id="right">
+		    	<div class="accountSettings">
+			    	<h3>Account Settings</h3>
+			    	<div id="accountSettingsContent">
+			    		<div class="edits">
+			    			<p>Change profile picture</p>
+			    			<span><i id="different" class="fa fa-edit"></i></span>
+			    		</div>
+			    		<div class="edits">
+			    			<p>Change location</p>
+			    			<span>Lagos, Nigeria<i class="fa fa-edit"></i></span>
+			    		</div>
+			    		<div class="edits">
+			    			<p>Edit bio</p>
+			    			<span>Lifestyle journalist<i class="fa fa-edit"></i></span>
+			    		</div>
+			    		<div class="edits last">
+			    			<p>Change password</p>
+			    			<span>XXXXXXXXXX<i class="fa fa-edit"></i></span>
+			    		</div>
+			    	</div>
+			    </div>
+			   
+			    <div class="notificationSettings">
+			    	<h3>Notification Settings</h3>
+			    	<div id="notificationSettingsContent">
+			    		<div class="edit">
+			    			<p>If someone likes a post I contributed to</p>
+			    			<span class="toggle"><i onclick="toggleOn(this)" class="fa fa-toggle-on"></i><i onclick="toggleOff(this)" class="fa fa-toggle-off"></i></span>
+			    		</div>
+			    		<div class="edit">
+			    			<p>if someone comments on post I contributed to</p>
+			    			<span class="toggle"><i onclick="toggleOn(this)" class="fa fa-toggle-on"></i><i onclick="toggleOff(this)" class="fa fa-toggle-off"></i></span>
+			    		</div>
+			    		<div class="edit">
+			    			<p>If someone comments on my post</p>
+			    			<span class="toggle"><i onclick="toggleOn(this)" class="fa fa-toggle-on"></i><i onclick="toggleOff(this)" class="fa fa-toggle-off"></i></span>
+			    		</div>
+			    		<div class="edit">
+			    			<p>If someone likes my post</p>
+			    			<span class="toggle"><i onclick="toggleOn(this)" class="fa fa-toggle-on"></i><i onclick="toggleOff(this)" class="fa fa-toggle-off"></i></span>
+			    		</div>
+			    		<div class="edit last">
+			    			<p>Recent post on politician</p>
+			    			<span class="toggle"><i onclick="toggleOn(this)" class="fa fa-toggle-on"></i><i onclick="toggleOff(this)" class="fa fa-toggle-off"></i></span>
+			    		</div>
+			    	</div>
+			    </div>
+			    <div class="doneButton">
+			    	<button type="click">Done</button>			    	
+			    </div>
+			    <div class="deleteMyAccount">
+			    	<button type="click">Delete my account</button>
+			    </div>
+			    <!--<div class="rightOutterWrapper">
+			    	<div class="rightInnerWrapper">
+				        <h4>Font Size</h4>
+				        <p>Adjust font size for better readability</p>
+				    </div>
+				    <button type="click">Regular</button>
+			    </div>-->
+		    </div>
+	    </div>
+	    <footer id="footer">
+                <hr id="hr">
+                <nav id="nav-flex">
+                    <section class="link-group">
+                        <span class="group-desc">Company</span>
+                        <a href="">About Us</a>
+                        <a href="">Our Team</a>
+                        <a href="">Election 2023</a>
+                    </section>
+                    <section class="link-group">
+                        <span class="group-desc">Help & Support</span>
+                        <a href="">FAQ</a>
+                        <a href="">Contact us</a>
+                    </section>
+                    <section class="link-group">
+                        <span class="group-desc">Legal</span>
+                        <a href="">Terms and Conditions</a>
+                        <a href="">Privacy Policy</a>
+                    </section>
+                    <section class="link-group">
+                        <span class="group-desc">Follow Us</span>
+                        <section id="socials">
+                                <a href="#" class="m-2"> <i class="fab fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#" class="m-2"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                                <a href="#" class="m-2"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        </section>
+                    </section>
+                </nav>
+            </footer>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script>
+    function toggleOn(obj) {
+	obj.style.display="none";
+	obj.nextElementSibling.style.display = "inline";
+}
+
+function toggleOff(obj) {
+	obj.style.display= "none";
+	obj.previousElementSibling.style.display ="inline";
+}
+</script>
+</body>
+</html>
