@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+<link rel="icon" type="img/png" href="images/favicon.png">
+<title>WikiPoli</title>
+<script>
+        function toggleIcon(e) {
+    $(e.target)
+        .prev('.panel-heading')
+        .find(".more-less")
+        .toggleClass('glyphicon-plus glyphicon-minus');
+}
+$('.panel-group').on('hidden.bs.collapse', toggleIcon);
+$('.panel-group').on('shown.bs.collapse', toggleIcon);
+    </script>
+<style>
+
+    body {
+        font-family: 'Nunito', segoe UI, sans-serif;
+        background: #ffffff;
+    }
+
+    .panel-group .panel {
+        border-radius: 0;
+        box-shadow: none;
+        border-color: #EEEEEE;
+    }
+
+    .panel-default > .panel-heading {
+        padding: 0;
+        border-radius: 0;
+        color: #ffffff;
+        background-color: #1257AE;;
+        border-color: #1257AE;
+    }
+
+    .panel-title {
+        font-size: 14px;
+    }
+
+    .panel-title > a {
+        display: block;
+        padding: 15px;
+        text-decoration: none;
+    }
+    .harsh{
+        float: right;
+        height: 50px;
+    }
+    .tag{
+        background: #1257AE;
+        height: 40px;
+        width: 80px;
+        border: 1px solid #6D9BF1;
+        
+    }
+
+    .fay{
+        height: 40px;
+        box-shadow: none;
+        background: #ffffff;
+        border: 1px solid #6D9BF1;
+        box-sizing: border-box;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 18px;
+        color: #8C8383;
+        width: 400px;
+        
+    
+        
+    }
+
+    .more-less {
+        float: right;
+        color: #ffffff;
+    }
+
+    .panel-default > .panel-heading + .panel-collapse > .panel-body {
+        border-top-color: #1257AE;
+        
+    }
+    .intro{
+        color: #1257AE;
+        text-align: center;
+        font-size: 35px;
+        font-display: bold;
+        line-height: 60px;
+
+    }
+    
+	body 
+	{
+	 	font-family: 'Nunito', segoe UI, sans-serif;
+	}
+    html
+    {
+        box-sizing:border-box;
+    }
+	#header
+	{
+		width: 100%;
+		padding: 0;
+	}
+	#header #navbar
+	{
+		padding: 0;
+	}
+	#header .logo img 
+	{
+	  width: 150px;
+	}
+
+	#header .navbar p 
+	{
+	  font-size: 2rem;
+	  color:  #6D9BF1;
+	}
+
+	#header .menu .nav-link
+	{
+	  font-size: 1.1rem;
+	  color:  rgba(0, 0, 0, 0.7);
+	  transition: 0.4s ease-out;
+	}
+	#header .menu .nav-link:hover
+	{
+		color: blue;
+	}
+	#header .menu #nav-register
+	{
+	  background-color: #1257AE;
+	  align-self: center;
+	  color: white;
+	  padding: 0.4rem 1.5rem;
+	}
+	#header .menu #nav-register:hover
+	{
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+	}
+
+	#header .menu li 
+	{
+	  margin-left: 2.2rem;
+	}
+
+	#header .fa-bars 
+	{
+	  color: #000000;
+	}
+    #footer
+		{
+			font-family: Nunito, segoe UI, sans-serif;
+			margin: 1rem auto;
+			width: 100%;
+		}
+		#footer #hr
+		{
+			width: 80%;
+			border: 0.5px solid rgba(0, 0, 0, 0.08);
+		}
+		#footer #nav-flex
+		{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			margin: 2rem auto;
+		}
+		#footer #nav-flex .link-group
+		{
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+		}
+		#footer .link-group .group-desc
+		{
+			color: #1257AE;
+			font-weight: bolder;
+			margin: 1rem 0;
+		}
+		#footer .link-group a
+		{
+			text-decoration: none;
+			color: rgba(0, 0, 0, 0.8);
+			margin: 0.15rem 0;
+			transition: 0.4s ease-out;
+		}
+		#footer .link-group a:hover
+		{
+			color: rgb(100, 100, 200);
+		}
+		#footer #socials
+		{
+			display: flex;
+			flex-direction: row;
+		}
+		#footer #socials .social-link
+		{
+			margin-right: 1rem;
+			border-radius: 100%;
+			height: 30px;
+			border: 2px solid white;
+			transition: 0.4s ease-out;
+		}
+		#footer #socials .social-link:hover
+		{
+			border: 2px solid skyblue;
+		}
+
+
+
+
+/* ----- v CAN BE DELETED v ----- */
+        
+
+
+.demo {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+    
+        
+    
+    @media (max-width: 860px)
+	{
+		#header .fa-bars 
+		{
+		  margin-bottom: 1rem;
+		}
+		#header .menu
+		{
+			border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+			padding-bottom: 1rem;
+		}
+		#header .menu .nav-link
+		{
+			font-size: 1rem;
+			padding: 0.3rem 1rem;
+		}
+		#header .menu #nav-register
+		{
+			padding: 0.3rem 1rem;
+		}
+		#header .menu li 
+		{
+			margin-left: 0.5rem;
+		}
+	}
+    @media (max-width: 860px)
+		{
+			#footer
+			{
+				padding-bottom: 1rem;
+			}
+			#footer #nav-flex
+			{
+				flex-direction: column;
+				margin: 1rem 2rem;
+			}
+			#footer .link-group .group-desc
+			{
+				margin: 1.5rem 0 0.5rem;
+			}
+		}
+</style>
+
+</head>
+<body>
+    
+    <header id="header" class="container-fluid" style="padding: 0px 10px 0px 10px">
+        
+            <nav class="navbar navbar-expand-lg" id="navbar">
+              <a href="index.html" class="navbar-brand logo">
+                <img src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571749198/c09e9odiqy2cvkosfubl.png" alt="WikiPoli Logo">
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="fa fa-bars" aria-hidden="true"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto menu">
+                  <li class="nav-item active">
+                    <a class="nav-link " href="index.html"><strong>Posts</strong></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="postpage1.html"><strong>Login</strong></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="error joor" id="nav-register">Register</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+    </header>
+        
+         <form role="search" style="padding: 0px 10px 0px 10px">
+                <div class="harsh">
+                  <input type="search" id="mySearch" name="q" class="fay"
+                   placeholder="Enter Candidates name"
+                   aria-label="Search through site content">
+                  <button class="tag">Search</button>
+                </div>
+              </form>
+            </header>
+        <div class="container demo">
+                <h1 class="intro">Frequently Asked Questions</h1>
+
+            <div clas=col-lg-8>
+            <div class="panel-group" class="accordion " id="accordion" role="tablist" aria-multiselectable="true">
+        
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <i class="more-less glyphicon glyphicon-plus"></i>
+                                What is WikiPoli?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse show" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <i class="more-less glyphicon glyphicon-plus"></i>
+                                How can I contribute?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <i class="more-less glyphicon glyphicon-plus"></i>
+                                Who owns WikiPoli?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="panel-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFour">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFoure">
+                                    <i class="more-less glyphicon glyphicon-plus"></i>
+                                    Is my Privacy Secured?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="panel-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFive">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        <i class="more-less glyphicon glyphicon-plus"></i>
+                                        Can I delete my Contribution?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                <div class="panel-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+        
+            </div><!-- panel-group -->
+        </div>
+            
+        </div><!-- container -->
+
+          
+        <footer>
+            <footer id="footer">
+                <hr id="hr">
+                <nav id="nav-flex">
+                    <section class="link-group">
+                        <span class="group-desc">Company</span>
+                        <a href="">About Us</a>
+                        <a href="">Our Team</a>
+                        <a href="">Election 2023</a>
+                    </section>
+                    <section class="link-group">
+                        <span class="group-desc">Help & Support</span>
+                        <a href="">FAQ</a>
+                        <a href="">Contact us</a>
+                    </section>
+                    <section class="link-group">
+                        <span class="group-desc">Legal</span>
+                        <a href="">Terms and Conditions</a>
+                        <a href="">Privacy Policy</a>
+                    </section>
+                    <section class="link-group">
+                        <span class="group-desc">Follow Us</span>
+                        <section id="socials">
+                            <a class="social-link" href=""><img src="images/facebook-icon.png" height="30px"></a>
+                            <a class="social-link" href=""><img src="images/linkedin-icon.png" height="30px"></a>
+                            <a class="social-link" href=""><img src="images/twitter-icon.png" height="30px"></a>
+                        </section>
+                    </section>
+                </nav>
+            
+        </footer>
+            
+    </div>
+    
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
