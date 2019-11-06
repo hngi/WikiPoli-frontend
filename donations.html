@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+<link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+<title>Donations</title>
+</head>
+<style>
+    body {
+        font-family: 'Nunito', sans-serif;
+        height: 100vh;
+    }
+
+    .navbar {
+        margin-top: -1.8em;
+    }
+
+    .nav-link {
+        font-size: 1.2em;
+        font-weight: 300;
+    }
+
+    .jumbotron {
+        margin-top: -2em;
+        height: 20em;
+        width: 100%;
+        background: url("https://res.cloudinary.com/ufonumo/image/upload/v1571835995/photo-1531206715517-5c0ba140b2b8_l0vc2u.jpg");
+    }
+    .navbar-toggler {
+        margin-top: -2em;
+    }
+    .fa {
+        font-size: 2em;
+    }
+
+    .don {
+        margin-top: 1em;
+    }
+
+    .list {
+        list-style-type: none;
+        line-height: 2em;
+    }
+
+    .list a {
+        text-decoration: none;
+        color: darkslategrey;
+    }
+
+    .cont a {
+        text-decoration: none;
+    }
+
+    .copy {
+        font-size: 12.5px;
+    }
+
+    @media only screen and (max-width: 574px) {
+        .don {
+            margin-top: 1.5em;
+        }
+
+        .jumbotron {
+            margin-top: 0.5em;
+        }
+    }
+
+    @media only screen and (width: 375px) {
+        .navimg {
+            margin-left: -8em;
+        }
+    }
+    @media only screen and (width: 425px) {
+        .navimg {
+            margin-left: -10em;
+        }
+    }
+
+    @media only screen and (max-width: 568px) {
+        .navimg {
+            margin-left: -5em;
+            height: 150px;
+            width: 190px;
+        }
+    }
+</style>
+<body>
+
+    <div class="container-fluid">
+
+        <nav class="navbar navbar-expand-sm navbar-light">
+            <a class="navbar-brand" href="index.html"></a>
+                <img src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571749198/c09e9odiqy2cvkosfubl.png" class="navimg">
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link text-primary pr-5" href="#">Posts <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pr-5 text-primary" href="logged-in.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary  pr-2" href="#">Register</a>
+                    </li>
+            </div>
+        </nav>
+
+        <div class="jumbotron col-sm-12 col-md-12 col-lg-12">
+                <h2 class="display-4 text-white text-center don">Make A Donation</h2>
+            </div>
+    
+            <div class="container mb-5">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <h3 class="h2 mb-3 text-dark mt-5">Where Your Donation Goes</h3>
+                        <p class="text-primary lead">Servers, bandwidth, maintenance, development. Donate to support a wide variety of projects,
+                                making your donation a great investment in a highly-efficient not-for-profit organization.
+                                <br>
+                                 Wikipoli is one of the top 10 websites in the world, and it runs on a fraction of what other top websites spend.
+                        </p>
+                    </div>
+    
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 mt-5">
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-primary m-3" href="#" role="button">N100</a>
+                            <a  class="btn btn-primary m-3" href="#" role="button">N200</a>
+                            <a  class="btn btn-primary m-3" href="#" role="button">N400</a>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <a  class="btn btn-primary m-3" href="#" role="button">N500</a>
+                            <a  class="btn btn-primary m-3" href="#" role="button">N1000</a>
+                            <a  class="btn btn-light m-3" href="#" role="button">Other</a>
+                        </div>
+    
+                        <div class="d-flex justify-content-center">
+                            <button  type="button" class="btn btn-dark col-sm-6 col-md-10 col-lg-9 mt-3" onClick="payWithRave()">DONATE NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <hr class="mt-4">
+            
+        <footer>
+            <div class="row">
+                <div class="mt-5 col-sm-12 col-md-3 col-lg-3">
+                    <h4 class="h4 text-center text-primary mb-4">Legal</h4>
+                    <li class="text-center list"><a href="Terms-of-use.html">Terms Of Use</a></li>
+                    <li class="text-center list"><a href="privacypolicy.html">Privacy Policy</a> </li>  
+                </div>
+
+                <div class="mt-5 col-sm-12 col-md-3 col-lg-3">
+                    <h4 class="h4 text-center text-primary mb-4">Company</h4>
+                        <li class="text-center list"><a href="aboutus.html">About</a></li>
+                        <li class="text-center list"><a href="careers.html">Careers</a></li>
+                </div>
+
+                <div class="mt-5 col-sm-12 col-md-3 col-lg-3">
+                    <h4 class="h4 text-center text-primary mb-4">Help & Support</h4>
+                        <li class="text-center list"><a href="FAQ.html">FAQs</a></li>
+                        <li class="text-center list"><a href="donations.html">Donations</a></li>
+                </div>
+
+                <div class="mt-5 col-sm-12 col-md-3 col-lg-3">
+                    <h4 class="h4 text-center text-primary mb-4">Connect With Us</h4>
+                    <div class="d-flex justify-content-center">
+                        <a href="#" class="m-2"> <i class="fab fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#" class="m-2"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" class="m-2"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="text-center mt-4 cont">
+                        <a href="#"><i class="fas fa-envelope" aria-hidden="true"></i> contact@wikipoli.gq</a>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center  mt-5 copy">&copy;2019 WikiPoli. All Rights Reserved</p>
+        </footer>
+
+    </div>
+    
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
