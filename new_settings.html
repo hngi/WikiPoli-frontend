@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>wikipoli | Profile</title>
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="icon" type="img/png" href="images/favicon.png" />
+  <!-- <link rel="stylesheet" href="styles/styles.css"> -->
+</head>
+
+<style type="text/css">
+	html{
+	box-sizing: border-box;
+	}
+	body 
+	{
+	 	font-family: 'Nunito', segoe UI, sans-serif;
+	}
+	#header
+	{
+		width: 100%;
+		padding: 0;
+	}
+	#header #navbar
+	{
+		padding: 0;
+	}
+	#header .logo img 
+	{
+	  width: 150px;
+	}
+
+	#header .navbar p 
+	{
+	  font-size: 2rem;
+	  color:  #6D9BF1;
+	}
+
+	#header .menu .nav-link
+	{
+	  font-size: 1.1rem;
+	  color:  rgba(0, 0, 0, 0.7);
+	  transition: 0.4s ease-out;
+	}
+	#header .menu .nav-link:hover
+	{
+		color: blue;
+	}
+	#header .menu #nav-register
+	{
+	  background-color: #1257AE;
+	  align-self: center;
+	  color: white;
+	  padding: 0.4rem 1.5rem;
+	}
+	#header .menu #nav-register:hover
+	{
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+	}
+
+	#header .menu li 
+	{
+	  margin-left: 2.2rem;
+	}
+
+	#header .fa-bars 
+	{
+	  color: #000000;
+	}
+
+	@media (max-width: 860px)
+	{
+		#header .fa-bars 
+		{
+		  margin-bottom: 1rem;
+		}
+		#header .menu
+		{
+			border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+			padding-bottom: 1rem;
+		}
+		#header .menu .nav-link
+		{
+			font-size: 1rem;
+			padding: 0.3rem 1rem;
+		}
+		#header .menu #nav-register
+		{
+			padding: 0.3rem 1rem;
+		}
+		#header .menu li 
+		{
+			margin-left: 0.5rem;
+		}
+  }
+  
+
+  /* FOR THE FOOTER */
+  #footer
+		{
+			font-family: Nunito, segoe UI, sans-serif;
+			margin: 1rem auto;
+			width: 100%;
+		}
+		#footer #hr
+		{
+			width: 80%;
+			border: 0.5px solid rgba(0, 0, 0, 0.08);
+		}
+		#footer #nav-flex
+		{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			margin: 2rem auto;
+		}
+		#footer #nav-flex .link-group
+		{
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+		}
+		#footer .link-group .group-desc
+		{
+			color: #1257AE;
+			font-weight: bolder;
+			margin: 1rem 0;
+		}
+		#footer .link-group a
+		{
+			text-decoration: none;
+			color: rgba(0, 0, 0, 0.8);
+			margin: 0.15rem 0;
+			transition: 0.4s ease-out;
+		}
+		#footer .link-group a:hover
+		{
+			color: rgb(100, 100, 200);
+		}
+		#footer #socials
+		{
+			display: flex;
+			flex-direction: row;
+		}
+		#footer #socials .social-link
+		{
+			margin-right: 1rem;
+			border-radius: 100%;
+			height: 30px;
+			border: 2px solid white;
+			transition: 0.4s ease-out;
+		}
+		#footer #socials .social-link:hover
+		{
+			border: 2px solid skyblue;
+		}
+		@media (max-width: 860px)
+		{
+			#footer
+			{
+				padding-bottom: 1rem;
+			}
+			#footer #nav-flex
+			{
+				flex-direction: column;
+				margin: 1rem 2rem;
+			}
+			#footer .link-group .group-desc
+			{
+				margin: 1.5rem 0 0.5rem;
+			}
+		}
+
+
+		/* FOR THE MAIN PAGE  */
+		aside {
+			/* width: 30%; */
+			background: #ffffffff;
+		}
+
+		.post_cont {
+			margin: 2rem;
+			min-height: 200px;
+		}
+		.post_cont img {
+			/* display: block; */
+			float: left;
+			height: 100%;
+			margin-right: 2rem; 
+		}
+		.post_det {
+			display: flow-root;
+		}
+		.post_det h3 {
+			font-weight: bold;
+			font-size: 20px;
+			color: #1257AE;
+		}
+		.post_det h3 span {
+			font-weight: 100;
+			font-size: 15px;
+			color: rgba(0, 0, 0, 0.55);
+		}
+		aside h3 {
+			font-size: bold;
+			color: #1257AE;
+		}
+		.contact h1, .contact h2 {
+			color:  rgba(0, 0, 0, 0.55);
+		}
+		.contact h1 {
+			font-weight: bold;
+			font-size: 26px;
+		}
+		.contact h2 {
+			font-size: 18px;
+		}
+		aside .fa-star {
+			color: yellowgreen;
+		}
+		aside .whit {
+			color: beige ;
+		}
+		.edit_profile {
+			display: block;
+			margin-bottom: 1rem;
+
+		}
+		.log_out {
+			background: #1257AE;
+			color: #ffffffff !important;
+        }
+        #right {
+		  display: flex;
+		  flex-direction: column;
+		  width: 100%;
+		  padding: 50px 15px;
+	  }
+	  
+	
+	  
+	  .accountSettings, .notificationSettings, .viewSettings, .doneButton, .deleteMyAccount {
+		  border-radius: 8px;
+		  margin-bottom: 20px;
+		  margin-left: 30px;
+		  padding: 10px;
+		  line-height: 30px;
+	  }
+	  .fa-toggle-on {
+		  font-size: 35px;
+		  color: #1257AE;
+	  }
+	  
+	  .fa-toggle-off {
+		  font-size: 35px;
+		  color: #1257AE;
+		  display: none;
+	  }
+	  
+	  .doneButton {
+		  display: flex;
+		  justify-content: flex-end;
+		  align-items: center;
+	  }
+	  
+	  .doneButton button {
+		  background-color: #1257AE;
+		  color: #ffffff;
+		  height: 40px;
+		  width: 100px;
+		  padding: 5px;
+		  font-size: 16px;
+		  border: none;
+		  outline: none;
+		  cursor: pointer;
+	  }
+	  
+	  .deleteMyAccount {
+		  display: flex;
+		  justify-content: flex-start;
+		  align-items: center;
+		  text-align: center;
+	  }
+	  
+	  .deleteMyAccount button {
+		  background-color: #1257AE;
+		  color: #ffffff;
+		  height: 45px;
+		  width: 150px;
+		  padding: 5px;
+		  font-size: 16px;
+		  border: none;
+		  outline: none;
+		  cursor: pointer;
+	  }
+	  
+	  #viewSettingsContent select {
+		  background-color: #1257AE;
+		  color: #ffffff;
+		  width: 100px;
+		  height: 40px;
+		  padding: 5px;
+		  font-size: 16px;
+		  border: none;
+		  outline: none;
+		  cursor: pointer;
+	  }
+	  
+	  #viewSettingsContent button i {
+		  margin-left: 10px;
+		  font-size: 16px;
+		  font-weight: bold;
+	  }
+	  
+	  .accountSettings h3, .notificationSettings h3, .viewSettings h3 {
+		  margin-bottom: 20px;
+	  }
+	  
+	  #accountSettingsContent, #notificationSettingsContent, #viewSettingsContent {
+		  border: 1px solid #1257AE;
+		  border-radius: 8px;
+		  margin-left: 5px;
+		  padding: 10px;
+	  }
+	  
+	  .edits, .edit {
+		  display: flex;
+		  justify-content: space-between;
+		  align-items: center;
+		  margin-bottom: 10px;
+	  }
+	  
+	  .edits p {
+		  width: 44%;
+		  align-self: flex-start;
+	  }
+	  
+	  #different {
+		  margin-left: initial;
+	  }
+	  
+	  .edit p {
+		  width: 65%;
+	  }
+	  
+	  .edits i, .edit i {
+		  margin-left: 5px;
+	  }
+	  
+	  .edits span {
+		  width: 45%;
+		  display: flex;
+		  justify-content: flex-start;
+	  }
+	  
+	  .edit span {
+		  display: flex;
+		  justify-content: flex-end;
+		  width: 20%;
+	  }
+	  
+	  .last {
+		  margin-bottom: initial;
+	  }
+	  
+	  .edits button, .edit button {
+		  height: 30px;
+		  width: 100px;
+		  padding: 5px;
+		  font-size: 16px;
+		  font-weight: normal;
+		  font-style: normal;
+	  }
+	  
+	  .rightInnerWrapper {
+		  width: 70%;
+	  }
+	  a:hover, button:hover {
+		  transform: scale(1.05);
+      }
+      @media screen and (max-width: 800px) {
+		  #formButton {
+			  width: 70px;
+			  padding-left: 3px;
+			  padding-right: 3px;
+			  font-size: 16px;
+		  }
+		  #main {
+			  margin-top:;
+              flex-direction: column;
+              margin-left: 
+		  }
+		  
+		  #left {
+			  width: 100%;
+			  height: 250px;
+			  background-color: inherit;
+			  border: none;
+              margin-bottom: ;
+		  }
+		  
+		  #right {
+			  width: 100%;
+		  }
+		  
+		  .accountSettings, .notificationSettings, .viewSettings, .doneButton, .deleteMyAccount {
+			  width: 100%;
+		  }
+	  
+		  .rightOutterWrapper {
+			  width: 100%;
+		  }
+		  
+		  .rightInnerWrapper {
+			  width: 75%;
+		  }
+		  
+		  #headerLogo {
+			  height: 80px;
+		  }
+	  
+		  #headerButton {
+			  border: none;
+		  }
+	  
+		  #focus {
+			  font-size: 25px;
+		  }
+	  
+		  #form, #focus, #main {
+			  width: 100%;
+			  margin-left: 0;
+			  margin-right: 0;
+		  }
+	  
+		  .rightOutterWrapper, .accountSettings, .notificationSettings, .viewSettings, .doneButton, .deleteMyAccount {
+			  margin-left: 0;
+			  margin-right: 0;
+			  padding: 15px 10px;
+		  }
+	  
+		  .rightOutterWrapper button {
+			  width: 60px;
+			  font-size: 14px;
+			  padding: 2px;
+		  }
+	  
+		  #viewSettingsContent select {
+			  width: 80px;
+			  font-size: 14px;
+			  padding: 2px;
+		  }
+	  }
+	  @media screen and (max-width: 768px) {
+		  #formButton, #form input{
+			  height: 40px;
+		  }
+		  #focus {
+			  padding-left: 25px;
+		  }
+	  
+		  #form {
+		  }
+		  
+		  #leftButton {
+			  font-size: 14px;
+		  }
+	  
+		  #left p {
+			  font-size: 18px;
+		  }
+	  }
+	  @media screen and (max-width: 450px) {
+		  #left p {
+			  font-size: 13px;
+		  }
+	  
+		  #name {
+			  font-size: 15px;
+		  }
+	  
+		  #viewSettingsContent button {
+			  height: 25px;
+			  padding: 2px;
+			  width: 70px ;
+			  font-size: 12px;
+		  }
+	  
+		  .edits p {
+			  width: 50%;
+			  font-size: 14px;
+		  }
+	  
+		  .edits span {
+			  font-size: 14px;
+			  width: 40%;
+		  }
+	  
+		  .edit span {
+	  
+		  }
+	  
+		  #header button {
+			  height: 35px;
+		  }
+	  
+		  #formButton, #form input {
+			  height: 35px;
+		  }
+	  
+		  .rightInnerWrapper p {
+			  width: 85%;
+		  }
+	  
+		  .doneButton button{
+			  height: 30px ;
+			  width: 80px ;
+			  padding: 2px;
+			  font-size: 13px ;
+	  
+		  }
+	  
+		  .deleteMyAccount button {
+			  height: 35px;
+			  width: 130px;
+			  font-size: 13px ;
+		  }
+	  
+		  #left {
+			  height: 220px;
+		  }
+	  
+		  #right {
+			  padding: 25px 15px;
+		  }
+	  
+	  }
+</style>
+<body>
+    <header id="header" class="container-fluid">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg" id="navbar">
+              <a href="index.html" class="navbar-brand logo">
+                <img src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571749198/c09e9odiqy2cvkosfubl.png" alt="WikiPoli Logo">
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="fa fa-bars" aria-hidden="true"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav navbar-nav ml-auto menu">
+                  <li class="nav-item active">
+                    <a class="nav-link " href="index.html"><strong>Home</strong></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="user_setting.html"><strong>Settings</strong></a>
+									</li>
+									<li class="nav-item">
+                    <a class="nav-link log_out" href="#"><strong>Log out</strong></a>
+                  </li>
+                  <!-- <li class="nav-item">
+                    <a class="nav-link" href="error joor" id="nav-register">Register</a>
+                  </li> -->
+                </ul>
+              </div>
+            </nav>
+          </div>
+			</header>
+			<div class="container">
+				<div class="row">
+						<aside class=" justify-content-center text-center col-12 col-md-3" >
+								<img src="images/profileSam2.png" class=" justify-content-center" alt="">
+								<h3 class="text-center">Celestine Stephen</h3>
+								<p>Human activist</p>
+								<span class="edit_profile"> <a href="edit-user-profile.html">Edit Profile</a></span>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star whit"></i>
+								<span>   | 20+ posts</span>
+								<hr id="hr">
+
+
+								<div class="contact">
+									<h1>contact Information</h1>
+									<h2>Email Address:</h2>
+									<p><i class="fa fa-messages"></i> decele2011@gmail.com</p>
+
+									<h2>Phone: </h2>
+									<p><i class="fa fa-phone"></i> +2348104222808</p>
+									
+									<h2>Address</h2>
+									<p>142 pack lane, USA</p>
+
+								</div>
+				
+							</aside>
+							<section class="col-12 col-sm-9">
+                                    <div id="right">
+                                            <div class="accountSettings">
+                                                <h3>Account Settings</h3>
+                                                <div id="accountSettingsContent">
+                                                    <div class="edits">
+                                                        <p>Change profile picture</p>
+                                                        <input type="file" name="" id="">
+                                                    </div>
+                                                    <div class="edits">
+                                                        <p>Change location</p>
+                                                        <input type="text" class="form-control" placeholder="E.g Lagos">
+                                                    </div>
+                                                    <div class="edits">
+                                                        <p>Edit bio</p>
+                                                       <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+                                                    </div>
+                                                    <div class="edits last">
+                                                        <p>Change password</p>
+                                                      <input type="password" class="form-control" placeholder="New Password">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                           
+                                            <div class="notificationSettings">
+                                                <h3>Notification Settings</h3>
+                                                <div id="notificationSettingsContent">
+                                                    <div class="edit">
+                                                        <p>If someone likes a post I contributed to</p>
+                                                        <span class="toggle"><i onclick="toggleOn(this)" class="fa fa-toggle-on"></i><i onclick="toggleOff(this)" class="fa fa-toggle-off"></i></span>
+                                                    </div>
+                                                    <div class="edit">
+                                                        <p>if someone comments on post I contributed to</p>
+                                                        <span class="toggle"><i onclick="toggleOn(this)" class="fa fa-toggle-on"></i><i onclick="toggleOff(this)" class="fa fa-toggle-off"></i></span>
+                                                    </div>
+                                                    <div class="edit">
+                                                        <p>If someone comments on my post</p>
+                                                        <span class="toggle"><i onclick="toggleOn(this)" class="fa fa-toggle-on"></i><i onclick="toggleOff(this)" class="fa fa-toggle-off"></i></span>
+                                                    </div>
+                                                    <div class="edit">
+                                                        <p>If someone likes my post</p>
+                                                        <span class="toggle"><i onclick="toggleOn(this)" class="fa fa-toggle-on"></i><i onclick="toggleOff(this)" class="fa fa-toggle-off"></i></span>
+                                                    </div>
+                                                    <div class="edit last">
+                                                        <p>Recent post on politician</p>
+                                                        <span class="toggle"><i onclick="toggleOn(this)" class="fa fa-toggle-on"></i><i onclick="toggleOff(this)" class="fa fa-toggle-off"></i></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="doneButton">
+                                                <button type="click">Done</button>			    	
+                                            </div>
+                                            <div class="deleteMyAccount">
+                                                <button type="click">Delete my account</button>
+                                            </div>
+                                            <!--<div class="rightOutterWrapper">
+                                                <div class="rightInnerWrapper">
+                                                    <h4>Font Size</h4>
+                                                    <p>Adjust font size for better readability</p>
+                                                </div>
+                                                <button type="click">Regular</button>
+                                            </div>-->
+                                        </div>
+
+							</section>
+				</div>
+
+
+			</div>
+
+      <footer id="footer">
+          <hr id="hr">
+          <nav id="nav-flex">
+            <section class="link-group">
+              <span class="group-desc">Company</span>
+              <a href="">About Us</a>
+              <a href="">Our Team</a>
+              <a href="">Election 2023</a>
+            </section>
+            <section class="link-group">
+              <span class="group-desc">Help & Support</span>
+              <a href="">FAQ</a>
+              <a href="">Contact us</a>
+            </section>
+            <section class="link-group">
+              <span class="group-desc">Legal</span>
+              <a href="">Terms and Conditions</a>
+              <a href="">Privacy Policy</a>
+            </section>
+            <section class="link-group">
+              <span class="group-desc">Follow Us</span>
+              <section id="socials">
+                <a class="social-link" href=""><img src="images/facebook-icon.png" height="30px"></a>
+                <a class="social-link" href=""><img src="images/linkedin-icon.png" height="30px"></a>
+                <a class="social-link" href=""><img src="images/twitter-icon.png" height="30px"></a>
+              </section>
+            </section>
+          </nav>
+        </footer>
+
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+  crossorigin="anonymous"
+></script>
+<script>
+        function toggleOn(obj) {
+        obj.style.display="none";
+        obj.nextElementSibling.style.display = "inline";
+    }
+    
+    function toggleOff(obj) {
+        obj.style.display= "none";
+        obj.previousElementSibling.style.display ="inline";
+    }
+    </script>
+</body>
+</html>
