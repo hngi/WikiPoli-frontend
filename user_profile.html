@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Profile | wikipoli</title>
+  <title>wikipoli | Profile</title>
   <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
   <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
@@ -14,9 +14,9 @@
 </head>
 
 <style type="text/css">
-	html 
+	html Profile
 	{
-	  	box-sizing: border-box;
+	  	bProfile
 	}
 	body 
 	{
@@ -227,6 +227,15 @@
 		aside .whit {
 			color: beige ;
 		}
+		.edit_profile {
+			display: block;
+			margin-bottom: 1rem;
+
+		}
+		.log_out {
+			background: #1257AE;
+			color: #ffffffff !important;
+		}
 </style>
 <body>
     <header id="header" class="container-fluid">
@@ -244,7 +253,10 @@
                     <a class="nav-link " href="index.html"><strong>Home</strong></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="postpage1.html"><strong>Settings</strong></a>
+                    <a class="nav-link" href="user_setting.html"><strong>Settings</strong></a>
+									</li>
+									<li class="nav-item">
+                    <a class="nav-link log_out" href="#"><strong>Log out</strong></a>
                   </li>
                   <!-- <li class="nav-item">
                     <a class="nav-link" href="error joor" id="nav-register">Register</a>
@@ -260,6 +272,7 @@
 								<img src="images/profileSam2.png" class=" justify-content-center" alt="">
 								<h3 class="text-center">Celestine Stephen</h3>
 								<p>Human activist</p>
+								<span class="edit_profile"> <a href="edit-user-profile.html">Edit Profile</a></span>
 								<i class="fa fa-star"></i>
 								<i class="fa fa-star"></i>
 								<i class="fa fa-star"></i>
@@ -267,6 +280,7 @@
 								<i class="fa fa-star whit"></i>
 								<span>   | 20+ posts</span>
 								<hr id="hr">
+
 
 								<div class="contact">
 									<h1>contact Information</h1>
