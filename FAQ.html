@@ -1,111 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
-<link rel="icon" type="img/png" href="images/favicon.png">
-<title>WikiPoli</title>
-<script>
-        function toggleIcon(e) {
-    $(e.target)
-        .prev('.panel-heading')
-        .find(".more-less")
-        .toggleClass('glyphicon-plus glyphicon-minus');
-}
-$('.panel-group').on('hidden.bs.collapse', toggleIcon);
-$('.panel-group').on('shown.bs.collapse', toggleIcon);
-    </script>
-<style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>wikipoli | Profile</title>
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="icon" type="img/png" href="images/favicon.png" />
+</head>
 
-    body {
-        font-family: 'Nunito', segoe UI, sans-serif;
-        background: #ffffff;
-    }
-
-    .panel-group .panel {
-        border-radius: 0;
-        box-shadow: none;
-        border-color: #EEEEEE;
-    }
-
-    .panel-default > .panel-heading {
-        padding: 0;
-        border-radius: 0;
-        color: #ffffff;
-        background-color: #1257AE;;
-        border-color: #1257AE;
-    }
-
-    .panel-title {
-        font-size: 14px;
-    }
-
-    .panel-title > a {
-        display: block;
-        padding: 15px;
-        text-decoration: none;
-    }
-    .harsh{
-        float: right;
-        height: 50px;
-    }
-    .tag{
-        background: #1257AE;
-        height: 40px;
-        width: 80px;
-        border: 1px solid #6D9BF1;
-        
-    }
-
-    .fay{
-        height: 40px;
-        box-shadow: none;
-        background: #ffffff;
-        border: 1px solid #6D9BF1;
-        box-sizing: border-box;
-        font-weight: normal;
-        font-size: 15px;
-        line-height: 18px;
-        color: #8C8383;
-        width: 400px;
-        
-    
-        
-    }
-
-    .more-less {
-        float: right;
-        color: #ffffff;
-    }
-
-    .panel-default > .panel-heading + .panel-collapse > .panel-body {
-        border-top-color: #1257AE;
-        
-    }
-    .intro{
-        color: #1257AE;
-        text-align: center;
-        font-size: 35px;
-        font-display: bold;
-        line-height: 60px;
-
-    }
-    
+<style type="text/css">
+	html Profile
+	{
+	  	bProfile
+	}
 	body 
 	{
 	 	font-family: 'Nunito', segoe UI, sans-serif;
 	}
-    html
-    {
-        box-sizing:border-box;
-    }
 	#header
 	{
 		width: 100%;
@@ -157,7 +72,36 @@ $('.panel-group').on('shown.bs.collapse', toggleIcon);
 	{
 	  color: #000000;
 	}
-    #footer
+
+	@media (max-width: 860px)
+	{
+		#header .fa-bars 
+		{
+		  margin-bottom: 1rem;
+		}
+		#header .menu
+		{
+			border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+			padding-bottom: 1rem;
+		}
+		#header .menu .nav-link
+		{
+			font-size: 1rem;
+			padding: 0.3rem 1rem;
+		}
+		#header .menu #nav-register
+		{
+			padding: 0.3rem 1rem;
+		}
+		#header .menu li 
+		{
+			margin-left: 0.5rem;
+		}
+  }
+  
+
+  /* FOR THE FOOTER */
+  #footer
 		{
 			font-family: Nunito, segoe UI, sans-serif;
 			margin: 1rem auto;
@@ -215,48 +159,7 @@ $('.panel-group').on('shown.bs.collapse', toggleIcon);
 		{
 			border: 2px solid skyblue;
 		}
-
-
-
-
-/* ----- v CAN BE DELETED v ----- */
-        
-
-
-.demo {
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-
-    
-        
-    
-    @media (max-width: 860px)
-	{
-		#header .fa-bars 
-		{
-		  margin-bottom: 1rem;
-		}
-		#header .menu
-		{
-			border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-			padding-bottom: 1rem;
-		}
-		#header .menu .nav-link
-		{
-			font-size: 1rem;
-			padding: 0.3rem 1rem;
-		}
-		#header .menu #nav-register
-		{
-			padding: 0.3rem 1rem;
-		}
-		#header .menu li 
-		{
-			margin-left: 0.5rem;
-		}
-	}
-    @media (max-width: 860px)
+		@media (max-width: 860px)
 		{
 			#footer
 			{
@@ -272,13 +175,36 @@ $('.panel-group').on('shown.bs.collapse', toggleIcon);
 				margin: 1.5rem 0 0.5rem;
 			}
 		}
-</style>
+    .log_out {
+			background: #1257AE;
+			color: #ffffffff !important;
+		}
 
-</head>
-<body>
+
+		/* FOR THE MAIN PAGE  */
+    .acc {
+      width: 100%;
+      color: #ffffffff;
+      font-weight: bold;
+    }
+    .acc:hover {
+      color: #ffffffff;
+    }
+    .actext {
+      float: left;
+      text-align: left;
+    }
+
+    .card-header {
+      background-color: #1257AE;
+      
+    }
     
-    <header id="header" class="container-fluid" style="padding: 0px 10px 0px 10px">
-        
+		
+</style>
+<body>
+    <header id="header" class="container-fluid">
+        <div class="container">
             <nav class="navbar navbar-expand-lg" id="navbar">
               <a href="index.html" class="navbar-brand logo">
                 <img src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571749198/c09e9odiqy2cvkosfubl.png" alt="WikiPoli Logo">
@@ -287,120 +213,266 @@ $('.panel-group').on('shown.bs.collapse', toggleIcon);
                   <i class="fa fa-bars" aria-hidden="true"></i>
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto menu">
+                <ul class="nav navbar-nav ml-auto menu">
                   <li class="nav-item active">
-                    <a class="nav-link " href="index.html"><strong>Posts</strong></a>
+                    <a class="nav-link " href="index.html"><strong>Home</strong></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="postpage1.html"><strong>Login</strong></a>
+                    <a class="nav-link" href="user_setting.html"><strong>Settings</strong></a>
+									</li>
+									<li class="nav-item">
+                    <a class="nav-link log_out" href="#"><strong>Log out</strong></a>
                   </li>
-                  <li class="nav-item">
+                  <!-- <li class="nav-item">
                     <a class="nav-link" href="error joor" id="nav-register">Register</a>
-                  </li>
+                  </li> -->
                 </ul>
               </div>
             </nav>
-    </header>
-        
-         <form role="search" style="padding: 0px 10px 0px 10px">
-                <div class="harsh">
-                  <input type="search" id="mySearch" name="q" class="fay"
-                   placeholder="Enter Candidates name"
-                   aria-label="Search through site content">
-                  <button class="tag">Search</button>
-                </div>
-              </form>
-            </header>
-        <div class="container demo">
-                <h1 class="intro">Frequently Asked Questions</h1>
+          </div>
+			</header>
+			<div class="container">
+          <h2>Frequently Asked Questions</h2>
+          <br>
+          <br>
+          <!-- <p>Login and Registration Issues</p> -->
+          <div class="accordion" id="Loginaccordion">
+            <div class="card z-depth-0 bordered">
+              <div class="card-header" id="heading1">
+                <h5 class="mb-0">
+                  <button class="btn btn-link acc" type="button" data-toggle="collapse" data-target="#collapse1"
+                    aria-expanded="true" aria-controls="collapse1">
+                    <span class="actext">What is WikiPoli?</span> 
+                    <i class="fa fa-plus float-right"></i>
+                  </button>
+                </h5>
+              </div>
+              <div id="collapse1" class="collapse show" aria-labelledby="heading1"
+                data-parent="#Loginaccordion">
+                <div class="card-body">
+                    It is a special type of website designed to make contribution
+                    on everything politics easy. Many people are constantly 
+                    improving WikiPOLIS, making thousands of edits every
+                    minute.
 
-            <div clas=col-lg-8>
-            <div class="panel-group" class="accordion " id="accordion" role="tablist" aria-multiselectable="true">
-        
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingOne">
-                        <h4 class="panel-title">
-                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                <i class="more-less glyphicon glyphicon-plus"></i>
-                                What is WikiPoli?
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseOne" class="panel-collapse collapse show" role="tabpanel" aria-labelledby="headingOne">
-                        <div class="panel-body">
-                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                    </div>
                 </div>
-        
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingTwo">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                <i class="more-less glyphicon glyphicon-plus"></i>
-                                How can I contribute?
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                        <div class="panel-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingThree">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                <i class="more-less glyphicon glyphicon-plus"></i>
-                                Who owns WikiPoli?
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                        <div class="panel-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingFour">
-                            <h4 class="panel-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFoure">
-                                    <i class="more-less glyphicon glyphicon-plus"></i>
-                                    Is my Privacy Secured?
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                            <div class="panel-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingFive">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                        <i class="more-less glyphicon glyphicon-plus"></i>
-                                        Can I delete my Contribution?
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-                                <div class="panel-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                </div>
-                            </div>
-                        </div>
-        
-            </div><!-- panel-group -->
-        </div>
+              </div>
+            </div>
             
-        </div><!-- container -->
+            <!-- SECOND  -->
+    
+            <div class="card z-depth-0 bordered">
+              <div class="card-header" id="heading2">
+                <h5 class="mb-0">
+                  <button class="btn btn-link acc" type="button" data-toggle="collapse" data-target="#collapse2"
+                    aria-expanded="true" aria-controls="collapse2">
+                    <span class="actext">How can I contribute?</span> 
+                    <i class="fa fa-plus float-right"></i>
+                  </button>
+                </h5>
+              </div>
+              <div id="collapse2" class="collapse" aria-labelledby="heading2"
+                data-parent="#Loginaccordion">
+                <div class="card-body">
+                    You may not have to, however, in order to post messages
+                    you must sign up/log in. Also, registration gives you access
+                    to additional features not available to guest users such as 
+                    private messaging the administrator, subscription to latest 
+                    news on this site, etc. It only takes a few moments to 
+                    register so it is recommended you do so.
+                </div>
+              </div>
+            </div>
+    
+            <!-- THIRD -->
+    
+            <div class="card z-depth-0 bordered">
+              <div class="card-header" id="heading3">
+                <h5 class="mb-0">
+                  <button class="btn btn-link acc" type="button" data-toggle="collapse" data-target="#collapse3"
+                    aria-expanded="true" aria-controls="collapse3">
+                    <span class="actext ">Who owns WikiPoli?</span> 
+                    <i class="fa fa-plus float-right"></i>
+                  </button>
+                </h5>
+              </div>
+              <div id="collapse3" class="collapse" aria-labelledby="heading3"
+                data-parent="#Loginaccordion">
+                <div class="card-body">
 
-          
+                  WikiPoli is owned by a group of individuals who had a common goal of educating people about political candidates
+                    <!--First, check your username and password. If they are 
+                    correct, then one of two things may have happened. 
+                    If you were sent an email, follow the instructions. 
+                    If you did not receive an email, you may have
+                    provided an incorrect email address or the 
+                    email may have been picked up by a spam filer. 
+                    If you are sure the email address you provided is 
+                    correct, try contacting an administrator.-->
+              
+                </div>
+              </div>
+            </div>
+    
+            <!-- FORTH -->
+    
+            <div class="card z-depth-0 bordered">
+              <div class="card-header" id="heading4">
+                    <h5 class="mb-0">
+                    <button class="btn btn-link acc" type="button" data-toggle="collapse" data-target="#collapse4"
+                    aria-expanded="true" aria-controls="collapse4">
+                   <span class="actext">Is my Privacy Secured?</span> 
+                   
+                    <i class="fa fa-plus float-right"></i>
+                    </button>
+                    
+                    </h5>
+              </div>
+              <div id="collapse4" class="collapse" aria-labelledby="heading4"
+                data-parent="#Loginaccordion">
+                <div class="card-body">
+                  Don’t panic! While your password cannot be retrieved, 
+                  it can easily be reset. Visit the login page and click 
+                  <em>I forgot my password</em>. Please note that only information you wish to display will be used
+                </div>
+              </div>
+            </div>
+
+
+            <!-- FIFTH-->
+    
+            <div class="card z-depth-0 bordered">
+                <div class="card-header" id="heading5">
+                      <h5 class="mb-0">
+                      <button class="btn btn-link acc" type="button" data-toggle="collapse" data-target="#collapse5"
+                      aria-expanded="true" aria-controls="collapse5">
+                      <span class="actext">Can I delete my Contribution?</span> 
+                      <i class="fa fa-plus float-right"></i>
+                      </button>
+                      </h5>
+                </div>
+                <div id="collapse5" class="collapse" aria-labelledby="heading5"
+                  data-parent="#Loginaccordion">
+                  <div class="card-body">
+                    Don’t panic! While your password cannot be retrieved, 
+                    it can easily be reset. Visit the login page and click 
+                    <em>I forgot my password</em>. 
+                    Follow the instructions and you should be able 
+                    to log in again shortly.<br />
+                    However, if you are not able to reset your 
+                    password, contact a board administrator.
+                  </div>
+                </div>
+              </div>
+
+              <!--SIXTH-->
+        <div class="card z-depth-0 bordered">
+          <div class="card-header" id="heading6">
+            <h5 class="mb-0">
+              <button class="btn btn-link acc" type="button" data-toggle="collapse" data-target="#collapse6"
+                aria-expanded="true" aria-controls="collapse6">
+                <span class="actext"> Who writes the articles on WikiPoli?</span>
+                <i class="fa fa-plus float-right"></i>
+              </button>
+            </h5>
+          </div>
+          <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#Loginaccordion">
+            <div class="card-body">
+              Almost all articles on WikiPoli are written by multiple editors, not just one. If you click on the "View
+              history" tab at the top of an article, a list will be displayed of all the contributors to the article and
+              when their contribution was made.
+            </div>
+          </div>
+        </div>
+
+                      <!--SEVENTH-->
+        <div class="card z-depth-0 bordered">
+          <div class="card-header" id="heading7">
+            <h5 class="mb-0">
+              <button class="btn btn-link acc" type="button" data-toggle="collapse" data-target="#collapse7"
+                aria-expanded="true" aria-controls="collapse7">
+                <span class="actext">How do I create a new page?</span>
+                <i class="fa fa-plus float-right"></i>
+              </button>
+            </h5>
+          </div>
+          <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#Loginaccordion">
+            <div class="card-body">
+              You are required to have a WikiPoli account to create a new article, you can register <a href="signup.html">here.</a> To see other
+              benefits to creating an account, see Why create an account?
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="card z-depth-0 bordered">
+          <div class="card-header" id="heading8">
+            <h5 class="mb-0">
+              <button class="btn btn-link acc" type="button" data-toggle="collapse" data-target="#collapse8"
+                aria-expanded="true" aria-controls="collapse8">
+                <span class="actext">How do I edit a page?</span>
+                <i class="fa fa-plus float-right"></i>
+              </button>
+            </h5>
+          </div>
+          <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#Loginaccordion">
+            <div class="card-body">
+              Editing most WikiPOli pages is easy, just click the "Edit" tab WikiPOli page (or on a. This will take you to a new page with a text box containing the editable text of the
+              page you were viewing. In this box you can type in the text that you want to add or format the text and add other elements like images.<!-- When you have finished editing you should
+              write a short edit summary in the small field below the edit-box describing your changes.-->
+            </div>
+          </div>
+        </div>
+
+        <div class="card z-depth-0 bordered">
+          <div class="card-header" id="heading9">
+            <h5 class="mb-0">
+              <button class="btn btn-link acc" type="button" data-toggle="collapse" data-target="#collapse9"
+                aria-expanded="true" aria-controls="collapse9">
+                <span class="actext">Can I rely on WikiPoli for advice on political related contents</span>
+                <i class="fa fa-plus float-right"></i>
+              </button>
+            </h5>
+          </div>
+          <div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#Loginaccordion">
+            <div class="card-body">
+              In a word, no. If you need specific advice on political related contents,
+              please seek a professional who is licensed or knowledgeable in that area. That is not to say that you will
+              not find valuable and accurate information in WikiPoli; much of the time you will. However, WikiPoli
+              cannot guarantee the validity of the information found here. The content of any given article may recently
+              have been changed or altered by someone whose opinion does not correspond with the state of
+              knowledge in the relevant fields.
+            </div>
+          </div>
+        </div>
+
+        <div class="card z-depth-0 bordered">
+          <div class="card-header" id="heading5">
+            <h5 class="mb-0">
+              <button class="btn btn-link acc" type="button" data-toggle="collapse" data-target="#collapse5"
+                aria-expanded="true" aria-controls="collapse5">
+                <span class="actext">I think I spotted an error. How can I get that fixed on the site?</span>
+                <i class="fa fa-plus float-right"></i>
+              </button>
+            </h5>
+          </div>
+          <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#Loginaccordion">
+            <div class="card-body">
+              Mistakes do appear on the website occasionally, so please point out apparent errors as soon as possible by
+              e-mailing contact@wikipoli.gq. To help us investigate further, please include as much supporting evidence as you
+              can. We do this for two reasons: 
+              <ul>
+                <ul>1. To confirm that it is truly an error (as you can imagine,
+                  sometimes people will ask for accurate information on our site to be changed or deleted);</ul>
+                  <ul>2. So that the error doesn't recur the next time we download the data from the source.</ul>
+              </ul>
+                 Thanks for helping us keep
+              Wikipuli.gq accurate.
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
         <footer>
             <footer id="footer">
                 <hr id="hr">
@@ -432,9 +504,6 @@ $('.panel-group').on('shown.bs.collapse', toggleIcon);
                 </nav>
             
         </footer>
-            
-    </div>
-    
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
