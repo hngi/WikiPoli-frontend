@@ -21,6 +21,7 @@
         body {
             font-family: 'Lato', sans-serif;
         }
+
         #header
         {
             width: 100%;
@@ -99,91 +100,12 @@
             }
         }
 
-        .logo img {
-            width: 120px;
-        }
-
-        .navbar p {
-            font-size: 2rem;
-            color: #6D9BF1;
-        }
-
-        .menu a {
-            font-size: 1.5rem;
-            color: #6D9BF1;
-        }
-
-        .menu li {
-            padding-left: 2.5rem;
-        }
-
-        .fa-bars {
-            color: #000000;
-        }
-
-        .posts-nav-link {
-            background-color: #6D9BF1 !important;
-
-            color: #ffffff !important;
-            padding: .6rem 1.7rem;
-        }
-
-        .posts-nav-link:hover {
-            text-decoration: none;
-            background-color: rgb(69, 115, 202) !important;
-        }
-
-        .button-signup {
-            background-color: #6D9BF1;
-            border: none;
-            box-shadow: none;
-            color: #ffffff;
-            padding: 6px;
-            font-size: 1.5rem;
-            width: 150px;
-            margin-left: 2.5rem;
-        }
-
-        .button-signup:hover {
-            background: rgb(69, 115, 202);
-        }
-
-        .user-name-link {
-            color: black !important;
-        }
-
-        .button-search {
-            background-color: #6D9BF1;
-            border: none;
-            box-shadow: none;
-            color: #ffffff;
-            font-size: 2rem;
-            padding: 1px;
-            width: 150px;
-        }
-
-        .form-content {
-            width: 80%;
-            margin-top: 15%;
-        }
-
-        .input-group {
-            width: 80%;
-            margin-left: 23%;
-        }
 
         h1 {
             color: #6D9BF1;
             margin-bottom: 50px;
         }
 
-        .search-content {
-            font-size: 1.2rem;
-            margin-left: 23%;
-            color: #676871;
-            padding-top: 20px;
-            font-weight: bold;
-        }
 
         .form-control {
             border: 1px solid rgb(148, 148, 148);
@@ -276,26 +198,6 @@
             font-size: 12px;
         }
 
-        /* Responsive styling */
-        /*@media screen and (max-width: 768px) {*/
-        /*    h1 {*/
-        /*        font-size: 30px;*/
-        /*    }*/
-        /*    #footer {*/
-        /*        margin-top: 150px;*/
-        /*        padding-top: 10px;*/
-        /*        height: 450px;*/
-        /*        width: 100%;*/
-        /*    }*/
-        /*    .social-links {*/
-        /*        margin-left: 40px;*/
-        /*    }*/
-
-        /*    .fa-2x {*/
-        /*        font-size: 1.3rem !important;*/
-        /*    }*/
-        /*}*/
-
         @media screen and (max-width: 768px) {
             .input-group {
                 width: 100%;
@@ -309,7 +211,6 @@
                 margin-left: 4%;
             }
         }
-
         #footer
         {
             font-family: Nunito, segoe UI, sans-serif;
@@ -318,6 +219,7 @@
         }
         #footer #hr
         {
+            margin-left: 9%;
             width: 80%;
             border: 0.5px solid rgba(0, 0, 0, 0.08);
         }
@@ -370,27 +272,30 @@
         }
 
 
-        @media (max-width: 860px)
-        {
-            #footer
-            {
+
+        @media (max-width: 860px) {
+
+            #footer {
                 padding-bottom: 1rem;
                 text-align:center;
             }
-            #footer #nav-flex
-            {
+
+            #footer #nav-flex {
                 flex-direction: column;
                 margin: 1rem 2rem;
             }
-            #footer .link-group .group-desc
-            {
+
+            #footer .link-group .group-desc {
                 margin: 1.5rem 0 0.5rem;
             }
         }
+
     </style>
 </head>
 <body>
 <div id="wrapper">
+
+
     <header id="header" class="container-fluid">
         <div class="container">
             <nav class="navbar navbar-expand-lg" id="navbar">
@@ -402,17 +307,21 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="nav navbar-nav ml-auto menu">
-                        <li class="nav-item">
-                            <h3 class="nav-link" href="postpage1.html"><strong>John Doe</strong></h3>
+                        <li class="nav-item active">
+                            <a class="nav-link " href="index.html"><strong>Posts</strong></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="error joor" id="nav-register">Posts</a>
+                            <a class="nav-link" href="postpage1.html"><strong>Login</strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="error joor" id="nav-register">Register</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </div>
     </header>
+
     <div class="container mx-auto">
         <h1 class="text-center mt-3 mb-5 pb-3">Get in Touch</h1>
         <div class="main-body row">
@@ -445,15 +354,13 @@
             </div>
         </div>
     </div>
-
     <footer id="footer">
         <hr id="hr">
         <nav id="nav-flex">
             <section class="link-group">
                 <span class="group-desc">Company</span>
                 <a href="">About Us</a>
-                <a href="">Our Team</a>
-                <a href="">Election 2023</a>
+                <a href="">Careers</a>
 
             </section>
             <section class="link-group">
@@ -476,6 +383,7 @@
             </section>
         </nav>
     </footer>
+
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
