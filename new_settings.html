@@ -101,6 +101,7 @@
 		font-family: Nunito, segoe UI, sans-serif;
 		margin: 1rem auto;
 		width: 100%;
+		text-align: center ;
 	}
 
 	#footer #hr {
@@ -357,6 +358,7 @@
 	.edits p {
 		width: 44%;
 		align-self: flex-start;
+		font-weight:600 ;
 	}
 
 	#different {
@@ -365,6 +367,7 @@
 
 	.edit p {
 		width: 65%;
+		font-weight:600 ;
 	}
 
 
@@ -374,10 +377,11 @@
 		justify-content: flex-start;
 	}
 
-	.edit span {
+#propic {
 		display: flex;
 		justify-content: flex-end;
-		width: 20%;
+		/* width: 30%; */
+		cursor: pointer;
 	}
 
 	.last {
@@ -398,8 +402,7 @@
 		width: 70%;
 	}
 
-	a:hover,
-	button:hover {}
+
 
 	@media screen and (max-width: 800px) {
 		#formButton {
@@ -435,6 +438,7 @@
 			width: 100%;
 		}
 
+	
 		.rightOutterWrapper {
 			width: 100%;
 		}
@@ -498,8 +502,7 @@
 			padding-left: 25px;
 		}
 
-		#form {}
-
+	
 		#leftButton {
 			font-size: 14px;
 		}
@@ -526,8 +529,9 @@
 		}
 
 		.edits p {
-			width: 50%;
+			width: 70%;
 			font-size: 14px;
+			margin-right: 20px;
 		}
 
 		.edits span {
@@ -644,7 +648,7 @@
 						<div id="accountSettingsContent">
 							<div class="edits">
 								<p>Change profile picture</p>
-								<input type="file" name="" id="" >
+								<input type="file" name="" id="propic"  class="btn btn-light btn-sm form control">
 							</div>
 							<div class="edits">
 								<p>Change location</p>
@@ -733,7 +737,7 @@
 			</section>
 			<section class="link-group">
 				<span class="group-desc">Follow Us</span>
-				<section id="socials">
+				<section id="socials" class="justify-content-center">
 					<a class="social-link" href=""><img src="images/facebook-icon.png" height="30px"></a>
 					<a class="social-link" href=""><img src="images/linkedin-icon.png" height="30px"></a>
 					<a class="social-link" href=""><img src="images/twitter-icon.png" height="30px"></a>
