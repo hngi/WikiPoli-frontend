@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Change Password</title>
+    <title>Search Result</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
@@ -27,9 +27,10 @@
         }
 
 
-        .search-results-container{
+        .search-results-container {
             background-color: #fff
         }
+
         #header {
             width: 100%;
             padding: 0;
@@ -270,52 +271,66 @@
             #footer .link-group .group-desc {
                 margin: 1.5rem 0 0.5rem;
             }
-            
-            
+
+
         }
-            .search-line{
-                display: flex;
-                justify-content: space-between;
-                
-            }
-        .search-line input{
-        width: 300px;
-        padding: 5px 10px;
-            margin-right:-5px;
-            border:1px solid  #1257AE
+
+        .search-line {
+            display: flex;
+            justify-content: space-between;
+
         }
-        .search-line button{
+
+        .search-line input {
+            width: 300px;
+            padding: 5px 10px;
+            margin-right: -5px;
+            border: 1px solid #1257AE
+        }
+
+        .search-line button {
             padding: 5px;
             width: 100px;
             background-color: #1257AE;
             color: #fff;
             border: 1px solid #1257AE
         }
-        @media (max-width: 1000px){
-            .search-line{
+
+        @media (max-width: 1000px) {
+            .search-line {
                 display: flex;
                 flex-direction: column-reverse;
                 justify-content: center;
                 align-items: center;
             }
-            .search-box{
+
+            .search-box {
                 margin-bottom: 12px;
                 width: 90%
             }
-            .search-line input{
-        width: 80%!important;
-        padding: 5px 10px;
-            
-        }
-        .search-line button{
-            padding: 5px;
-            width: 20%!important;
-            
-        }
-            .search-line h3{
-                font-size:19px
+
+            .search-line input {
+                width: 80% !important;
+                padding: 5px 10px;
+
+            }
+
+            .search-line button {
+                padding: 5px;
+                width: 20% !important;
+
+            }
+
+            .search-line h3 {
+                font-size: 19px
             }
         }
+
+        /*
+        #post_results{
+            display: none;
+        }
+*/
     </style>
 
 </head>
@@ -346,199 +361,311 @@
             </nav>
         </div>
     </header>
-    
 
-        <section class="site-section py-sm search-results-container">
-            <div class="container ">
-                <div class="row search-line">
-                    <div class="">
-                        <h3 class="mb-4 text-success">Search Results for <span id="search-keyword">"KeyWord"</span></h3>
-                        <!-- <h4>Results found for Keyword</h4> -->
-                    </div>
-                    
-<!--                    search box starts here-->
-              
-              <div class="justify-content-right search-box">
-                <input type="text" placeholder="search" class="">
-                <button class="">Search</button>
-            </div>
-               
+
+    <section class="site-section py-sm search-results-container">
+        <div class="container ">
+            <div class="row search-line pt-4">
+                <div class="">
+                    <h3 class="mb-4 text-success">Search Results for <span id="search-keyword">"KeyWord"</span></h3>
+                    <!-- <h4>Results found for Keyword</h4> -->
                 </div>
-                <div class="row blog-entries">
-                    <div class="col-md-12 col-lg-12 main-content">
-                        <div class="row">
-                        
-<!--                         Search box result starts here-->
-                          <div class="col-md-12 my-1">
-                                <a href="#" class="blog-entry element-animate" data-animate-effect="fadeIn">
-                                   <div class="row">
-                                    <div class="col-md-2 col-lg-2 col  d-flex justify-content-center"><img src="https://res.cloudinary.com/wpgroom-com/image/upload/v1573068937/camera-placeholder_fo4ozm.jpg" alt="" class="img-fluid" style=""></div>
-                                    <div class="blog-content-body col-md-10 col-lg-10">
-                                        <div class="post-meta">
-                                            <span class="category">Author</span>
-                                            <span class="category mr-2">Date</span> 
-                                            <!-- <span class="ml-2"><span class="fa fa-comments"></span> {{post.comments.count}}</span> -->
-                                        </div>
-                                        <h2>Title of Post</h2>
-                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur dicta repellat
-                                            aut odio repellendus, voluptatibus exercitationem! Autem eligendi vel rem iste a nisi consequatur
-                                            minima asperiores. Consequatur ipsum rem sint!</p>
-                                    </div>
-                                    </div>
-                                </a>
-                            </div>
-  <!--                         Search box result ends here-->
-                           
-                           <!--                         Search box result starts here-->
-                          <div class="col-md-12 my-1">
-                                <a href="#" class="blog-entry element-animate" data-animate-effect="fadeIn">
-                                   <div class="row">
-                                    <div class="col-md-2 col-lg-2 col  d-flex justify-content-center"><img src="https://res.cloudinary.com/wpgroom-com/image/upload/v1573068937/camera-placeholder_fo4ozm.jpg" alt="" class="img-fluid" style=""></div>
-                                    <div class="blog-content-body col-md-10 col-lg-10">
-                                        <div class="post-meta">
-                                            <span class="category">Author</span>
-                                            <span class="category mr-2">Date</span> 
-                                            <!-- <span class="ml-2"><span class="fa fa-comments"></span> {{post.comments.count}}</span> -->
-                                        </div>
-                                        <h2>Title of Post</h2>
-                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur dicta repellat
-                                            aut odio repellendus, voluptatibus exercitationem! Autem eligendi vel rem iste a nisi consequatur
-                                            minima asperiores. Consequatur ipsum rem sint!</p>
-                                    </div>
-                                    </div>
-                                </a>
-                            </div>
-  <!--                         Search box result ends here-->
-                           
-                           <!--                         Search box result starts here-->
-                          <div class="col-md-12 my-1">
-                                <a href="#" class="blog-entry element-animate" data-animate-effect="fadeIn">
-                                   <div class="row">
-                                    <div class="col-md-2 col-lg-2 col  d-flex justify-content-center"><img src="https://res.cloudinary.com/wpgroom-com/image/upload/v1573068937/camera-placeholder_fo4ozm.jpg" alt="" class="img-fluid" style=""></div>
-                                    <div class="blog-content-body col-md-10 col-lg-10">
-                                        <div class="post-meta">
-                                            <span class="category">Author</span>
-                                            <span class="category mr-2">Date</span> 
-                                            <!-- <span class="ml-2"><span class="fa fa-comments"></span> {{post.comments.count}}</span> -->
-                                        </div>
-                                        <h2>Title of Post</h2>
-                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur dicta repellat
-                                            aut odio repellendus, voluptatibus exercitationem! Autem eligendi vel rem iste a nisi consequatur
-                                            minima asperiores. Consequatur ipsum rem sint!</p>
-                                    </div>
-                                    </div>
-                                </a>
-                            </div>
-  <!--                         Search box result ends here-->
-                           
-                           <!--                         Search box result starts here-->
-                          <div class="col-md-12 my-1">
-                                <a href="#" class="blog-entry element-animate" data-animate-effect="fadeIn">
-                                   <div class="row">
-                                    <div class="col-md-2 col-lg-2 col  d-flex justify-content-center"><img src="https://res.cloudinary.com/wpgroom-com/image/upload/v1573068937/camera-placeholder_fo4ozm.jpg" alt="" class="img-fluid" style=""></div>
-                                    <div class="blog-content-body col-md-10 col-lg-10">
-                                        <div class="post-meta">
-                                            <span class="category">Author</span>
-                                            <span class="category mr-2">Date</span> 
-                                            <!-- <span class="ml-2"><span class="fa fa-comments"></span> {{post.comments.count}}</span> -->
-                                        </div>
-                                        <h2>Title of Post</h2>
-                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur dicta repellat
-                                            aut odio repellendus, voluptatibus exercitationem! Autem eligendi vel rem iste a nisi consequatur
-                                            minima asperiores. Consequatur ipsum rem sint!</p>
-                                    </div>
-                                    </div>
-                                </a>
-                            </div>
-  <!--                         Search box result ends here-->
-                           
-                           <!--                         Search box result starts here-->
-                          <div class="col-md-12 my-1">
-                                <a href="#" class="blog-entry element-animate" data-animate-effect="fadeIn">
-                                   <div class="row">
-                                    <div class="col-md-2 col-lg-2 col  d-flex justify-content-center"><img src="https://res.cloudinary.com/wpgroom-com/image/upload/v1573068937/camera-placeholder_fo4ozm.jpg" alt="" class="img-fluid" style=""></div>
-                                    <div class="blog-content-body col-md-10 col-lg-10">
-                                        <div class="post-meta">
-                                            <span class="category">Author</span>
-                                            <span class="category mr-2">Date</span> 
-                                            <!-- <span class="ml-2"><span class="fa fa-comments"></span> {{post.comments.count}}</span> -->
-                                        </div>
-                                        <h2>Title of Post</h2>
-                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur dicta repellat
-                                            aut odio repellendus, voluptatibus exercitationem! Autem eligendi vel rem iste a nisi consequatur
-                                            minima asperiores. Consequatur ipsum rem sint!</p>
-                                    </div>
-                                    </div>
-                                </a>
-                            </div>
-  <!--                         Search box result ends here-->
-                           
-                           <!--                         Search box result starts here-->
-                          <div class="col-md-12 my-1">
-                                <a href="#" class="blog-entry element-animate" data-animate-effect="fadeIn">
-                                   <div class="row">
-                                    <div class="col-md-2 col-lg-2 col  d-flex justify-content-center"><img src="https://res.cloudinary.com/wpgroom-com/image/upload/v1573068937/camera-placeholder_fo4ozm.jpg" alt="" class="img-fluid" style=""></div>
-                                    <div class="blog-content-body col-md-10 col-lg-10">
-                                        <div class="post-meta">
-                                            <span class="category">Author</span>
-                                            <span class="category mr-2">Date</span> 
-                                            <!-- <span class="ml-2"><span class="fa fa-comments"></span> {{post.comments.count}}</span> -->
-                                        </div>
-                                        <h2>Title of Post</h2>
-                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur dicta repellat
-                                            aut odio repellendus, voluptatibus exercitationem! Autem eligendi vel rem iste a nisi consequatur
-                                            minima asperiores. Consequatur ipsum rem sint!</p>
-                                    </div>
-                                    </div>
-                                </a>
-                            </div>
-  <!--                         Search box result ends here-->
-                           
-                           
-                            
-                            
+
+                <!--                    search box starts here-->
+
+                <div class="justify-content-right search-box">
+                    <input type="text" placeholder="search" class="">
+                    <button class="">Search</button>
+                </div>
+
+            </div>
+            <div>
+                <ul class="nav nav-tabs d-flex justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link active text-bold" data-toggle="tab" href="#profile_results">Politicians</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#post_results">Posts</a>
+                    </li>
+                </ul>
+            </div>
+     
+            <div class="row blog-entries tab-content">
+                <!--------------------------------------->
+                <!--   Profile result starts here-->
+                <!--------------------------------------->
+                <div class="col-md-12 col-lg-12 main-content tab-pane active" id="profile_results"><br>
+                    <div class="row justify-content-between">
+
+                        <div class="card col-lg-3 col-12 col-md-4 mb-5 blog-entry"><a href="#">
+                                <img class="card-img-top img-fluid" src="https://res.cloudinary.com/wpgroom-com/image/upload/v1573117704/img_avatar1_vzgtxd.png" alt="Card image" style="width:100%">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Politician Name</h4>
+
+                                </div>
+                            </a>
                         </div>
+                        <div class="card col-lg-3 col-12 col-md-4 mb-5 blog-entry"><a href="#">
+                                <img class="card-img-top" src="https://res.cloudinary.com/wpgroom-com/image/upload/v1573117704/img_avatar1_vzgtxd.png" alt="Card image" style="width:100%">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Politician Name</h4>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card col-lg-3 col-12 col-md-4 mb-5 blog-entry"><a href="#">
+                                <img class="card-img-top" src="https://res.cloudinary.com/wpgroom-com/image/upload/v1573117704/img_avatar1_vzgtxd.png" alt="Card image" style="width:100%">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Politician Name</h4>
+
+                                </div>
+                            </a>
+                        </div>
+
+
+                    </div>
+                    <div class="row justify-content-between">
+
+                        <div class="card col-lg-3 col-12 col-md-4 mb-5 blog-entry"><a href="#">
+                                <img class="card-img-top img-fluid" src="https://res.cloudinary.com/wpgroom-com/image/upload/v1573117704/img_avatar1_vzgtxd.png" alt="Card image" style="width:100%">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Politician Name</h4>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card col-lg-3 col-12 col-md-4 mb-5 blog-entry"><a href="#">
+                                <img class="card-img-top" src="https://res.cloudinary.com/wpgroom-com/image/upload/v1573117704/img_avatar1_vzgtxd.png" alt="Card image" style="width:100%">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Politician Name</h4>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card col-lg-3 col-12 col-md-4 mb-5 blog-entry"><a href="#">
+                                <img class="card-img-top" src="https://res.cloudinary.com/wpgroom-com/image/upload/v1573117704/img_avatar1_vzgtxd.png" alt="Card image" style="width:100%">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Politician Name</h4>
+
+                                </div>
+                            </a>
+                        </div>
+
+
+                    </div>
+                    <div class="row justify-content-between">
+
+                        <div class="card col-lg-3 col-12 col-md-4 mb-5 blog-entry"><a href="#">
+                                <img class="card-img-top img-fluid" src="https://res.cloudinary.com/wpgroom-com/image/upload/v1573117704/img_avatar1_vzgtxd.png" alt="Card image" style="width:100%">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Politician Name</h4>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card col-lg-3 col-12 col-md-4 mb-5 blog-entry"><a href="#">
+                                <img class="card-img-top" src="https://res.cloudinary.com/wpgroom-com/image/upload/v1573117704/img_avatar1_vzgtxd.png" alt="Card image" style="width:100%">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Politician Name</h4>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card col-lg-3 col-12 col-md-4 mb-5 blog-entry"><a href="#">
+                                <img class="card-img-top" src="https://res.cloudinary.com/wpgroom-com/image/upload/v1573117704/img_avatar1_vzgtxd.png" alt="Card image" style="width:100%">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Politician Name</h4>
+
+                                </div>
+                            </a>
+                        </div>
+
+
                     </div>
                 </div>
+                <!--------------------------------------->
+                <!--Profile result ends here-->
+                <!--------------------------------------->
+                <!--.................................-->
+                <!--post results starts here-->
+                <!--.............................................-->
+                <div class="col-md-12 col-lg-12 main-content tab-pane fade" id="post_results">
+                    <div class="row">
+
+                        <!--                         Search box result starts here-->
+                        <div class="col-md-12 my-1">
+                            <a href="#" class="blog-entry element-animate" data-animate-effect="fadeIn">
+                                <div class="row">
+                                    <div class="col-md-2 col-lg-2 col  d-flex justify-content-center"><img src="https://res.cloudinary.com/wpgroom-com/image/upload/v1573068937/camera-placeholder_fo4ozm.jpg" alt="" class="img-fluid" style=""></div>
+                                    <div class="blog-content-body col-md-10 col-lg-10">
+                                        <div class="post-meta">
+                                            <span class="category">Author</span>
+                                            <span class="category mr-2">Date</span>
+                                            <!-- <span class="ml-2"><span class="fa fa-comments"></span> {{post.comments.count}}</span> -->
+                                        </div>
+                                        <h2>Title of Post</h2>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur dicta repellat
+                                            aut odio repellendus, voluptatibus exercitationem! Autem eligendi vel rem iste a nisi consequatur
+                                            minima asperiores. Consequatur ipsum rem sint!</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!--                         Search box result ends here-->
+
+                        <!--                         Search box result starts here-->
+                        <div class="col-md-12 my-1">
+                            <a href="#" class="blog-entry element-animate" data-animate-effect="fadeIn">
+                                <div class="row">
+                                    <div class="col-md-2 col-lg-2 col  d-flex justify-content-center"><img src="https://res.cloudinary.com/wpgroom-com/image/upload/v1573068937/camera-placeholder_fo4ozm.jpg" alt="" class="img-fluid" style=""></div>
+                                    <div class="blog-content-body col-md-10 col-lg-10">
+                                        <div class="post-meta">
+                                            <span class="category">Author</span>
+                                            <span class="category mr-2">Date</span>
+                                            <!-- <span class="ml-2"><span class="fa fa-comments"></span> {{post.comments.count}}</span> -->
+                                        </div>
+                                        <h2>Title of Post</h2>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur dicta repellat
+                                            aut odio repellendus, voluptatibus exercitationem! Autem eligendi vel rem iste a nisi consequatur
+                                            minima asperiores. Consequatur ipsum rem sint!</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!--                         Search box result ends here-->
+
+                        <!--                         Search box result starts here-->
+                        <div class="col-md-12 my-1">
+                            <a href="#" class="blog-entry element-animate" data-animate-effect="fadeIn">
+                                <div class="row">
+                                    <div class="col-md-2 col-lg-2 col  d-flex justify-content-center"><img src="https://res.cloudinary.com/wpgroom-com/image/upload/v1573068937/camera-placeholder_fo4ozm.jpg" alt="" class="img-fluid" style=""></div>
+                                    <div class="blog-content-body col-md-10 col-lg-10">
+                                        <div class="post-meta">
+                                            <span class="category">Author</span>
+                                            <span class="category mr-2">Date</span>
+                                            <!-- <span class="ml-2"><span class="fa fa-comments"></span> {{post.comments.count}}</span> -->
+                                        </div>
+                                        <h2>Title of Post</h2>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur dicta repellat
+                                            aut odio repellendus, voluptatibus exercitationem! Autem eligendi vel rem iste a nisi consequatur
+                                            minima asperiores. Consequatur ipsum rem sint!</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!--                         Search box result ends here-->
+
+                        <!--                         Search box result starts here-->
+                        <div class="col-md-12 my-1">
+                            <a href="#" class="blog-entry element-animate" data-animate-effect="fadeIn">
+                                <div class="row">
+                                    <div class="col-md-2 col-lg-2 col  d-flex justify-content-center"><img src="https://res.cloudinary.com/wpgroom-com/image/upload/v1573068937/camera-placeholder_fo4ozm.jpg" alt="" class="img-fluid" style=""></div>
+                                    <div class="blog-content-body col-md-10 col-lg-10">
+                                        <div class="post-meta">
+                                            <span class="category">Author</span>
+                                            <span class="category mr-2">Date</span>
+                                            <!-- <span class="ml-2"><span class="fa fa-comments"></span> {{post.comments.count}}</span> -->
+                                        </div>
+                                        <h2>Title of Post</h2>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur dicta repellat
+                                            aut odio repellendus, voluptatibus exercitationem! Autem eligendi vel rem iste a nisi consequatur
+                                            minima asperiores. Consequatur ipsum rem sint!</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!--                         Search box result ends here-->
+
+                        <!--                         Search box result starts here-->
+                        <div class="col-md-12 my-1">
+                            <a href="#" class="blog-entry element-animate" data-animate-effect="fadeIn">
+                                <div class="row">
+                                    <div class="col-md-2 col-lg-2 col  d-flex justify-content-center"><img src="https://res.cloudinary.com/wpgroom-com/image/upload/v1573068937/camera-placeholder_fo4ozm.jpg" alt="" class="img-fluid" style=""></div>
+                                    <div class="blog-content-body col-md-10 col-lg-10">
+                                        <div class="post-meta">
+                                            <span class="category">Author</span>
+                                            <span class="category mr-2">Date</span>
+                                            <!-- <span class="ml-2"><span class="fa fa-comments"></span> {{post.comments.count}}</span> -->
+                                        </div>
+                                        <h2>Title of Post</h2>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur dicta repellat
+                                            aut odio repellendus, voluptatibus exercitationem! Autem eligendi vel rem iste a nisi consequatur
+                                            minima asperiores. Consequatur ipsum rem sint!</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!--                         Search box result ends here-->
+
+                        <!--                         Search box result starts here-->
+                        <div class="col-md-12 my-1">
+                            <a href="#" class="blog-entry element-animate" data-animate-effect="fadeIn">
+                                <div class="row">
+                                    <div class="col-md-2 col-lg-2 col  d-flex justify-content-center"><img src="https://res.cloudinary.com/wpgroom-com/image/upload/v1573068937/camera-placeholder_fo4ozm.jpg" alt="" class="img-fluid" style=""></div>
+                                    <div class="blog-content-body col-md-10 col-lg-10">
+                                        <div class="post-meta">
+                                            <span class="category">Author</span>
+                                            <span class="category mr-2">Date</span>
+                                            <!-- <span class="ml-2"><span class="fa fa-comments"></span> {{post.comments.count}}</span> -->
+                                        </div>
+                                        <h2>Title of Post</h2>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur dicta repellat
+                                            aut odio repellendus, voluptatibus exercitationem! Autem eligendi vel rem iste a nisi consequatur
+                                            minima asperiores. Consequatur ipsum rem sint!</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!--                         Search box result ends here-->
+
+
+
+
+                    </div>
+                </div>
+                <!--..........................-->
+                <!--post results ends here-->
+                <!--.............................................-->
+                <!--****************************************************-->
+
             </div>
-        </section>
-    
+        </div>
+    </section>
 
-        <footer id="footer">
-            <hr id="hr">
-            <nav id="nav-flex">
-                <section class="link-group">
-                    <span class="group-desc">Company</span>
-                    <a href="">About Us</a>
-                    <a href="">Our Team</a>
-                    <a href="">Election 2023</a>
+
+    <footer id="footer">
+        <hr id="hr">
+        <nav id="nav-flex">
+            <section class="link-group">
+                <span class="group-desc">Company</span>
+                <a href="">About Us</a>
+                <a href="">Our Team</a>
+                <a href="">Election 2023</a>
+            </section>
+            <section class="link-group">
+                <span class="group-desc">Help & Support</span>
+                <a href="">FAQ</a>
+                <a href="">Contact us</a>
+            </section>
+            <section class="link-group">
+                <span class="group-desc">Legal</span>
+                <a href="">Terms and Conditions</a>
+                <a href="">Privacy Policy</a>
+            </section>
+            <section class="link-group">
+                <span class="group-desc">Follow Us</span>
+                <section id="socials">
+                    <a class="social-link" href=""><img src="images/facebook-icon.png" height="30px"></a>
+                    <a class="social-link" href=""><img src="images/linkedin-icon.png" height="30px"></a>
+                    <a class="social-link" href=""><img src="images/twitter-icon.png" height="30px"></a>
                 </section>
-                <section class="link-group">
-                    <span class="group-desc">Help & Support</span>
-                    <a href="">FAQ</a>
-                    <a href="">Contact us</a>
-                </section>
-                <section class="link-group">
-                    <span class="group-desc">Legal</span>
-                    <a href="">Terms and Conditions</a>
-                    <a href="">Privacy Policy</a>
-                </section>
-                <section class="link-group">
-                    <span class="group-desc">Follow Us</span>
-                    <section id="socials">
-                        <a class="social-link" href=""><img src="images/facebook-icon.png" height="30px"></a>
-                        <a class="social-link" href=""><img src="images/linkedin-icon.png" height="30px"></a>
-                        <a class="social-link" href=""><img src="images/twitter-icon.png" height="30px"></a>
-                    </section>
-                </section>
-            </nav>
-        </footer>
+            </section>
+        </nav>
+    </footer>
 
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-</body>
-
-</html>
+</body></html>
