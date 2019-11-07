@@ -21,7 +21,7 @@ a:hover
 }
 .blue-text
 {
-	color: #6A9AD1; /*darkblue;*/
+	color: #1257AE; /*darkblue;*/
 }
 .admin-main-general
 {
@@ -64,7 +64,7 @@ a:hover
 	top: 0;
 	height: 100vh;
 	width: var(--sidebar-width);
-	background-color: #E9EDFA; /*rgb(220, 230, 245);*/
+	background-color: #F8F8F8; /*rgb(220, 230, 245);*/
 	padding-top: 85px;
 	display: flex;
 	flex-direction: column;
@@ -101,7 +101,7 @@ a:hover
 #admin-sidebar-general .sidebar-active-link
 {
 	color: rgb(220, 230, 245);
-	background-color: #6D9BF1; /*darkblue;*/
+	background-color: #1257AE; /*darkblue;*/
 	align-self: stretch;
 }
 #mobile-bars 

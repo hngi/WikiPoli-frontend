@@ -23,9 +23,9 @@ html
 #main-options > *
 {
 	background-color: white;/*rgb(113, 113, 200);*/
-	border: 1px solid #6D9BF1; /*rgb(63, 63, 150);*/
+	border: 1px solid #1257AE; /*rgb(63, 63, 150);*/
 	font-size: 32px;
-	color: #6D9BF1;
+	color: #1257AE;
 	border-radius: 10px;
 	cursor: pointer;
 	text-align: center;
@@ -36,7 +36,7 @@ html
 }
 #main-options > *:hover
 {
-	background-color: #6D9BF1; /*rgb(63, 63, 150);*/
+	background-color: #1257AE; /*rgb(63, 63, 150);*/
 	color: white;
 	text-decoration: none;
 }
