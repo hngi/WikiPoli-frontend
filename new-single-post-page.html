@@ -137,12 +137,18 @@
 
 .comment-div {
     display: flex;
-    margin-top: 3em;
+    margin-top: 1em;
 }
 
 .icon {
     font-size: 5em;
-    margin-left: 16px;
+}
+
+.icon img {
+    font-size: 40px;
+    height: 2em;
+    width: 4em;
+    object-fit: cover;
 }
 
 .text {
@@ -169,6 +175,12 @@
         align-self: center;
     }
 
+    .icon img {
+        font-size: 2em;
+        width: 9em;
+        height: 1em;
+    }
+
     .text {
         margin-top: auto;
     }
@@ -183,6 +195,29 @@
     .follow {
         font-size: 0.9em;
         margin-top: 0.1em;
+    }
+}
+
+@media only screen and (width:425px) {
+    .icon img {
+        font-size: 1.6em;
+        width: 6em;
+        height: 1.1em;
+    }
+}
+@media only screen and (width:375px) {
+    .icon img {
+        font-size: 2em;
+        width: 6em;
+        height: 1em;
+    }
+}
+
+@media only screen and (width: 768px) {
+    .icon img {
+        font-size: 1.5em;
+        width: 2.3em;
+        height: 0.7em;
     }
 }
 
@@ -340,17 +375,17 @@
           <button type="submit"  class="btn btn-lg mt-3 comment-btn">Comment</button>
         </div>
 
-        <div class="container">
+        <div class="container mt-5">
             <div class="comment-div">
                 <div class="icon">
-                    <a href="">
-                        <i class="fa fa-user    "></i>
-                    </a>
+                    <a href="#">
+                        <img src="https://res.cloudinary.com/gozzycloud/image/upload/v1572694229/wikipoli/IBB_bdbbsh.jpg" alt="Responsive image" class="img-thumbnail rounded-circle">
                 </div>
-                <div class="ml-5 text">
+                <div class="ml-3 text">
                     <div class="sub-text">
-                        <a href=""><h4 class="text-primary">John Doe</h4></a>
-                        <span class="ml-2">Tue, Nov 5 2019</span>
+                        <h4 class="text-primary">John Doe</h4>
+                    </a>
+                        <span class="ml-2 mt-1">Tue, Nov 5 2019</span>
                     </div>
                     <p class="follow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam unde soluta magnam reiciendis, itaque maxime velit? Architecto, quibusdam. Eligendi porro fuga nobis debitis repellat dolor illum perspiciatis dolore sit magnam?</p>
                 </div>
@@ -358,14 +393,14 @@
             <hr>
             <div class="comment-div">
                 <div class="icon">
-                    <a href="">
-                        <i class="fa fa-user    "></i>
-                    </a>
+                    <a href="#">
+                        <img src="https://res.cloudinary.com/gozzycloud/image/upload/v1572694229/wikipoli/IBB_bdbbsh.jpg" alt="Responsive image" class="img-thumbnail rounded-circle">
                 </div>
-                <div class="ml-5 text">
+                <div class="ml-3 text">
                     <div class="sub-text">
-                        <a href=""><h4 class="text-primary">John Doe</h4></a>
-                        <span class="ml-2">Tue, Nov 5 2019</span>
+                        <h4 class="text-primary">John Doe</h4>
+                    </a>
+                        <span class="ml-2 mt-1">Tue, Nov 5 2019</span>
                     </div>
                     <p class="follow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam unde soluta magnam reiciendis, itaque maxime velit? Architecto, quibusdam. Eligendi porro fuga nobis debitis repellat dolor illum perspiciatis dolore sit magnam?</p>
                 </div>
@@ -373,14 +408,14 @@
             <hr>
             <div class="comment-div">
                 <div class="icon">
-                    <a href="">
-                        <i class="fa fa-user    "></i>
-                    </a>
+                    <a href="#">
+                        <img src="https://res.cloudinary.com/gozzycloud/image/upload/v1572694229/wikipoli/IBB_bdbbsh.jpg" alt="Responsive image" class="img-thumbnail rounded-circle">
                 </div>
-                <div class="ml-5 text">
+                <div class="ml-3 text">
                     <div class="sub-text">
-                        <a href=""><h4 class="text-primary">John Doe</h4></a>
-                        <span class="ml-2">Tue, Nov 5 2019</span>
+                        <h4 class="text-primary">John Doe</h4>
+                    </a>
+                        <span class="ml-2 mt-1">Tue, Nov 5 2019</span>
                     </div>
                     <p class="follow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam unde soluta magnam reiciendis, itaque maxime velit? Architecto, quibusdam. Eligendi porro fuga nobis debitis repellat dolor illum perspiciatis dolore sit magnam?</p>
                 </div>
@@ -388,19 +423,20 @@
             <hr>
             <div class="comment-div">
                 <div class="icon">
-                    <a href="">
-                        <i class="fa fa-user    "></i>
-                    </a>
+                    <a href="#">
+                        <img src="https://res.cloudinary.com/gozzycloud/image/upload/v1572694229/wikipoli/IBB_bdbbsh.jpg" alt="Responsive image" class="img-thumbnail rounded-circle">
                 </div>
-                <div class="ml-5 text">
+                <div class="ml-3 text">
                     <div class="sub-text">
-                        <a href=""><h4 class="text-primary">John Doe</h4></a>
-                        <span class="ml-2">Tue, Nov 5 2019</span>
+                        <h4 class="text-primary">John Doe</h4>
+                    </a>
+                        <span class="ml-2 mt-1">Tue, Nov 5 2019</span>
                     </div>
                     <p class="follow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam unde soluta magnam reiciendis, itaque maxime velit? Architecto, quibusdam. Eligendi porro fuga nobis debitis repellat dolor illum perspiciatis dolore sit magnam?</p>
                 </div>
             </div>
             <hr>
+            
         </div>
     </div>
       
