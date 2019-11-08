@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="icon" type="img/png" href="images/favicon.png">
+    <title>politician information</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+
+        #header {
+            width: 100%;
+            padding: 0;
+        }
+
+        #header #navbar {
+            padding: 0;
+        }
+
+        #header .logo img {
+            width: 150px;
+        }
+
+        #header .navbar p {
+            font-size: 2rem;
+            color: #6D9BF1;
+        }
+
+        #header .menu .nav-link {
+            font-size: 1.1rem;
+            color: rgba(0, 0, 0, 0.7);
+            transition: 0.4s ease-out;
+        }
+
+        #header .menu .nav-link:hover {
+            color: blue;
+        }
+
+        #header .menu #nav-register {
+            background-color: #1257AE;
+            align-self: center;
+            color: white;
+            padding: 0.4rem 1.5rem;
+        }
+
+        #header .menu #nav-register:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+        }
+
+        #header .menu li {
+            margin-left: 2.2rem;
+        }
+
+        #header .fa-bars {
+            color: #000000;
+        }
+
+        @media (max-width: 860px) {
+            #header .fa-bars {
+                margin-bottom: 1rem;
+            }
+
+            #header .menu {
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                padding-bottom: 1rem;
+            }
+
+            #header .menu .nav-link {
+                font-size: 1rem;
+                padding: 0.3rem 1rem;
+            }
+
+            #header .menu #nav-register {
+                padding: 0.3rem 1rem;
+            }
+
+            #header .menu li {
+                margin-left: 0.5rem;
+            }
+        }
+
+
+        h1 {
+            color: #1257AE;
+            margin-bottom: 50px;
+        }
+
+
+        .form-control {
+            border: 1px solid rgb(148, 148, 148);
+            border-radius: 0;
+        }
+
+        .send-email {
+            background: #1257AE;
+            color: white;
+            border-radius: 0;
+        }
+
+        .send-email:hover {
+            background: rgb(69, 115, 202);
+        }
+
+        .send-email:hover {
+            color: white;
+        }
+
+        .search-content a {
+            font-weight: bold;
+            color: #6D9BF1;
+        }
+
+
+        #footer {
+            margin-top: 200px;
+            padding-top: 10px;
+            height: 300px;
+            width: 100%;
+        }
+
+        .links {
+            padding-top: 20px;
+        }
+
+        .quick-links li {
+            list-style-type: none;
+            padding-top: 5px;
+        }
+
+        .quick-links li:first-child {
+            color: #ffffff;
+            padding-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .main-body .fas,
+        .main-body .fab {
+            display: inline-block;
+            margin-right: 2rem;
+        }
+
+        .fas {
+            /* background-color: #1257AE; */
+            color: #1257AE;
+        }
+
+        .icons-row {
+            padding: 0 3rem;
+        }
+
+        .icons-row a {
+            color: #333;
+        }
+
+        .icons-row a:hover {
+            color: #555;
+        }
+
+        .secondrow-content {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #333;
+        }
+
+        .secondrow-content>* {
+            margin-bottom: 1rem;
+        }
+
+        .quick-links li a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .social-links a span {
+            color: #ffffff;
+            letter-spacing: 20px;
+        }
+
+        .copyright p {
+            padding-top: 10px;
+            color: #ffffff;
+            font-size: 12px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .input-group {
+                width: 100%;
+                margin-left: 12%;
+            }
+        }
+
+        @media screen and (max-width: 375px) {
+            .input-group {
+                width: 120%;
+                margin-left: 4%;
+            }
+        }
+
+        #footer {
+            font-family: Nunito, segoe UI, sans-serif;
+            margin: 1rem auto;
+            width: 100%;
+        }
+
+        #footer #hr {
+            margin-left: 9%;
+            width: 80%;
+            border: 0.5px solid rgba(0, 0, 0, 0.08);
+        }
+
+        #footer #nav-flex {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin: 2rem auto;
+        }
+
+        #footer #nav-flex .link-group {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        #footer .link-group .group-desc {
+            color: #1257AE;
+            font-weight: bolder;
+            margin: 1rem 0;
+        }
+
+        #footer .link-group a {
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.8);
+            margin: 0.15rem 0;
+            transition: 0.4s ease-out;
+        }
+
+        #footer .link-group a:hover {
+            color: rgb(100, 100, 200);
+        }
+
+        #footer #socials {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #footer #socials .social-link {
+            margin-right: 1rem;
+            border-radius: 100%;
+            height: 30px;
+            border: 2px solid white;
+            transition: 0.4s ease-out;
+        }
+
+        #footer #socials .social-link:hover {
+            border: 2px solid skyblue;
+        }
+
+
+
+        @media (max-width: 860px) {
+
+            #footer {
+                padding-bottom: 1rem;
+                text-align: center;
+            }
+
+            #footer #nav-flex {
+                flex-direction: column;
+                margin: 1rem 2rem;
+            }
+
+            #footer .link-group .group-desc {
+                margin: 1.5rem 0 0.5rem;
+            }
+        }
+
+        .img-center{
+            
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 70%;
+                  
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+
+
+        <header id="header" class="container-fluid">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg" id="navbar">
+                    <a href="index.html" class="navbar-brand logo">
+                        <img src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571749198/c09e9odiqy2cvkosfubl.png"
+                            alt="WikiPoli Logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="nav navbar-nav ml-auto menu">
+                            <li class="nav-item active">
+                                <a class="nav-link " href="index.html"><strong>Posts</strong></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="postpage1.html"><strong>Login</strong></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="error joor" id="nav-register">Register</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <div class="container mx-auto">
+            <h1 class="text-center mt-3 mb-5 pb-3">Yemi Osinbajo</h1>
+            <div class="row ">
+                <div class="col-md-3 mb-4 img-center" >
+                    <img src="https://res.cloudinary.com/dash9jjyg/image/upload/v1573233033/Yemi_Osinbajo_u4ahwc.jpg"
+                        class="img-fluid" alt="Osinbajo pic">
+                </div>
+                <div class="col-md-9">
+                    <p>
+                        Oluyemi Oluleke "Yemi" Osinbajo (born 8 March 1957) is a Nigerian politician and a lawyer, who
+                        is the current Vice President of Nigeria, in office since 29 May 2015. He is also a Senior
+                        Advocate of
+                        Nigeria, Professor of Law and until his inauguration as Vice President, a Senior Partner with
+                        SimmonsCooper Partners, a commercial law practice.
+                    </p>
+                    <br>
+                    <br>
+                    <h3>Marriage, family and personal life</h3>
+                    <hr />
+                    <p>Yemi Osinbajo SAN, GCON was born into the family of Opeoluwa Osinbajo on 8 March 1957, Creek
+                        Hospital, Lagos. Osinbajo is married to Dolapo (née Soyode) Osinbajo, a granddaughter of Obafemi
+                        Awolowo. They have three children - two daughters, Damilola, Kanyinsola and a son,
+                        Fiyinfoluwa Osinbajo.
+                    </p>
+                    <br>
+                    <br>
+                    <h3>Education</h3>
+                    <hr />
+                    <p>
+                        Yemi Osinbajo was educated at Corona primary School, in Lagos. Between 1969–1975, he attended
+                        Igbobi College Yaba, Lagos, Nigeria. where he was the winner of the State Merit Award (1971);
+                        the School Prize for English Oratory (1972); Adeoba Prize for English Oratory (1972-1975); Elias
+                        Prize for Best Performance in History (WASC, 1973); School Prize for Literature (HSC, 1975); and
+                        African Statesman Intercollegiate Best Speaker's Prize (1974).
+                    </p>
+                    <p>
+                        Thereafter, he studied for his undergraduate degree at the University of Lagos between 1975-1978
+                        when he obtained a Second Class Upper Degree in Law. Here, he also won the Graham-Douglas Prize
+                        for Commercial Law. In 1979, he completed the mandatory one-year professional training at the
+                        Nigerian Law School whereon he was admitted to practice as a Barrister and Solicitor of
+                        Nigeria's Supreme Court. In 1980, he attended the London School of Economics & Political
+                        Science, where he obtained a Master of Laws degree.
+                    </p>
+                    <br>
+                    <br>
+                    <h3>Legal career</h3>
+                    <hr>
+                    <p>
+                        From 1979–1980, Osinbajo served the compulsory one year youth service as a legal officer with
+                        Bendel Development and Planning Authority (BDPA), Bendel state.
+                    </p>
+                    <p>
+                        In 1981, he was employed as a law lecturer at the University of Lagos, Nigeria. From 1983 to
+                        1986, he was Senior lecturer of Law at the University of Lagos. From 1988 to 1992, he was an
+                        Adviser (legal advice and litigation) to the Attorney-General and Minister of Justice, Bola
+                        Ajibola. Osinbajo began lecturing at the age of 23.
+                    </p>
+                    <p>
+                        From 1997 to 1999 he was made Professor of Law and Head of Department of Public Law, University
+                        of Lagos. From 1999 to 2007, Osinbajo was Member of Cabinet, Lagos State Ministry of Justice,
+                        also Attorney-General and Commissioner for Justice. From 2007 to 2013 Osinbajo was once again
+                        employed as a Professor of Law, Department of Public Law, Faculty of Law, University of Lagos.
+                        In 2007, Osinbajo was made Senior Partner, Simmons Cooper Partners (Barristers and Solicitors),
+                        Nigeria. Osinbajo was also a Senior lecturer at the Lagos State University.
+                    </p>
+                    <br>
+                    <br>
+                    <h3>Pastoral career</h3>
+                    <hr>
+                    <p>
+                        Yemi Osinbajo was the Pastor in charge of the Lagos Province 48 (Olive Tree provincial
+                        headquarter) of The Redeemed Christian Church of God.
+                    </p>
+                    <br>
+                    <br>
+                    <h3>Vice Presidency</h3>
+                    <hr>
+                    <p>
+                        After the formation of the All Progressives Congress (APC) in 2013, Yemi was tasked, with other
+                        notable Nigerians, to design and produce a manifesto for the new political party. This
+                        culminated in the presentation of the "Roadmap to a New Nigeria", a document published by APC as
+                        its manifesto if elected to power. The highlights of the Roadmap included a free schools meal
+                        plan, a conditional cash transfer to the 25 million poorest Nigerians if they enroll children in
+                        school and immunise them. There were also a number of programs designed to create economic
+                        opportunities for Nigeria's massive youth population.
+                    </p>
+                    <p>
+                        On 17 December 2014 the presidential candidate of the All Progressives Congress, retired General
+                        Muhammadu Buhari, announced Osinbajo as his running mate and vice-presidential candidate for the
+                        2015 general elections
+                    </p>
+                    <p>
+                        On 31 March 2015 Buhari was confirmed by the Independent National Electoral Commission (INEC) as
+                        the winner of the presidential elections. Thus Osinbajo became the Vice President-elect of
+                        Nigeria. They were both sworn in on 29 May 2015. On 17 August 2017 VP Yemi Osibanjo described
+                        hate speech as a species of terrorism.
+                    </p>
+                    <p>
+                        Yemi Osinbajo assumed office after taking the oath of office on 29 May 2015 at the Eagle Square,
+                        Abuja. As the Vice President of the Federal Republic of Nigeria, he is expected to oversee the
+                        economic planning team and report, as well as make recommendations, to the president who takes
+                        the final decision. Because of his legal background and antecedents as a commissioner for
+                        justice in Lagos state for eight years, many expect that he will contribute a great deal to the
+                        much needed reform of the judicial system at the national level. During the 2014/2015 campaigns
+                        of the All progressives Congress, Yemi Osinbajo held numerous town hall meetings across the
+                        country as against the popular rallies that many Nigerians and their politicians were used to.
+                        One of his campaign promises, which he has recently reiterated, was the plan to feed a school
+                        child a meal per day. Beyond feeding the school children, he has recently emphasized that this
+                        plan will create jobs (another campaign promise) for those who will make it happen.
+                    </p>
+                    <br>
+                    <br>
+                    <h3>Awards</h3>
+                    <hr>
+                    <ul class="list-group">
+                        <li class="list-group-item">State Merit Award 1971</li>
+                        <li class="list-group-item">the School Prize for English Oratory, 1972</li>
+                        <li class="list-group-item">Adeoba Prize for English Oratory 1972–1975</li>
+                        <li class="list-group-item">Elias Prize for Best Performance in History (WASC) 1973</li>
+                        <li class="list-group-item">School Prize for Literature (HSC), 1975</li>
+                        <li class="list-group-item">African Statesman Intercollegiate Best Speaker's Prize, 1974</li>
+                        <li class="list-group-item">President Goodluck Jonathan conferred on Osinbajo the Grand
+                            Commander of the Order of the Niger on May 28, 2015.</li>
+                    </ul>
+                    <br>
+                    <br>
+                    <h3>Memberships</h3>
+                    <hr>
+                    <p>He is a member of the following professional bodies:</p>
+                    <ul class="list-group">
+                            <li class="list-group-item">Nigerian Bar Association</li>
+                            <li class="list-group-item">International Bar Association</li>
+                            <li class="list-group-item">Nigerian Body of Benchers</li>
+                            <li class="list-group-item">Council of Legal Education in Nigeria and Senior Advocate of Nigeria</li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer id="footer">
+        <hr id="hr">
+        <nav id="nav-flex">
+            <section class="link-group">
+                <span class="group-desc">Company</span>
+                <a href="">About Us</a>
+                <a href="">Careers</a>
+
+            </section>
+            <section class="link-group">
+                <span class="group-desc">Help & Support</span>
+                <a href="">FAQ</a>
+                <a href="">Contact us</a>
+            </section>
+            <section class="link-group">
+                <span class="group-desc">Legal</span>
+                <a href="">Terms and Conditions</a>
+                <a href="">Privacy Policy</a>
+            </section>
+            <section class="link-group">
+                <span class="group-desc">Follow Us</span>
+                <section id="socials" class="justify-content-center">
+                    <a class="social-link" href=""><img src="images/facebook-icon.png" height="30px"></a>
+                    <a class="social-link" href=""><img src="images/linkedin-icon.png" height="30px"></a>
+                    <a class="social-link" href=""><img src="images/twitter-icon.png" height="30px"></a>
+                </section>
+            </section>
+        </nav>
+    </footer>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
