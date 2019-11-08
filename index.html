@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
 <title>WikiPoli</title>
@@ -15,14 +15,58 @@
         height: 100vh;
     }
 
-    .navbar {
-        margin-top: -1.8em;
-    }
+    #header
+	{
+		width: 100%;
+		padding: 0;
+	}
+	#header #navbar
+	{
+		padding: 0;
+	}
+	#header .logo img 
+	{
+	  width: 150px;
+	}
 
-    .nav-link {
-        font-size: 1.2em;
-        font-weight: 300;
-    }
+	#header .navbar p 
+	{
+	  font-size: 2rem;
+	  color:  #6D9BF1;
+	}
+
+	#header .menu .nav-link
+	{
+	  font-size: 1.1rem;
+	  color:  rgba(0, 0, 0, 0.7);
+	  transition: 0.4s ease-out;
+	}
+	#header .menu .nav-link:hover
+	{
+		color: blue;
+	}
+	#header .menu #nav-register
+	{
+	  background-color: #1257AE;
+	  align-self: center;
+	  color: white;
+	  padding: 0.4rem 1.5rem;
+	}
+	#header .menu #nav-register:hover
+	{
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+	}
+
+	#header .menu li 
+	{
+	  margin-left: 2.2rem;
+	}
+
+	#header .fa-bars 
+	{
+	  color: #000000;
+	}
+
 
     .form-control {
         width: 35em;
@@ -45,6 +89,14 @@
     .cardi {
         margin: 1em;
         max-width: 100%;
+        overflow: clip;
+        overflow-wrap: break-word;
+    }
+
+    .post {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
     .cardi a {
@@ -82,6 +134,66 @@
     .copy {
         font-size: 12.5px;
     }
+	#footer
+		{
+			font-family: Nunito, segoe UI, sans-serif;
+			margin: 1rem auto;
+			width: 100%;
+		}
+		#footer #hr
+		{
+			width: 80%;
+			border: 0.5px solid rgba(0, 0, 0, 0.08);
+		}
+		#footer #nav-flex
+		{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			margin: 2rem auto;
+		}
+		#footer #nav-flex .link-group
+		{
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+		}
+		#footer .link-group .group-desc
+		{
+			color: #1257AE;
+			font-weight: bolder;
+			margin: 1rem 0;
+		}
+		#footer .link-group a
+		{
+			text-decoration: none;
+			color: rgba(0, 0, 0, 0.8);
+			margin: 0.15rem 0;
+			transition: 0.4s ease-out;
+		}
+		#footer .link-group a:hover
+		{
+			color: rgb(100, 100, 200);
+		}
+		#footer #socials
+		{
+			display: flex;
+			flex-direction: row;
+		}
+		#footer #socials .social-link
+		{
+			margin-right: 1rem;
+			border-radius: 100%;
+			height: 30px;
+			border: 2px solid white;
+			transition: 0.4s ease-out;
+		}
+		#footer #socials .social-link:hover
+		{
+			border: 2px solid skyblue;
+		}
+
+
 
     @media only screen and (max-width: 568px) {
         .navimg {
@@ -100,6 +212,46 @@
         }
     }
 
+    @media (max-width: 860px)
+		{
+			#footer
+			{
+				padding-bottom: 1rem;
+				text-align:center;
+			}
+			#footer #nav-flex
+			{
+				flex-direction: column;
+				margin: 1rem 2rem;
+			}
+			#footer .link-group .group-desc
+			{
+				margin: 1.5rem 0 0.5rem;
+			}
+            #header .fa-bars 
+		{
+		  margin-bottom: 1rem;
+		}
+		#header .menu
+		{
+			border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+			padding-bottom: 1rem;
+		}
+		#header .menu .nav-link
+		{
+			font-size: 1rem;
+			padding: 0.3rem 1rem;
+		}
+		#header .menu #nav-register
+		{
+			padding: 0.3rem 1rem;
+		}
+		#header .menu li 
+		{
+			margin-left: 0.5rem;
+		}
+
+		}
     @media only screen and (max-width: 768px) {
         .form-control {
             width: 27em;
@@ -122,26 +274,32 @@
 <body>
 
     <div class="container-fluid">
-        <nav class="navbar navbar-expand-sm navbar-light">
-            <a class="navbar-brand" href="index.html"></a>
-                <img src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571749198/c09e9odiqy2cvkosfubl.png" class="navimg">
-            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavId">
-                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
-                        <a class="nav-link text-primary pr-5" href="#">Posts <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link pr-5 text-primary" href="#">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-primary  pr-2" href="#">Register</a>
-                    </li>
-            </div>
+        
+<header id="header" class="container-fluid">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg" id="navbar">
+          <a href="index.html" class="navbar-brand logo">
+            <img src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571749198/c09e9odiqy2cvkosfubl.png" alt="WikiPoli Logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa fa-bars" aria-hidden="true"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="nav navbar-nav ml-auto menu">
+              <li class="nav-item active">
+                <a class="nav-link " href="index.html"><strong>Posts</strong></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="postpage1.html"><strong>Login</strong></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="error joor" id="nav-register">Register</a>
+              </li>
+            </ul>
+          </div>
         </nav>
+      </div>
+  </header>
 
         <div class="text-center mt-5 mb-4">
             <h5 class="display-4">Know your candidate</h5>
@@ -158,14 +316,32 @@
         <div class="mt-5 posts">
             <a href="recentpostbeforelog.html"><h3 class="text-center text-dark pt-4 h3 pb-3">Recent Posts</h3></a>
 
-            <div class="row disp">
+            <div class="row disp post">
 
                 <div class="col-sm-12 col-md-3 col-lg-3 mt-5 cardi">
                         <a href="#">
                             <img class="img-fluid" src="https://res.cloudinary.com/gozzycloud/image/upload/v1572694230/wikipoli/Goodluck_Jonathan_2014_jr8b3g.jpg">
                             <div>
                                 <h5 class="h5 mb-2 mt-2">Good Or Bad</h5>
-                                <p class="text-dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                <p class="text-dark"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            </div>
+                        </a>
+                    </div>
+                <div class="col-sm-12 col-md-3 col-lg-3 mt-5 cardi">
+                        <a href="#">
+                            <img class="img-fluid" src="https://res.cloudinary.com/gozzycloud/image/upload/v1572694230/wikipoli/Goodluck_Jonathan_2014_jr8b3g.jpg">
+                            <div>
+                                <h5 class="h5 mb-2 mt-2">Good Or Bad</h5>
+                                <p class="text-dark"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            </div>
+                        </a>
+                    </div>
+                <div class="col-sm-12 col-md-3 col-lg-3 mt-5 cardi">
+                        <a href="#">
+                            <img class="img-fluid" src="https://res.cloudinary.com/gozzycloud/image/upload/v1572694230/wikipoli/Goodluck_Jonathan_2014_jr8b3g.jpg">
+                            <div>
+                                <h5 class="h5 mb-2 mt-2">Good Or Bad</h5>
+                                <p class="text-dark"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
                             </div>
                         </a>
                     </div>
@@ -239,52 +415,73 @@
                             </div>
                         </a>
                     </div>
+                    <div class="col-md-12 col-md-3 col-lg-3 mt-5 cardi">
+                        <a href="#">
+                            <img class="img-fluid" src="https://res.cloudinary.com/gozzycloud/image/upload/v1572694229/wikipoli/IBB_bdbbsh.jpg">
+                            <div>
+                                <h5 class="h5 mb-2 mt-2">Good Or Bad</h5>
+                                <p class="text-dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-12 col-md-3 col-lg-3 mt-5 cardi">
+                        <a href="#">
+                            <img class="img-fluid" src="https://res.cloudinary.com/gozzycloud/image/upload/v1572694229/wikipoli/IBB_bdbbsh.jpg">
+                            <div>
+                                <h5 class="h5 mb-2 mt-2">Good Or Bad</h5>
+                                <p class="text-dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-12 col-md-3 col-lg-3 mt-5 cardi">
+                        <a href="#">
+                            <img class="img-fluid" src="https://res.cloudinary.com/gozzycloud/image/upload/v1572694229/wikipoli/IBB_bdbbsh.jpg">
+                            <div>
+                                <h5 class="h5 mb-2 mt-2">Good Or Bad</h5>
+                                <p class="text-dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            </div>
+                        </a>
+                    </div>
             
             </div>
 
         </div>
 
-        <hr class="mt-4">
             
-        <footer>
-            <div class="row">
-                <div class="mt-5 col-sm-12 col-md-3 col-lg-3">
-                    <h4 class="h4 text-center text-primary mb-4">Legal</h4>
-                    <li class="text-center list"><a href="Terms-of-use.html">Terms Of Use</a></li>
-                    <li class="text-center list"><a href="privacypolicy.html">Privacy Policy</a> </li>  
-                </div>
-
-                <div class="mt-5 col-sm-12 col-md-3 col-lg-3">
-                    <h4 class="h4 text-center text-primary mb-4">Company</h4>
-                        <li class="text-center list"><a href="about.html">About</a></li>
-                        <li class="text-center list"><a href="careers.html">Careers</a></li>
-                </div>
-
-                <div class="mt-5 col-sm-12 col-md-3 col-lg-3">
-                    <h4 class="h4 text-center text-primary mb-4">Help & Support</h4>
-                        <li class="text-center list"><a href="FAQ.html">FAQs</a></li>
-                        <li class="text-center list"><a href="my--don.html">Donations</a></li>
-                </div>
-
-                <div class="mt-5 col-sm-12 col-md-3 col-lg-3">
-                    <h4 class="h4 text-center text-primary mb-4">Connect With Us</h4>
-                    <div class="d-flex justify-content-center">
-                        <a href="#" class="m-2"> <i class="fab fa-facebook" aria-hidden="true"></i></a>
-                        <a href="#" class="m-2"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-                        <a href="#" class="m-2"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                    </div>
-                    <div class="text-center mt-4 cont">
-                        <a href="#"><i class="fas fa-envelope" aria-hidden="true"></i> contact@wikipoli.gq</a>
-                    </div>
-                </div>
-            </div>
-            <p class="text-center  mt-5 copy">&copy;2019 WikiPoli. All Rights Reserved</p>
+        <footer id="footer">
+            <hr id="hr">
+            <nav id="nav-flex">
+                <section class="link-group">
+                    <span class="group-desc">Company</span>
+                    <a href="">About Us</a>
+                    <a href="">Careers</a>
+                
+                </section>
+                <section class="link-group">
+                    <span class="group-desc">Help & Support</span>
+                    <a href="">FAQ</a>
+                    <a href="">Contact us</a>
+                </section>
+                <section class="link-group">
+                    <span class="group-desc">Legal</span>
+                    <a href="">Terms and Conditions</a>
+                    <a href="">Privacy Policy</a>
+                </section>
+                <section class="link-group">
+                    <span class="group-desc">Follow Us</span>
+                    <section id="socials" class="justify-content-center">
+                        <a class="social-link" href=""><img src="images/facebook-icon.png" height="30px"></a>
+                        <a class="social-link" href=""><img src="images/linkedin-icon.png" height="30px"></a>
+                        <a class="social-link" href=""><img src="images/twitter-icon.png" height="30px"></a>
+                    </section>
+                </section>
+            </nav>
         </footer>
             
     </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>

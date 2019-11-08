@@ -43,6 +43,12 @@
         text-decoration: none;
     }
 
+    .post {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
     .img-fluid {
         height: 13em;
         width: 100%;
@@ -52,6 +58,11 @@
     .card-text {
         font-size: 0.85em;
         color: darkslategrey;
+    }
+
+    .numb {
+        margin-left: -10px;
+        font-size: 13px;
     }
 
     .list {
@@ -71,6 +82,66 @@
     .copy {
         font-size: 12.5px;
     }
+
+	#footer
+		{
+			font-family: Nunito, segoe UI, sans-serif;
+			margin: 1rem auto;
+			width: 100%;
+		}
+		#footer #hr
+		{
+			width: 80%;
+			border: 0.5px solid rgba(0, 0, 0, 0.08);
+		}
+		#footer #nav-flex
+		{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			margin: 2rem auto;
+		}
+		#footer #nav-flex .link-group
+		{
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+		}
+		#footer .link-group .group-desc
+		{
+			color: #1257AE;
+			font-weight: bolder;
+			margin: 1rem 0;
+		}
+		#footer .link-group a
+		{
+			text-decoration: none;
+			color: rgba(0, 0, 0, 0.8);
+			margin: 0.15rem 0;
+			transition: 0.4s ease-out;
+		}
+		#footer .link-group a:hover
+		{
+			color: rgb(100, 100, 200);
+		}
+		#footer #socials
+		{
+			display: flex;
+			flex-direction: row;
+		}
+		#footer #socials .social-link
+		{
+			margin-right: 1rem;
+			border-radius: 100%;
+			height: 30px;
+			border: 2px solid white;
+			transition: 0.4s ease-out;
+		}
+		#footer #socials .social-link:hover
+		{
+			border: 2px solid skyblue;
+		}
+
 
     @media only screen and (max-width: 425px) {
         .navimg {
@@ -151,6 +222,46 @@
             margin-right: auto;
         }
     }
+    @media (max-width: 860px)
+		{
+			#footer
+			{
+				padding-bottom: 1rem;
+				text-align:center;
+			}
+			#footer #nav-flex
+			{
+				flex-direction: column;
+				margin: 1rem 2rem;
+			}
+			#footer .link-group .group-desc
+			{
+				margin: 1.5rem 0 0.5rem;
+            }
+            #header .fa-bars 
+		{
+		  margin-bottom: 1rem;
+		}
+		#header .menu
+		{
+			border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+			padding-bottom: 1rem;
+		}
+		#header .menu .nav-link
+		{
+			font-size: 1rem;
+			padding: 0.3rem 1rem;
+		}
+		#header .menu #nav-register
+		{
+			padding: 0.3rem 1rem;
+		}
+		#header .menu li 
+		{
+			margin-left: 0.5rem;
+		}
+		}
+
     @media only screen and (min-width: 1024px) {
         .card {
             margin-left: 3em;
@@ -195,20 +306,21 @@
         </div>
         
 
-        <div class="row">
+        <div class="post">
 
             <div class="col-sm-12 col-md-4 col-lg-3 mt-5 cardi">
                     <a href="#">
                         <img class="img-fluid" src="https://res.cloudinary.com/gozzycloud/image/upload/v1572694230/wikipoli/Goodluck_Jonathan_2014_jr8b3g.jpg">
                         <div>
                             <h5 class="h5 mb-2 mt-2">Good Or Bad</h5>
-                            <p class="text-dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p class="text-dark"> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </a>
                         <div>
-                            <a href="#"><i class="fa fa-thumbs-up pr-3" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fa fa-thumbs-down pr-3" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fa fa-reply" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-thumbs-up pr-3" aria-hidden="true"></i><span class="numb">12</span></a>
+                            <a href="#"><i class="fa fa-thumbs-down ml-3 pr-3" aria-hidden="true"></i><span class="numb">12</span></a>
+                            <a href="#"><i class="fa fa-reply ml-3" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-exclamation-circle float-right pl-3 text-danger" aria-hidden="true"></i></a>
                             <a href="#"><i class="fab fa-facebook  float-right" aria-hidden="true"></i></a>
                             <a href="#"><i class="fab fa-twitter pr-3 float-right"></i></a>
                         </div>
@@ -222,13 +334,14 @@
                             <p class="text-dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </a>
-                        <div>
-                            <a href="#"><i class="fa fa-thumbs-up pr-3" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fa fa-thumbs-down pr-3" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fa fa-reply" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fab fa-facebook  float-right" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fab fa-twitter pr-3 float-right"></i></a>
-                        </div>
+                    <div>
+                        <a href="#"><i class="fa fa-thumbs-up pr-3" aria-hidden="true"></i><span class="numb">12</span></a>
+                        <a href="#"><i class="fa fa-thumbs-down ml-3 pr-3" aria-hidden="true"></i><span class="numb">12</span></a>
+                        <a href="#"><i class="fa fa-reply ml-3" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-exclamation-circle float-right pl-3 text-danger" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fab fa-facebook  float-right" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fab fa-twitter pr-3 float-right"></i></a>
+                    </div>
                 </div>
 
                 <div class="col-sm-12 col-md-4 col-lg-3 mt-5 cardi">
@@ -239,13 +352,14 @@
                             <p class="text-dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </a>
-                        <div>
-                            <a href="#"><i class="fa fa-thumbs-up pr-3" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fa fa-thumbs-down pr-3" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fa fa-reply" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fab fa-facebook  float-right" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fab fa-twitter pr-3 float-right"></i></a>
-                        </div>
+                    <div>
+                        <a href="#"><i class="fa fa-thumbs-up pr-3" aria-hidden="true"></i><span class="numb">12</span></a>
+                        <a href="#"><i class="fa fa-thumbs-down ml-3 pr-3" aria-hidden="true"></i><span class="numb">12</span></a>
+                        <a href="#"><i class="fa fa-reply ml-3" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-exclamation-circle float-right pl-3 text-danger" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fab fa-facebook  float-right" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fab fa-twitter pr-3 float-right"></i></a>
+                    </div>
                 </div>
 
                 <div class="col-sm-12 col-md-4 col-lg-3 mt-5 cardi">
@@ -256,13 +370,14 @@
                             <p class="text-dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </a>
-                        <div>
-                            <a href="#"><i class="fa fa-thumbs-up pr-3" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fa fa-thumbs-down pr-3" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fa fa-reply" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fab fa-facebook  float-right" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fab fa-twitter pr-3 float-right"></i></a>
-                        </div>
+                    <div>
+                        <a href="#"><i class="fa fa-thumbs-up pr-3" aria-hidden="true"></i><span class="numb">12</span></a>
+                        <a href="#"><i class="fa fa-thumbs-down ml-3 pr-3" aria-hidden="true"></i><span class="numb">12</span></a>
+                        <a href="#"><i class="fa fa-reply ml-3" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-exclamation-circle float-right pl-3 text-danger" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fab fa-facebook  float-right" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fab fa-twitter pr-3 float-right"></i></a>
+                    </div>
                 </div>
 
                 <div class="col-sm-12 col-md-4 col-lg-3 mt-5 cardi">
@@ -273,13 +388,14 @@
                             <p class="text-dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </a>
-                        <div>
-                            <a href="#"><i class="fa fa-thumbs-up pr-3" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fa fa-thumbs-down pr-3" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fa fa-reply" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fab fa-facebook  float-right" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fab fa-twitter pr-3 float-right"></i></a>
-                        </div>
+                    <div>
+                        <a href="#"><i class="fa fa-thumbs-up pr-3" aria-hidden="true"></i><span class="numb">12</span></a>
+                        <a href="#"><i class="fa fa-thumbs-down ml-3 pr-3" aria-hidden="true"></i><span class="numb">12</span></a>
+                        <a href="#"><i class="fa fa-reply ml-3" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-exclamation-circle float-right pl-3 text-danger" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fab fa-facebook  float-right" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fab fa-twitter pr-3 float-right"></i></a>
+                    </div>
                 </div>
 
                 <div class="col-sm-12 col-md-4 col-lg-3 mt-5 cardi">
@@ -290,13 +406,14 @@
                             <p class="text-dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </a>
-                        <div>
-                            <a href="#"><i class="fa fa-thumbs-up pr-3" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fa fa-thumbs-down pr-3" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fa fa-reply" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fab fa-facebook  float-right" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fab fa-twitter pr-3 float-right"></i></a>
-                        </div>
+                    <div>
+                        <a href="#"><i class="fa fa-thumbs-up pr-3" aria-hidden="true"></i><span class="numb">12</span></a>
+                        <a href="#"><i class="fa fa-thumbs-down ml-3 pr-3" aria-hidden="true"></i><span class="numb">12</span></a>
+                        <a href="#"><i class="fa fa-reply ml-3" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-exclamation-circle float-right pl-3 text-danger" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fab fa-facebook  float-right" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fab fa-twitter pr-3 float-right"></i></a>
+                    </div>
                 </div>
 
                 <div class="col-sm-12 col-md-4 col-lg-3 mt-5 cardi">
@@ -307,13 +424,14 @@
                             <p class="text-dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </a>
-                        <div>
-                            <a href="#"><i class="fa fa-thumbs-up pr-3" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fa fa-thumbs-down pr-3" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fa fa-reply" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fab fa-facebook  float-right" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fab fa-twitter pr-3 float-right"></i></a>
-                        </div>
+                    <div>
+                        <a href="#"><i class="fa fa-thumbs-up pr-3" aria-hidden="true"></i><span class="numb">12</span></a>
+                        <a href="#"><i class="fa fa-thumbs-down ml-3 pr-3" aria-hidden="true"></i><span class="numb">12</span></a>
+                        <a href="#"><i class="fa fa-reply ml-3" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-exclamation-circle float-right pl-3 text-danger" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fab fa-facebook  float-right" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fab fa-twitter pr-3 float-right"></i></a>
+                    </div>
                 </div>
 
                 <div class="col-sm-12 col-md-4 col-lg-3 mt-5 cardi">
@@ -324,13 +442,118 @@
                             <p class="text-dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </a>
+                    <div>
+                        <a href="#"><i class="fa fa-thumbs-up pr-3" aria-hidden="true"></i><span class="numb">12</span></a>
+                        <a href="#"><i class="fa fa-thumbs-down ml-3 pr-3" aria-hidden="true"></i><span class="numb">12</span></a>
+                        <a href="#"><i class="fa fa-reply ml-3" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-exclamation-circle float-right pl-3 text-danger" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fab fa-facebook  float-right" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fab fa-twitter pr-3 float-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4 col-lg-3 mt-5 cardi">
+                    <a href="#">
+                        <img class="img-fluid" src="https://res.cloudinary.com/gozzycloud/image/upload/v1572694229/wikipoli/IBB_bdbbsh.jpg">
                         <div>
-                            <a href="#"><i class="fa fa-thumbs-up pr-3" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fa fa-thumbs-down pr-3" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fa fa-reply" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fab fa-facebook  float-right" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fab fa-twitter pr-3 float-right"></i></a>
+                            <h5 class="h5 mb-2 mt-2">Good Or Bad</h5>
+                            <p class="text-dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
+                    </a>
+                    <div>
+                        <a href="#"><i class="fa fa-thumbs-up pr-3" aria-hidden="true"></i><span class="numb">12</span></a>
+                        <a href="#"><i class="fa fa-thumbs-down ml-3 pr-3" aria-hidden="true"></i><span class="numb">12</span></a>
+                        <a href="#"><i class="fa fa-reply ml-3" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-exclamation-circle float-right pl-3 text-danger" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fab fa-facebook  float-right" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fab fa-twitter pr-3 float-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4 col-lg-3 mt-5 cardi">
+                    <a href="#">
+                        <img class="img-fluid" src="https://res.cloudinary.com/gozzycloud/image/upload/v1572694229/wikipoli/IBB_bdbbsh.jpg">
+                        <div>
+                            <h5 class="h5 mb-2 mt-2">Good Or Bad</h5>
+                            <p class="text-dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </a>
+                    <div>
+                        <a href="#"><i class="fa fa-thumbs-up pr-3" aria-hidden="true"></i><span class="numb">12</span></a>
+                        <a href="#"><i class="fa fa-thumbs-down ml-3 pr-3" aria-hidden="true"></i><span class="numb">12</span></a>
+                        <a href="#"><i class="fa fa-reply ml-3" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-exclamation-circle float-right pl-3 text-danger" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fab fa-facebook  float-right" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fab fa-twitter pr-3 float-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3 mt-5 cardi">
+                    <a href="#">
+                        <img class="img-fluid" src="https://res.cloudinary.com/gozzycloud/image/upload/v1572694229/wikipoli/IBB_bdbbsh.jpg">
+                        <div>
+                            <h5 class="h5 mb-2 mt-2">Good Or Bad</h5>
+                            <p class="text-dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </a>
+                    <div>
+                        <a href="#"><i class="fa fa-thumbs-up pr-3" aria-hidden="true"></i><span class="numb">12</span></a>
+                        <a href="#"><i class="fa fa-thumbs-down ml-3 pr-3" aria-hidden="true"></i><span class="numb">12</span></a>
+                        <a href="#"><i class="fa fa-reply ml-3" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-exclamation-circle float-right pl-3 text-danger" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fab fa-facebook  float-right" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fab fa-twitter pr-3 float-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3 mt-5 cardi">
+                    <a href="#">
+                        <img class="img-fluid" src="https://res.cloudinary.com/gozzycloud/image/upload/v1572694229/wikipoli/IBB_bdbbsh.jpg">
+                        <div>
+                            <h5 class="h5 mb-2 mt-2">Good Or Bad</h5>
+                            <p class="text-dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </a>
+                    <div>
+                        <a href="#"><i class="fa fa-thumbs-up pr-3" aria-hidden="true"></i><span class="numb">12</span></a>
+                        <a href="#"><i class="fa fa-thumbs-down ml-3 pr-3" aria-hidden="true"></i><span class="numb">12</span></a>
+                        <a href="#"><i class="fa fa-reply ml-3" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-exclamation-circle float-right pl-3 text-danger" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fab fa-facebook  float-right" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fab fa-twitter pr-3 float-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3 mt-5 cardi">
+                    <a href="#">
+                        <img class="img-fluid" src="https://res.cloudinary.com/gozzycloud/image/upload/v1572694229/wikipoli/IBB_bdbbsh.jpg">
+                        <div>
+                            <h5 class="h5 mb-2 mt-2">Good Or Bad</h5>
+                            <p class="text-dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </a>
+                    <div>
+                        <a href="#"><i class="fa fa-thumbs-up pr-3" aria-hidden="true"></i><span class="numb">12</span></a>
+                        <a href="#"><i class="fa fa-thumbs-down ml-3 pr-3" aria-hidden="true"></i><span class="numb">12</span></a>
+                        <a href="#"><i class="fa fa-reply ml-3" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-exclamation-circle float-right pl-3 text-danger" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fab fa-facebook  float-right" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fab fa-twitter pr-3 float-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3 mt-5 cardi">
+                    <a href="#">
+                        <img class="img-fluid" src="https://res.cloudinary.com/gozzycloud/image/upload/v1572694229/wikipoli/IBB_bdbbsh.jpg">
+                        <div>
+                            <h5 class="h5 mb-2 mt-2">Good Or Bad</h5>
+                            <p class="text-dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </a>
+                    <div>
+                        <a href="#"><i class="fa fa-thumbs-up pr-3" aria-hidden="true"></i><span class="numb">12</span></a>
+                        <a href="#"><i class="fa fa-thumbs-down ml-3 pr-3" aria-hidden="true"></i><span class="numb">12</span></a>
+                        <a href="#"><i class="fa fa-reply ml-3" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-exclamation-circle float-right pl-3 text-danger" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fab fa-facebook  float-right" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fab fa-twitter pr-3 float-right"></i></a>
+                    </div>
                 </div>
             
         </div>
@@ -348,51 +571,39 @@
                 </li>
             </ul>
         </nav>
-
-
-
-
-        <hr class="mt-3">
             
-        <footer>
-            <div class="row">
-                <div class="mt-5 col-sm-12 col-md-3 col-lg-3">
-                    <h4 class="h4 text-center text-primary mb-4">Legal</h4>
-                    <li class="text-center list"><a href="Terms-of-use.html">Terms Of Use</a></li>
-                    <li class="text-center list"><a href="privacypolicy.html">Privacy Policy</a> </li>  
-                </div>
-
-                <div class="mt-5 col-sm-12 col-md-3 col-lg-3">
-                    <h4 class="h4 text-center text-primary mb-4">Company</h4>
-                        <li class="text-center list"><a href="about.html">About</a></li>
-                        <li class="text-center list"><a href="careers.html">Careers</a></li>
-                </div>
-
-                <div class="mt-5 col-sm-12 col-md-3 col-lg-3">
-                    <h4 class="h4 text-center text-primary mb-4">Help & Support</h4>
-                        <li class="text-center list"><a href="FAQ.html">FAQs</a></li>
-                        <li class="text-center list"><a href="my--don.html">Donations</a></li>
-                </div>
-
-                <div class="mt-5 col-sm-12 col-md-3 col-lg-3">
-                    <h4 class="h4 text-center text-primary mb-4">Connect With Us</h4>
-                    <div class="d-flex justify-content-center">
-                        <a href="#" class="m-2"> <i class="fab fa-facebook" aria-hidden="true"></i></a>
-                        <a href="#" class="m-2"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-                        <a href="#" class="m-2"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                    </div>
-                    <div class="text-center mt-4 cont">
-                        <a href="#"><i class="fas fa-envelope" aria-hidden="true"></i> contact@wikipoli.gq</a>
-                    </div>
-                </div>
-            </div>
-            <p class="text-center  mt-5 copy">&copy;2019 WikiPoli. All Rights Reserved</p>
+        <footer id="footer">
+            <hr id="hr">
+            <nav id="nav-flex">
+                <section class="link-group">
+                    <span class="group-desc">Company</span>
+                    <a href="">About Us</a>
+                    <a href="">Careers</a>
+                
+                </section>
+                <section class="link-group">
+                    <span class="group-desc">Help & Support</span>
+                    <a href="">FAQ</a>
+                    <a href="">Contact us</a>
+                </section>
+                <section class="link-group">
+                    <span class="group-desc">Legal</span>
+                    <a href="">Terms and Conditions</a>
+                    <a href="">Privacy Policy</a>
+                </section>
+                <section class="link-group">
+                    <span class="group-desc">Follow Us</span>
+                    <section id="socials" class="justify-content-center">
+                        <a class="social-link" href=""><img src="images/facebook-icon.png" height="30px"></a>
+                        <a class="social-link" href=""><img src="images/linkedin-icon.png" height="30px"></a>
+                        <a class="social-link" href=""><img src="images/twitter-icon.png" height="30px"></a>
+                    </section>
+                </section>
+            </nav>
         </footer>
-
     </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-</body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </html>
