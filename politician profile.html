@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Politician profile</title>
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+<link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel="icon" type="img/png" href="images/favicon.png" />
+</head>
+<style>
+  body {
+      font-family: 'Nunito', sans-serif;
+      padding-left: 10px;
+      padding-right: 1rem;
+  }
+  .navbar {
+      margin-top: -1.8em;
+  }
+
+  .link {
+        text-decoration: none;
+    }
+    .nav-item {
+      margin: 1rem;
+    }
+    .nav-item .active {
+      background: #1257AE;
+      color: #FFFFFF !important;
+    }
+    .nav-item .active:hover {
+      color: #FFFFFF !important;
+    }
+
+    .idc{
+        color: #1257AE;
+    }
+
+    #rw{
+      padding-left: 30px;
+    }
+
+    }
+    .main-img {
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    #footer
+		{
+			font-family: Nunito, segoe UI, sans-serif;
+			margin: 1rem auto;
+			width: 100%;
+		}
+		#footer #hr
+		{
+			width: 80%;
+			border: 0.5px solid rgba(0, 0, 0, 0.08);
+		}
+		#footer #nav-flex
+		{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			margin: 2rem auto;
+		}
+		#footer #nav-flex .link-group
+		{
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+		}
+		#footer .link-group .group-desc
+		{
+			color: #1257AE;
+			font-weight: bolder;
+			margin: 1rem 0;
+		}
+		#footer .link-group a
+		{
+			text-decoration: none;
+			color: rgba(0, 0, 0, 0.8);
+			margin: 0.15rem 0;
+			transition: 0.4s ease-out;
+		}
+		#footer .link-group a:hover
+		{
+			color: rgb(100, 100, 200);
+		}
+		#footer #socials
+		{
+			display: flex;
+			flex-direction: row;
+		}
+		#footer #socials .social-link
+		{
+			margin-right: 1rem;
+			border-radius: 100%;
+			height: 30px;
+			border: 2px solid white;
+			transition: 0.4s ease-out;
+		}
+		#footer #socials .social-link:hover
+		{
+			border: 2px solid skyblue;
+		}
+
+        
+@media only screen and (max-width: 568px) {
+        .navimg {
+            margin-left: -1em;
+            height: 120px;
+            width: 120px;
+        }
+    }
+
+		@media (max-width: 860px)
+		{
+			#footer
+			{
+				padding-bottom: 1rem;
+				text-align:center;
+			}
+			#footer #nav-flex
+			{
+				flex-direction: column;
+				margin: 1rem 2rem;
+			}
+			#footer .link-group .group-desc
+			{
+				margin: 1.5rem 0 0.5rem;
+			}
+		}    
+        h3.text-justify{
+                font-weight: bold;
+                color: #1257AE;
+                font-size: 17px;
+            }
+
+            p.text-justify{
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 2em;
+            }
+
+
+</style>
+<body class="bg-light " >
+    <div class="container-fluid bg-light">
+        <nav class="navbar navbar-expand-md navbar-light ">
+          <a class="navbar-brand font-weight-bold" href="#"
+            ><img
+              src="https://res.cloudinary.com/fabianuzukwu/image/upload/v1571749198/c09e9odiqy2cvkosfubl.png"
+              alt="logo"
+              class="navimg"
+          /></a>
+          <button
+            class="navbar-toggler "
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link " href="index.html"><strong>Posts</strong></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="postpage1.html"><strong>Login</strong></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="error joor" id="nav-register">Register</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark font-weight-bold" href="#">Post</a>
+              </li>
+              <li class="nav-item ">
+                    <a class="nav-link text-dark font-weight-bold" href="#"> 
+                      <i class="fa fa-search "></i>
+                    </a>
+              </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="row" id="rw">
+        <div class="col-12 col-md-6">
+           <img src="images/sowore1.png"  alt="image" class="main-img">
+           <h2>Omoyele Sowore</h2>
+        </div>
+        
+        <div class="col-12 col-md-6">
+            <p class="dd">
+                <h2 class="idc">Born</h2>
+                <h5>16th february 1971.</h5>
+            </p>
+            <p class="dd">
+                <h2 class="idc">Education</h2>
+                <h5>University of lagos <span><br>Colubia University</span></h5>
+            </p>
+            <p class="dd">
+                <h2 class="idc">Occupation</h2>
+                <h5>Human right activist,blogger.</h5>
+            </p>
+            <p class="dd">   
+                <h2 class="idc">Spouse</h2>
+                <h5>Opeyemi sowore</h5>
+          </p>
+          <p class="dd">
+              <h3 class="idc">Website</h3>
+              <h5>saharareporters.com</h5>
+          </p>
+                 
+        </div>
+    </div>
+    <div class="row" id="rw" style="scroll-padding-bottom: 3px;">
+        <div class="col-lg-12">
+            <p class="text-justify">Omoyele “Yele” Sowore (born 16 February, 1971) is a Nigerian human rights activist, pro-democracy campaigner, 
+                former presidential candidate, and founder of an online news agency Sahara reporters. On August 3, 2019, Sowore was 
+                arrested by the Nigerian Department of Security (DSS) for alleged treason after calling for a protest tagged RevolutionNow.
+            </p><br /><br />
+        </div>
+    </div>
+    <div class="row" id="rw">
+        <div class="col-lg-12">
+            <h3 class="text-justify">Biography</h3><br />
+            <hr />
+            <p class="text-justify">Omoyele “Yele” Sowore (born 16 February, 1971) is a Nigerian human rights activist, pro-democracy campaigner, 
+                former presidential candidate, and founder of an online news agency Sahara reporters. On August 3, 2019,Sowore was 
+                arrested by the Nigerian Department of Security (DSS) for alleged treason after calling for a protest tagged RevolutionNow..<br /><br />
+
+                Omoyele “Yele” Sowore (born 16 February, 1971) is a Nigerian human rights activist, pro-democracy campaigner, forme presidential candidate, 
+                and founder of an online news agency Sahara reporters. On August 3, 2019,Sowore was arrested by the Nigerian Department of Security (DSS) for alleged 
+                treason after calling for a protest tagged RevolutionNow.<br></br>
+
+                Omoyele “Yele” Sowore (born 16 February, 1971) is a Nigerian human rights activist, pro-democracy campaigner, forme presidential candidate, 
+                and founder of an online news agency Sahara reporters. On August 3, 2019,Sowore was arrested by the Nigerian Department of Security (DSS) for alleged 
+                treason after calling for a protest tagged RevolutionNow.
+            </p>   
+        </div>
+    </div>
+    <div class="row" id="rw">
+            <div class="col-lg-12">
+                <h3 class="text-justify">Education</h3><br />
+                <hr />
+                <p class="text-justify">Yele Sowore is from Ese-Odo, Ondo State in South West Nigeria. Sowore was born in the Niger Delta region of the country 
+                    where he was also raised in a polygamous home with sixteen children. At 12, he learned to ride a motorcycle so that he 
+                    could go to the lake to go fishing for food for his entire family every morning before going to school. Sowore's passion 
+                    and desire in media was propelled during the military rule in Nigeria.<br /><br />
+    
+                    Sowore studied Geography and Planning at the University of Lagos from 1989 to 1995 with his academic program extended by two extra years 
+                    after being expelled twice for political reasons and student activism.[citation needed] He was the President of the University of Lagos 
+                    Student Union Government between 1992 and 1994 where he was involved in anti-cultism and anti-corruption advocacy.
+                    [citation needed] Sowore holds a Masters degree in Public Administration from Columbia University.<br></br>
+    
+                    Omoyele “Yele” Sowore (born 16 February, 1971) is a Nigerian human rights activist, pro-democracy campaigner, forme presidential candidate, 
+                    and founder of an online news agency Sahara reporters. On August 3, 2019,Sowore was arrested by the Nigerian Department of Security (DSS) for alleged 
+                    treason after calling for a protest tagged RevolutionNow.
+                </p>   
+            </div>
+        </div>
+        <div class="row" id="rw">
+                <div class="col-lg-12">
+                    <h3 class="text-justify">Career</h3><br />
+                    <hr />
+                    <p class="text-justify">In 1989, he took part in student demonstrations protesting the conditions of an International 
+                        Monetary Fund (IMF) loan of $120 million to be used for a Nigerian oil pipeline. Included among the conditions of the
+                        IMF loan, was a reduction in the number of universities in Nigeria from 28 to 5.Sowore led 5,100 students in protest 
+                        against the Nigerian government in 1992. The protest resulted in police opening fire and killing seven protesters. 
+                        Sowore was arrested and tortured. Omoyele was also involved in the demand for democratic government taking over military 
+                        rule on June 12, 1993. This resulted in several arrests, detentions and life threatening treatment by government officials<br /><br />
+        
+                        A renowned journalist, Niyi Babade, in his yet to be published memoir, also acknowledges Sowore's stride in the June 12
+                        struggle - “Unannounced they came out of an unmarked grey vehicle and saw the ugly scenes then opened fire on all of us.
+                        I spent some quality time in my resting place the gutter till I heard the singing voices of the students of University of 
+                        Lagos led by Yele Sowore (now a Sahara reporter) heading to Abiola’s house, I crawled out of my hiding and tried to get an 
+                        exclusive shot when the hoodlums among the students attacked me and wanted to confiscate my camera but with the heroic effort
+                        of Sowore I was spared and allowed to join them as one of the hoodlums and a journalist which then gave me unlimited access to 
+                        xclusive footage of the day till we got to MKO Abiola’s house<br></br>
+        
+                        Omoyele “Yele” Sowore (born 16 February, 1971) is a Nigerian human rights activist, pro-democracy campaigner, forme presidential candidate, 
+                        and founder of an online news agency Sahara reporters. On August 3, 2019,Sowore was arrested by the Nigerian Department of Security (DSS) for alleged 
+                        treason after calling for a protest tagged RevolutionNow.
+                    </p>   
+                </div>
+            </div>
+            <div class="row"id="rw">
+                    <div class="col-lg-12">
+                        <h3 class="text-justify">politics</h3><br />
+                        <hr />
+                        <p class="text-justify">On February 25, 2018, Sowore announced his intention to run for president in the 2019 Nigerian 
+                            general election.[16] In August 2018, he founded a political party, the African Action Congress (AAC), for which he
+                            will run for in 2019. On October 6, 2018, following successful primary elections at the AAC's national convention, 
+                            Omoyele Sowore emerged unchallenged as the Presidential Candidate for the party<br /><br />
+            
+                            After touring many states in Nigeria, visiting dignitaries such as the Emir of Kano and Wole Soyinka, Sowore embarked 
+                            on a fundraising tour around the world including Australia, the United States of America and the UK. He was in Luton (London) 
+                            on the 10th of November, 2018.Sowore flouted debate rules of engagement through naming and shaming corrupt members of the opposition party<br></br>
+                        </p>   
+                    </div>
+                </div>
+      <footer id="footer">
+            <hr id="hr">
+            <nav id="nav-flex">
+              <section class="link-group">
+                <span class="group-desc">Company</span>
+                <a href="">About Us</a>
+                <a href="">Careers</a>
+              
+              </section>
+              <section class="link-group">
+                <span class="group-desc">Help & Support</span>
+                <a href="">FAQ</a>
+                <a href="">Contact us</a>
+              </section>
+              <section class="link-group">
+                <span class="group-desc">Legal</span>
+                <a href="">Terms and Conditions</a>
+                <a href="">Privacy Policy</a>
+              </section>
+              <section class="link-group">
+                <span class="group-desc">Follow Us</span>
+                <section id="socials" class="justify-content-center">
+                  <a class="social-link" href=""><img src="images/facebook-icon.png" height="30px"></a>
+                  <a class="social-link" href=""><img src="images/linkedin-icon.png" height="30px"></a>
+                  <a class="social-link" href=""><img src="images/twitter-icon.png" height="30px"></a>
+                </section>
+              </section>
+            </nav>
+          </footer>
+    
+      S</div>
+    
+          <script
+          src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+          integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+          crossorigin="anonymous"
+        ></script>
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+          integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+          crossorigin="anonymous"
+        ></script>
+        <script
+          src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+          integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+          crossorigin="anonymous"
+        ></script>
+    </body>
+    </html>

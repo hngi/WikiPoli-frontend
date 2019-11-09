@@ -218,6 +218,14 @@ border-radius: 10px;
 background: #6D9BF1; 
 }
 /*Responsive styling */
+
+@media (min-width: 992px){
+    .container {
+        width: 801;
+        height: 680;
+    }
+}
+
 @media screen and (max-width: 768px) {
 h1 {
 font-size: 30px;
